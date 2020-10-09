@@ -1,0 +1,20 @@
+module Firearms
+{
+	imports
+	{
+		Base,
+	}
+
+	/************************Guns************************/
+	recipe Saw Off Rifle
+	{
+	   HuntingRifle,
+	   keep [Recipe.GetItemTypes.Saw],
+
+	   Result:HuntingRifle_Sawn,
+	   Sound:Sawing,
+	   Time:200.0,
+	   OnCreate:RifleSawnOff_OnCreate,
+	}
+
+}

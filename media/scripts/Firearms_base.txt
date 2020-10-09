@@ -49,6 +49,17 @@ module Base
 		}
 	}
 
+	model Glock17
+	{
+		mesh = Weapons/Firearm/Glock17,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1710 0.0250,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+
 		model Model700
 		{
 			mesh = weapons/firearm/Model700,
@@ -61,22 +72,22 @@ module Base
 
 			attachment muzzle
 			{
-				offset = 0.0000 0.5310 0.0530,
+				offset = 0.0000 0.5310 0.0730,
 				rotate = -90.0000 0.0000 180.0000,
 			}
 
 			attachment muzzle
 			{
-				offset = 0.0000 0.5310 0.0530,
+				offset = 0.0000 0.5310 0.0730,
 				rotate = -90.0000 0.0000 -180.0000,
 			}
 		}
 
-		model Model700_Sawn
+		model Model788
 		{
-			mesh = weapons/firearm/Model700_Sawn,
+			mesh = weapons/firearm/Model700,
 
-		texture = Weapons/firearm/Model700,
+			texture = Weapons/firearm/Model788,
 
 			attachment bayonet
 			{
@@ -86,15 +97,85 @@ module Base
 
 			attachment muzzle
 			{
-				offset = 0.0000 0.3410 0.0530,
+				offset = 0.0000 0.5310 0.0730,
 				rotate = -90.0000 0.0000 180.0000,
 			}
 
 			attachment muzzle
 			{
-				offset = 0.0000 0.3410 0.0530,
+				offset = 0.0000 0.5310 0.0730,
 				rotate = -90.0000 0.0000 -180.0000,
 			}
+		}
+
+		model Model788_Sawn
+		{
+			mesh = weapons/firearm/Model788_Sawn,
+
+		texture = Weapons/firearm/Model788,
+
+			attachment bayonet
+			{
+				offset = 0.0000 0.4340 0.0080,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.3410 0.0730,
+				rotate = -90.0000 0.0000 180.0000,
+			}
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.3410 0.0730,
+				rotate = -90.0000 0.0000 -180.0000,
+			}
+		}
+
+		model HuntingRifleScope
+		{
+			mesh = weapons/firearm/rifle_scope,
+			texture = weapons/firearm/VarmintRifle_Scope,
+		}
+
+		model HuntingRifle_SawnScope
+		{
+			mesh = weapons/firearm/rifle_scope,
+			texture = weapons/firearm/VarmintRifle_Scope,
+		}
+
+		model VarmintRifleScope
+		{
+			mesh = weapons/firearm/rifle_scope,
+			texture = weapons/firearm/VarmintRifle_Scope,
+		}
+
+		model Rifle_Ammostrap
+		{
+			mesh = weapons/firearm/Rifle_Ammostrap,
+		}
+
+		model Rifle_Sling
+		{
+			mesh = weapons/firearm/Rifle_Sling,
+		}
+
+		model Rifle_Pad
+		{
+			mesh = weapons/firearm/Rifle_Pad,
+		}
+
+		model AssaultRifle_Sling
+		{
+			mesh = weapons/firearm/AssaultRifle_Sling,
+			texture = weapons/firearm/Rifle_Sling,
+		}
+
+		model M14_Sling
+		{
+			mesh = weapons/firearm/M14_Sling,
+			texture = weapons/firearm/Rifle_Sling,
 		}
 
 }

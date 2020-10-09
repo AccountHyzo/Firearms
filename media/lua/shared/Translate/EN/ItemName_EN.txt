@@ -2,13 +2,16 @@ ItemName_EN = {
     ItemName_Base.Pistol = "Beretta M9",
     ItemName_Base.Pistol2 = "M1911",
     ItemName_Base.Pistol3 = "Desert Eagle",
+    ItemName_Firearms.Glock17 = "Glock 17",
 
     ItemName_Base.Revolver = "S&W M625 .45 ACP Revolver",
     ItemName_Base.Revolver_Long = "S&W M29 .44 Magnum",
     ItemName_Base.Revolver_Short = "S&W M36 .38 Special Revolver",
+    ItemName_Firearms.ColtPeacemaker = "Colt Peacemaker",
 
-    ItemName_Base.VarmintRifle = "Remington Model 700 Rifle",
-    ItemName_Base.HuntingRifle = "Remington Model 788 Rifle",
+    ItemName_Base.VarmintRifle = "Remington Model 700",
+    ItemName_Base.HuntingRifle = "Remington Model 788",
+    ItemName_Firearms.HuntingRifle_Sawn = "Sawn-off Remington Model 788",
 
     ItemName_Base.AssaultRifle = "M16A1",
     ItemName_Base.AssaultRifle2 = "M14",
@@ -30,6 +33,7 @@ ItemName_EN = {
     ItemName_Base.M14Clip = "M14 Magazine",
     ItemName_Base.44Clip = "Desert Eagle Magazine",
     ItemName_Base.45Clip = "M1911 Magazine",
+    ItemName_Base.Glock17Mag = "Glock 17 Magazine",
 
     ItemName_Firearms.ColtPeacemaker = "Colt Peacemaker",
 }

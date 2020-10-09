@@ -7,13 +7,11 @@ local distributionTable = {
 		counter ={
 
 			items = {
-      "Firearms.AluminumBaseballBat", 0.25,
 			},
 
 			junk = {
 
 				items = {
-        "Firearms.AluminumBaseballBat", 0.5,
 				},
 			},
 		}
@@ -25,7 +23,6 @@ local distributionTable = {
         {
 
             items = {
-            "Firearms.AluminumBaseballBat", 0.25,
             }
         }
     },
@@ -35,7 +32,6 @@ local distributionTable = {
         {
 
             items = {
-                "Firearms.AluminumBaseballBat", 0.5,
             }
         },
 
@@ -43,7 +39,7 @@ local distributionTable = {
         {
 
             items = {
-            "Firearms.AluminumBaseballBat", 0.25,
+
             }
         }
     },
@@ -53,21 +49,18 @@ local distributionTable = {
         counter = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 0.25,
             }
         },
 
         shelvesmag ={
 
             items = {
-            "Firearms.GunnutMonthly1", 2,
             }
         },
 
         crate = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         }
     },
@@ -77,7 +70,6 @@ local distributionTable = {
         bin = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         },
     },
@@ -89,7 +81,6 @@ local distributionTable = {
         counter ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             },
             junk = {
 
@@ -116,7 +107,6 @@ local distributionTable = {
         crate = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         }
     },
@@ -127,7 +117,6 @@ local distributionTable = {
         counter ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             },
             junk = {
 
@@ -147,7 +136,6 @@ local distributionTable = {
         crate = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         }
     },
@@ -170,7 +158,6 @@ local distributionTable = {
         crate = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         }
     },
@@ -202,7 +189,6 @@ local distributionTable = {
         crate = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         },
     },
@@ -211,7 +197,7 @@ local distributionTable = {
     {
         plankstash ={
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+                "Firearms.ColtPeacemaker",5,
             }
         },
 
@@ -234,19 +220,25 @@ local distributionTable = {
         },
 
 		locker ={
-    "Firearms.AluminumBaseballBat", 4,
+        "Firearms.ColtPeacemaker",0.5,
+        "Firearms.Glock17", 0.25,
+        "Firearms.Glock17Mag", 0.05,
 		},
 
         inventorymale = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker",0.05,
+            "Firearms.Glock17", 0.01,
+            "Firearms.Glock17Mag", 0.01,
             }
         },
         inventoryfemale = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker",0.05,
+            "Firearms.Glock17", 0.01,
+            "Firearms.Glock17Mag", 0.01,
             }
 
         },
@@ -281,19 +273,22 @@ local distributionTable = {
 		},
 
 		wardrobe = {
+    "Firearms.ColtPeacemaker",0.05,
+    "Firearms.Glock17", 0.01,
+    "Firearms.Glock17Mag", 0.01,
 		},
 
         crate = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker", 0.1,
             }
         },
 
 		counter = {
 
 			items = {
-      "Firearms.AluminumBaseballBat", 4,
+      "Firearms.ColtPeacemaker", 0.1,
 			},
 
 			junk = {
@@ -318,7 +313,7 @@ local distributionTable = {
         bin = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 0.15,
+            "Firearms.ColtPeacemaker", 0.15,
             }
         },
 
@@ -337,7 +332,7 @@ local distributionTable = {
         metal_shelves ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker", 0.1,
             }
         },
 
@@ -360,7 +355,9 @@ local distributionTable = {
         other ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker",0.05,
+            "Firearms.Glock17", 0.01,
+            "Firearms.Glock17Mag", 0.01,
             },
 
             junk = {
@@ -392,7 +389,9 @@ local distributionTable = {
         other ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker",0.1,
+            "Firearms.Glock17", 0.01,
+            "Firearms.Glock17Mag", 0.01,
             },
 
             junk = {
@@ -452,14 +451,12 @@ local distributionTable = {
         smallcrate={
 
             items = {
-            "Firearms.AluminumBaseballBat", 0.4,
             }
         },
 
         smallbox={
 
             items = {
-            "Firearms.AluminumBaseballBat", 0.4,
             }
         },
     },
@@ -478,14 +475,12 @@ local distributionTable = {
         shelves ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         },
 
         counter ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 2,
             }
         },
     },
@@ -530,7 +525,9 @@ local distributionTable = {
         locker ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker",5,
+            "Firearms.Glock17", 5,
+            "Firearms.Glock17Mag", 5,
             },
         },
 
@@ -538,7 +535,8 @@ local distributionTable = {
         {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.Glock17", 5,
+            "Firearms.Glock17Mag", 5,
             }
         },
     },
@@ -547,7 +545,9 @@ local distributionTable = {
         counter ={
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+            "Firearms.ColtPeacemaker", 2,
+            "Firearms.Glock17", 5,
+            "Firearms.Glock17Mag", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -556,6 +556,8 @@ local distributionTable = {
 
             items = {
             "Firearms.ColtPeacemaker", 4,
+            "Firearms.Glock17", 15,
+            "Firearms.Glock17Mag", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -563,7 +565,9 @@ local distributionTable = {
         locker ={
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+            "Firearms.ColtPeacemaker", 2,
+            "Firearms.Glock17", 5,
+            "Firearms.Glock17Mag", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -571,7 +575,7 @@ local distributionTable = {
         metal_shelves ={
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+            "Firearms.ColtPeacemaker", 0.1,
             },
             dontSpawnAmmo = true,
         },
@@ -581,7 +585,9 @@ local distributionTable = {
         all={
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+            "Firearms.ColtPeacemaker", 5,
+            "Firearms.Glock17", 15,
+            "Firearms.Glock17Mag", 5,
             },
 
             dontSpawnAmmo = true,
@@ -592,7 +598,7 @@ local distributionTable = {
         wardrobe ={
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+            "Firearms.ColtPeacemaker", 0.1,
             }
         },
 
@@ -665,7 +671,6 @@ local distributionTable = {
         counter = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             },
         },
     },
@@ -690,7 +695,6 @@ local distributionTable = {
         other = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             },
         },
     },
@@ -699,7 +703,6 @@ local distributionTable = {
         other = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             },
         },
     },
@@ -739,7 +742,9 @@ local distributionTable = {
         all ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker", 0.6,
+            "Firearms.Glock17", 0.1,
+            "Firearms.Glock17Mag", 0.1,
             },
         },
     },
@@ -748,14 +753,12 @@ local distributionTable = {
         counter ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         },
 
         crate ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         },
     },
@@ -795,7 +798,6 @@ local distributionTable = {
         shelves ={
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             },
         },
     },
@@ -865,7 +867,6 @@ local distributionTable = {
         counter = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             },
         },
     },
@@ -883,14 +884,13 @@ local distributionTable = {
         shelves = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         },
 
         counter = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker", 0.1,
             }
         }
     },
@@ -899,7 +899,6 @@ local distributionTable = {
         metal_shelves = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
             }
         },
     },
@@ -908,7 +907,7 @@ local distributionTable = {
         all = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker", 0.1,
             }
         },
     },
@@ -931,7 +930,9 @@ local distributionTable = {
         locker = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker", 1,
+            "Firearms.Glock17", 0.5,
+            "Firearms.Glock17Mag", 0.5,
             }
         },
 
@@ -944,7 +945,7 @@ local distributionTable = {
         other = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker", 0.1,
             }
         },
     },
@@ -955,7 +956,7 @@ local distributionTable = {
         all = {
 
             items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker", 0.1,
             }
         },
     },
@@ -963,6 +964,9 @@ local distributionTable = {
     Bag_WeaponBag = {
 
         items = {
+            "Firearms.ColtPeacemaker",5,
+            "Firearms.Glock17", 5,
+            "Firearms.Glock17Mag", 5,
         },
         fillRand = 0,
     },
@@ -970,7 +974,9 @@ local distributionTable = {
     Bag_SurvivorBag = {
 
         items = {
-            "Firearms.AluminumBaseballBat", 4,
+            "Firearms.ColtPeacemaker",5,
+            "Firearms.Glock17", 5,
+            "Firearms.Glock17Mag", 5,
         },
         fillRand = 0,
     },
@@ -1016,14 +1022,18 @@ local distributionTable = {
         ShotgunBox = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             }
         },
 
         Bag_DuffelBagTINT = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
             fillRand=3,
         },
@@ -1033,7 +1043,9 @@ local distributionTable = {
         ShotgunBox = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             }
         },
 
@@ -1048,24 +1060,18 @@ local distributionTable = {
         ToolsBox = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.AluminumBaseballBat", 5,
             },
         },
 
         counter = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.AluminumBaseballBat", 4,
             },
         },
 
         Bag_DuffelBagTINT = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.AluminumBaseballBat", 4,
             },
             fillRand = 3,
         },
@@ -1075,7 +1081,9 @@ local distributionTable = {
         GunBox = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -1083,15 +1091,18 @@ local distributionTable = {
         counter = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
         },
 
         Bag_DuffelBagTINT = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.AluminumBaseballBat", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
             fillRand = 3,
         },
@@ -1101,8 +1112,9 @@ local distributionTable = {
         GunBox = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.AluminumBaseballBat", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -1110,8 +1122,9 @@ local distributionTable = {
         Bag_DuffelBagTINT = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.AluminumBaseballBat", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
             fillRand=3,
         },
@@ -1122,8 +1135,9 @@ local distributionTable = {
         SurvivorCrate = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.AluminumBaseballBat", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             }
         },
     },
@@ -1133,8 +1147,9 @@ local distributionTable = {
         SurvivorCrate = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.AluminumBaseballBat", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             }
         },
     },
@@ -1145,7 +1160,8 @@ local distributionTable = {
         {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -1155,8 +1171,8 @@ local distributionTable = {
         shelves = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.AluminumBaseballBat", 4,
+                "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker", 4,
             },
         },
     },
@@ -1165,21 +1181,27 @@ local distributionTable = {
         metal_shelves = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
         },
 
         counter = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
         },
 
         locker = {
 
             items = {
-            "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 5,
+                "Firearms.Glock17Mag", 5,
             },
         },
     },
@@ -1188,6 +1210,7 @@ local distributionTable = {
 table.insert(Distributions, distributionTable);
 
 --*******All Items***************--
---"Firearms.AluminumBaseballBat"
---"Firearms.ColtPeacemaker"
+---"Firearms.ColtPeacemaker",5,
+---"Firearms.Glock17", 5,
+---"Firearms.Glock17Mag", 5,
 --*****************************--

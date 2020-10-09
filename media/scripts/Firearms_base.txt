@@ -1,0 +1,100 @@
+module Base
+{
+	/************************Models************************/
+	model DoubleBarrelShotgunSawn
+    {
+        mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.3400 0.0330,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+    }
+	model ShotgunDoubleBarrelSawn_OPEN
+    {
+        mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn_OPEN,
+    }
+
+	model M1911
+	{
+		mesh = Weapons/Firearm/M1911,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1700 -0.0300,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+
+	model ShotgunSawnOff
+	{
+		mesh = Weapons/Firearm/ShotgunSawnOff,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.2000 0.2000,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+
+	model ColtPeacemaker
+	{
+		mesh = Weapons/Firearm/ColtPeacemaker,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1710 0.0250,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+
+		model Model700
+		{
+			mesh = weapons/firearm/Model700,
+
+			attachment bayonet
+			{
+				offset = 0.0000 0.4340 0.0080,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.5310 0.0530,
+				rotate = -90.0000 0.0000 180.0000,
+			}
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.5310 0.0530,
+				rotate = -90.0000 0.0000 -180.0000,
+			}
+		}
+
+		model Model700_Sawn
+		{
+			mesh = weapons/firearm/Model700_Sawn,
+
+		texture = Weapons/firearm/Model700,
+
+			attachment bayonet
+			{
+				offset = 0.0000 0.4340 0.0080,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.3410 0.0530,
+				rotate = -90.0000 0.0000 180.0000,
+			}
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.3410 0.0530,
+				rotate = -90.0000 0.0000 -180.0000,
+			}
+		}
+
+}

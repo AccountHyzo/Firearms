@@ -1,0 +1,35 @@
+ItemName_EN = {
+    ItemName_Base.Pistol = "Beretta M9",
+    ItemName_Base.Pistol2 = "M1911",
+    ItemName_Base.Pistol3 = "Desert Eagle",
+
+    ItemName_Base.Revolver = "S&W M625 .45 ACP Revolver",
+    ItemName_Base.Revolver_Long = "S&W M29 .44 Magnum",
+    ItemName_Base.Revolver_Short = "S&W M36 .38 Special Revolver",
+
+    ItemName_Base.VarmintRifle = "Remington Model 700 Rifle",
+    ItemName_Base.HuntingRifle = "Remington Model 788 Rifle",
+
+    ItemName_Base.AssaultRifle = "M16A1",
+    ItemName_Base.AssaultRifle2 = "M14",
+
+    ItemName_Base.Shotgun = "Mossberg 500",
+    ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
+    ItemName_Base.DoubleBarrelShotgun = "Double Barrel Shotgun",
+
+
+    ItemName_Base.x2Scope = "x2 Scope",
+    ItemName_Base.x4Scope = "x4 Scope",
+    ItemName_Base.x8Scope = "x8 Scope",
+
+    ItemName_Base.223Clip = ".223 Remington Internal Magazine",
+    ItemName_Base.308Clip = ".308 Winchester Internal Magazine",
+    ItemName_Base.Magazine = "Magazine",
+    ItemName_Base.9mmClip = "Beretta M9 Magazine",
+    ItemName_Base.556Clip = "5.56x45mm STANAG Magazine",
+    ItemName_Base.M14Clip = "M14 Magazine",
+    ItemName_Base.44Clip = "Desert Eagle Magazine",
+    ItemName_Base.45Clip = "M1911 Magazine",
+
+    ItemName_Firearms.ColtPeacemaker = "Colt Peacemaker",
+}

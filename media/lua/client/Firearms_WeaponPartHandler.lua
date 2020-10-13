@@ -27,6 +27,17 @@ function ISRemoveWeaponUpgrade:perform()
     ISBaseTimedAction.perform(self);
 end
 
+function ISUpgradeWeapon:perform()
+    self.weapon:setJobDelta(0.0);
+    self.part:setJobDelta(0.0);
+    self.weapon:attachWeaponPart(self.part)
+    self.character:getInventory():Remove(self.part);
+    self.character:removeFromHands(self.weapon);
+    self.character:setSecondaryHandItem(nil);
+    -- needed to remove from queue / start next.
+    ISBaseTimedAction.perform(self);
+end
+
 function ISRemoveWeaponUpgrade:isValid()
     --if not self.character:getInventory():containsTagEval("Screwdriver", predicateNotBroken) then return false end
     if not self.character:getInventory():contains(self.weapon) then return false end

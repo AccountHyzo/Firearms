@@ -13,8 +13,8 @@ local function silence(wielder, weapon)
       if canon then
   			if string.find(canon:getType(), "Silencer") then
   				if weapon:getWeaponReloadType() == "handgun" then
-  		      soundVolume = soundVolume *  (0.10)
-  		      soundRadius = soundRadius * (0.10)
+  		      soundVolume = soundVolume *  (0.40)
+  		      soundRadius = soundRadius * (0.40)
   		      swingSound = 'silencer'
   		    elseif weapon:getWeaponReloadType() == "boltaction" then
   		      soundVolume = soundVolume *  (0.3)

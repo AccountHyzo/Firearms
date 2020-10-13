@@ -13,12 +13,30 @@ function RifleSawnOff_OnCreate(items, result, player)
 			for k,v in pairs(item:getModData()) do
 				modData[k] = v
 			end
-			result:AddItem(item:getScope())
-			result:attachWeaponPart(item:getClip())
-			inv:AddItem(item:getSling())
-			inv:AddItem(item:getCanon())
-			inv:AddItem(item:getStock())
-			inv:AddItem(item:getRecoilpad())
+			local clip = item:getClip()
+			local scope = item:getScope()
+			local sling = item:getSling()
+			local canon = item:getCanon()
+			local stock = item:getStock()
+			local pad = item:getRecoilpad()
+			if clip then
+			result:attachWeaponPart(clip)
+			end
+			if scope then
+			inv:AddItem(scope)
+			end
+			if sling then
+			inv:AddItem(sling)
+			end
+			if canon then
+			inv:AddItem(canon)
+			end
+			if stock then
+			inv:AddItem(stock)
+			end
+			if pad then
+			inv:AddItem(pad)
+			end
 			return
 		end
     end

@@ -411,6 +411,7 @@ module Base
 			 ModelWeaponPart = RecoilPad Firearms.Rifle_Pad,
 			 ModelWeaponPart = Firearms.223Silencer Firearms.Rifle_Silencer,
 			 ModelWeaponPart = Firearms.Rifle_Bipod Firearms.Rifle_Bipod,
+			 ModelWeaponPart = Firearms.ExtendedRecoilPad Firearms.Rifle_ExtendedPad,
        RackAfterShoot = TRUE,
        /*MagazineType = Base.223Clip,*/
        JamGunChance = 5,
@@ -488,6 +489,7 @@ module Base
 	        ModelWeaponPart = Sling Firearms.Rifle_Sling,
 	        ModelWeaponPart = RecoilPad Firearms.Rifle_Pad,
 				  ModelWeaponPart = Firearms.Rifle_Bipod Firearms.Rifle_Bipod,
+				  ModelWeaponPart = Firearms.ExtendedRecoilPad Firearms.Rifle_ExtendedPad,
 	        RackAfterShoot = TRUE,
 	        /*MagazineType = Base.308Clip,*/
 	        JamGunChance = 5,

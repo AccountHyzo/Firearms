@@ -363,7 +363,7 @@ module Firearms
 		Weight	=	0.2,
 		Type	=	Normal,
 		DisplayName	=	Glock 17 Magazine,
-		Icon	=	9mm_Mag,
+		Icon	=	Glock_Mag,
 		MaxAmmo = 17,
 		AmmoType = Base.Bullets9mm,
 		StaticModel = GunMagazine,

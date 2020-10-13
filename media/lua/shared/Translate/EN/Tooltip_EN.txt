@@ -1,0 +1,5 @@
+
+Tooltip_EN = {
+  /*Attachments*/
+  Tooltip_Silencer = "Suppresses the sound of a firing gun."
+}

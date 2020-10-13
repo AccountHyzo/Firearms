@@ -1,12 +1,12 @@
 ItemName_EN = {
     ItemName_Base.Pistol = "Beretta M9",
-    ItemName_Base.Pistol2 = "M1911",
+    ItemName_Base.Pistol2 = "Colt M1911",
     ItemName_Base.Pistol3 = "Desert Eagle",
     ItemName_Firearms.Glock17 = "Glock 17",
 
-    ItemName_Base.Revolver = "S&W M625 .45 ACP Revolver",
-    ItemName_Base.Revolver_Long = "S&W M29 .44 Magnum",
-    ItemName_Base.Revolver_Short = "S&W M36 .38 Special Revolver",
+    ItemName_Base.Revolver = "S&W M625",
+    ItemName_Base.Revolver_Long = "S&W M29",
+    ItemName_Base.Revolver_Short = "S&W M36",
     ItemName_Firearms.ColtPeacemaker = "Colt Peacemaker",
 
     ItemName_Base.VarmintRifle = "Remington Model 700",
@@ -15,6 +15,7 @@ ItemName_EN = {
 
     ItemName_Base.AssaultRifle = "M16A1",
     ItemName_Base.AssaultRifle2 = "M14",
+    ItemName_Firearms.M24Rifle = "M24",
 
     ItemName_Base.Shotgun = "Mossberg 500",
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
@@ -24,6 +25,14 @@ ItemName_EN = {
     ItemName_Base.x2Scope = "x2 Scope",
     ItemName_Base.x4Scope = "x4 Scope",
     ItemName_Base.x8Scope = "x8 Scope",
+
+    ItemName_Firearms.ExtendedRecoilPad = "Extended Recoil Pad",
+
+    ItemName_Firearms.45Silencer = ".45 Silencer",
+    ItemName_Firearms.9mmSilencer = "9mm Silencer",
+    ItemName_Firearms.223Silencer = ".223 Silencer",
+    ItemName_Firearms.308Silencer = ".308 Silencer",
+    ItemName_Firearms.556Silencer = "5.56 Silencer",
 
     ItemName_Base.223Clip = ".223 Remington Internal Magazine",
     ItemName_Base.308Clip = ".308 Winchester Internal Magazine",

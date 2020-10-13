@@ -13,7 +13,7 @@ function RifleSawnOff_OnCreate(items, result, player)
 			for k,v in pairs(item:getModData()) do
 				modData[k] = v
 			end
-			result:attachWeaponPart(item:getScope())
+			result:AddItem(item:getScope())
 			result:attachWeaponPart(item:getClip())
 			inv:AddItem(item:getSling())
 			inv:AddItem(item:getCanon())

@@ -74,7 +74,7 @@ module Base
 			ImpactSound	=	null,
 			MaxRange	=	7,
 			RangeFalloff	=	TRUE,
-			WeaponSprite	=	Shotgun,
+			WeaponSprite	=	Firearms.Mossberg500,
 			SoundVolume	=	200,
 			MinAngle	=	0.9,
 			Type	=	Weapon,
@@ -105,7 +105,7 @@ module Base
 			MinDamage	=	1.5,
 			KnockdownMod	=	8,
 			SplatBloodOnNoDeath	=	TRUE,
-			Icon	=	Shotgun2,
+			Icon	=	Mossberg500,
 			RunAnim	=	Run_Weapon2,
 			CriticalChance = 60,
 					CritDmgMultiplier = 2,
@@ -127,7 +127,8 @@ module Base
 					EjectAmmoSound = Stormy9mmClipEject,
 					RackSound = stormyShotgunPump,
 					AmmoType = Base.ShotgunShells,
-					ModelWeaponPart = Sling Firearms.Rifle_Sling,
+					ModelWeaponPart = Sling Firearms.Mossberg500_sling,
+					ModelWeaponPart = RecoilPad Firearms.Mossberg500_pad,
 					WeaponReloadType = shotgun,
 					RackAfterShoot = TRUE,
 					JamGunChance = 2,
@@ -139,7 +140,7 @@ module Base
 		ImpactSound	=	null,
 		MaxRange	=	2,
 		RangeFalloff	=	TRUE,
-		WeaponSprite	=	Firearms.ShotgunSawnOff,
+		WeaponSprite	=	Firearms.Mossberg500SawnOff,
 		SoundVolume	=	250,
 		MinAngle	=	0.657,
 		Type	=	Weapon,
@@ -174,7 +175,7 @@ module Base
 		MinDamage	=	1.5,
 		KnockdownMod	=	8,
 		SplatBloodOnNoDeath	=	TRUE,
-		Icon	=	ShotgunDoublebarrelSawn,
+		Icon	=	Mossberg500_Sawn,
 		RunAnim	=	Run_Weapon2,
 		CriticalChance	=	60,
         CritDmgMultiplier = 2,
@@ -719,5 +720,31 @@ module Base
 			        PartType = Sling,
 			        Tooltip = Tooltip_Sling,
 			    }
+
+					item RecoilPad
+			    {
+			        Type = WeaponPart,
+			        DisplayName = Recoil Pad,
+			        Icon = RifleRecoilPad,
+			        Weight = 0.1,
+			        WeightModifier = 0.1,
+			        RecoilDelayModifier = -10.0,
+			        MountOn = HuntingRifle; VarmintRifle; M24Rifle ; Shotgun,
+			        PartType = RecoilPad,
+			        Tooltip = Tooltip_RecoilPad,
+			    }
+
+
+						recipe Saw Off Shotgun
+						{
+						   Shotgun,
+						   keep [Recipe.GetItemTypes.Saw],
+
+						   Result:ShotgunSawnoff,
+						   Sound:Sawing,
+						   Time:200.0,
+						   OnCreate:onSawnOff_OnCreate,
+							 Override:true,
+						}
 
 }

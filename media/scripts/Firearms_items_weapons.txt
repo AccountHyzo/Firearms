@@ -343,7 +343,7 @@ module Firearms
 	       ModelWeaponPart = Base.x2Scope Firearms.Rifle_Scope,
 	       ModelWeaponPart = Base.x4Scope Firearms.Rifle_Scope,
 	       ModelWeaponPart = Base.x8Scope Firearms.Rifle_Scope,
-				 ModelWeaponPart = Base.Sling Firearms.Rifle_Sling,
+				 ModelWeaponPart = Base.Sling Firearms.M24Rifle_Sling,
 				 ModelWeaponPart = Base.AmmoStraps Firearms.Rifle_Ammostrap,
 				 ModelWeaponPart = Base.RecoilPad Firearms.Rifle_Pad,
 				 ModelWeaponPart = ExtendedRecoilPad Firearms.Rifle_ExtendedPad,

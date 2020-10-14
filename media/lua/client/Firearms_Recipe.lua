@@ -1,6 +1,6 @@
 
 -- Sawn-off recipe callback, copies modData to the new sawn-off.
-function RifleSawnOff_OnCreate(items, result, player)
+function onSawnOff_OnCreate(items, result, player)
 	local inv = player:getInventory();
 	for i=0,items:size()-1 do
 		local item = items:get(i)

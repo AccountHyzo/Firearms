@@ -14,7 +14,7 @@ module Firearms
 	   Result:HuntingRifle_Sawn,
 	   Sound:Sawing,
 	   Time:200.0,
-	   OnCreate:RifleSawnOff_OnCreate,
+	   OnCreate:onSawnOff_OnCreate,
 	}
 
 }

@@ -17,6 +17,46 @@ module Firearms
         mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn_OPEN,
     }
 
+		model Mossberg500
+		{
+			mesh = Weapons/Firearm/Mossberg500,
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.4000 -0.0000,
+				rotate = -90.0000 0.0000 180.0000,
+			}
+
+			attachment world
+			{
+				offset = 0.0000 0.1660 0.0000,
+				rotate = -180.0000 1.0000 -180.0000,
+			}
+		}
+
+		model Mossberg500SawnOff
+		{
+			mesh = Weapons/Firearm/ShotgunSawnOff,
+			texture = Weapons/Firearm/Mossberg500,
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.3500 -0.0000,
+				rotate = -90.0000 0.0000 180.0000,
+			}
+		}
+
+		model Mossberg500_pad
+		{
+			mesh = Weapons/Firearm/Mossberg500_pad,
+			texture = Weapons/firearm/Rifle_pad,
+		}
+
+		model Mossberg500_sling
+		{
+			mesh = Weapons/Firearm/Mossberg500_sling,
+		}
+
 	model M1911
 	{
 		mesh = Weapons/Firearm/M1911,
@@ -24,17 +64,6 @@ module Firearms
 		attachment muzzle
 		{
 			offset = 0.0000 0.1700 -0.0300,
-			rotate = -90.0000 0.0000 0.0000,
-		}
-	}
-
-	model ShotgunSawnOff
-	{
-		mesh = Weapons/Firearm/ShotgunSawnOff,
-
-		attachment muzzle
-		{
-			offset = 0.0000 0.2000 0.2000,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 	}
@@ -148,6 +177,12 @@ module Firearms
 		model Rifle_Sling
 		{
 			mesh = weapons/firearm/Rifle_Sling,
+		}
+
+		model M24Rifle_Sling
+		{
+			mesh = weapons/firearm/Rifle_Sling,
+			texture = weapons/firearm/Mossberg500_sling,
 		}
 
 		model Rifle_Pad

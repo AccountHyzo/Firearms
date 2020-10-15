@@ -68,6 +68,29 @@ module Firearms
 		}
 	}
 
+	model DEagle
+	{
+		mesh = Weapons/Firearm/DEagle,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1520 -0.0270,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+
+	model DEagle_flashlight
+	{
+		mesh = weapons/firearm/DEagle_flashlight,
+		texture = Weapons/firearm/Flashlight,
+	}
+
+	model DEagle_laser
+	{
+		mesh = weapons/firearm/DEagle_laser,
+		texture = Weapons/firearm/Laser,
+	}
+
 	model ColtPeacemaker
 	{
 		mesh = Weapons/Firearm/ColtPeacemaker,
@@ -116,7 +139,6 @@ module Firearms
 		model Model788
 		{
 			mesh = weapons/firearm/Model700,
-
 			texture = Weapons/firearm/Model788,
 
 			attachment bayonet

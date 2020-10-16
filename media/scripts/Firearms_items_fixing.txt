@@ -1,0 +1,36 @@
+module Firearms
+{
+	imports
+	{
+		Base
+	}
+
+    fixing Fix ColtPeacemaker
+    {
+       Require : ColtPeacemaker,
+
+       Fixer : ColtPeacemaker; Aiming=3,
+    }
+
+    fixing Fix Glock17
+    {
+       Require : Glock17,
+
+       Fixer : Glock17; Aiming=3,
+    }
+
+    fixing Fix HuntingRifle_Sawn
+    {
+       Require : HuntingRifle_Sawn,
+
+       Fixer : HuntingRifle_Sawn; Aiming=4,
+    }
+
+    fixing Fix M24Rifle
+    {
+       Require : M24Rifle,
+
+       Fixer : M24Rifle; Aiming=5,
+    }
+
+}

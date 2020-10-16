@@ -57,6 +57,30 @@ module Firearms
 			mesh = Weapons/Firearm/Mossberg500_sling,
 		}
 
+		model Mossberg500_AmmoSling
+		{
+			mesh = Weapons/Firearm/Mossberg500_AmmoSling,
+			texture = Weapons/firearm/ammosling,
+		}
+
+		model Mossberg500_AmmoStrap
+		{
+			mesh = Weapons/Firearm/Mossberg500_AmmoStrap,
+			texture = Weapons/firearm/ammosling,
+		}
+
+		model Mossberg500_choke
+		{
+			mesh = Weapons/Firearm/Mossberg500_choke,
+			texture = Weapons/firearm/Mossberg500,
+		}
+
+		model Mossberg500_Reddot
+		{
+			mesh = Weapons/Firearm/Mossberg500_Reddot,
+			texture = Weapons/firearm/RedDot,
+		}
+
 	model M1911
 	{
 		mesh = Weapons/Firearm/M1911,
@@ -90,6 +114,13 @@ module Firearms
 		mesh = weapons/firearm/DEagle_laser,
 		texture = Weapons/firearm/Laser,
 	}
+
+	model DEagle_reddot
+	{
+		mesh = weapons/firearm/DEagle_reddot,
+		texture = Weapons/firearm/RedDot,
+	}
+
 
 	model ColtPeacemaker
 	{
@@ -263,18 +294,6 @@ module Firearms
 		{
 			mesh = weapons/firearm/M16_Silencer,
 			texture = weapons/firearm/Silencer,
-		}
-
-	/************************Sounds************************/
-
-		sound silencer
-		{
-				category = Item,
-				clip
-				{
-						file = media/sound/silencer.ogg,
-						distanceMax = 50,
-				}
 		}
 
 }

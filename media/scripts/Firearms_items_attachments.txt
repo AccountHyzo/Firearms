@@ -96,4 +96,18 @@ module Firearms
          Tooltip = Tooltip_Bipod,
      }
 
+
+		 item AmmoStock
+     {
+         Type = WeaponPart,
+         DisplayName = Shotgun Ammostrap,
+         Icon = AmmoStock,
+         Weight = 0.5,
+				 WeightModifier = 0.5,
+				 ReloadTimeModifier = -6,
+				 RecoilDelayModifier = -5.0,
+         MountOn = Shotgun,
+         PartType = Stock,
+         Tooltip = Tooltip_AmmoStock,
+     }
 }

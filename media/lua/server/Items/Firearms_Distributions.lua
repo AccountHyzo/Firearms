@@ -223,6 +223,7 @@ local distributionTable = {
         "Firearms.ColtPeacemaker",0.5,
         "Firearms.Glock17", 0.25,
         "Firearms.Glock17Mag", 0.05,
+        "Firearms.AmmoStock", 1,
 		},
 
         inventorymale = {
@@ -276,6 +277,7 @@ local distributionTable = {
     "Firearms.ColtPeacemaker",0.05,
     "Firearms.Glock17", 0.01,
     "Firearms.Glock17Mag", 0.01,
+    "Firearms.AmmoStock", 1,
 		},
 
         crate = {
@@ -357,6 +359,7 @@ local distributionTable = {
             "Firearms.ColtPeacemaker",0.05,
             "Firearms.Glock17", 0.01,
             "Firearms.Glock17Mag", 0.01,
+            "Firearms.AmmoStock", 1,
             },
 
             junk = {
@@ -391,6 +394,7 @@ local distributionTable = {
             "Firearms.ColtPeacemaker",0.1,
             "Firearms.Glock17", 0.01,
             "Firearms.Glock17Mag", 0.01,
+            "Firearms.AmmoStock", 1,
             },
 
             junk = {
@@ -408,6 +412,7 @@ local distributionTable = {
             items = {
             "Firearms.45Silencer", 0.5,
             "Firearms.223Silencer", 0.5,
+            "Firearms.AmmoStock", 1,
             }
         },
         crate = {
@@ -416,6 +421,7 @@ local distributionTable = {
             "Firearms.45Silencer", 0.5,
             "Firearms.9mmSilencer", 0.5,
             "Firearms.223Silencer", 0.5,
+            "Firearms.AmmoStock", 1,
             }
         }
     },
@@ -572,7 +578,6 @@ local distributionTable = {
 
             items = {
             "Firearms.ColtPeacemaker", 2,
-            "Firearms.Glock17", 5,
             "Firearms.Glock17Mag", 5,
             "Firearms.45Silencer", 2,
             "Firearms.9mmSilencer", 2,
@@ -581,7 +586,7 @@ local distributionTable = {
             "Firearms.556Silencer", 0.5,
             "Firearms.ExtendedRecoilPad", 1,
             "Firearms.Rifle_Bipod", 1,
-            "Firearms.M24Rifle", 0.5,
+            "Firearms.AmmoStock", 1,
             },
             dontSpawnAmmo = true,
         },
@@ -599,6 +604,7 @@ local distributionTable = {
             "Firearms.556Silencer", 0.5,
             "Firearms.ExtendedRecoilPad", 1,
             "Firearms.Rifle_Bipod", 1,
+            "Firearms.AmmoStock", 1,
             "Firearms.M24Rifle", 0.5,
             },
             dontSpawnAmmo = true,
@@ -615,6 +621,9 @@ local distributionTable = {
             "Firearms.223Silencer", 2,
             "Firearms.308Silencer", 1,
             "Firearms.556Silencer", 0.5,
+            "Firearms.Rifle_Bipod", 1,
+            "Firearms.AmmoStock", 1,
+            "Firearms.M24Rifle", 0.5,
             },
             dontSpawnAmmo = true,
         },
@@ -643,6 +652,8 @@ local distributionTable = {
             "Firearms.ExtendedRecoilPad", 1,
             "Firearms.Rifle_Bipod", 1,
             "Firearms.M24Rifle", 0.5,
+            "Firearms.Rifle_Bipod", 2,
+            "Firearms.AmmoStock", 2,
             },
 
             dontSpawnAmmo = true,
@@ -654,6 +665,7 @@ local distributionTable = {
 
             items = {
             "Firearms.ColtPeacemaker", 0.1,
+            "Firearms.AmmoStock", 1,
             }
         },
 
@@ -1000,6 +1012,7 @@ local distributionTable = {
             "Firearms.ExtendedRecoilPad", 0.1,
             "Firearms.Rifle_Bipod", 0.1,
             "Firearms.M24Rifle", 0.05,
+            "Firearms.AmmoStock", 1,
             }
         },
 
@@ -1024,6 +1037,7 @@ local distributionTable = {
 
             items = {
             "Firearms.ColtPeacemaker", 0.1,
+            "Firearms.AmmoStock", 1,
             }
         },
     },
@@ -1034,6 +1048,7 @@ local distributionTable = {
             "Firearms.ColtPeacemaker",5,
             "Firearms.Glock17", 5,
             "Firearms.Glock17Mag", 5,
+            "Firearms.AmmoStock", 1,
         },
         fillRand = 0,
     },
@@ -1046,9 +1061,10 @@ local distributionTable = {
             "Firearms.Glock17Mag", 5,
             "Firearms.45Silencer", 2,
             "Firearms.9mmSilencer", 2,
-            "Firearms.223Silencer", 2,
+            "Firearms.223Silencer", 1,
             "Firearms.308Silencer", 1,
             "Firearms.556Silencer", 0.5,
+            "Firearms.AmmoStock", 1,
         },
         fillRand = 0,
     },
@@ -1099,11 +1115,12 @@ local distributionTable = {
                 "Firearms.Glock17Mag", 5,
                 "Firearms.45Silencer", 2,
                 "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
+                "Firearms.223Silencer", 1,
                 "Firearms.308Silencer", 1,
                 "Firearms.556Silencer", 0.5,
                 "Firearms.ExtendedRecoilPad", 0.1,
                 "Firearms.Rifle_Bipod", 0.1,
+                "Firearms.AmmoStock", 1,
                 "Firearms.M24Rifle", 0.05,
             }
         },
@@ -1116,11 +1133,12 @@ local distributionTable = {
                 "Firearms.Glock17Mag", 5,
                 "Firearms.45Silencer", 2,
                 "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
+                "Firearms.223Silencer", 1,
                 "Firearms.308Silencer", 1,
                 "Firearms.556Silencer", 0.5,
                 "Firearms.ExtendedRecoilPad", 0.1,
                 "Firearms.Rifle_Bipod", 0.1,
+                "Firearms.AmmoStock", 1,
                 "Firearms.M24Rifle", 0.05,
             },
             fillRand=3,
@@ -1136,9 +1154,10 @@ local distributionTable = {
                 "Firearms.Glock17Mag", 5,
                 "Firearms.45Silencer", 2,
                 "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
+                "Firearms.223Silencer", 1,
                 "Firearms.308Silencer", 1,
                 "Firearms.556Silencer", 0.5,
+                "Firearms.AmmoStock", 1,
             }
         },
 
@@ -1185,6 +1204,7 @@ local distributionTable = {
                 "Firearms.ExtendedRecoilPad", 0.1,
                 "Firearms.Rifle_Bipod", 0.1,
                 "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
             },
             dontSpawnAmmo = true,
         },
@@ -1200,6 +1220,7 @@ local distributionTable = {
                 "Firearms.223Silencer", 2,
                 "Firearms.308Silencer", 1,
                 "Firearms.556Silencer", 0.5,
+                "Firearms.AmmoStock", 1,
             },
         },
 
@@ -1217,6 +1238,7 @@ local distributionTable = {
                 "Firearms.ExtendedRecoilPad", 0.1,
                 "Firearms.Rifle_Bipod", 0.1,
                 "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
             },
             fillRand = 3,
         },
@@ -1237,6 +1259,7 @@ local distributionTable = {
                 "Firearms.ExtendedRecoilPad", 0.1,
                 "Firearms.Rifle_Bipod", 0.1,
                 "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
             },
             dontSpawnAmmo = true,
         },
@@ -1255,6 +1278,7 @@ local distributionTable = {
                 "Firearms.ExtendedRecoilPad", 0.1,
                 "Firearms.Rifle_Bipod", 0.1,
                 "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
             },
             fillRand=3,
         },
@@ -1276,6 +1300,7 @@ local distributionTable = {
                 "Firearms.ExtendedRecoilPad", 0.1,
                 "Firearms.Rifle_Bipod", 0.1,
                 "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
             }
         },
     },
@@ -1293,6 +1318,7 @@ local distributionTable = {
                 "Firearms.223Silencer", 2,
                 "Firearms.308Silencer", 1,
                 "Firearms.556Silencer", 0.5,
+                "Firearms.AmmoStock", 1,
             }
         },
     },
@@ -1306,6 +1332,7 @@ local distributionTable = {
                 "Firearms.Glock17", 5,
                 "Firearms.Glock17Mag", 5,
                 "Firearms.9mmSilencer", 2,
+                "Firearms.AmmoStock", 1,
             },
             dontSpawnAmmo = true,
         },
@@ -1320,6 +1347,7 @@ local distributionTable = {
                 "Firearms.45Silencer", 0.2,
                 "Firearms.223Silencer", 0.2,
                 "Firearms.556Silencer", 0.1,
+                "Firearms.AmmoStock", 1,
             },
         },
     },
@@ -1339,6 +1367,7 @@ local distributionTable = {
                 "Firearms.ExtendedRecoilPad", 1,
                 "Firearms.Rifle_Bipod", 1,
                 "Firearms.M24Rifle", 0.5,
+                "Firearms.AmmoStock", 1,
             },
         },
 
@@ -1356,6 +1385,7 @@ local distributionTable = {
                 "Firearms.ExtendedRecoilPad", 1,
                 "Firearms.Rifle_Bipod", 1,
                 "Firearms.M24Rifle", 0.5,
+                "Firearms.AmmoStock", 1,
             },
         },
 
@@ -1371,6 +1401,7 @@ local distributionTable = {
                 "Firearms.223Silencer", 5,
                 "Firearms.308Silencer", 5,
                 "Firearms.556Silencer", 5,
+                "Firearms.AmmoStock", 1,
             },
         },
     },

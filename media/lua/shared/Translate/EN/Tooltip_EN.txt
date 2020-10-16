@@ -3,4 +3,5 @@ Tooltip_EN = {
   /*Attachments*/
   Tooltip_Silencer = "Suppresses the sound of a firing gun."
   Tooltip_Bipod = "Decreases recoil which in turn increases chance to hit."
+  Tooltip_AmmoStock = "Decreases reload speed."
 }

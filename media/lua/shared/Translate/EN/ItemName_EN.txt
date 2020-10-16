@@ -27,6 +27,7 @@ ItemName_EN = {
     ItemName_Base.x8Scope = "x8 Scope",
 
     ItemName_Firearms.ExtendedRecoilPad = "Extended Recoil Pad",
+    ItemName_Firearms.AmmoStock = "Shotgun Shell Ammostrap",
 
     ItemName_Firearms.45Silencer = ".45 Silencer",
     ItemName_Firearms.9mmSilencer = "9mm Silencer",

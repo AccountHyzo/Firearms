@@ -67,6 +67,18 @@ module Firearms
 			Tooltip = Tooltip_Silencer,
 	}
 
+	item ImprovisedSilencer
+	{
+			Type = WeaponPart,
+			DisplayName = Silencer,
+			Icon = Silencer,
+			Weight = 0.2,
+			WeightModifier = 0.2,
+			MountOn = Pistol; Pistol2; Glock17,
+			PartType = Canon,
+			Tooltip = Tooltip_ImprovisedSilencer,
+	}
+
 	/************************Pads************************/
 
 	    item ExtendedRecoilPad

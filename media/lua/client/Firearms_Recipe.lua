@@ -1,4 +1,15 @@
 
+function onImprovisedSilencer_OnCreate(items, result, player)
+	local inv = player:getInventory();
+	for i=0,items:size()-1 do
+		local item = items:get(i)
+		if item:getType() == "HandTorch" and item:getUsedDelta() > 0 then
+			battery = inv:AddItem("Base.Battery");
+			battery:setUsedDelta(item:getUsedDelta());
+		end
+    end
+end
+
 -- Sawn-off recipe callback, copies modData to the new sawn-off.
 function onSawnOff_OnCreate(items, result, player)
 	local inv = player:getInventory();

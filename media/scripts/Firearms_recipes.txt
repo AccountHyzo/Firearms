@@ -17,4 +17,15 @@ module Firearms
 	   OnCreate:onSawnOff_OnCreate,
 	}
 
+	recipe Make Improvised Silencer
+	{
+	   destroy HandTorch,
+		 ScrapMetal,
+	   DuctTape=1,
+
+	   Result:ImprovisedSilencer,
+	   Time:300.0,
+	   OnCreate:onImprovisedSilencer_OnCreate,
+	}
+
 }

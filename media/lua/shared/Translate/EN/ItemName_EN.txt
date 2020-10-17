@@ -34,6 +34,7 @@ ItemName_EN = {
     ItemName_Firearms.223Silencer = ".223 Silencer",
     ItemName_Firearms.308Silencer = ".308 Silencer",
     ItemName_Firearms.556Silencer = "5.56 Silencer",
+    ItemName_Firearms.ImprovisedSilencer = "Improvised Silencer",
 
     ItemName_Base.223Clip = ".223 Remington Internal Magazine",
     ItemName_Base.308Clip = ".308 Winchester Internal Magazine",

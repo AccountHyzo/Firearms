@@ -3,15 +3,27 @@ module Firearms
 
 	/************************Sounds************************/
 
-		sound silencer
-		{
-				category = Item,
-				clip
-				{
-						file = media/sound/silencer.ogg,
-						distanceMax = 50,
-				}
-		}
+	sound FirearmPistolSilencerShot
+	{
+			category = Item,
+			clip
+			{
+					file = media/sound/silencer.ogg,
+					distanceMax = 100,
+					volume = 1.5,
+			}
+	}
+
+	sound FirearmRifleSilencerShot
+	{
+			category = Item,
+			clip
+			{
+					file = media/sound/silencer_rifle.ogg,
+					distanceMax = 150,
+					volume = 1.5,
+			}
+	}
 
 		sound FirearmDEagleShot
 		{
@@ -20,6 +32,7 @@ module Firearms
 				{
 						file = media/sound/DEagle.ogg,
 						distanceMax = 200,
+						volume = 2,
 				}
 		}
 
@@ -40,6 +53,7 @@ module Firearms
 				{
 						file = media/sound/Rifle.ogg,
 						distanceMax = 200,
+						volume = 6,
 				}
 		}
 
@@ -50,6 +64,7 @@ module Firearms
 				{
 						file = media/sound/ar15.ogg,
 						distanceMax = 200,
+						volume = 2,
 				}
 		}
 

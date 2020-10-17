@@ -10,6 +10,82 @@ module Base
 		}
 	}
 
+	sound BulletInRifle
+	{
+		category = Item,
+		clip
+		{
+			event = bulletInRifle,
+		}
+	}
+
+	sound FirearmShotgun
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FirearmShotgunFire.ogg,
+			distanceMax = 200, /* SoundRadius in items.txt */
+		}
+	}
+
+	sound FirearmShotgunSawnoff
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FirearmShotgunFire.ogg,
+			distanceMax = 250, /* SoundRadius in items.txt */
+		}
+	}
+
+	sound stormyShotgunPump
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/ShotgunCock.ogg,
+		}
+	}
+
+	sound StormyShotgunInsertRound
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/ShotgunLoad.ogg,
+		}
+	}
+
+	sound StormyShotgunClick
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/dryfire.ogg,
+			volume = 0.2,
+		}
+	}
+
+	sound Stormy9mmClick
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/dryfire.ogg,
+			volume = 0.2,
+		}
+	}
+
+	sound Stormy9mmRack
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/Firearm9mmRack.ogg,
+		}
+	}
+
 	/************************Guns************************/
 
 	item DoubleBarrelShotgun
@@ -385,7 +461,7 @@ module Base
         MinRange	=	0.61,
         SwingTime	=	0.5,
         MultipleHitConditionAffected	=	FALSE,
-        SwingSound	=	Firearm9mmShot,
+        SwingSound	=	FirearmDEagleShot,
         SoundRadius	=	100,
         MinDamage	=	1,
         MaxDamage	=	1.9,

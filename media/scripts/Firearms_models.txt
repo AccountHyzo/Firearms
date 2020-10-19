@@ -14,9 +14,10 @@ module Firearms
     {
         mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn_OPEN,
     }
-	model Mossberg500
+	model Mossberg500Wood
 	{
 		mesh = Weapons/Firearm/Mossberg500,
+		texture = Weapons/firearm/Mossberg500_Wood,
 
 		attachment muzzle
 		{
@@ -30,10 +31,10 @@ module Firearms
 			rotate = -180.0000 1.0000 -180.0000,
 		}
 	}
-	model Mossberg500SawnOff
+	model Mossberg500WoodSawnOff
 	{
 		mesh = Weapons/Firearm/ShotgunSawnOff,
-		texture = Weapons/Firearm/Mossberg500,
+		texture = Weapons/firearm/Mossberg500_Wood,
 
 		attachment muzzle
 		{
@@ -70,6 +71,83 @@ module Firearms
 			mesh = Weapons/Firearm/Mossberg500_Reddot,
 			texture = Weapons/firearm/RedDot,
 		}
+		model Mossberg500Tactical
+		{
+			mesh = Weapons/Firearm/MossbergTactical,
+			texture = Weapons/firearm/Mossberg500,
+
+			attachment muzzle
+			{
+				offset = 0.0000 0.3700 -0.0250,
+				rotate = -90.0000 0.0000 180.0000,
+			}
+
+			attachment world
+			{
+				offset = 0.0000 0.1660 0.0000,
+				rotate = -180.0000 1.0000 -180.0000,
+			}
+		}
+		model Mossberg500Tactical_Choke
+			{
+				mesh = Weapons/Firearm/MossbergTactical_Choke,
+				texture = Weapons/firearm/Mossberg500,
+			}
+			model Mossberg500Tactical_Stock
+				{
+					mesh = Weapons/Firearm/MossbergTactical_Stock,
+					texture = Weapons/firearm/Mossberg500,
+				}
+				model Mossberg500
+				{
+					mesh = Weapons/Firearm/Mossberg500,
+					texture = Weapons/firearm/Mossberg500,
+
+					attachment muzzle
+					{
+						offset = 0.0000 0.3700 -0.0250,
+						rotate = -90.0000 0.0000 180.0000,
+					}
+
+					attachment world
+					{
+						offset = 0.0000 0.1660 0.0000,
+						rotate = -180.0000 1.0000 -180.0000,
+					}
+				}
+	model Remington870Wood
+	{
+		mesh = Weapons/Firearm/Remington870,
+		texture = Weapons/firearm/Remington870_Wood,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.3700 -0.0250,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 1.0000 -180.0000,
+		}
+	}
+	model Remington870SawnOff
+	{
+		mesh = Weapons/Firearm/ShotgunSawnOff,
+		texture = Weapons/firearm/Remington870_Wood,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.3350 -0.0250,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+	}
+	model Remington870_Choke
+	{
+		mesh = Weapons/Firearm/Remington870_Choke,
+		texture = Weapons/firearm/Mossberg500,
+	}
 	model M1911
 	{
 		mesh = Weapons/Firearm/M1911,

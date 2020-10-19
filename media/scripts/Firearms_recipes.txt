@@ -25,7 +25,22 @@ module Firearms
 
 	   Result:ImprovisedSilencer,
 	   Time:300.0,
+		 Category:Welding,
+		 SkillRequired:MetalWelding=1,
+	 	 OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
 	   OnCreate:onImprovisedSilencer_OnCreate,
+	}
+
+
+	recipe Saw Off Shotgun
+	{
+		Remington870Wood,
+		keep [Recipe.GetItemTypes.Saw],
+
+		Result:Remington870Sawnoff,
+		Sound:Sawing,
+		Time:200.0,
+		OnCreate:onSawnOff_OnCreate,
 	}
 
 }

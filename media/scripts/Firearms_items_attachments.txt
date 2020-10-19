@@ -118,8 +118,21 @@ module Firearms
 				 WeightModifier = 0.5,
 				 ReloadTimeModifier = -6,
 				 RecoilDelayModifier = -5.0,
-         MountOn = Shotgun,
+         MountOn = Shotgun; Mossberg500; Mossberg500Tactical; Remington870,
          PartType = Stock,
          Tooltip = Tooltip_AmmoStock,
+     }
+
+		 item TacticalStock
+     {
+         Type = WeaponPart,
+         DisplayName = Tactical Stock,
+         Icon = TacticalStock,
+         Weight = 1,
+				 WeightModifier = 1,
+				 RecoilDelayModifier = -20.0,
+         MountOn =  Mossberg500Tactical,
+         PartType = RecoilPad,
+         Tooltip = Tooltip_TacticalStock,
      }
 }

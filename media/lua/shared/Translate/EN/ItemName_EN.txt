@@ -20,6 +20,10 @@ ItemName_EN = {
     ItemName_Base.Shotgun = "Mossberg 500",
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
     ItemName_Base.DoubleBarrelShotgun = "Double Barrel Shotgun",
+    ItemName_Firearms.Mossberg500 = "Mossberg 500",
+    ItemName_Firearms.Mossberg500Tactical = "Mossberg500 Tactical",
+    ItemName_Firearms.Remington870Wood = "Remington 870",
+    ItemName_Firearms.Remington870Sawnoff = "Sawed-off Remington 870",
 
 
     ItemName_Base.x2Scope = "x2 Scope",

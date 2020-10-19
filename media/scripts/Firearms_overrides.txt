@@ -159,7 +159,7 @@ module Base
 			ImpactSound	=	null,
 			MaxRange	=	7,
 			RangeFalloff	=	TRUE,
-			WeaponSprite	=	Firearms.Mossberg500,
+			WeaponSprite	=	Firearms.Mossberg500Wood,
 			SoundVolume	=	200,
 			MinAngle	=	0.9,
 			Type	=	Weapon,
@@ -231,7 +231,7 @@ module Base
 		ImpactSound	=	null,
 		MaxRange	=	3,
 		RangeFalloff	=	TRUE,
-		WeaponSprite	=	Firearms.Mossberg500SawnOff,
+		WeaponSprite	=	Firearms.Mossberg500WoodSawnOff,
 		SoundVolume	=	250,
 		MinAngle	=	0.2,
 		Type	=	Weapon,
@@ -293,7 +293,7 @@ module Base
         WeaponReloadType = shotgun,
         RackAfterShoot = TRUE,
         JamGunChance = 2,
-        AttachmentType = Rifle,
+        AttachmentType = Holster,
 	}
 
 	item Pistol
@@ -1077,7 +1077,7 @@ module Base
 			        Icon = GunSling,
 			        Weight = 0.5,
 			        WeightModifier = -0.3,
-			        MountOn = HuntingRifle; VarmintRifle; Shotgun; AssaultRifle; AssaultRifle2; Firearms.M24Rifle,
+			        MountOn = HuntingRifle; VarmintRifle; Shotgun; Firearms.Mossberg500; AssaultRifle; AssaultRifle2; Firearms.M24Rifle,
 			        PartType = Sling,
 			        Tooltip = Tooltip_Sling,
 			    }
@@ -1090,7 +1090,7 @@ module Base
 			        Weight = 0.1,
 			        WeightModifier = 0.1,
 			        RecoilDelayModifier = -10.0,
-			        MountOn = HuntingRifle; VarmintRifle; M24Rifle ; Shotgun,
+			        MountOn = HuntingRifle; VarmintRifle; Firearms.M24Rifle ; Shotgun; Firearms.Mossberg500; Firearms.Remington870,
 			        PartType = RecoilPad,
 			        Tooltip = Tooltip_RecoilPad,
 			    }
@@ -1130,7 +1130,7 @@ module Base
 				        Weight = 0.2,
 				        WeightModifier = 0.2,
 				        AimingTimeModifier = 5,
-				        MountOn = Pistol; Pistol3; Shotgun,
+				        MountOn = Pistol; Pistol3; Shotgun; Firearms.Mossberg500; Firearms.Mossberg500Tactical; Firearms.Remington870,
 				        PartType = Scope,
 				        Tooltip = Tooltip_RedDot,
 				        MetalValue = 15,
@@ -1144,7 +1144,7 @@ module Base
 				        Weight = 0.5,
 				        WeightModifier = 0.5,
 				        ReloadTimeModifier = -5,
-				        MountOn = HuntingRifle; VarmintRifle; Firearms.M24Rifle; Shotgun,
+				        MountOn = HuntingRifle; VarmintRifle; Firearms.M24Rifle; Shotgun; Firearms.Mossberg500; Firearms.Remington870,
 				        PartType = Sling,
 				        Tooltip = Tooltip_AmmoStrap,
 				    }

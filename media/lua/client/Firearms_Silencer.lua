@@ -1,6 +1,6 @@
 local function silence(wielder, weapon)
   if weapon == nil then return end
-	if not weapon:isRanged() then return; end
+	if not weapon:IsWeapon() or not weapon:isRanged() then return; end
     local scriptItem = weapon:getScriptItem()
 
     local soundVolume = scriptItem:getSoundVolume()
@@ -21,12 +21,12 @@ local function silence(wielder, weapon)
   			end
       elseif string.find(canon:getType(), "ImprovisedSilencer") then
         if weapon:getWeaponReloadType() == "handgun" then
-          soundVolume = soundVolume *  (1)
-          soundRadius = soundRadius * (0.70)
+          soundVolume = soundVolume *  (1.3)
+          soundRadius = soundRadius * (0.850)
           swingSound = 'FirearmPistolSilencerShot'
         elseif weapon:getWeaponReloadType() == "boltaction" then
-          soundVolume = soundVolume *  (1)
-          soundRadius = soundRadius * (0.4)
+          soundVolume = soundVolume *  (1.3)
+          soundRadius = soundRadius * (0.7)
           swingSound = 'FirearmRifleSilencerShot'
         end
       end

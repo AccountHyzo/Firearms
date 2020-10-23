@@ -79,6 +79,20 @@ module Firearms
 			Tooltip = Tooltip_ImprovisedSilencer,
 	}
 
+	item GunLightImprovised
+	{
+			Type = WeaponPart,
+			DisplayName = Improvised Shotgun Flashlight,
+			Icon = ImpFlashlight,
+			Weight = 0.2,
+			WeightModifier = 0.2,
+			AimingTimeModifier = 5,
+			MountOn = Shotgun; ShotgunSawnoff; Mossberg500; Mossberg500Tactical; Remington870Wood; Remington870Sawnoff,
+			PartType = Canon,
+			StaticModel = GunLight,
+			MetalValue = 15,
+	}
+
 	/************************Pads************************/
 
 	    item ExtendedRecoilPad
@@ -118,7 +132,7 @@ module Firearms
 				 WeightModifier = 0.5,
 				 ReloadTimeModifier = -6,
 				 RecoilDelayModifier = -5.0,
-         MountOn = Shotgun; Mossberg500; Mossberg500Tactical; Remington870,
+         MountOn = Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood,
          PartType = Stock,
          Tooltip = Tooltip_AmmoStock,
      }

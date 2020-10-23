@@ -21,7 +21,7 @@ module Firearms
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.3700 -0.0250,
+			offset = 0.0000 0.4790 -0.0250,
 			rotate = -90.0000 0.0000 180.0000,
 		}
 
@@ -71,50 +71,60 @@ module Firearms
 			mesh = Weapons/Firearm/Mossberg500_Reddot,
 			texture = Weapons/firearm/RedDot,
 		}
-		model Mossberg500Tactical
+	model Mossberg500Tactical
+	{
+		mesh = Weapons/Firearm/MossbergTactical,
+		texture = Weapons/firearm/Mossberg500,
+
+		attachment muzzle
 		{
-			mesh = Weapons/Firearm/MossbergTactical,
-			texture = Weapons/firearm/Mossberg500,
-
-			attachment muzzle
-			{
-				offset = 0.0000 0.3700 -0.0250,
-				rotate = -90.0000 0.0000 180.0000,
-			}
-
-			attachment world
-			{
-				offset = 0.0000 0.1660 0.0000,
-				rotate = -180.0000 1.0000 -180.0000,
-			}
+			offset = 0.0000 0.3900 -0.0280,
+			rotate = -90.0000 0.0000 180.0000,
 		}
-		model Mossberg500Tactical_Choke
-			{
-				mesh = Weapons/Firearm/MossbergTactical_Choke,
-				texture = Weapons/firearm/Mossberg500,
-			}
-			model Mossberg500Tactical_Stock
-				{
-					mesh = Weapons/Firearm/MossbergTactical_Stock,
-					texture = Weapons/firearm/Mossberg500,
-				}
-				model Mossberg500
-				{
-					mesh = Weapons/Firearm/Mossberg500,
-					texture = Weapons/firearm/Mossberg500,
 
-					attachment muzzle
-					{
-						offset = 0.0000 0.3700 -0.0250,
-						rotate = -90.0000 0.0000 180.0000,
-					}
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 1.0000 -180.0000,
+		}
+	}
+	model Mossberg500Tactical_Choke
+		{
+			mesh = Weapons/Firearm/MossbergTactical_Choke,
+			texture = Weapons/firearm/Mossberg500,
+		}
+	model Mossberg500Tactical_Stock
+		{
+			mesh = Weapons/Firearm/MossbergTactical_Stock,
+			texture = Weapons/firearm/Mossberg500,
+		}
+	model Mossberg500Tactical_Sling
+		{
+			mesh = Weapons/Firearm/MossbergTactical_Sling,
+			texture = Weapons/firearm/Mossberg500_sling,
+		}
+	model Mossberg500Tactical_AmmoStrap
+		{
+			mesh = Weapons/Firearm/MossbergTactical_AmmoStrap,
+			texture = Weapons/firearm/ammosling,
+		}
+	model Mossberg500
+	{
+		mesh = Weapons/Firearm/Mossberg500,
+		texture = Weapons/firearm/Mossberg500,
 
-					attachment world
-					{
-						offset = 0.0000 0.1660 0.0000,
-						rotate = -180.0000 1.0000 -180.0000,
-					}
-				}
+		attachment muzzle
+		{
+			offset = 0.0000 0.4790 -0.0250,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 1.0000 -180.0000,
+		}
+	}
 	model Remington870Wood
 	{
 		mesh = Weapons/Firearm/Remington870,
@@ -122,7 +132,7 @@ module Firearms
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.3700 -0.0250,
+			offset = 0.0000 0.4270 -0.0280,
 			rotate = -90.0000 0.0000 180.0000,
 		}
 
@@ -147,6 +157,31 @@ module Firearms
 	{
 		mesh = Weapons/Firearm/Remington870_Choke,
 		texture = Weapons/firearm/Mossberg500,
+	}
+	model Remington870_Sling
+	{
+		mesh = Weapons/Firearm/Remington870_Sling,
+		texture = Weapons/firearm/Mossberg500_sling,
+	}
+	model Remington870_AmmoSling
+	{
+		mesh = Weapons/Firearm/Remington870_AmmoSling,
+		texture = Weapons/firearm/ammosling,
+	}
+	model Remington870_Pad
+	{
+		mesh = Weapons/Firearm/Remington870_Pad,
+		texture = Weapons/firearm/Rifle_pad,
+	}
+	model Tactical_RedDot
+	{
+		mesh = Weapons/Firearm/Tactical_RedDot,
+		texture = Weapons/firearm/RedDot,
+	}
+	model Shotgun_Flashlight
+	{
+		mesh = Weapons/Firearm/Shotgun_Flashlight,
+		texture = Weapons/firearm/ImprovisedSilencer,
 	}
 	model M1911
 	{
@@ -199,7 +234,7 @@ module Firearms
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.1180 -0.020,
+			offset = 0.0000 0.1180 0.0200,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 	}
@@ -323,9 +358,14 @@ module Firearms
 			mesh = weapons/firearm/M16_Silencer,
 			texture = weapons/firearm/Silencer,
 		}
-		model FlashlightSilencer_Pistol
+	model FlashlightSilencer_Pistol
 			{
 				mesh = weapons/firearm/FlashlightSilencer_Pistol,
 				texture = weapons/firearm/ImprovisedSilencer,
 			}
+	model FlashlightSilencer_Pistol_M9
+					{
+						mesh = weapons/firearm/FlashlightSilencer_Pistol_M9,
+						texture = weapons/firearm/ImprovisedSilencer,
+					}
 }

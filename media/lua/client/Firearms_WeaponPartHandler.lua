@@ -1,21 +1,13 @@
 ISInventoryPaneContextMenu.onRemoveUpgradeWeapon = function(weapon, part, playerObj)
     ISInventoryPaneContextMenu.transferIfNeeded(playerObj, weapon)
-    --local screwdriver = playerObj:getInventory():getFirstTagEvalRecurse("Screwdriver", predicateNotBroken)
-    --if screwdriver then
-        --ISInventoryPaneContextMenu.equipWeapon(screwdriver, true, false, playerObj:getPlayerNum());
-        ISTimedActionQueue.add(ISRemoveWeaponUpgrade:new(playerObj, weapon, part, 50));
-    --end
+    ISTimedActionQueue.add(ISRemoveWeaponUpgrade:new(playerObj, weapon, part, 50));
 end
 
 ISInventoryPaneContextMenu.onUpgradeWeapon = function(weapon, part, player)
     ISInventoryPaneContextMenu.transferIfNeeded(player, weapon)
     ISInventoryPaneContextMenu.transferIfNeeded(player, part)
-    --local screwdriver = player:getInventory():getFirstTagEvalRecurse("Screwdriver", predicateNotBroken)
-    --if screwdriver then
-        ISInventoryPaneContextMenu.equipWeapon(part, false, false, player:getPlayerNum());
-        --ISInventoryPaneContextMenu.equipWeapon(screwdriver, true, false, player:getPlayerNum());
-        ISTimedActionQueue.add(ISUpgradeWeapon:new(player, weapon, part, 50));
-    --end
+    ISInventoryPaneContextMenu.equipWeapon(part, false, false, player:getPlayerNum());
+    ISTimedActionQueue.add(ISUpgradeWeapon:new(player, weapon, part, 50));
 end
 
 function ISRemoveWeaponUpgrade:perform()
@@ -32,20 +24,18 @@ function ISUpgradeWeapon:perform()
     self.part:setJobDelta(0.0);
     self.weapon:attachWeaponPart(self.part)
     self.character:getInventory():Remove(self.part);
-    self.character:removeFromHands(self.weapon);
     self.character:setSecondaryHandItem(nil);
+    self.character:removeFromHands(self.weapon);
     -- needed to remove from queue / start next.
     ISBaseTimedAction.perform(self);
 end
 
 function ISRemoveWeaponUpgrade:isValid()
-    --if not self.character:getInventory():containsTagEval("Screwdriver", predicateNotBroken) then return false end
     if not self.character:getInventory():contains(self.weapon) then return false end
     return self.weapon:getWeaponPart(self.part:getPartType()) == self.part
 end
 
 function ISUpgradeWeapon:isValid()
-    --if not self.character:getInventory():containsTagEval("Screwdriver", predicateNotBroken) then return false end
     if self.weapon:getWeaponPart(self.part:getPartType()) then return false end
     return self.character:getInventory():contains(self.part);
 end

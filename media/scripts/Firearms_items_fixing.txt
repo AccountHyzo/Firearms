@@ -33,4 +33,32 @@ module Firearms
        Fixer : M24Rifle; Aiming=5,
     }
 
+		fixing Fix Mossberg500
+    {
+       Require : Mossberg500,
+
+       Fixer : Mossberg500; Aiming=2,
+    }
+
+		fixing Fix Mossberg500Tactical
+    {
+       Require : Mossberg500Tactical,
+
+       Fixer : Mossberg500Tactical; Aiming=3,
+    }
+
+		fixing Fix Remington870Wood
+    {
+       Require : Remington870Wood,
+
+       Fixer : Remington870Wood; Aiming=2,
+    }
+
+		fixing Fix Remington870Sawnoff
+    {
+       Require : Remington870Sawnoff,
+
+       Fixer : Remington870Sawnoff; Aiming=2,
+    }
+
 }

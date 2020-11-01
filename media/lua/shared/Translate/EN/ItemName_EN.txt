@@ -33,6 +33,9 @@ ItemName_EN = {
 
     ItemName_Firearms.ExtendedRecoilPad = "Extended Recoil Pad",
     ItemName_Firearms.AmmoStock = "Shotgun Shell Ammostrap",
+    ItemName_Firearms.TacticalStock = "Tactical Stock",
+    ItemName_Firearms.ShotgunStock = "Shotgun Stock",
+    ItemName_Firearms.LightShotgunStock = "Light Shotgun Stock",
 
     ItemName_Firearms.45Silencer = ".45 Silencer",
     ItemName_Firearms.9mmSilencer = "9mm Silencer",

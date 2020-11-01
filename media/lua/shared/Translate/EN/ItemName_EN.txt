@@ -16,6 +16,7 @@ ItemName_EN = {
     ItemName_Base.AssaultRifle = "M16A1",
     ItemName_Base.AssaultRifle2 = "M14",
     ItemName_Firearms.M24Rifle = "M24",
+    ItemName_Firearms.M16A2 = "M16A2",
 
     ItemName_Base.Shotgun = "Mossberg 500",
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",

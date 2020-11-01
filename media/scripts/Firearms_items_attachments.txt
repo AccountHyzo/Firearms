@@ -62,7 +62,7 @@ module Firearms
 			Icon = Silencer,
 			Weight = 0.3,
 			WeightModifier = 0.3,
-			MountOn = AssaultRifle,
+			MountOn = AssaultRifle; M16A2,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
 	}
@@ -145,6 +145,32 @@ module Firearms
          Weight = 1,
 				 WeightModifier = 1,
 				 RecoilDelayModifier = -20.0,
+         MountOn =  Mossberg500Tactical,
+         PartType = RecoilPad,
+         Tooltip = Tooltip_TacticalStock,
+     }
+
+		 item ShotgunStock
+     {
+         Type = WeaponPart,
+         DisplayName = Shotgun Stock,
+         Icon = ShotgunStock,
+         Weight = 1.5,
+				 WeightModifier = 1.5,
+				 RecoilDelayModifier = -15.0,
+         MountOn =  Mossberg500Tactical,
+         PartType = RecoilPad,
+         Tooltip = Tooltip_TacticalStock,
+     }
+
+		 item LightShotgunStock
+     {
+         Type = WeaponPart,
+         DisplayName = Shotgun Stock,
+         Icon = LightShotgunStock,
+         Weight = 0.75,
+				 WeightModifier = 0.75,
+				 RecoilDelayModifier = -10.0,
          MountOn =  Mossberg500Tactical,
          PartType = RecoilPad,
          Tooltip = Tooltip_TacticalStock,

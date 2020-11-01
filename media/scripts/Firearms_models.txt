@@ -94,8 +94,18 @@ module Firearms
 			texture = Weapons/firearm/Mossberg500,
 		}
 	model Mossberg500Tactical_Stock
-		{
+	{
 			mesh = Weapons/Firearm/MossbergTactical_Stock,
+			texture = Weapons/firearm/Mossberg500,
+	}
+	model Mossberg500ShotgunStock
+	{
+				mesh = Weapons/Firearm/ShotgunStock,
+				texture = Weapons/firearm/Mossberg500,
+	}
+	model Mossberg500LightStock
+		{
+			mesh = Weapons/Firearm/ShotgunLightStock,
 			texture = Weapons/firearm/Mossberg500,
 		}
 	model Mossberg500Tactical_Sling
@@ -367,5 +377,27 @@ module Firearms
 					{
 						mesh = weapons/firearm/FlashlightSilencer_Pistol_M9,
 						texture = weapons/firearm/ImprovisedSilencer,
+					}
+					model M16A1
+					{
+						mesh = Weapons/Firearm/M16A1,
+						texture = weapons/firearm/M16,
+
+						attachment muzzle
+						{
+							offset = 0.0000 0.4020 0.0270,
+							rotate = -90.0000 0.0000 -180.0000,
+						}
+					}
+					model M16A2
+					{
+						mesh = Weapons/Firearm/M16A2,
+						texture = weapons/firearm/M16,
+
+						attachment muzzle
+						{
+							offset = 0.0000 0.4020 0.0270,
+							rotate = -90.0000 0.0000 -180.0000,
+						}
 					}
 }

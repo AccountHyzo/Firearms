@@ -33,6 +33,14 @@ module Firearms
        Fixer : M24Rifle; Aiming=5,
     }
 
+		fixing Fix M16A2
+    {
+       Require : M16A2,
+
+       Fixer : M16A2; Aiming=5,
+    }
+
+
 		fixing Fix Mossberg500
     {
        Require : Mossberg500,

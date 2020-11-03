@@ -43,4 +43,23 @@ module Firearms
 		OnCreate:onSawnOff_OnCreate,
 	}
 
+	recipe Extend Stock
+   {
+     MP5,
+
+     Result:MP5,
+     Time:30,
+     OnTest:onExtendStock_OnTest,
+     OnCreate:onExtendStock_OnCreate,
+   }
+
+	 	recipe Detract Stock
+	    {
+	      MP5,
+
+	      Result:MP5,
+	      Time:30,
+	      OnTest:onDetractStock_OnTest,
+	      OnCreate:onDetractStock_OnCreate,
+	    }
 }

@@ -17,6 +17,7 @@ ItemName_EN = {
     ItemName_Base.AssaultRifle2 = "M14",
     ItemName_Firearms.M24Rifle = "M24",
     ItemName_Firearms.M16A2 = "M16A2",
+    ItemName_Firearms.MP5 = "MP5A1",
 
     ItemName_Base.Shotgun = "Mossberg 500",
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
@@ -36,6 +37,8 @@ ItemName_EN = {
     ItemName_Firearms.TacticalStock = "Tactical Stock",
     ItemName_Firearms.ShotgunStock = "Shotgun Stock",
     ItemName_Firearms.LightShotgunStock = "Light Shotgun Stock",
+    ItemName_Firearms.MP5_Stock_Extended = "MP5 Stock",
+    ItemName_Firearms.MP5_Stock_Detracted = "MP5 Stock",
 
     ItemName_Firearms.45Silencer = ".45 Silencer",
     ItemName_Firearms.9mmSilencer = "9mm Silencer",
@@ -53,6 +56,7 @@ ItemName_EN = {
     ItemName_Base.44Clip = "Desert Eagle Magazine",
     ItemName_Base.45Clip = "M1911 Magazine",
     ItemName_Base.Glock17Mag = "Glock 17 Magazine",
+    ItemName_Base.MP5Mag = "MP5 Magazine",
 
     ItemName_Firearms.ColtPeacemaker = "Colt Peacemaker",
 }

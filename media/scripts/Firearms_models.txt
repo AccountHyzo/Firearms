@@ -248,6 +248,36 @@ module Firearms
 			rotate = -90.0000 0.0000 0.0000,
 		}
 	}
+	model MP5
+	{
+		mesh = Weapons/Firearm/MP5,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.2480 0.0270,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+	model MP5_Stock_Detracted
+	{
+		mesh = weapons/firearm/MP5_Stock_Detracted,
+		texture = Weapons/firearm/MP5,
+	}
+	model MP5_Stock_Extended
+	{
+		mesh = weapons/firearm/MP5_Stock_Extended,
+		texture = Weapons/firearm/MP5,
+	}
+	model MP5_Silencer
+	{
+		mesh = weapons/firearm/MP5_Silencer,
+		texture = Weapons/firearm/Silencer,
+	}
+	model MP5_Silencer_Improvised
+	{
+		mesh = weapons/firearm/FlashlightSilencer_MP5,
+		texture = Weapons/firearm/ImprovisedSilencer,
+	}
 	model Model700
 		{
 			mesh = weapons/firearm/Model700,

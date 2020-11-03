@@ -26,7 +26,7 @@ module Firearms
 			Icon = Silencer,
 			Weight = 0.3,
 			WeightModifier = 0.3,
-			MountOn = Glock17; Pistol,
+			MountOn = Glock17; Pistol; MP5,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
 	}
@@ -74,7 +74,7 @@ module Firearms
 			Icon = Silencer,
 			Weight = 0.2,
 			WeightModifier = 0.2,
-			MountOn = Pistol; Pistol2; Glock17,
+			MountOn = Pistol; Pistol2; Glock17; MP5,
 			PartType = Canon,
 			Tooltip = Tooltip_ImprovisedSilencer,
 	}
@@ -174,5 +174,30 @@ module Firearms
          MountOn =  Mossberg500Tactical,
          PartType = RecoilPad,
          Tooltip = Tooltip_TacticalStock,
+     }
+
+		 item MP5_Stock_Extended
+     {
+         Type = WeaponPart,
+         DisplayName = MP5 Stock,
+         Icon = MP5_Stock,
+         Weight = 1,
+				 WeightModifier = 1,
+				 RecoilDelayModifier = -20.0,
+         MountOn =  MP5,
+         PartType = Stock,
+         Tooltip = Tooltip_ExtendableStock,
+     }
+
+		 item MP5_Stock_Detracted
+     {
+         Type = WeaponPart,
+         DisplayName = MP5 Stock,
+         Icon = MP5_Stock,
+         Weight = 1,
+				 WeightModifier = 0.2,
+         MountOn =  MP5,
+         PartType = Stock,
+         Tooltip = Tooltip_ExtendableStock,
      }
 }

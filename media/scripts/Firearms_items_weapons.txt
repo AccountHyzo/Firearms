@@ -653,8 +653,8 @@ module Firearms
 			 		ModelWeaponPart = Firearms.556Silencer Firearms.M16_Silencer,
 	        JamGunChance = 2,
 	        AttachmentType = Rifle,
-	        FireMode = Auto,
-	        FireModePossibilities = Auto/Single,
+	        FireMode = Single,
+	        FireModePossibilities = Burst/Single,
 	    }
 
 			item MP5

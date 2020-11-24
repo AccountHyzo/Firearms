@@ -201,24 +201,6 @@ local distributionTable = {
             }
         },
 
-        dresser = {
-
-            items = {
-            }
-        },
-
-        postbox = {
-
-            items = {
-            },
-        },
-
-        corn ={
-
-            items = {
-            }
-        },
-
 		locker ={
         "Firearms.ColtPeacemaker",0.5,
         "Firearms.Glock17", 0.25,
@@ -248,30 +230,6 @@ local distributionTable = {
             items = {
             }
         },
-
-		desk = {
-
-			items = {
-			},
-
-			junk = {
-
-				items = {
-				},
-			},
-		},
-
-		filingcabinet = {
-
-			items = {
-			},
-
-			junk = {
-
-				items = {
-				},
-			},
-		},
 
 		wardrobe = {
     "Firearms.ColtPeacemaker",0.05,
@@ -1642,15 +1600,6 @@ local distributionTable = {
     },
 }
 
-table.insert(Distributions, distributionTable);
+table.insert(Distributions, 1, distributionTable);
 
---*******All Items***************--
----"Firearms.ColtPeacemaker",5,
----"Firearms.Glock17", 1,
----"Firearms.Glock17Mag", 2,
---"Firearms.45Silencer", 2,
---"Firearms.9mmSilencer", 2,
---"Firearms.223Silencer", 2,
---"Firearms.308Silencer", 1,
---"Firearms.556Silencer", 0.1,
---*****************************--
+SuburbsDistributions = distributionTable;

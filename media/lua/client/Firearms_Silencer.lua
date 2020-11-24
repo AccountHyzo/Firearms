@@ -24,7 +24,7 @@ local function silence(wielder, weapon)
   	      swingSound = 'FirearmPistolSilencerShot'
   	    elseif weapon:getWeaponReloadType() == "boltaction" or weapon:getWeaponReloadType() == "boltactionnomag" then
   	      soundVolume = soundVolume *  (1)
-  	      soundRadius = soundRadius * (0.4)
+  	      soundRadius = soundRadius * (0.3)
   	      swingSound = 'FirearmRifleSilencerShot'
   			end
       elseif string.find(canon:getType(), "ImprovisedSilencer") then
@@ -42,7 +42,7 @@ local function silence(wielder, weapon)
           swingSound = 'FirearmPistolSilencerShot'
         elseif weapon:getWeaponReloadType() == "boltaction" or weapon:getWeaponReloadType() == "boltactionnomag " then
           soundVolume = soundVolume *  (1.3)
-          soundRadius = soundRadius * (0.7)
+          soundRadius = soundRadius * (0.4)
           swingSound = 'FirearmRifleSilencerShot'
         end
       end
@@ -51,6 +51,7 @@ local function silence(wielder, weapon)
     weapon:setSoundVolume(soundVolume)
     weapon:setSoundRadius(soundRadius)
     weapon:setSwingSound(swingSound)
+    print(scriptItem:getSoundRadius())
 end
 
 Events.OnEquipPrimary.Add(silence);

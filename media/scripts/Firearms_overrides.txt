@@ -667,7 +667,7 @@ module Base
 				MinRange	=	0.61,
 				SwingTime	=	0.5,
 				MultipleHitConditionAffected	=	FALSE,
-				SoundRadius	=	30,
+				SoundRadius	=	50,
 				MinDamage	=	0.7,
 				MaxDamage	=	1.2,
 				SplatSize	=	3,
@@ -932,7 +932,7 @@ module Base
 			 		ModelWeaponPart = Firearms.556Silencer Firearms.M16_Silencer,
 	        JamGunChance = 2,
 	        AttachmentType = Rifle,
-	        FireMode = Auto,
+	        FireMode = Single,
 	        FireModePossibilities = Auto/Single,
 	    }
 

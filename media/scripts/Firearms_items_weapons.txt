@@ -5,6 +5,83 @@ module Firearms
 		Base
 	}
 
+	/************************Sounds************************/
+
+	sound FirearmPistolSilencerShot
+	{
+			category = Item,
+			clip
+			{
+					file = media/sound/silencer.ogg,
+					distanceMax = 100,
+					volume = 1.5,
+			}
+	}
+
+	sound FirearmRifleSilencerShot
+	{
+			category = Item,
+			clip
+			{
+					file = media/sound/silencer_rifle.ogg,
+					distanceMax = 150,
+					volume = 1.5,
+			}
+	}
+
+		sound FirearmDEagleShot
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/DEagle.ogg,
+						distanceMax = 200,
+						volume = 2,
+				}
+		}
+
+		sound Firearm1911Shot
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/1911.ogg,
+						distanceMax = 200,
+				}
+		}
+
+		sound FirearmRifleShot
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/Rifle.ogg,
+						distanceMax = 200,
+						volume = 6,
+				}
+		}
+
+		sound FirearmAR15Shot
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/ar15.ogg,
+						distanceMax = 200,
+						volume = 2,
+				}
+		}
+
+		sound FirearmSW642Shot
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/sw642.ogg,
+						distanceMax = 200,
+				}
+		}
+
 	/************************Guns************************/
 	item Mossberg500
 	{
@@ -13,7 +90,7 @@ module Firearms
 		RangeFalloff	=	TRUE,
 		WeaponSprite	=	Firearms.Mossberg500,
 		SoundVolume	=	200,
-		MinAngle	=	0.98,
+		MinAngle	=	0.91,
 		Type	=	Weapon,
 		KnockBackOnNoDeath	=	TRUE,
 		Ranged	=	TRUE,
@@ -64,18 +141,21 @@ module Firearms
 				EjectAmmoSound = Stormy9mmClipEject,
 				RackSound = stormyShotgunPump,
 				AmmoType = Base.ShotgunShells,
-				ModelWeaponPart = Base.Sling Mossberg500_sling,
-				ModelWeaponPart = Base.RecoilPad Mossberg500_pad,
-				ModelWeaponPart = Base.AmmoStraps Mossberg500_AmmoSling,
-				ModelWeaponPart = AmmoStock Mossberg500_AmmoStrap,
-				ModelWeaponPart = Base.RedDot Mossberg500_Reddot,
-				ModelWeaponPart = Base.ChokeTubeFull Mossberg500_choke,
-				ModelWeaponPart = Base.ChokeTubeImproved Mossberg500_choke,
-				ModelWeaponPart = GunLightImprovised Shotgun_Flashlight,
+				ModelWeaponPart = Base.x2Scope Firearms.Acog scope scope,
+				ModelWeaponPart = Base.x4Scope Firearms.Scope scope scope,
+				ModelWeaponPart = Base.x8Scope Firearms.Scope scope scope,
+				ModelWeaponPart = Base.RecoilPad Recoil_Pad recoilpad recoilpad,
+				ModelWeaponPart = Base.Sling Shotgun_Sling sling sling,
+				ModelWeaponPart = Base.AmmoStraps Shotgun_AmmoSling sling sling,
+				ModelWeaponPart = AmmoStock Shotgun_AmmoStrap ammostrap ammostrap,
+				ModelWeaponPart = Base.RedDot Reddot_PicatinnyShort reddot reddot,
+				ModelWeaponPart = Base.ChokeTubeFull Choke_Tube silencer silencer,
+				ModelWeaponPart = Base.ChokeTubeImproved Choke_Tube silencer silencer,
+				ModelWeaponPart = GunLightImprovised Flashlight_Improvised gunlight gunlight,
 				WeaponReloadType = shotgun,
 				RackAfterShoot = TRUE,
 				JamGunChance = 2,
-				AttachmentType = Shotgun,
+				AttachmentType = Rifle,
 	}
 
 	item Mossberg500Tactical
@@ -85,7 +165,7 @@ module Firearms
 		RangeFalloff	=	TRUE,
 		WeaponSprite	=	Firearms.Mossberg500Tactical,
 		SoundVolume	=	200,
-		MinAngle	=	0.99,
+		MinAngle	=	0.91,
 		Type	=	Weapon,
 		KnockBackOnNoDeath	=	TRUE,
 		Ranged	=	TRUE,
@@ -136,20 +216,23 @@ module Firearms
 			EjectAmmoSound = Stormy9mmClipEject,
 			RackSound = stormyShotgunPump,
 			AmmoType = Base.ShotgunShells,
-			ModelWeaponPart = Base.Sling Mossberg500Tactical_Sling,
-			ModelWeaponPart = Base.AmmoStraps Remington870_AmmoSling,
-			ModelWeaponPart = AmmoStock Mossberg500Tactical_AmmoStrap,
-			ModelWeaponPart = Base.RedDot Tactical_RedDot,
-			ModelWeaponPart = Base.ChokeTubeFull Mossberg500Tactical_choke,
-			ModelWeaponPart = Base.ChokeTubeImproved Mossberg500Tactical_choke,
-			ModelWeaponPart = TacticalStock Mossberg500Tactical_stock,
-			ModelWeaponPart = ShotgunStock Mossberg500ShotgunStock,
-			ModelWeaponPart = LightShotgunStock Mossberg500LightStock,
-			ModelWeaponPart = GunLightImprovised Shotgun_Flashlight,
+			ModelWeaponPart = Base.x2Scope Firearms.Acog scope scope,
+			ModelWeaponPart = Base.x4Scope Firearms.Scope scope scope,
+			ModelWeaponPart = Base.x8Scope Firearms.Scope scope scope,
+			ModelWeaponPart = Base.Sling Shotgun_Sling_Short sling sling,
+			ModelWeaponPart = Base.AmmoStraps Shotgun_AmmoSling sling sling,
+			ModelWeaponPart = AmmoStock Shotgun_AmmoStrap ammostrap ammostrap,
+			ModelWeaponPart = Base.RedDot Reddot_PicatinnyShort reddot reddot,
+			ModelWeaponPart = Base.ChokeTubeFull Choke_Tube silencer silencer,
+			ModelWeaponPart = Base.ChokeTubeImproved Choke_Tube silencer silencer,
+			ModelWeaponPart = GunLightImprovised Flashlight_Improvised gunlight gunlight,
+			ModelWeaponPart = TacticalStock Stock_Tactical stock stock,
+			ModelWeaponPart = ShotgunStock Stock stock stock,
+			ModelWeaponPart = LightShotgunStock Stock_Light stock stock,
 			WeaponReloadType = shotgun,
 			RackAfterShoot = TRUE,
 			JamGunChance = 2,
-			AttachmentType = Shotgun,
+			AttachmentType = Rifle,
 	}
 
 	item Remington870Wood
@@ -159,7 +242,7 @@ module Firearms
 		RangeFalloff	=	TRUE,
 		WeaponSprite	=	Firearms.Remington870Wood,
 		SoundVolume	=	200,
-		MinAngle	=	0.98,
+		MinAngle	=	0.91,
 		Type	=	Weapon,
 		KnockBackOnNoDeath	=	TRUE,
 		Ranged	=	TRUE,
@@ -210,18 +293,21 @@ module Firearms
 				EjectAmmoSound = Stormy9mmClipEject,
 				RackSound = stormyShotgunPump,
 				AmmoType = Base.ShotgunShells,
-				ModelWeaponPart = Base.Sling Remington870_Sling,
-				ModelWeaponPart = Base.RecoilPad Remington870_Pad,
-				ModelWeaponPart = Base.AmmoStraps Remington870_AmmoSling,
-				ModelWeaponPart = AmmoStock Mossberg500_AmmoStrap,
-				ModelWeaponPart = Base.RedDot Tactical_RedDot,
-				ModelWeaponPart = Base.ChokeTubeFull Remington870_choke,
-				ModelWeaponPart = Base.ChokeTubeImproved Remington870_choke,
-				ModelWeaponPart = GunLightImprovised Shotgun_Flashlight,
+				ModelWeaponPart = Base.x2Scope Firearms.Acog scope scope,
+				ModelWeaponPart = Base.x4Scope Firearms.Scope scope scope,
+				ModelWeaponPart = Base.x8Scope Firearms.Scope scope scope,
+				ModelWeaponPart = Base.RecoilPad Recoil_Pad recoilpad recoilpad,
+				ModelWeaponPart = Base.Sling Shotgun_Sling sling sling,
+				ModelWeaponPart = Base.AmmoStraps Shotgun_AmmoSling sling sling,
+				ModelWeaponPart = AmmoStock Shotgun_AmmoStrap ammostrap ammostrap,
+				ModelWeaponPart = Base.RedDot Reddot_PicatinnyShort reddot reddot,
+				ModelWeaponPart = Base.ChokeTubeFull Choke_Tube silencer silencer,
+				ModelWeaponPart = Base.ChokeTubeImproved Choke_Tube silencer silencer,
+				ModelWeaponPart = GunLightImprovised Flashlight_Improvised gunlight gunlight,
 				WeaponReloadType = shotgun,
 				RackAfterShoot = TRUE,
 				JamGunChance = 2,
-				AttachmentType = Shotgun,
+				AttachmentType = Rifle,
 	}
 
 
@@ -291,6 +377,14 @@ module Firearms
 	        RackSound = stormyShotgunPump,
 	        AmmoType = Base.ShotgunShells,
 	        WeaponReloadType = shotgun,
+					ModelWeaponPart = Base.x2Scope Firearms.Acog scope scope,
+					ModelWeaponPart = Base.x4Scope Firearms.Scope scope scope,
+					ModelWeaponPart = Base.x8Scope Firearms.Scope scope scope,
+					ModelWeaponPart = Base.Sling Shotgun_Sling_Short sling sling,
+					ModelWeaponPart = Base.AmmoStraps Shotgun_AmmoSling sling sling,
+					ModelWeaponPart = Firearms.AmmoStock Firearms.Shotgun_AmmoStrap ammostrap ammostrap,
+					ModelWeaponPart = Base.RedDot Reddot_PicatinnyShort reddot reddot,
+					ModelWeaponPart = Firearms.GunLightImprovised Firearms.Flashlight_Improvised gunlight gunlight,
 	        RackAfterShoot = TRUE,
 	        JamGunChance = 2,
 	        AttachmentType = Holster,
@@ -423,8 +517,8 @@ module Firearms
 					EjectAmmoSound = Stormy9mmClipEject,
 					RackSound = Stormy9mmRack,
 					MagazineType = Firearms.Glock17Mag,
-			 		ModelWeaponPart = 9mmSilencer Glock17_Silencer,
-			 		ModelWeaponPart = ImprovisedSilencer FlashlightSilencer_Pistol,
+			 		ModelWeaponPart = 9mmSilencer Silencer silencer silencer,
+			 		ModelWeaponPart = ImprovisedSilencer Silencer_Improvised silencer silencer,
 					AmmoType = Base.Bullets9mm,
 					WeaponReloadType = handgun,
 					JamGunChance = 1,
@@ -495,6 +589,16 @@ module Firearms
 		RackSound = BulletOutVarmint,
 		AmmoType = Base.308Bullets,
 		WeaponReloadType = boltactionnomag,
+		ModelWeaponPart = Base.x2Scope Firearms.Acog scope scope,
+		ModelWeaponPart = Base.x4Scope Firearms.Scope scope scope,
+		ModelWeaponPart = Base.x8Scope Firearms.Scope scope scope,
+		ModelWeaponPart = Base.RedDot Reddot_PicatinnyShort reddot reddot,
+		ModelWeaponPart = Base.Sling Firearms.MP5_Sling_Short sling sling,
+		ModelWeaponPart = Base.AmmoStraps Firearms.Rifle_Ammostrap stock stock,
+		ModelWeaponPart = Base.RecoilPad Firearms.Recoil_Pad recoilpad recoilpad,
+		ModelWeaponPart = ExtendedRecoilPad Firearms.Rifle_ExtendedPad recoilpad recoilpad,
+		ModelWeaponPart = 308Silencer Firearms.Silencer silencer silencer,
+		ModelWeaponPart = Rifle_Bipod Firearms.Bipod bipod bipod,
 		RackAfterShoot = TRUE,
 		/*MagazineType = Base.308Clip,*/
 		JamGunChance = 7,
@@ -566,15 +670,16 @@ module Firearms
 	       AmmoType = Base.308Bullets,
 	       WeaponReloadType = boltactionnomag,
 	/*       ModelWeaponPart = FiberglassStock HuntingKnife none bayonet,*/
-	       ModelWeaponPart = Base.x2Scope Firearms.Rifle_Scope,
-	       ModelWeaponPart = Base.x4Scope Firearms.Rifle_Scope,
-	       ModelWeaponPart = Base.x8Scope Firearms.Rifle_Scope,
-				 ModelWeaponPart = Base.Sling Firearms.M24Rifle_Sling,
-				 ModelWeaponPart = Base.AmmoStraps Firearms.Rifle_Ammostrap,
-				 ModelWeaponPart = Base.RecoilPad Firearms.Rifle_Pad,
-				 ModelWeaponPart = ExtendedRecoilPad Firearms.Rifle_ExtendedPad,
-				 ModelWeaponPart = 308Silencer Firearms.Rifle_Silencer,
-				 ModelWeaponPart = Rifle_Bipod Firearms.Rifle_Bipod,
+	       ModelWeaponPart = Base.x2Scope Firearms.Acog scope scope,
+	       ModelWeaponPart = Base.x4Scope Firearms.Scope scope scope,
+	       ModelWeaponPart = Base.x8Scope Firearms.Scope scope scope,
+				 ModelWeaponPart = Base.RedDot Reddot_PicatinnyShort reddot reddot,
+				 ModelWeaponPart = Base.Sling Firearms.Sling sling sling,
+				 ModelWeaponPart = Base.AmmoStraps Firearms.Rifle_Ammostrap stock stock,
+				 ModelWeaponPart = Base.RecoilPad Firearms.Recoil_Pad recoilpad recoilpad,
+				 ModelWeaponPart = ExtendedRecoilPad Firearms.Rifle_ExtendedPad recoilpad recoilpad,
+				 ModelWeaponPart = 308Silencer Firearms.Silencer silencer silencer,
+				 ModelWeaponPart = Rifle_Bipod Firearms.Bipod bipod bipod,
 	       RackAfterShoot = TRUE,
 	       /*MagazineType = Base.223Clip,*/
 	       JamGunChance = 5,
@@ -629,6 +734,7 @@ module Firearms
 	        AimingPerkMinAngleModifier = 0.01,
 	        AimingPerkRangeModifier = 3,
 	        RecoilDelay = 0,
+					PiercingBullets = TRUE,
 	        SoundGain = 2,
 	        ReloadTime = 25,
 	        AimingTime = 25,
@@ -644,13 +750,14 @@ module Firearms
 	        MagazineType = Base.556Clip,
 	        AmmoType = Base.556Bullets,
 	        WeaponReloadType = boltaction,
-					ModelWeaponPart = Base.x2Scope Firearms.Rifle_Scope,
-	        ModelWeaponPart = Base.x4Scope Firearms.Rifle_Scope,
-	        ModelWeaponPart = Base.x8Scope Firearms.Rifle_Scope,
-					ModelWeaponPart = Base.AmmoStraps Firearms.Rifle_Ammostrap,
-	        ModelWeaponPart = Base.Sling Firearms.AssaultRifle_Sling,
-	        ModelWeaponPart = Base.RecoilPad Firearms.Rifle_Pad,
-			 		ModelWeaponPart = Firearms.556Silencer Firearms.M16_Silencer,
+					ModelWeaponPart = Base.x2Scope Firearms.Acog scope scope,
+ 	       ModelWeaponPart = Base.x4Scope Firearms.Acog scope scope,
+ 	       ModelWeaponPart = Base.x8Scope Firearms.Scope scope scope,
+				 ModelWeaponPart = Base.RedDot Reddot_PicatinnyShort reddot reddot,
+ 				 ModelWeaponPart = Base.Sling Firearms.Sling sling sling,
+ 				 ModelWeaponPart = Base.AmmoStraps Firearms.Rifle_Ammostrap stock stock,
+ 				 ModelWeaponPart = Base.RecoilPad Firearms.Recoil_Pad recoilpad recoilpad,
+ 				 ModelWeaponPart = 556Silencer Firearms.Silencer silencer silencer,
 	        JamGunChance = 2,
 	        AttachmentType = Rifle,
 	        FireMode = Single,
@@ -705,6 +812,7 @@ module Firearms
 	        AimingPerkMinAngleModifier = 0.01,
 	        AimingPerkRangeModifier = 3,
 	        RecoilDelay = 0,
+					PiercingBullets = TRUE,
 	        SoundGain = 2,
 	        ReloadTime = 25,
 	        AimingTime = 25,
@@ -720,16 +828,16 @@ module Firearms
 	        MagazineType = Firearms.MP5Mag,
 	        AmmoType = Base.Bullets9mm,
 	        WeaponReloadType = boltaction,
-					ModelWeaponPart = Base.x2Scope Firearms.Rifle_Scope,
-					ModelWeaponPart = Base.x4Scope Firearms.Rifle_Scope,
-	        ModelWeaponPart = Base.x8Scope Firearms.Rifle_Scope,
-					ModelWeaponPart = Base.RedDot Mossberg500_Reddot,
-					ModelWeaponPart = Base.AmmoStraps Firearms.Mossberg500Tactical_Sling,
-	        ModelWeaponPart = Base.Sling Firearms.Mossberg500Tactical_Sling,
-					ModelWeaponPart = Firearms.9mmSilencer Firearms.MP5_Silencer,
-			 		ModelWeaponPart = Firearms.ImprovisedSilencer Firearms.MP5_Silencer_Improvised,
-	        ModelWeaponPart = Firearms.MP5_Stock_Extended Firearms.MP5_Stock_Extended,
-	        ModelWeaponPart = Firearms.MP5_Stock_Detracted Firearms.MP5_Stock_Detracted,
+					ModelWeaponPart = Base.x2Scope Firearms.Acog scope scope,
+					ModelWeaponPart = Base.x4Scope Firearms.Acog scope scope,
+	        ModelWeaponPart = Base.x8Scope Firearms.Scope scope scope,
+					ModelWeaponPart = Base.RedDot Reddot_PicatinnyShort reddot reddot,
+					ModelWeaponPart = Base.AmmoStraps Firearms.Shotgun_Sling_Short sling sling,
+	        ModelWeaponPart = Base.Sling Firearms.MP5_Sling_Short sling sling,
+					ModelWeaponPart = Firearms.9mmSilencer Firearms.Silencer silencer silencer,
+			 		ModelWeaponPart = Firearms.ImprovisedSilencer Firearms.Silencer_Improvised silencer silencer,
+	        ModelWeaponPart = Firearms.MP5_Stock_Extended Firearms.MP5_Stock_Extended stock stock,
+	        ModelWeaponPart = Firearms.MP5_Stock_Detracted Firearms.MP5_Stock_Detracted stock stock,
 	        JamGunChance = 2,
 	        AttachmentType = Rifle,
 	        FireMode = Auto,

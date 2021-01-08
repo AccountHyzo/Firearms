@@ -283,7 +283,7 @@ AttachedWeaponDefinitions.handgunHolster = {
 		"Base.Pistol2",
 		"Base.Pistol3",
 		"Base.Revolver_Short",
-		"Firearms.Glock17"
+		"Firearms.Glock17",
 		"Base.Nightstick",
 	},
 }
@@ -299,8 +299,8 @@ AttachedWeaponDefinitions.shotgunPolice = {
 	weapons = {
 		"Base.Shotgun",
 		"Firearms.Mossberg500",
-		"Firearms.Mossberg500Tactical"
-		"Firearms.MP5"
+		"Firearms.Mossberg500Tactical",
+		"Firearms.MP5",
 	},
 }
 

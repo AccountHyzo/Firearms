@@ -117,7 +117,7 @@ module Firearms
          WeightModifier = 1,
          HitChanceModifier = 8,
 				 RecoilDelayModifier = -5.0,
-         MountOn = HuntingRifle; VarmintRifle; M24Rifle; AssaultRifle2,
+         MountOn = HuntingRifle; VarmintRifle; M24Rifle; HuntingRifle_Sawn; AssaultRifle2,
          PartType = Stock,
          Tooltip = Tooltip_Bipod,
      }
@@ -132,7 +132,7 @@ module Firearms
 				 WeightModifier = 0.5,
 				 ReloadTimeModifier = -6,
 				 RecoilDelayModifier = -5.0,
-         MountOn = Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood,
+         MountOn =  ShotgunSawnoff; Remington870Sawnoff; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood,
          PartType = Stock,
          Tooltip = Tooltip_AmmoStock,
      }

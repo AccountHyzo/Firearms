@@ -589,6 +589,7 @@ local distributionTable = {
             "Firearms.MP5", 1,
             "Firearms.MP5Mag", 3,
             "Firearms.MP5_Stock_Detracted", 1,
+            "Firearms.GunToolKit", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -644,6 +645,7 @@ local distributionTable = {
             "Firearms.MP5", 1,
             "Firearms.MP5Mag", 3,
             "Firearms.MP5_Stock_Detracted", 1,
+            "Firearms.GunToolKit", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -652,6 +654,7 @@ local distributionTable = {
 
             items = {
             "Firearms.ColtPeacemaker", 0.1,
+            "Firearms.GunToolKit", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -683,6 +686,7 @@ local distributionTable = {
             "Firearms.MP5", 1,
             "Firearms.MP5Mag", 3,
             "Firearms.MP5_Stock_Detracted", 1,
+            "Firearms.GunToolKit", 5,
             },
 
             dontSpawnAmmo = true,
@@ -695,6 +699,7 @@ local distributionTable = {
             items = {
             "Firearms.ColtPeacemaker", 0.1,
             "Firearms.AmmoStock", 1,
+            "Firearms.GunToolKit", 0.5,
             }
         },
 
@@ -854,6 +859,7 @@ local distributionTable = {
             "Firearms.MP5", 0.1,
             "Firearms.MP5Mag", 1,
             "Firearms.MP5_Stock_Detracted", 0.2,
+            "Firearms.GunToolKit", 0.5,
             },
         },
     },
@@ -924,6 +930,7 @@ local distributionTable = {
         counter ={
 
             items = {
+            "Firearms.GunToolKit", 1,
             },
         },
     },
@@ -1017,6 +1024,7 @@ local distributionTable = {
 
             items = {
             "Firearms.ColtPeacemaker", 0.1,
+            "Firearms.GunToolKit", 1,
             }
         },
     },
@@ -1053,6 +1061,7 @@ local distributionTable = {
             "Firearms.MP5", 1,
             "Firearms.MP5Mag", 3,
             "Firearms.MP5_Stock_Detracted", 1,
+            "Firearms.GunToolKit", 3,
             }
         },
 
@@ -1078,7 +1087,8 @@ local distributionTable = {
             items = {
             "Firearms.ColtPeacemaker", 0.1,
             "Firearms.AmmoStock", 0.1,
-            "Firearms.Mossberg500", 0.,
+            "Firearms.Mossberg500", 0.1,
+            "Firearms.GunToolKit", 1,
             }
         },
     },
@@ -1099,6 +1109,7 @@ local distributionTable = {
             "Firearms.MP5", 1,
             "Firearms.MP5Mag", 3,
             "Firearms.MP5_Stock_Detracted", 1,
+            "Firearms.GunToolKit", 5,
         },
         fillRand = 0,
     },
@@ -1124,6 +1135,7 @@ local distributionTable = {
             "Firearms.MP5", 1,
             "Firearms.MP5Mag", 3,
             "Firearms.MP5_Stock_Detracted", 1,
+            "Firearms.GunToolKit", 1,
         },
         fillRand = 0,
     },
@@ -1190,6 +1202,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 1,
             }
         },
 
@@ -1217,6 +1230,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 1,
             },
             fillRand=3,
         },
@@ -1244,6 +1258,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 1,
             }
         },
 
@@ -1300,6 +1315,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -1319,6 +1335,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 5,
             },
         },
 
@@ -1346,6 +1363,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 5,
             },
             fillRand = 3,
         },
@@ -1376,6 +1394,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -1435,6 +1454,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 1,
             }
         },
     },
@@ -1511,6 +1531,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 5,
             },
         },
     },
@@ -1541,6 +1562,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 5,
             },
         },
 
@@ -1569,6 +1591,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 5,
             },
         },
 
@@ -1595,6 +1618,7 @@ local distributionTable = {
                 "Firearms.MP5", 1,
                 "Firearms.MP5Mag", 3,
                 "Firearms.MP5_Stock_Detracted", 1,
+                "Firearms.GunToolKit", 5,
             },
         },
     },

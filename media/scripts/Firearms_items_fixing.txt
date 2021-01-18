@@ -2,29 +2,13 @@ module Firearms
 {
 	imports
 	{
-		Base
+		Base,
 	}
-
-		item GunToolKit
-		{
-			Weight	=	0.5,
-			Type	=	Drainable,
-			UseDelta	=	0.05,
-			UseWhileEquipped	=	FALSE,
-			DisplayName	=	Gun Tool Kit,
-			Icon	=	GunToolKit,
-			Tooltip = Tooltip_FixItems,
-			SurvivalGear = TRUE,
-		}
-
 
     fixing Fix ColtPeacemaker
     {
        Require : ColtPeacemaker,
 
-			 Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : GunToolKit=2; Aiming=3,
-			 Fixer : GunToolKit=3; Aiming=2,
 			 Fixer : ColtPeacemaker,
     }
 
@@ -32,9 +16,6 @@ module Firearms
     {
        Require : Glock17,
 
-			 Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : GunToolKit=2; Aiming=3,
-			 Fixer : GunToolKit=3; Aiming=2,
 			 Fixer : Glock17,
     }
 
@@ -42,31 +23,20 @@ module Firearms
     {
        Require : HuntingRifle_Sawn,
 
-			 Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : GunToolKit=2; Aiming=3,
-			 Fixer : GunToolKit=3; Aiming=2,
 			 Fixer : HuntingRifle,
-			 Fixer : HuntingRifle_Sawn,
     }
 
     fixing Fix M24Rifle
     {
        Require : M24Rifle,
 
-			 Fixer : GunToolKit=1; Aiming=8,
-			 Fixer : GunToolKit=2; Aiming=6,
-			 Fixer : GunToolKit=3; Aiming=4,
 			 Fixer : M24Rifle,
-			 Fixer : VarmintRifle,
     }
 
 		fixing Fix M16A2
     {
        Require : M16A2,
 
-			 Fixer : GunToolKit=1; Aiming=8,
-			 Fixer : GunToolKit=2; Aiming=6,
-			 Fixer : GunToolKit=3; Aiming=4,
 			 Fixer : M16A2,
     }
 
@@ -75,45 +45,27 @@ module Firearms
     {
        Require : Mossberg500,
 
-			 Fixer : GunToolKit=1; Aiming=4,
-			 Fixer : GunToolKit=2; Aiming=2,
-			 Fixer : GunToolKit=3,
 			 Fixer : Mossberg500,
-			 Fixer : Shotgun,
-			 Fixer : Mossberg500Tactical,
     }
 
 		fixing Fix Mossberg500Tactical
     {
        Require : Mossberg500Tactical,
 
-			 Fixer : GunToolKit=1; Aiming=4,
-			 Fixer : GunToolKit=2; Aiming=2,
-			 Fixer : GunToolKit=3,
 			 Fixer : Mossberg500Tactical,
-			 Fixer : Shotgun,
-			 Fixer : Mossberg500,
     }
 
 		fixing Fix Remington870Wood
     {
        Require : Remington870Wood,
 
-			 Fixer : GunToolKit=1; Aiming=4,
-			 Fixer : GunToolKit=2; Aiming=2,
-			 Fixer : GunToolKit=3,
 			 Fixer : Remington870Wood,
-			 Fixer : Remington870Sawnoff,
     }
 
 		fixing Fix Remington870Sawnoff
     {
        Require : Remington870Sawnoff,
 
-			 Fixer : GunToolKit=1; Aiming=4,
-			 Fixer : GunToolKit=2; Aiming=2,
-			 Fixer : GunToolKit=3,
-			 Fixer : Remington870Wood,
 			 Fixer : Remington870Sawnoff,
     }
 
@@ -121,23 +73,7 @@ module Firearms
     {
        Require : MP5,
 
-			 Fixer : GunToolKit=1; Aiming=7,
-			 Fixer : GunToolKit=2; Aiming=5,
-			 Fixer : GunToolKit=3; Aiming=3,
 			 Fixer : MP5,
     }
-
-		fixing Fix Shotgun
-		{
-			 Require : Shotgun,
-
-			 Fixer : GunToolKit=1; Aiming=4,
-			 Fixer : GunToolKit=2; Aiming=2,
-			 Fixer : GunToolKit=3,
-			 Fixer : Shotgun,
-			 Fixer : Mossberg500,
-			 Fixer : ShotgunSawnoff;
-			 Fixer : Mossberg500Tactical,
-		}
 
 }

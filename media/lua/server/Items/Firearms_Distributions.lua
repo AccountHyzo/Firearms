@@ -1,1629 +1,908 @@
-FirearmsDistributions = Distributions or {};
-
-local distributionTable = {
-
-    burgerkitchen =
-    {
-		counter ={
-
-			items = {
-			},
-
-			junk = {
-
-				items = {
-				},
-			},
-		}
-	},
-
-    medclinic =
-    {
-        counter =
-        {
-
-            items = {
-            }
-        }
-    },
-
-    medicalstorage = {
-        counter =
-        {
-
-            items = {
-            }
-        },
-
-        metal_shelves =
-        {
-
-            items = {
-
-            }
-        }
-    },
-
-    zippeestore =
-    {
-        counter = {
-
-            items = {
-            }
-        },
-
-        shelvesmag ={
-
-            items = {
-            }
-        },
-
-        crate = {
-
-            items = {
-            }
-        }
-    },
-
-    grocerystorage =
-    {
-        bin = {
-
-            items = {
-            }
-        },
-    },
-
-
-    grocery =
-    {
-
-        counter ={
-
-            items = {
-            },
-            junk = {
-
-                items = {
-
-                }
-            }
-        },
-
-        smallbox= {
-
-            items = {
-
-            }
-        },
-
-        shelvesmag ={
-
-            items = {
-
-            }
-        },
-
-        crate = {
-
-            items = {
-            }
-        }
-    },
-
-    gigamart =
-    {
-
-        counter ={
-
-            items = {
-            },
-            junk = {
-
-                items = {
-
-                }
-            }
-        },
-
-        shelvesmag ={
-
-            items = {
-
-            }
-        },
-
-        crate = {
-
-            items = {
-            }
-        }
-    },
-
-    fossoil =
-    {
-        counter ={
-
-            items = {
-            }
-        },
-
-        shelvesmag ={
-
-            items = {
-
-            }
-        },
-
-        crate = {
-
-            items = {
-            }
-        }
-    },
-
-	bedroom =
-	{
-
-        plankstash ={
-
-            items = {
-            }
-        },
-
-		sidetable = {
-
-			items = {
-			},
-
-			junk = {
-
-				items = {
-				},
-			},
-        },
-	},
-
-    loggingfactory =
-    {
-        crate = {
-
-            items = {
-            }
-        },
-    },
-
-    all =
-    {
-        plankstash ={
-            items = {
-                "Firearms.ColtPeacemaker",1,
-            }
-        },
-
-		locker ={
-        "Firearms.ColtPeacemaker",0.5,
-        "Firearms.Glock17", 0.25,
-        "Firearms.Glock17Mag", 0.05,
-        "Firearms.AmmoStock", 1,
-		},
-
-        inventorymale = {
-
-            items = {
-            "Firearms.ColtPeacemaker",0.05,
-            "Firearms.Glock17", 0.01,
-            "Firearms.Glock17Mag", 0.01,
-            }
-        },
-        inventoryfemale = {
-
-            items = {
-            "Firearms.ColtPeacemaker",0.05,
-            "Firearms.Glock17", 0.01,
-            "Firearms.Glock17Mag", 0.01,
-            }
-
-        },
-        shelvesmag ={
-
-            items = {
-            }
-        },
-
-		wardrobe = {
-    "Firearms.ColtPeacemaker",0.05,
-    "Firearms.Glock17", 0.01,
-    "Firearms.Glock17Mag", 0.01,
-    "Firearms.AmmoStock", 1,
-		},
-
-        crate = {
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.1,
-            }
-        },
-
-		counter = {
-
-			items = {
-      "Firearms.ColtPeacemaker", 0.1,
-			},
-
-			junk = {
-
-				items = {
-				},
-			},
-		},
-
-		sidetable = {
-
-			items = {
-			},
-
-			junk = {
-
-				items = {
-				},
-			},
-		},
-
-        bin = {
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.15,
-            }
-        },
-
-		officedrawers = {
-
-			items = {
-			},
-
-			junk = {
-
-				items = {
-				},
-			},
-		},
-
-        metal_shelves ={
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.1,
-            }
-        },
-
-        shelves ={
-
-            items = {
-            }
-        },
-
-        other = {
-
-            items = {
-            }
-        },
-    },
-
-    shed =
-    {
-        other ={
-
-            items = {
-            "Firearms.ColtPeacemaker",0.05,
-            "Firearms.Glock17", 0.01,
-            "Firearms.Glock17Mag", 0.01,
-            "Firearms.AmmoStock", 1,
-            },
-
-            junk = {
-
-                items = {
-                },
-            },
-        },
-
-        logs = {
-
-            items = {
-            }
-        },
-    },
-
-
-    plazastore1 =
-    {
-        counter ={
-
-            items = {
-            }
-        },
-    },
-
-    garagestorage =
-    {
-        other ={
-
-            items = {
-            "Firearms.ColtPeacemaker",0.1,
-            "Firearms.Glock17", 0.01,
-            "Firearms.Glock17Mag", 0.01,
-            "Firearms.AmmoStock", 1,
-            },
-
-            junk = {
-
-                items = {
-                },
-            },
-        },
-    },
-
-    garage =
-    {
-        metal_shelves ={
-
-            items = {
-            "Firearms.45Silencer", 0.5,
-            "Firearms.223Silencer", 0.5,
-            "Firearms.AmmoStock", 1,
-            }
-        },
-        crate = {
-
-            items = {
-            "Firearms.45Silencer", 0.5,
-            "Firearms.9mmSilencer", 0.5,
-            "Firearms.223Silencer", 0.5,
-            "Firearms.AmmoStock", 1,
-            }
-        }
-    },
-
-    motelbedroom =
-    {
-        wardrobe ={
-
-            items = {
-            }
-        },
-    },
-
-    lobby =
-    {
-        counter ={
-
-            items = {
-            }
-        },
-    },
-
-    bookstore =
-    {
-
-        other =
-        {
-
-            items = {
-            }
-        }
-    },
-
-    grocers =
-    {
-
-        smallcrate={
-
-            items = {
-            }
-        },
-
-        smallbox={
-
-            items = {
-            }
-        },
-    },
-
-    library =
-    {
-        counter ={
-
-            items = {
-            }
-        },
-    },
-
-    toolstore =
-    {
-        shelves ={
-
-            items = {
-            }
-        },
-
-        counter ={
-
-            items = {
-            }
-        },
-    },
-
-    bar =
-    {
-        shelves ={
-
-            items = {
-            },
-        },
-
-        counter ={
-
-            items = {
-            },
-        },
-
-        bin = {
-
-            items = {
-            }
-        },
-    },
-
-    policestorage = {
-        locker ={
-
-            items = {
-            "Firearms.Glock17", 1,
-            "Firearms.Glock17Mag", 3,
-            "Firearms.45Silencer", 0.1,
-            "Firearms.9mmSilencer", 0.1,
-            "Firearms.223Silencer", 0.05,
-            "Firearms.Mossberg500", 1,
-            "Firearms.Remington870Wood", 1,
-            "Firearms.Mossberg500Tactical", 4,
-            "Firearms.TacticalStock", 4,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.MP5", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            },
-        },
-
-        metal_shelves =
-        {
-
-            items = {
-            "Firearms.Glock17", 1,
-            "Firearms.Glock17Mag", 1,
-            "Firearms.45Silencer", 0.1,
-            "Firearms.9mmSilencer", 0.1,
-            "Firearms.223Silencer", 0.05,
-            "Firearms.Mossberg500", 2,
-            "Firearms.Mossberg500Tactical", 5,
-            "Firearms.TacticalStock", 5,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.Remington870Wood", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            }
-        },
-    },
-
-    armystorage = {
-        locker ={
-
-            items = {
-            "Firearms.Glock17", 3,
-            "Firearms.Glock17Mag", 2,
-            "Firearms.45Silencer", 1,
-            "Firearms.9mmSilencer", 1,
-            "Firearms.223Silencer", 0.5,
-            "Firearms.M24Rifle", 10,
-            "Firearms.ExtendedRecoilPad", 1,
-            "Firearms.Rifle_Bipod", 1,
-            "Firearms.M24Rifle", 0.5,
-            "Firearms.Mossberg500", 3,
-            "Firearms.Mossberg500Tactical", 2,
-            "Firearms.TacticalStock", 3,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.Remington870Wood", 3,
-            "Firearms.M16A2", 5,
-            "Firearms.MP5", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            },
-        },
-
-        metal_shelves =
-        {
-
-            items = {
-            "Firearms.Glock17", 1,
-            "Firearms.Glock17Mag", 2,
-            "Firearms.45Silencer", 1,
-            "Firearms.9mmSilencer", 1,
-            "Firearms.223Silencer", 0.5,
-            "Firearms.ExtendedRecoilPad", 1,
-            "Firearms.Rifle_Bipod", 1,
-            "Firearms.M24Rifle", 0.5,
-            "Firearms.Mossberg500", 3,
-            "Firearms.Mossberg500Tactical", 2,
-            "Firearms.TacticalStock", 3,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.Remington870Wood", 3,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            }
-        },
-    },
-
-    gunstore = {
-        counter ={
-
-            items = {
-            "Firearms.ColtPeacemaker", 2,
-            "Firearms.Glock17Mag", 2,
-            "Firearms.45Silencer", 2,
-            "Firearms.9mmSilencer", 2,
-            "Firearms.223Silencer", 2,
-            "Firearms.308Silencer", 1,
-            "Firearms.556Silencer", 0.1,
-            "Firearms.ExtendedRecoilPad", 1,
-            "Firearms.Rifle_Bipod", 1,
-            "Firearms.AmmoStock", 1,
-            "Firearms.Mossberg500", 3,
-            "Firearms.Mossberg500Tactical", 2,
-            "Firearms.TacticalStock", 3,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.Remington870Wood", 3,
-            "Firearms.MP5", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            "Firearms.GunToolKit", 5,
-            },
-            dontSpawnAmmo = true,
-        },
-
-        displaycase ={
-
-            items = {
-            "Firearms.ColtPeacemaker", 4,
-            "Firearms.Glock17", 15,
-            "Firearms.Glock17Mag", 2,
-            "Firearms.45Silencer", 2,
-            "Firearms.9mmSilencer", 2,
-            "Firearms.223Silencer", 2,
-            "Firearms.308Silencer", 1,
-            "Firearms.556Silencer", 0.1,
-            "Firearms.ExtendedRecoilPad", 1,
-            "Firearms.Rifle_Bipod", 1,
-            "Firearms.AmmoStock", 1,
-            "Firearms.M24Rifle", 0.5,
-            "Firearms.Mossberg500", 3,
-            "Firearms.Mossberg500Tactical", 2,
-            "Firearms.TacticalStock", 3,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.Remington870Wood", 3,
-            "Firearms.MP5", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            },
-            dontSpawnAmmo = true,
-        },
-
-        locker ={
-
-            items = {
-            "Firearms.ColtPeacemaker", 2,
-            "Firearms.Glock17", 1,
-            "Firearms.Glock17Mag", 2,
-            "Firearms.45Silencer", 2,
-            "Firearms.9mmSilencer", 2,
-            "Firearms.223Silencer", 2,
-            "Firearms.308Silencer", 1,
-            "Firearms.556Silencer", 0.1,
-            "Firearms.Rifle_Bipod", 1,
-            "Firearms.AmmoStock", 1,
-            "Firearms.M24Rifle", 0.5,
-            "Firearms.Mossberg500", 3,
-            "Firearms.Mossberg500Tactical", 2,
-            "Firearms.TacticalStock", 3,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.Remington870Wood", 3,
-            "Firearms.MP5", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            "Firearms.GunToolKit", 5,
-            },
-            dontSpawnAmmo = true,
-        },
-
-        metal_shelves ={
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.1,
-            "Firearms.GunToolKit", 5,
-            },
-            dontSpawnAmmo = true,
-        },
-    },
-
-    gunstorestorage ={
-        all={
-
-            items = {
-            "Firearms.ColtPeacemaker", 5,
-            "Firearms.Glock17", 15,
-            "Firearms.Glock17Mag", 2,
-            "Firearms.45Silencer", 2,
-            "Firearms.9mmSilencer", 2,
-            "Firearms.223Silencer", 2,
-            "Firearms.308Silencer", 1,
-            "Firearms.556Silencer", 0.1,
-            "Firearms.ExtendedRecoilPad", 1,
-            "Firearms.Rifle_Bipod", 1,
-            "Firearms.M24Rifle", 0.5,
-            "Firearms.Rifle_Bipod", 2,
-            "Firearms.AmmoStock", 2,
-            "Firearms.Mossberg500", 3,
-            "Firearms.Mossberg500Tactical", 2,
-            "Firearms.TacticalStock", 3,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.Remington870Wood", 3,
-            "Firearms.MP5", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            "Firearms.GunToolKit", 5,
-            },
-
-            dontSpawnAmmo = true,
-        },
-    },
-
-    mechanic = {
-        wardrobe ={
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.1,
-            "Firearms.AmmoStock", 1,
-            "Firearms.GunToolKit", 0.5,
-            }
-        },
-
-        metal_shelves ={
-
-            items = {
-            }
-        },
-    },
-
-    clothesstore = {
-        counter ={
-
-            items = {
-            },
-        },
-    },
-
-    motelroom = {
-        bin = {
-
-            items = {
-            }
-        },
-        other ={
-
-            items = {
-            },
-        },
-    },
-
-    motelroomoccupied = {
-
-        bin = {
-
-            items = {
-            }
-        },
-
-        other ={
-
-            items = {
-            },
-        },
-    },
-
-    empty = {
-        all ={
-
-            items = {
-            },
-        },
-    },
-
-    cafe = {
-        counter = {
-
-            items = {
-            },
-        },
-
-        bin = {
-
-            items = {
-            },
-        },
-    },
-
-    restaurant = {
-        counter = {
-
-            items = {
-            },
-        },
-    },
-
-    post = {
-        counter = {
-
-            items = {
-            },
-        },
-    },
-
-    poststorage = {
-        all = {
-
-            items = {
-            },
-        },
-    },
-
-    generalstorestorage = {
-        other = {
-
-            items = {
-            },
-        },
-    },
-
-    generalstore = {
-        other = {
-
-            items = {
-            },
-        },
-    },
-
-    laundry = {
-        counter ={
-
-            items = {
-            },
-        },
-    },
-
-    furniturestore = {
-        freezer =
-        {
-            items = {
-            }
-        },
-
-        fridge ={
-            items = {
-            }
-        },
-
-        wardrobe ={
-            items = {
-            }
-        },
-
-        counter ={
-            items = {
-            },
-        },
-    },
-
-    storageunit = {
-        all ={
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.6,
-            "Firearms.Glock17", 0.1,
-            "Firearms.Glock17Mag", 0.1,
-            "Firearms.45Silencer", 0.2,
-            "Firearms.9mmSilencer", 0.2,
-            "Firearms.223Silencer", 0.2,
-            "Firearms.308Silencer", 0.1,
-            "Firearms.ExtendedRecoilPad", 0.1,
-            "Firearms.Rifle_Bipod", 0.1,
-            "Firearms.M24Rifle", 0.05,
-            "Firearms.Mossberg500", 1,
-            "Firearms.Remington870Wood", 1,
-            "Firearms.Mossberg500Tactical", 1,
-            "Firearms.MP5", 0.1,
-            "Firearms.MP5Mag", 1,
-            "Firearms.MP5_Stock_Detracted", 0.2,
-            "Firearms.GunToolKit", 0.5,
-            },
-        },
-    },
-
-    fishingstorage= {
-        counter ={
-
-            items = {
-            }
-        },
-
-        crate ={
-
-            items = {
-            }
-        },
-    },
-
-    theatre = {
-        counter ={
-
-            items = {
-            },
-        },
-    },
-
-    theatrestorage = {
-        crate ={
-
-            items = {
-            },
-        },
-    },
-
-    cornerstore = {
-
-        counter ={
-
-            items = {
-            }
-        },
-
-        shelvesmag ={
-
-            items = {
-            },
-        },
-    },
-
-    housewarestore = {
-        shelves ={
-
-            items = {
-            },
-        },
-    },
-
-    shoestore = {
-
-        counter ={
-
-            items = {
-            },
-        },
-    },
-
-    sportstorage = {
-        counter ={
-
-            items = {
-            "Firearms.GunToolKit", 1,
-            },
-        },
-    },
-
-    giftstorage = {
-        crate ={
-
-            items = {
-            },
-        },
-    },
-
-    giftstore = {
-        shelves ={
-
-            items = {
-            },
-        },
-
-        counter ={
-
-            items = {
-            },
-        },
-    },
-
-    electronicsstore = {
-        counter ={
-
-            items = {
-            }
-        },
-
-        shelves ={
-
-            items = {
-            }
-        },
-    },
-
-    sewingstore = {
-        counter ={
-
-            items = {
-            }
-        },
-    },
-
-    departmentstore = {
-        counter = {
-
-            items = {
-            },
-        },
-    },
-
-    hall = {
-        counter = {
-
-            items = {
-            },
-        },
-    },
-
-    gasstore = {
-
-        shelves = {
-
-            items = {
-            }
-        },
-
-        counter = {
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.1,
-            }
-        }
-    },
-
-    gasstorage = {
-        metal_shelves = {
-
-            items = {
-            }
-        },
-    },
-
-    farmstorage = {
-        all = {
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.1,
-            "Firearms.GunToolKit", 1,
-            }
-        },
-    },
-
-    changeroom = {
-        locker = {
-
-            items = {
-            }
-        },
-
-        counter = {
-
-            items = {
-            }
-        },
-    },
-
-    hunting = {
-        locker = {
-
-            items = {
-            "Firearms.ColtPeacemaker", 1,
-            "Firearms.45Silencer", 0.2,
-            "Firearms.9mmSilencer", 0.2,
-            "Firearms.223Silencer", 0.2,
-            "Firearms.308Silencer", 0.1,
-            "Firearms.ExtendedRecoilPad", 0.1,
-            "Firearms.Rifle_Bipod", 0.1,
-            "Firearms.M24Rifle", 0.05,
-            "Firearms.AmmoStock", 1,
-            "Firearms.Mossberg500", 3,
-            "Firearms.Remington870Wood", 3,
-            "Firearms.MP5", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            "Firearms.GunToolKit", 3,
-            }
-        },
-
-        metal_shelves ={
-
-            items = {
-            },
-        },
-
-        other = {
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.1,
-            }
-        },
-    },
-
-    camping = {
-
-
-        all = {
-
-            items = {
-            "Firearms.ColtPeacemaker", 0.1,
-            "Firearms.AmmoStock", 0.1,
-            "Firearms.Mossberg500", 0.1,
-            "Firearms.GunToolKit", 1,
-            }
-        },
-    },
-
-    Bag_WeaponBag = {
-
-        items = {
-            "Firearms.ColtPeacemaker",5,
-            "Firearms.Glock17", 1,
-            "Firearms.Glock17Mag", 2,
-            "Firearms.AmmoStock", 1,
-            "Firearms.Mossberg500", 3,
-            "Firearms.Mossberg500Tactical", 2,
-            "Firearms.TacticalStock", 3,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.Remington870Wood", 3,
-            "Firearms.MP5", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            "Firearms.GunToolKit", 5,
-        },
-        fillRand = 0,
-    },
-
-    Bag_SurvivorBag = {
-
-        items = {
-            "Firearms.ColtPeacemaker",5,
-            "Firearms.Glock17", 1,
-            "Firearms.Glock17Mag", 2,
-            "Firearms.45Silencer", 2,
-            "Firearms.9mmSilencer", 2,
-            "Firearms.223Silencer", 1,
-            "Firearms.308Silencer", 1,
-            "Firearms.556Silencer", 0.1,
-            "Firearms.AmmoStock", 1,
-            "Firearms.Mossberg500", 3,
-            "Firearms.Mossberg500Tactical", 2,
-            "Firearms.TacticalStock", 3,
-            "Firearms.ShotgunStock", 4,
-            "Firearms.LightShotgunStock", 4,
-            "Firearms.Remington870Wood", 3,
-            "Firearms.MP5", 1,
-            "Firearms.MP5Mag", 3,
-            "Firearms.MP5_Stock_Detracted", 1,
-            "Firearms.GunToolKit", 1,
-        },
-        fillRand = 0,
-    },
-
-    Bag_WorkerBag = {
-
-        items = {
-        },
-        fillRand = 1,
-    },
-
-    Toolbox = {
-
-        items = {
-        },
-        fillRand = 1,
-    },
-
-    Garbagebag = {
-
-        items = {
-        },
-        fillRand = 2,
-    },
-
-    Carpenter = {
-        counter = {
-
-            items = {
-            }
-        },
-    },
-
-    Electrician = {
-        counter = {
-
-            items = {
-            }
-        },
-    },
-
-    ShotgunCache1 = {
-        ShotgunBox = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 1,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.ExtendedRecoilPad", 0.1,
-                "Firearms.Rifle_Bipod", 0.1,
-                "Firearms.AmmoStock", 1,
-                "Firearms.M24Rifle", 0.05,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 1,
-            }
-        },
-
-        Bag_DuffelBagTINT = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 1,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.ExtendedRecoilPad", 0.1,
-                "Firearms.Rifle_Bipod", 0.1,
-                "Firearms.AmmoStock", 1,
-                "Firearms.M24Rifle", 0.05,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 1,
-            },
-            fillRand=3,
-        },
-    },
-
-    ShotgunCache2 = {
-        ShotgunBox = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 1,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 1,
-            }
-        },
-
-        counter = {
-
-            items = {
-            }
-        },
-    },
-
-    ToolsCache1 = {
-        ToolsBox = {
-
-            items = {
-            },
-        },
-
-        counter = {
-
-            items = {
-            },
-        },
-
-        Bag_DuffelBagTINT = {
-
-            items = {
-            },
-            fillRand = 3,
-        },
-    },
-
-    GunCache1 = {
-        GunBox = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.ExtendedRecoilPad", 0.1,
-                "Firearms.Rifle_Bipod", 0.1,
-                "Firearms.M24Rifle", 0.05,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 5,
-            },
-            dontSpawnAmmo = true,
-        },
-
-        counter = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.AmmoStock", 1,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 5,
-            },
-        },
-
-        Bag_DuffelBagTINT = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.ExtendedRecoilPad", 0.1,
-                "Firearms.Rifle_Bipod", 0.1,
-                "Firearms.M24Rifle", 0.05,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 5,
-            },
-            fillRand = 3,
-        },
-    },
-
-    GunCache2 = {
-        GunBox = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.ExtendedRecoilPad", 0.1,
-                "Firearms.Rifle_Bipod", 0.1,
-                "Firearms.M24Rifle", 0.05,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 5,
-            },
-            dontSpawnAmmo = true,
-        },
-
-        Bag_DuffelBagTINT = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.ExtendedRecoilPad", 0.1,
-                "Firearms.Rifle_Bipod", 0.1,
-                "Firearms.M24Rifle", 0.05,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-            },
-            fillRand=3,
-        },
-    },
-
-    SurvivorCache1 = {
-
-        SurvivorCrate = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.ExtendedRecoilPad", 0.1,
-                "Firearms.Rifle_Bipod", 0.1,
-                "Firearms.M24Rifle", 0.05,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 1,
-            }
-        },
-    },
-
-    SurvivorCache2 = {
-
-        SurvivorCrate = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-            }
-        },
-    },
-
-    security =
-    {
-        locker =
-        {
-
-            items = {
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-            },
-            dontSpawnAmmo = true,
-        },
-    },
-
-    armysurplus = {
-        shelves = {
-
-            items = {
-                "Firearms.ColtPeacemaker", 4,
-                "Firearms.ColtPeacemaker", 4,
-                "Firearms.45Silencer", 0.2,
-                "Firearms.223Silencer", 0.2,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Base.AssaultRifle", 1,
-                "Firearms.M16A2", 1,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 5,
-            },
-        },
-    },
-
-    armyhanger = {
-        metal_shelves = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.ExtendedRecoilPad", 1,
-                "Firearms.Rifle_Bipod", 1,
-                "Firearms.M24Rifle", 0.5,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.M16A2", 5,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 5,
-            },
-        },
-
-        counter = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 2,
-                "Firearms.9mmSilencer", 2,
-                "Firearms.223Silencer", 2,
-                "Firearms.308Silencer", 1,
-                "Firearms.556Silencer", 0.1,
-                "Firearms.ExtendedRecoilPad", 1,
-                "Firearms.Rifle_Bipod", 1,
-                "Firearms.M24Rifle", 0.5,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.M16A2", 5,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 5,
-            },
-        },
-
-        locker = {
-
-            items = {
-                "Firearms.ColtPeacemaker",5,
-                "Firearms.Glock17", 1,
-                "Firearms.Glock17Mag", 2,
-                "Firearms.45Silencer", 5,
-                "Firearms.9mmSilencer", 5,
-                "Firearms.9mmSilencer", 5,
-                "Firearms.223Silencer", 5,
-                "Firearms.308Silencer", 5,
-                "Firearms.556Silencer", 5,
-                "Firearms.AmmoStock", 1,
-                "Firearms.Mossberg500", 3,
-                "Firearms.Mossberg500Tactical", 2,
-                "Firearms.TacticalStock", 3,
-                "Firearms.ShotgunStock", 4,
-                "Firearms.LightShotgunStock", 4,
-                "Firearms.Remington870Wood", 3,
-                "Firearms.M16A2", 5,
-                "Firearms.MP5", 1,
-                "Firearms.MP5Mag", 3,
-                "Firearms.MP5_Stock_Detracted", 1,
-                "Firearms.GunToolKit", 5,
-            },
-        },
-    },
-}
-
-table.insert(Distributions, 1, distributionTable);
-
-SuburbsDistributions = distributionTable;
+require 'Items/SuburbsDistributions'
+require 'Items/ProceduralDistributions'
+
+--all
+--inventorymale
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.5);
+--inventoryfemale
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.5);
+
+--policestorage
+--locker
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 1.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 2);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 2);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.8);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 1);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 1);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.05);
+
+--armystorage
+--locker
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 1.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 2);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 2);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.8);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 1);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 1);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["armystorage"]["locker"].items, 0.05);
+
+
+--gunstore
+--counter
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 1.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 2);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 2);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.8);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 1);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 1);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 0.05);
+
+--displaycase
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 1.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 2);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 2);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.8);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 1);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 1);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.05);
+
+--locker
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 1.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 2);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 2);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.8);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 1);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 1);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, "Firearms.556Silencer");
+table.insert(SuburbsDistributions["gunstore"]["locker"].items, 0.05);
+--metal_shelves
+table.insert(SuburbsDistributions["gunstore"]["metal_shelves"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["gunstore"]["metal_shelves"].items, 0.5);
+
+--gunstorestorage
+--all
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 1.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 2);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 2);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.8);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 1);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 1);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.05);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.05);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.05);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.05);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.05);
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, "Firearms.556Silencer");
+table.insert(SuburbsDistributions["gunstorestorage"]["all"].items, 0.05);
+
+--mechanic
+--wardrobe
+table.insert(SuburbsDistributions["mechanic"]["wardrobe"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["mechanic"]["wardrobe"].items, 0.1);
+table.insert(SuburbsDistributions["mechanic"]["wardrobe"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["mechanic"]["wardrobe"].items, 0.1);
+
+--cafe
+--counter
+table.insert(SuburbsDistributions["cafe"]["counter"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["cafe"]["counter"].items, 0.1);
+table.insert(SuburbsDistributions["cafe"]["counter"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["cafe"]["counter"].items, 0.1);
+
+--restaurant
+--counter
+table.insert(SuburbsDistributions["restaurant"]["counter"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["restaurant"]["counter"].items, 0.1);
+table.insert(SuburbsDistributions["restaurant"]["counter"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["restaurant"]["counter"].items, 0.1);
+
+--cornerstore
+--counter
+table.insert(SuburbsDistributions["cornerstore"]["counter"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["cornerstore"]["counter"].items, 0.1);
+table.insert(SuburbsDistributions["cornerstore"]["counter"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["cornerstore"]["counter"].items, 0.1);
+
+--gasstore
+--counter
+table.insert(SuburbsDistributions["gasstore"]["counter"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["gasstore"]["counter"].items, 0.1);
+table.insert(SuburbsDistributions["gasstore"]["counter"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["gasstore"]["counter"].items, 0.1);
+
+--farmstorage
+--all
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, 0.1);
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, 0.1);
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, 0.1);
+
+--storageunit
+--all
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.25);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.05);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.1);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.01);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.05);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.05);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 1);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.001);
+
+--hunting
+--locker
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 1.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 2);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 2);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.8);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 1);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 1);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.05);
+--other
+table.insert(SuburbsDistributions["hunting"]["other"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["hunting"]["other"].items, 0.05);
+
+--bag
+--Bag_WeaponBag
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 1.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 2);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 2);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.8);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 1);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 1);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.05);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.05);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.05);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.05);
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["Bag_WeaponBag"].items, 0.05);
+
+--Bag_SurvivorBag
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 1.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 2);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 2);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.8);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 1);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 1);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.5);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.05);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.05);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.05);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.05);
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["Bag_SurvivorBag"].items, 0.05);
+
+--ShotgunCache1
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 1.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 2);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 2);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.8);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 1);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 1);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.05);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.05);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.05);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.05);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 0.05);
+
+--ShotgunCache2
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 1.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 2);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 2);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.8);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 1);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 1);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.5);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.05);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.05);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.05);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.05);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.05);
+
+--GunCache1
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 1.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 2);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 2);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.8);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 1);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 1);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.05);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.05);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.05);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.05);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.05);
+
+--GunCache2
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 1.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 2);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 2);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.8);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 1);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 1);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.5);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.05);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.05);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.05);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.05);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 0.05);
+
+--SurvivorCache1
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 1.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 2);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 2);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.8);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 1);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 1);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.05);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.05);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.05);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.05);
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["SurvivorCache1"]["SurvivorCrate"].items, 0.05);
+
+--SurvivorCache2
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 1.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 2);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 2);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.8);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 1);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 1);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.5);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.05);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.05);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.05);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.05);
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["SurvivorCache2"]["SurvivorCrate"].items, 0.05);
+
+--security
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["security"]["locker"].items, 2);
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["security"]["locker"].items, 2);
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["security"]["locker"].items, 0.8);
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["security"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["security"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["security"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["security"]["locker"].items, 1);
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["security"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["security"]["locker"].items, 1);
+table.insert(SuburbsDistributions["security"]["locker"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["security"]["locker"].items, 0.5);
+
+--armysurplus
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 1.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 2);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 2);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.8);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 1);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 1);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.05);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.05);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.05);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.05);
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["armysurplus"]["shelves"].items, 0.05);
+
+--armyhanger
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 1.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 2);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 2);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.8);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 1);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 1);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["armyhanger"]["metal_shelves"].items, 0.05);
+
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 1.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 2);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 2);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.8);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 1);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 1);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["armyhanger"]["counter"].items, 0.05);
+
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.ColtPeacemaker");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 1.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.Remington870Wood");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 2);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.Mossberg500");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 2);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.Mossberg500Tactical");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.8);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.TacticalStock");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.ShotgunStock");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.LightShotgunStock");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.AmmoStock");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.MP5");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.MP5Mag");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 1);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.MP5_Stock_Detracted");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.ExtendedRecoilPad");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.Rifle_Bipod");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.Glock17");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 1);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.Glock17Mag");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.45Silencer");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.9mmSilencer");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.223Silencer");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.308Silencer");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.M24Rifle");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.05);

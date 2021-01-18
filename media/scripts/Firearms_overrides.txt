@@ -1,6 +1,19 @@
 module Base
 {
 
+	model ShotgunDoubleBarrelSawn_OPEN
+	{
+	mesh = Weapons/Firearm/DoubleBarrelSawn_OPEN,
+	texture = Weapons/firearm/Mossberg500_Wood,
+	}
+
+
+	model ShotgunDoubleBarrel_OPEN
+	{
+	mesh = Weapons/Firearm/DoubleBarrel_OPEN,
+	texture = Weapons/firearm/Mossberg500_Wood,
+	}
+
 	sound BulletOutVarmint
 	{
 		category = Item,
@@ -91,9 +104,9 @@ module Base
 	item DoubleBarrelShotgun
     {
         ImpactSound	=	null,
-        MaxRange	=	9,
+        MaxRange	=	10,
         RangeFalloff	=	TRUE,
-        WeaponSprite	=	DoubleBarrelShotgun,
+        WeaponSprite	=	Firearms.DoubleBarrel,
         SoundVolume	=	200,
         MinAngle	=	0.9,
         Type	=	Weapon,
@@ -124,7 +137,7 @@ module Base
         MaxDamage	=	2.7,
         KnockdownMod	=	8,
         SplatBloodOnNoDeath	=	TRUE,
-        Icon	=	ShotgunDoublebarrel,
+        Icon	=	DoubleBarrel,
         RunAnim	=	Run_Weapon2,
         CriticalChance = 80,
         CritDmgMultiplier = 2,
@@ -164,6 +177,73 @@ module Base
         RackAfterShoot = FALSE,
         haveChamber = FALSE,
     }
+
+		item DoubleBarrelShotgunSawnoff
+	    {
+	        ImpactSound	=	null,
+	        MaxRange	=	8,
+	        RangeFalloff	=	TRUE,
+	        WeaponSprite	=	Firearms.DoubleBarrelSawn,
+	        SoundVolume	=	200,
+	        MinAngle	=	0.657,
+	        Type	=	Weapon,
+	        KnockBackOnNoDeath	=	TRUE,
+	        Ranged	=	TRUE,
+	        ProjectileCount	=	5,
+	        ConditionLowerChanceOneIn	=	60,
+	        Weight	=	4,
+	        SplatNumber	=	5,
+	        PushBackMod	=	0.8,
+	        SubCategory	=	Firearm,
+	        AimingMod	=	2,
+	        ConditionMax	=	10,
+	        ShareDamage	=	FALSE,
+	        MaxHitCount	=	6,
+	        IsAimedHandWeapon	=	TRUE,
+	        IsAimedFirearm	=	TRUE,
+	        DoorDamage	=	30,
+	        UseEndurance	=	FALSE,
+	        DisplayName	=	Sawn Off Double Barrel Shotgun,
+	        MinRange	=	0.67,
+	        SwingTime	=	2,
+	        AngleFalloff	=	TRUE,
+	        MultipleHitConditionAffected	=	FALSE,
+	        SwingSound	=	FirearmShotgun,
+	        SoundRadius	=	200,
+	        MinDamage	=	2,
+	        MaxDamage	=	2.7,
+	        KnockdownMod	=	8,
+	        SplatBloodOnNoDeath	=	TRUE,
+	        Icon	=	DoubleBarrelSawn,
+	        RunAnim	=	Run_Weapon2,
+	        CriticalChance = 80,
+	        CritDmgMultiplier = 2,
+	        AimingPerkCritModifier = 4,
+	        HitChance = 80,
+	        AimingPerkHitChanceModifier = 5,
+	        RecoilDelay = 50,
+	        SoundGain = 2,
+	        ReloadTime = 25,
+	        AimingTime = 20,
+	        RequiresEquippedBothHands = TRUE,
+	        BreakSound  =   BreakMetalItem,
+	        ShellFallSound = ShotgunShellHitGround,
+	        MetalValue = 45,
+	        TwoHandWeapon = TRUE,
+	        AmmoBox = ShotgunShellsBox,
+	        MaxAmmo = 2,
+	        InsertAmmoSound = StormyShotgunInsertRound,
+	        EjectAmmoSound = Stormy9mmClipEject,
+	        RackSound = stormyShotgunPump,
+	        AmmoType = Base.ShotgunShells,
+	        WeaponReloadType = doublebarrelshotgunsawn,
+	        JamGunChance = 0,
+	        AttachmentType = Rifle,
+	        InsertAllBulletsReload = TRUE,
+	        RackAfterShoot = FALSE,
+	        haveChamber = FALSE,
+	    }
+
 
 		item Shotgun
 		{
@@ -325,7 +405,7 @@ module Base
 	{
 			ImpactSound	=	null,
 			MaxRange	=	7,
-			WeaponSprite	=	Handgun03,
+			WeaponSprite	=	Firearms.M9,
 			SoundVolume	=	30,
 			MinAngle	=	0.95,
 			Type	=	Weapon,
@@ -359,7 +439,7 @@ module Base
 			SplatSize	=	3,
 			KnockdownMod	=	2,
 			SplatBloodOnNoDeath	=	TRUE,
-			Icon	=	HandGun,
+			Icon	=	M9,
 			RunAnim	=	Run_Weapon2,
 			CriticalChance	=	20,
 			CritDmgMultiplier = 4,
@@ -385,9 +465,10 @@ module Base
 			WeaponReloadType = handgun,
 			JamGunChance = 2,
 			ModelWeaponPart = Laser Laser laser laser,
-			ModelWeaponPart = RedDot Reddot reddot reddot,
+			ModelWeaponPart = RedDot Firearms.Reddot_Small reddot reddot,
 			ModelWeaponPart = Firearms.9mmSilencer Firearms.Silencer silencer silencer,
-			 ModelWeaponPart = Firearms.ImprovisedSilencer Firearms.Silencer_Improvised silencer silencer,
+			ModelWeaponPart = Firearms.ImprovisedSilencer Firearms.Silencer_Improvised silencer silencer,
+			ModelWeaponPart = Firearms.9mmCompensator Firearms.Compensator_Pistol silencer silencer,
 			AttachmentType = Holster,
 }
 
@@ -450,7 +531,7 @@ module Base
         InsertAmmoSound = Stormy9mmClipLoad,
         EjectAmmoSound = Stormy9mmClipEject,
 				ModelWeaponPart = Laser Laser laser laser,
-			 	ModelWeaponPart = RedDot Reddot reddot reddot,
+				ModelWeaponPart = RedDot Firearms.Reddot_Small reddot reddot,
 			 	ModelWeaponPart = Firearms.45Silencer Firearms.Silencer silencer silencer,
 			 	ModelWeaponPart = Firearms.ImprovisedSilencer Firearms.Silencer_Improvised silencer silencer,
         RackSound = Stormy9mmRack,
@@ -1161,7 +1242,7 @@ module Base
 				        Weight = 0.2,
 				        WeightModifier = 0.2,
 				        AimingTimeModifier = 5,
-				        MountOn = Pistol; Pistol3; Firearms.Glock17; Firearms.HuntingRifle_Sawn; Shotgun; ShotgunSawnoff; Firearms.Remington870Sawnoff; Firearms.Mossberg500; Firearms.Mossberg500Tactical; Firearms.Remington870Wood; Firearms.MP5; AssaultRifle; AssaultRifle2; Firearms.M24Rifle; Firearms.M16A2,
+				        MountOn = Pistol; Pistol2; Pistol3; Firearms.Glock17; Firearms.HuntingRifle_Sawn; Shotgun; ShotgunSawnoff; Firearms.Remington870Sawnoff; Firearms.Mossberg500; Firearms.Mossberg500Tactical; Firearms.Remington870Wood; Firearms.MP5; AssaultRifle; AssaultRifle2; Firearms.M24Rifle; Firearms.M16A2,
 				        PartType = Scope,
 				        Tooltip = Tooltip_RedDot,
 				        MetalValue = 15,
@@ -1209,144 +1290,5 @@ module Base
 				        Tooltip = Tooltip_ChokeTubeImproved,
 				        MetalValue = 12,
 				    }
-
-fixing Fix Pistol
-{
-	 Require : Pistol,
-
-	 Fixer : GunToolKit=1; Aiming=5,
-	 Fixer : GunToolKit=2; Aiming=3,
-	 Fixer : GunToolKit=3; Aiming=2,
-	 Fixer : Pistol,
-}
-
-fixing Fix Pistol2
-{
-	 Require : Pistol2,
-
-	 Fixer : GunToolKit=1; Aiming=5,
-	 Fixer : GunToolKit=2; Aiming=3,
-	 Fixer : GunToolKit=3; Aiming=2,
-	 Fixer : Pistol2,
-}
-
-fixing Fix Pistol3
-{
-	 Require : Pistol3,
-
-	 Fixer : GunToolKit=1; Aiming=5,
-	 Fixer : GunToolKit=2; Aiming=3,
-	 Fixer : GunToolKit=3; Aiming=2,
-	 Fixer : Pistol3,
-}
-
-fixing Fix Revolver
-{
-	 Require : Revolver,
-
-	 Fixer : GunToolKit=1; Aiming=5,
-	 Fixer : GunToolKit=2; Aiming=3,
-	 Fixer : GunToolKit=3; Aiming=2,
-	 Fixer : Revolver,
-}
-
-fixing Fix Revolver_Long
-{
-	 Require : Revolver_Long,
-
-	 Fixer : GunToolKit=1; Aiming=5,
-	 Fixer : GunToolKit=2; Aiming=3,
-	 Fixer : GunToolKit=3; Aiming=2,
-	 Fixer : Revolver_Long,
-}
-
-fixing Fix Revolver_Short
-{
-	 Require : Revolver_Short,
-
-	 Fixer : GunToolKit=1; Aiming=5,
-	 Fixer : GunToolKit=2; Aiming=3,
-	 Fixer : GunToolKit=3; Aiming=2,
-	 Fixer : Revolver_Short,
-}
-
-fixing Fix Shotgun
-{
-	 Require : Shotgun,
-
-	 Fixer : GunToolKit=1; Aiming=4,
-	 Fixer : GunToolKit=2; Aiming=2,
-	 Fixer : GunToolKit=3,
-	 Fixer : Shotgun,
-	 Fixer : Mossberg500,
-	 Fixer : ShotgunSawnoff;
-	 Fixer : Mossberg500Tactical,
-}
-
-fixing Fix DoubleBarrelShotgun
-{
-	 Require : DoubleBarrelShotgun,
-
-	 Fixer : GunToolKit=1; Aiming=4,
-	 Fixer : GunToolKit=2; Aiming=2,
-	 Fixer : GunToolKit=3,
-	 Fixer : DoubleBarrelShotgun,
-	 Fixer : DoubleBarrelShotgun,
-}
-
-fixing Fix ShotgunSawnoff
-{
-	 Require : ShotgunSawnoff,
-
-	 Fixer : GunToolKit=1; Aiming=4,
-	 Fixer : GunToolKit=2; Aiming=2,
-	 Fixer : GunToolKit=3,
-	 Fixer : ShotgunSawnoff;
-	 Fixer : Shotgun,
-	 Fixer : Mossberg500,
-	 Fixer : Mossberg500Tactical,
-}
-
-fixing Fix Hunting Rifle
-{
-	 Require : HuntingRifle,
-
-	 Fixer : GunToolKit=1; Aiming=5,
-	 Fixer : GunToolKit=2; Aiming=3,
-	 Fixer : GunToolKit=3; Aiming=2,
-	 Fixer : HuntingRifle,
-}
-
-fixing Fix Varmint Rifle
-{
-	 Require : VarmintRifle,
-
-	 Fixer : GunToolKit=1; Aiming=5,
-	 Fixer : GunToolKit=2; Aiming=3,
-	 Fixer : GunToolKit=3; Aiming=2,
-	 Fixer : M24Rifle,
-	 Fixer : VarmintRifle,
-}
-
-fixing Fix Assault Rifle
-{
-	 Require : AssaultRifle,
-
-	 Fixer : GunToolKit=1; Aiming=8,
-	 Fixer : GunToolKit=2; Aiming=6,
-	 Fixer : GunToolKit=3; Aiming=4,
-	 Fixer : AssaultRifle,
-	 Fixer : M16A2,
-}
-
-fixing Fix AssaultRifle2
-{
-	 Require : AssaultRifle2,
-
-	 Fixer : GunToolKit=1; Aiming=8,
-	 Fixer : GunToolKit=2; Aiming=6,
-	 Fixer : GunToolKit=3; Aiming=4,
-	 Fixer : AssaultRifle2,
-}
 
 }

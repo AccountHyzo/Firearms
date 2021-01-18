@@ -1,0 +1,929 @@
+FirearmsDistributions = Distributions or {};
+
+local distributionTable = {
+
+    all =
+    {
+        plankstash ={
+            items = {
+                "Firearms.ColtPeacemaker",1,
+            }
+        },
+
+		locker ={
+        "Firearms.ColtPeacemaker",0.5,
+        "Firearms.Glock17", 0.25,
+        "Firearms.Glock17Mag", 0.05,
+        "Firearms.AmmoStock", 1,
+		},
+
+        inventorymale = {
+
+            items = {
+            "Firearms.ColtPeacemaker",0.05,
+            "Firearms.Glock17", 0.01,
+            "Firearms.Glock17Mag", 0.01,
+            }
+        },
+        inventoryfemale = {
+
+            items = {
+            "Firearms.ColtPeacemaker",0.05,
+            "Firearms.Glock17", 0.01,
+            "Firearms.Glock17Mag", 0.01,
+            }
+
+        },
+
+		wardrobe = {
+    "Firearms.ColtPeacemaker",0.05,
+    "Firearms.Glock17", 0.01,
+    "Firearms.Glock17Mag", 0.01,
+    "Firearms.AmmoStock", 1,
+		},
+
+        crate = {
+            items = {
+            "Firearms.ColtPeacemaker", 0.1,
+            }
+        },
+
+		counter = {
+			items = {
+      "Firearms.ColtPeacemaker", 0.1,
+			},
+		},
+
+        bin = {
+
+            items = {
+            "Firearms.ColtPeacemaker", 0.15,
+            }
+        },
+
+        metal_shelves ={
+
+            items = {
+            "Firearms.ColtPeacemaker", 0.1,
+            }
+        },
+
+    },
+
+    shed =
+    {
+        other ={
+
+            items = {
+            "Firearms.ColtPeacemaker",0.05,
+            "Firearms.Glock17", 0.01,
+            "Firearms.Glock17Mag", 0.01,
+            "Firearms.AmmoStock", 1,
+            },
+        },
+    },
+
+    garagestorage =
+    {
+        other ={
+
+            items = {
+            "Firearms.ColtPeacemaker",0.1,
+            "Firearms.Glock17", 0.01,
+            "Firearms.Glock17Mag", 0.01,
+            "Firearms.AmmoStock", 1,
+            },
+        },
+    },
+
+    garage =
+    {
+        metal_shelves ={
+
+            items = {
+            "Firearms.45Silencer", 0.5,
+            "Firearms.223Silencer", 0.5,
+            "Firearms.AmmoStock", 1,
+            }
+        },
+        crate = {
+
+            items = {
+            "Firearms.45Silencer", 0.5,
+            "Firearms.9mmSilencer", 0.5,
+            "Firearms.223Silencer", 0.5,
+            "Firearms.AmmoStock", 1,
+            }
+        }
+    },
+
+    bar =
+    {
+
+        counter ={
+
+            items = {
+            "Firearms.Mossberg500", 1,
+            "Firearms.Remington870Wood", 1,
+            "Firearms.ColtPeacemaker", 2,
+            },
+        },
+    },
+
+    policestorage = {
+        locker ={
+
+            items = {
+            "Firearms.Glock17", 1,
+            "Firearms.Glock17Mag", 3,
+            "Firearms.45Silencer", 0.1,
+            "Firearms.9mmSilencer", 0.1,
+            "Firearms.223Silencer", 0.05,
+            "Firearms.Mossberg500", 1,
+            "Firearms.Remington870Wood", 1,
+            "Firearms.Mossberg500Tactical", 4,
+            "Firearms.TacticalStock", 4,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.MP5", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+            },
+        },
+
+        metal_shelves =
+        {
+
+            items = {
+            "Firearms.Glock17", 1,
+            "Firearms.Glock17Mag", 1,
+            "Firearms.45Silencer", 0.1,
+            "Firearms.9mmSilencer", 0.1,
+            "Firearms.223Silencer", 0.05,
+            "Firearms.Mossberg500", 2,
+            "Firearms.Mossberg500Tactical", 5,
+            "Firearms.TacticalStock", 5,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.Remington870Wood", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+            }
+        },
+    },
+
+    armystorage = {
+        locker ={
+
+            items = {
+            "Firearms.Glock17", 3,
+            "Firearms.Glock17Mag", 2,
+            "Firearms.45Silencer", 1,
+            "Firearms.9mmSilencer", 1,
+            "Firearms.223Silencer", 0.5,
+            "Firearms.M24Rifle", 10,
+            "Firearms.ExtendedRecoilPad", 1,
+            "Firearms.Rifle_Bipod", 1,
+            "Firearms.M24Rifle", 0.5,
+            "Firearms.Mossberg500", 3,
+            "Firearms.Mossberg500Tactical", 2,
+            "Firearms.TacticalStock", 3,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.Remington870Wood", 3,
+            "Firearms.M16A2", 5,
+            "Firearms.MP5", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+            },
+        },
+
+        metal_shelves =
+        {
+
+            items = {
+            "Firearms.Glock17", 1,
+            "Firearms.Glock17Mag", 2,
+            "Firearms.45Silencer", 1,
+            "Firearms.9mmSilencer", 1,
+            "Firearms.223Silencer", 0.5,
+            "Firearms.ExtendedRecoilPad", 1,
+            "Firearms.Rifle_Bipod", 1,
+            "Firearms.M24Rifle", 0.5,
+            "Firearms.Mossberg500", 3,
+            "Firearms.Mossberg500Tactical", 2,
+            "Firearms.TacticalStock", 3,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.Remington870Wood", 3,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+            }
+        },
+    },
+
+    gunstore = {
+        counter ={
+
+            items = {
+            "Firearms.ColtPeacemaker", 2,
+            "Firearms.Glock17Mag", 2,
+            "Firearms.45Silencer", 2,
+            "Firearms.9mmSilencer", 2,
+            "Firearms.223Silencer", 2,
+            "Firearms.308Silencer", 1,
+            "Firearms.556Silencer", 0.1,
+            "Firearms.ExtendedRecoilPad", 1,
+            "Firearms.Rifle_Bipod", 1,
+            "Firearms.AmmoStock", 1,
+            "Firearms.Mossberg500", 3,
+            "Firearms.Mossberg500Tactical", 2,
+            "Firearms.TacticalStock", 3,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.Remington870Wood", 3,
+            "Firearms.MP5", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+            },
+            dontSpawnAmmo = true,
+        },
+
+        displaycase ={
+
+            items = {
+            "Firearms.ColtPeacemaker", 4,
+            "Firearms.Glock17", 15,
+            "Firearms.Glock17Mag", 2,
+            "Firearms.45Silencer", 2,
+            "Firearms.9mmSilencer", 2,
+            "Firearms.223Silencer", 2,
+            "Firearms.308Silencer", 1,
+            "Firearms.556Silencer", 0.1,
+            "Firearms.ExtendedRecoilPad", 1,
+            "Firearms.Rifle_Bipod", 1,
+            "Firearms.AmmoStock", 1,
+            "Firearms.M24Rifle", 0.5,
+            "Firearms.Mossberg500", 3,
+            "Firearms.Mossberg500Tactical", 2,
+            "Firearms.TacticalStock", 3,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.Remington870Wood", 3,
+            "Firearms.MP5", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+            },
+            dontSpawnAmmo = true,
+        },
+
+        locker ={
+
+            items = {
+            "Firearms.ColtPeacemaker", 2,
+            "Firearms.Glock17", 1,
+            "Firearms.Glock17Mag", 2,
+            "Firearms.45Silencer", 2,
+            "Firearms.9mmSilencer", 2,
+            "Firearms.223Silencer", 2,
+            "Firearms.308Silencer", 1,
+            "Firearms.556Silencer", 0.1,
+            "Firearms.Rifle_Bipod", 1,
+            "Firearms.AmmoStock", 1,
+            "Firearms.M24Rifle", 0.5,
+            "Firearms.Mossberg500", 3,
+            "Firearms.Remington870Wood", 3,
+            "Firearms.Mossberg500Tactical", 2,
+            "Firearms.TacticalStock", 3,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.MP5", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+            },
+            dontSpawnAmmo = true,
+        },
+
+        metal_shelves ={
+
+            items = {
+            "Firearms.ColtPeacemaker", 0.1,
+            },
+            dontSpawnAmmo = true,
+        },
+    },
+
+    gunstorestorage ={
+        all={
+
+            items = {
+            "Firearms.ColtPeacemaker", 5,
+            "Firearms.Glock17", 15,
+            "Firearms.Glock17Mag", 2,
+            "Firearms.45Silencer", 2,
+            "Firearms.9mmSilencer", 2,
+            "Firearms.223Silencer", 2,
+            "Firearms.308Silencer", 1,
+            "Firearms.556Silencer", 0.1,
+            "Firearms.ExtendedRecoilPad", 1,
+            "Firearms.Rifle_Bipod", 1,
+            "Firearms.M24Rifle", 0.5,
+            "Firearms.Rifle_Bipod", 2,
+            "Firearms.AmmoStock", 2,
+            "Firearms.Mossberg500", 3,
+            "Firearms.Mossberg500Tactical", 2,
+            "Firearms.TacticalStock", 3,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.Remington870Wood", 3,
+            "Firearms.MP5", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+            },
+
+            dontSpawnAmmo = true,
+        },
+    },
+
+    mechanic = {
+        wardrobe ={
+
+            items = {
+            "Firearms.ColtPeacemaker", 0.1,
+            "Firearms.AmmoStock", 1,
+            }
+        },
+    },
+
+
+    cafe = {
+        counter = {
+
+            items = {
+            "Firearms.Mossberg500", 3,
+            "Firearms.Remington870Wood", 3,
+            },
+        },
+    },
+
+    restaurant = {
+        counter = {
+
+            items = {
+            "Firearms.Mossberg500", 3,
+            "Firearms.Remington870Wood", 3,
+            },
+        },
+    },
+
+    storageunit = {
+        all ={
+
+            items = {
+            "Firearms.ColtPeacemaker", 0.6,
+            "Firearms.Glock17", 0.1,
+            "Firearms.Glock17Mag", 0.1,
+            "Firearms.45Silencer", 0.2,
+            "Firearms.9mmSilencer", 0.2,
+            "Firearms.223Silencer", 0.2,
+            "Firearms.308Silencer", 0.1,
+            "Firearms.ExtendedRecoilPad", 0.1,
+            "Firearms.Rifle_Bipod", 0.1,
+            "Firearms.M24Rifle", 0.05,
+            "Firearms.Mossberg500", 1,
+            "Firearms.Remington870Wood", 1,
+            "Firearms.Mossberg500Tactical", 1,
+            "Firearms.MP5", 0.1,
+            "Firearms.MP5Mag", 1,
+            "Firearms.MP5_Stock_Detracted", 0.2,
+            },
+        },
+    },
+
+
+    cornerstore = {
+
+        counter ={
+
+            items = {
+            "Firearms.Mossberg500", 3,
+            "Firearms.Remington870Wood", 3,
+            }
+        },
+    },
+
+    gasstore = {
+        counter = {
+
+            items = {
+            "Firearms.ColtPeacemaker", 0.1,
+            }
+        }
+    },
+
+    farmstorage = {
+        all = {
+            items = {
+            "Firearms.ColtPeacemaker", 0.1,
+            }
+        },
+    },
+
+    hunting = {
+        locker = {
+
+            items = {
+            "Firearms.ColtPeacemaker", 1,
+            "Firearms.45Silencer", 0.2,
+            "Firearms.9mmSilencer", 0.2,
+            "Firearms.223Silencer", 0.2,
+            "Firearms.308Silencer", 0.1,
+            "Firearms.ExtendedRecoilPad", 0.1,
+            "Firearms.Rifle_Bipod", 0.1,
+            "Firearms.M24Rifle", 0.05,
+            "Firearms.AmmoStock", 1,
+            "Firearms.Mossberg500", 3,
+            "Firearms.Remington870Wood", 3,
+            "Firearms.MP5", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+            }
+        },
+
+        other = {
+
+            items = {
+            "Firearms.ColtPeacemaker", 0.1,
+            }
+        },
+    },
+
+    camping = {
+
+
+        all = {
+            items = {
+            "Firearms.ColtPeacemaker", 0.1,
+            "Firearms.AmmoStock", 0.1,
+            "Firearms.Mossberg500", 0.1,
+            }
+        },
+    },
+
+    Bag_WeaponBag = {
+
+        items = {
+            "Firearms.ColtPeacemaker",5,
+            "Firearms.Glock17", 1,
+            "Firearms.Glock17Mag", 2,
+            "Firearms.AmmoStock", 1,
+            "Firearms.Mossberg500", 3,
+            "Firearms.Mossberg500Tactical", 2,
+            "Firearms.TacticalStock", 3,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.Remington870Wood", 3,
+            "Firearms.MP5", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+        },
+        fillRand = 0,
+    },
+
+    Bag_SurvivorBag = {
+
+        items = {
+            "Firearms.ColtPeacemaker",5,
+            "Firearms.Glock17", 1,
+            "Firearms.Glock17Mag", 2,
+            "Firearms.45Silencer", 2,
+            "Firearms.9mmSilencer", 2,
+            "Firearms.223Silencer", 1,
+            "Firearms.308Silencer", 1,
+            "Firearms.556Silencer", 0.1,
+            "Firearms.AmmoStock", 1,
+            "Firearms.Mossberg500", 3,
+            "Firearms.Mossberg500Tactical", 2,
+            "Firearms.TacticalStock", 3,
+            "Firearms.ShotgunStock", 4,
+            "Firearms.LightShotgunStock", 4,
+            "Firearms.Remington870Wood", 3,
+            "Firearms.MP5", 1,
+            "Firearms.MP5Mag", 3,
+            "Firearms.MP5_Stock_Detracted", 1,
+        },
+        fillRand = 0,
+    },
+
+    ShotgunCache1 = {
+        ShotgunBox = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 1,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.ExtendedRecoilPad", 0.1,
+                "Firearms.Rifle_Bipod", 0.1,
+                "Firearms.AmmoStock", 1,
+                "Firearms.M24Rifle", 0.05,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            }
+        },
+
+        Bag_DuffelBagTINT = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 1,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.ExtendedRecoilPad", 0.1,
+                "Firearms.Rifle_Bipod", 0.1,
+                "Firearms.AmmoStock", 1,
+                "Firearms.M24Rifle", 0.05,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+            fillRand=3,
+        },
+    },
+
+    ShotgunCache2 = {
+        ShotgunBox = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 1,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            }
+        },
+    },
+
+
+    GunCache1 = {
+        GunBox = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 2,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.ExtendedRecoilPad", 0.1,
+                "Firearms.Rifle_Bipod", 0.1,
+                "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+            dontSpawnAmmo = true,
+        },
+
+        counter = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 2,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.AmmoStock", 1,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+        },
+
+        Bag_DuffelBagTINT = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 2,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.ExtendedRecoilPad", 0.1,
+                "Firearms.Rifle_Bipod", 0.1,
+                "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+            fillRand = 3,
+        },
+    },
+
+    GunCache2 = {
+        GunBox = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 2,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.ExtendedRecoilPad", 0.1,
+                "Firearms.Rifle_Bipod", 0.1,
+                "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+            dontSpawnAmmo = true,
+        },
+
+        Bag_DuffelBagTINT = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 2,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.ExtendedRecoilPad", 0.1,
+                "Firearms.Rifle_Bipod", 0.1,
+                "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+            fillRand=3,
+        },
+    },
+
+    SurvivorCache1 = {
+
+        SurvivorCrate = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 2,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.ExtendedRecoilPad", 0.1,
+                "Firearms.Rifle_Bipod", 0.1,
+                "Firearms.M24Rifle", 0.05,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            }
+        },
+    },
+
+    SurvivorCache2 = {
+
+        SurvivorCrate = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 2,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            }
+        },
+    },
+
+    security =
+    {
+        locker =
+        {
+
+            items = {
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+            dontSpawnAmmo = true,
+        },
+    },
+
+    armysurplus = {
+        shelves = {
+
+            items = {
+                "Firearms.ColtPeacemaker", 4,
+                "Firearms.ColtPeacemaker", 4,
+                "Firearms.45Silencer", 0.2,
+                "Firearms.223Silencer", 0.2,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Base.AssaultRifle", 1,
+                "Firearms.M16A2", 1,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+        },
+    },
+
+    armyhanger = {
+        metal_shelves = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 2,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.ExtendedRecoilPad", 1,
+                "Firearms.Rifle_Bipod", 1,
+                "Firearms.M24Rifle", 0.5,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.M16A2", 5,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+        },
+
+        counter = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 2,
+                "Firearms.9mmSilencer", 2,
+                "Firearms.223Silencer", 2,
+                "Firearms.308Silencer", 1,
+                "Firearms.556Silencer", 0.1,
+                "Firearms.ExtendedRecoilPad", 1,
+                "Firearms.Rifle_Bipod", 1,
+                "Firearms.M24Rifle", 0.5,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.M16A2", 5,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+        },
+
+        locker = {
+
+            items = {
+                "Firearms.ColtPeacemaker",5,
+                "Firearms.Glock17", 1,
+                "Firearms.Glock17Mag", 2,
+                "Firearms.45Silencer", 5,
+                "Firearms.9mmSilencer", 5,
+                "Firearms.9mmSilencer", 5,
+                "Firearms.223Silencer", 5,
+                "Firearms.308Silencer", 5,
+                "Firearms.556Silencer", 5,
+                "Firearms.AmmoStock", 1,
+                "Firearms.Mossberg500", 3,
+                "Firearms.Mossberg500Tactical", 2,
+                "Firearms.TacticalStock", 3,
+                "Firearms.ShotgunStock", 4,
+                "Firearms.LightShotgunStock", 4,
+                "Firearms.Remington870Wood", 3,
+                "Firearms.M16A2", 5,
+                "Firearms.MP5", 1,
+                "Firearms.MP5Mag", 3,
+                "Firearms.MP5_Stock_Detracted", 1,
+            },
+        },
+    },
+}
+
+table.insert(Distributions, 1, distributionTable);
+
+SuburbsDistributions = distributionTable;

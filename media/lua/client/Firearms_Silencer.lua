@@ -7,6 +7,10 @@ local function silence(wielder, weapon)
     local soundRadius = scriptItem:getSoundRadius()
     local swingSound = scriptItem:getSwingSound()
 
+    if weapon:getMinAngle() >= 1.0 then
+      weapon:setMinAngle(0.99)
+    end
+
     local canon = weapon:getCanon()
     if canon then
   		if string.find(canon:getType(), "Silencer") then

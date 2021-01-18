@@ -7,4 +7,5 @@ Tooltip_EN = {
   Tooltip_AmmoStock = "Decreases reload speed."
   Tooltip_TacticalStock = "Decreases recoil which in turn increases chance to hit."
   Tooltip_ExtendableStock = "Decreases recoil which in turn increases chance to hit. Can be detracted."
+  Tooltip_Compensator = "Decreases recoil which in turn increases chance to hit."
 }

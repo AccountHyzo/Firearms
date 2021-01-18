@@ -11,7 +11,7 @@ ItemName_EN = {
 
     ItemName_Base.VarmintRifle = "Remington Model 700",
     ItemName_Base.HuntingRifle = "Remington Model 788",
-    ItemName_Firearms.HuntingRifle_Sawn = "Sawn-off Remington Model 788",
+    ItemName_Firearms.HuntingRifle_Sawn = "Sawed-off Remington Model 788",
 
     ItemName_Base.AssaultRifle = "M16A1",
     ItemName_Base.AssaultRifle2 = "M14",
@@ -21,16 +21,19 @@ ItemName_EN = {
 
     ItemName_Base.Shotgun = "Mossberg 500",
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
-    ItemName_Base.DoubleBarrelShotgun = "Double Barrel Shotgun",
+    ItemName_Base.DoubleBarrelShotgun = "Rossi Overland Coach Gun",
+    ItemName_Base.DoubleBarrelShotgunSawnoff = "Sawed-off Rossi Overland Coach Gun",
     ItemName_Firearms.Mossberg500 = "Mossberg 500",
     ItemName_Firearms.Mossberg500Tactical = "Mossberg 500 Tactical",
     ItemName_Firearms.Remington870Wood = "Remington 870",
     ItemName_Firearms.Remington870Sawnoff = "Sawed-off Remington 870",
 
 
-    ItemName_Base.x2Scope = "x2 Scope",
+    ItemName_Base.x2Scope = "ACOG x2",
     ItemName_Base.x4Scope = "x4 Scope",
     ItemName_Base.x8Scope = "x8 Scope",
+
+    ItemName_Base.GunToolKit = "Gun Tool Kit",
 
     ItemName_Firearms.ExtendedRecoilPad = "Extended Recoil Pad",
     ItemName_Firearms.AmmoStock = "Shotgun Shell Ammostrap",
@@ -47,6 +50,8 @@ ItemName_EN = {
     ItemName_Firearms.556Silencer = "5.56 Silencer",
     ItemName_Firearms.ImprovisedSilencer = "Improvised Silencer",
 
+    ItemName_Firearms.9mmCompensator = "9mm Compensator",
+
     ItemName_Base.223Clip = ".223 Remington Internal Magazine",
     ItemName_Base.308Clip = ".308 Winchester Internal Magazine",
     ItemName_Base.Magazine = "Magazine",
@@ -58,5 +63,4 @@ ItemName_EN = {
     ItemName_Base.Glock17Mag = "Glock 17 Magazine",
     ItemName_Base.MP5Mag = "MP5 Magazine",
 
-    ItemName_Firearms.ColtPeacemaker = "Colt Peacemaker",
 }

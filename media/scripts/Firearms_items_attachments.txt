@@ -79,6 +79,20 @@ module Firearms
 			Tooltip = Tooltip_ImprovisedSilencer,
 	}
 
+	item 9mmCompensator
+	{
+			Type = WeaponPart,
+			DisplayName = 9mmCompensator,
+			Icon = Compensator,
+			Weight = 0.2,
+			WeightModifier = 0.2,
+			HitChanceModifier = 8,
+			RecoilDelayModifier = -5.0,
+			MountOn = Pistol; Glock17,
+			PartType = Canon,
+			Tooltip = Tooltip_Compensator,
+	}
+
 	item GunLightImprovised
 	{
 			Type = WeaponPart,

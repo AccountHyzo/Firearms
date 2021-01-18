@@ -27,7 +27,6 @@ function ISUpgradeWeapon:perform()
     self.character:getInventory():Remove(self.part);
     self.character:setSecondaryHandItem(nil);
     self.character:removeFromHands(self.weapon);
-    print(self.weapon:getSoundRadius())
     -- needed to remove from queue / start next.
     ISBaseTimedAction.perform(self);
 end

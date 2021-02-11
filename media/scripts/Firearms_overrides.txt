@@ -1,6 +1,13 @@
 module Base
 {
 
+	fixing Fix Shotgun
+	{
+		 Require : Shotgun,
+
+		 Fixer : Shotgun; Aiming=2,
+	}
+
 	model ShotgunDoubleBarrelSawn_OPEN
 	{
 	mesh = Weapons/Firearm/DoubleBarrelSawn_OPEN,
@@ -464,12 +471,13 @@ module Base
 			AmmoType = Base.Bullets9mm,
 			WeaponReloadType = handgun,
 			JamGunChance = 2,
-			ModelWeaponPart = Laser Laser laser laser,
+			ModelWeaponPart = Laser Firearms.TacticalLaser laser laser,
 			ModelWeaponPart = RedDot Firearms.Reddot_Small reddot reddot,
 			ModelWeaponPart = Firearms.9mmSilencer Firearms.Silencer silencer silencer,
 			ModelWeaponPart = Firearms.ImprovisedSilencer Firearms.Silencer_Improvised silencer silencer,
 			ModelWeaponPart = Firearms.9mmCompensator Firearms.Compensator_Pistol silencer silencer,
 			AttachmentType = Holster,
+
 }
 
 	item Pistol2
@@ -530,7 +538,7 @@ module Base
         MaxAmmo = 7,
         InsertAmmoSound = Stormy9mmClipLoad,
         EjectAmmoSound = Stormy9mmClipEject,
-				ModelWeaponPart = Laser Laser laser laser,
+				ModelWeaponPart = Laser Firearms.TacticalLaser laser laser,
 				ModelWeaponPart = RedDot Firearms.Reddot_Small reddot reddot,
 			 	ModelWeaponPart = Firearms.45Silencer Firearms.Silencer silencer silencer,
 			 	ModelWeaponPart = Firearms.ImprovisedSilencer Firearms.Silencer_Improvised silencer silencer,
@@ -600,7 +608,7 @@ module Base
         MaxAmmo = 8,
         InsertAmmoSound = Stormy9mmClipLoad,
         EjectAmmoSound = Stormy9mmClipEject,
-			 	ModelWeaponPart = Laser Firearms.Laser laser laser,
+			 	ModelWeaponPart = Laser Firearms.TacticalLaser laser laser,
 			 	ModelWeaponPart = RedDot Firearms.RedDot reddot reddot,
         RackSound = Stormy9mmRack,
         MagazineType = Base.44Clip,
@@ -1228,7 +1236,7 @@ module Base
 				        Weight = 0.2,
 				        WeightModifier = 0.2,
 				        HitChanceModifier = 5,
-				        MountOn = Pistol; Pistol3,
+				        MountOn = Pistol; Firearms.Glock17; Pistol3,
 				        PartType = Canon,
 				        Tooltip = Tooltip_Laser,
 				        MetalValue = 15,
@@ -1290,5 +1298,17 @@ module Base
 				        Tooltip = Tooltip_ChokeTubeImproved,
 				        MetalValue = 12,
 				    }
+
+						item GunToolKit
+						{
+						Weight	=	1,
+		        Type	=	Drainable,
+		        UseDelta	=	0.05,
+		        UseWhileEquipped	=	FALSE,
+		        DisplayName	=	Gun Tool Kit,
+		        Icon	=	DuctTape,
+		        Tooltip = Tooltip_FixItems,
+		        SurvivalGear = TRUE,
+						}
 
 }

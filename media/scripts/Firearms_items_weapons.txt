@@ -443,6 +443,7 @@ module Firearms
 			 		ModelWeaponPart = 9mmSilencer Silencer silencer silencer,
 			 		ModelWeaponPart = ImprovisedSilencer Silencer_Improvised silencer silencer,
 			 		ModelWeaponPart = 9mmCompensator Compensator_Pistol silencer silencer,
+					ModelWeaponPart = Base.Laser TacticalLaser laser laser,
 					ModelWeaponPart = Base.RedDot Reddot_Small reddot reddot,
 					AmmoType = Base.Bullets9mm,
 					WeaponReloadType = handgun,

@@ -1197,7 +1197,7 @@ module Base
 			        Icon = GunSling,
 			        Weight = 0.5,
 			        WeightModifier = -0.3,
-			        MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Firearms.HuntingRifle_Sawn; Firearms.Remington870Sawnoff; Shotgun; Firearms.Mossberg500; AssaultRifle; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.Remington870Wood; Firearms.Mossberg500Tactical; Firearms.MP5,
+			        MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Firearms.Winchester94; Firearms.HuntingRifle_Sawn; Firearms.Remington870Sawnoff; Shotgun; Firearms.Mossberg500; AssaultRifle; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.Remington870Wood; Firearms.Mossberg500Tactical; Firearms.MP5,
 			        PartType = Sling,
 			        Tooltip = Tooltip_Sling,
 			    }
@@ -1210,7 +1210,7 @@ module Base
 			        Weight = 0.1,
 			        WeightModifier = 0.1,
 			        RecoilDelayModifier = -10.0,
-			        MountOn = HuntingRifle; VarmintRifle; Firearms.M24Rifle ; Shotgun; Firearms.Mossberg500; Firearms.Remington870Wood,
+			        MountOn = HuntingRifle; VarmintRifle; Firearms.Winchester94; Firearms.M24Rifle ; Shotgun; Firearms.Mossberg500; Firearms.Remington870Wood,
 			        PartType = RecoilPad,
 			        Tooltip = Tooltip_RecoilPad,
 			    }

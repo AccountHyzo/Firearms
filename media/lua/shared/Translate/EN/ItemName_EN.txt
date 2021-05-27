@@ -7,7 +7,7 @@ ItemName_EN = {
     ItemName_Base.Revolver = "S&W M625",
     ItemName_Base.Revolver_Long = "S&W M29",
     ItemName_Base.Revolver_Short = "S&W M36",
-    ItemName_Firearms.ColtPeacemaker = "Colt Peacemaker",
+    ItemName_Firearms.ColtPeacemaker = "Colt Single Action Army",
 
     ItemName_Base.VarmintRifle = "Remington Model 700",
     ItemName_Base.HuntingRifle = "Remington Model 788",
@@ -23,10 +23,11 @@ ItemName_EN = {
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
     ItemName_Base.DoubleBarrelShotgun = "Rossi Overland Coach Gun",
     ItemName_Base.DoubleBarrelShotgunSawnoff = "Sawed-off Rossi Overland Coach Gun",
-    ItemName_Firearms.Mossberg500 = "Mossberg 500",
-    ItemName_Firearms.Mossberg500Tactical = "Mossberg 500 Tactical",
+    ItemName_Firearms.Mossberg500 = "Mossberg 590",
+    ItemName_Firearms.Mossberg500Tactical = "Mossberg 590A1 Tactical",
     ItemName_Firearms.Remington870Wood = "Remington 870",
     ItemName_Firearms.Remington870Sawnoff = "Sawed-off Remington 870",
+    ItemName_Firearms.Winchester94 = "Winchester Model 1894"
 
 
     ItemName_Base.x2Scope = "ACOG x2",

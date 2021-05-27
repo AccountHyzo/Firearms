@@ -82,5 +82,26 @@ module Firearms
 				}
 		}
 
+		sound LeverActionCock
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/LeverActionCock.ogg,
+						distanceMax = 20,
+						volume = 1,
+				}
+		}
+
+		sound LeverActionLoad
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/LeverActionLoad.ogg,
+						distanceMax = 20,
+						volume = 1,
+				}
+		}
 
 }

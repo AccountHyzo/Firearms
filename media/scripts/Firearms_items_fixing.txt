@@ -76,4 +76,11 @@ module Firearms
 			 Fixer : MP5,
     }
 
+		fixing Fix Winchester94
+		{
+			Require : Winchester94,
+
+			Fixer : Winchester94,
+		}
+
 }

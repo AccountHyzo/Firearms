@@ -1,6 +1,8 @@
 # Firearms
 *Overall firearms overhaul.*
 
+![Firearms B41](/poster.png "Title card")
+
 **Adds several new guns:**
 - Glock 17
 - Colt Single Action Army

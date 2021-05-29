@@ -23,12 +23,12 @@ local function silence(wielder, weapon)
     	      soundRadius = soundRadius * (0.7)
           else
           soundVolume = soundVolume *  (1)
-          soundRadius = soundRadius * (0.7)
+          soundRadius = soundRadius * (0.5)
           end
   	      swingSound = 'FirearmPistolSilencerShot'
   	    elseif weapon:getWeaponReloadType() == "boltaction" or weapon:getWeaponReloadType() == "boltactionnomag" then
   	      soundVolume = soundVolume *  (1)
-  	      soundRadius = soundRadius * (0.3)
+  	      soundRadius = soundRadius * (0.6)
   	      swingSound = 'FirearmRifleSilencerShot'
   			end
       elseif string.find(canon:getType(), "ImprovisedSilencer") then
@@ -46,7 +46,7 @@ local function silence(wielder, weapon)
           swingSound = 'FirearmPistolSilencerShot'
         elseif weapon:getWeaponReloadType() == "boltaction" or weapon:getWeaponReloadType() == "boltactionnomag " then
           soundVolume = soundVolume *  (1.3)
-          soundRadius = soundRadius * (0.4)
+          soundRadius = soundRadius * (0.7)
           swingSound = 'FirearmRifleSilencerShot'
         end
       end

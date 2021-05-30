@@ -15,8 +15,9 @@ ItemName_EN = {
 
     ItemName_Base.AssaultRifle = "M16A1",
     ItemName_Base.AssaultRifle2 = "M14",
-    ItemName_Firearms.M24Rifle = "M24",
     ItemName_Firearms.M16A2 = "M16A2",
+    ItemName_Firearms.M24Rifle = "M24",
+    ItemName_Firearms.M60 = "M60"
     ItemName_Firearms.MP5 = "MP5A1",
 
     ItemName_Base.Shotgun = "Mossberg 500",
@@ -61,7 +62,11 @@ ItemName_EN = {
     ItemName_Base.M14Clip = "M14 Magazine",
     ItemName_Base.44Clip = "Desert Eagle Magazine",
     ItemName_Base.45Clip = "M1911 Magazine",
-    ItemName_Base.Glock17Mag = "Glock 17 Magazine",
-    ItemName_Base.MP5Mag = "MP5 Magazine",
+    ItemName_Firearms.Glock17Mag = "Glock 17 Magazine",
+    ItemName_Firearms.MP5Mag = "MP5 Magazine",
+    ItemName_Firearms.M60Mag = "M60 Magazine"
+
+    ItemName_Base.762Box = "Box of 7.62x51mm Ammo",
+    ItemName_Base.762Bullets = "7.62x51mm Round",
 
 }

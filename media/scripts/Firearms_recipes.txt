@@ -62,4 +62,36 @@ module Firearms
 	      OnTest:onDetractStock_OnTest,
 	      OnCreate:onDetractStock_OnCreate,
 	    }
+
+			recipe Convert to 5.56x45mm
+			{
+	      223Bullets,
+
+	      Result:556Bullets,
+	      Time:0,
+			}
+
+			recipe Convert to .223
+			{
+	      556Bullets,
+
+	      Result:223Bullets,
+	      Time:0,
+			}
+
+			recipe Convert to 7.62x51mm
+			{
+	      308Bullets,
+
+	      Result:762Bullets,
+	      Time:0,
+			}
+
+			recipe Convert to .308
+			{
+	      762Bullets,
+
+	      Result:308Bullets,
+	      Time:0,
+			}
 }

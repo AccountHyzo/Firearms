@@ -783,7 +783,7 @@ module Base
 				MinRange	=	0.61,
 				SwingTime	=	0.5,
 				MultipleHitConditionAffected	=	FALSE,
-				SoundRadius	=	70,
+				SoundRadius	=	55,
 				MinDamage	=	0.7,
 				MaxDamage	=	1.2,
 				SplatSize	=	3,
@@ -1154,7 +1154,7 @@ module Base
 			        WeightModifier = 0.3,
 			        MaxRangeModifier = 7,
 			        MinRangeModifier = 6,
-			        MountOn = HuntingRifle; VarmintRifle; Firearms.HuntingRifle_Sawn; AssaultRifle; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.MP5; Firearms.Mossberg500Tactical; Firearms.Mossberg500; Shotgun; ShotgunSawnoff; Firearms.Remington870Sawnoff; Firearms.Remington870Wood,
+			        MountOn = HuntingRifle; VarmintRifle; Firearms.HuntingRifle_Sawn; AssaultRifle; Firearms.M60; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.MP5; Firearms.Mossberg500Tactical; Firearms.Mossberg500; Shotgun; ShotgunSawnoff; Firearms.Remington870Sawnoff; Firearms.Remington870Wood,
 			        PartType = Scope,
 			        Tooltip = Tooltip_Scope,
 			        MetalValue = 22,
@@ -1197,7 +1197,7 @@ module Base
 			        Icon = GunSling,
 			        Weight = 0.5,
 			        WeightModifier = -0.3,
-			        MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Firearms.Winchester94; Firearms.HuntingRifle_Sawn; Firearms.Remington870Sawnoff; Shotgun; Firearms.Mossberg500; AssaultRifle; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.Remington870Wood; Firearms.Mossberg500Tactical; Firearms.MP5,
+			        MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Firearms.Winchester94; Firearms.M60; Firearms.HuntingRifle_Sawn; Firearms.Remington870Sawnoff; Shotgun; Firearms.Mossberg500; AssaultRifle; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.Remington870Wood; Firearms.Mossberg500Tactical; Firearms.MP5,
 			        PartType = Sling,
 			        Tooltip = Tooltip_Sling,
 			    }
@@ -1227,6 +1227,15 @@ module Base
 						   OnCreate:onSawnOff_OnCreate,
 							 Override:true,
 						}
+
+						recipe Open Box of 7.62x51mm Ammo
+				    {
+				        762Box,
+
+				        Result:762Bullets=8,
+				        Sound:PutItemInBag,
+				        Time:5.0,
+				    }
 
 						item Laser
 				    {
@@ -1309,6 +1318,29 @@ module Base
 		        Icon	=	DuctTape,
 		        Tooltip = Tooltip_FixItems,
 		        SurvivalGear = TRUE,
+						}
+
+						item 762Bullets
+						{
+								Count	=	5,
+								Weight	=	0.02,
+								AlwaysWelcomeGift	=	TRUE,
+								Type	=	Normal,
+								DisplayName	=	7.62 Ammo,
+								DisplayCategory = Ammo,
+								Icon	=	RifleAmmo308loose,
+								MetalValue = 1,
+						}
+
+						item 762Box
+						{
+								Weight	=	0.85,
+								AlwaysWelcomeGift	=	TRUE,
+								Type	=	Normal,
+								DisplayName	=	Box of 7.62 Bullets,
+								DisplayCategory = Ammo,
+								Icon	=	RifleAmmo308,
+								MetalValue = 40,
 						}
 
 }

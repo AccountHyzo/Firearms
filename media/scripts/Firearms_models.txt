@@ -1209,6 +1209,59 @@ offset = 0.0000 0.4020 0.0270,
 rotate = 180.0000 0.0000 180.0000,
 }
 }
+	model M60
+	{
+		mesh = Weapons/Firearm/M60,
+		texture = weapons/firearm/M60,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.4900 0.0410,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment sling
+		{
+			offset = 0.0000 0.2870 -0.0030,
+			rotate = 174.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0380 0.0700,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0040 0.0470 0.0710,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment gunlight
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.2680 -0.0050,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment stock
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment silencer
+		{
+			offset = 0.0000 0.5130 0.0420,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
 	model Scope
 						{
 							mesh = weapons/firearm/attachments/Scope,

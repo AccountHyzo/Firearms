@@ -104,4 +104,37 @@ module Firearms
 				}
 		}
 
+		sound FirearmM60Load
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/FirearmM60Load.ogg,
+						distanceMax = 20,
+						volume = 1,
+				}
+		}
+
+		sound FirearmM60Rack
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/FirearmM60Rack.ogg,
+						distanceMax = 20,
+						volume = 1,
+				}
+		}
+
+		sound FirearmM60Fire
+		{
+				category = Item,
+				clip
+				{
+						file = media/sound/FirearmM60Fire.ogg,
+						distanceMax = 200,
+						volume = 2,
+				}
+		}
+
 }

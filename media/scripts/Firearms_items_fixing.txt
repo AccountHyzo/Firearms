@@ -83,4 +83,10 @@ module Firearms
 			Fixer : Winchester94,
 		}
 
+		fixing Fix M60
+		{
+			Require : M60,
+
+			Fixer : M60,
+		}
 }

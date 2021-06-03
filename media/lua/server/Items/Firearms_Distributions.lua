@@ -51,7 +51,8 @@ table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.55
 table.insert(SuburbsDistributions["policestorage"]["locker"].items, 0.5);
 table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.556Box");
 table.insert(SuburbsDistributions["policestorage"]["locker"].items, 3);
-
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, "Firearms.762Box");
+table.insert(SuburbsDistributions["policestorage"]["locker"].items, 3);
 --armystorage
 --locker
 table.insert(SuburbsDistributions["armystorage"]["locker"].items, "Firearms.ColtPeacemaker");
@@ -157,6 +158,10 @@ table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.Winche
 table.insert(SuburbsDistributions["gunstore"]["counter"].items, 1);
 table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.762Box");
 table.insert(SuburbsDistributions["gunstore"]["counter"].items, 10);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.Winchester73");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 1);
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, "Firearms.4440Box");
+table.insert(SuburbsDistributions["gunstore"]["counter"].items, 10);
 
 --displaycase
 table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.ColtPeacemaker");
@@ -199,6 +204,10 @@ table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.30
 table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.01);
 table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.Winchester94");
 table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 1);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.Winchester73");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 1);
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.4440Box");
+table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 10);
 table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.AssaultRifle");
 table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, 0.1);
 table.insert(SuburbsDistributions["gunstore"]["displaycase"].items, "Firearms.M16A2");
@@ -378,6 +387,10 @@ table.insert(SuburbsDistributions["farmstorage"]["all"].items, "Firearms.ColtPea
 table.insert(SuburbsDistributions["farmstorage"]["all"].items, 0.5);
 table.insert(SuburbsDistributions["farmstorage"]["all"].items, "Firearms.Winchester94");
 table.insert(SuburbsDistributions["farmstorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, "Firearms.Winchester73");
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, "Firearms.4440Box");
+table.insert(SuburbsDistributions["farmstorage"]["all"].items, 5);
 
 --storageunit
 --all
@@ -406,7 +419,11 @@ table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.5);
 table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.M24Rifle");
 table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.001);
 table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.Winchester94");
-table.insert(SuburbsDistributions["storageunit"]["all"].items, 1);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.Winchester73");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 0.5);
+table.insert(SuburbsDistributions["storageunit"]["all"].items, "Firearms.4440Box");
+table.insert(SuburbsDistributions["storageunit"]["all"].items, 5);
 
 --hunting
 --locker
@@ -468,6 +485,10 @@ table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.762Box")
 table.insert(SuburbsDistributions["hunting"]["locker"].items, 10);
 table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.M60Mag");
 table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.Winchester73");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["hunting"]["locker"].items, "Firearms.4440Box");
+table.insert(SuburbsDistributions["hunting"]["locker"].items, 5);
 --other
 table.insert(SuburbsDistributions["hunting"]["other"].items, "Firearms.ColtPeacemaker");
 table.insert(SuburbsDistributions["hunting"]["other"].items, 0.05);
@@ -1078,3 +1099,7 @@ table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.762Bo
 table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 10);
 table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.M60Mag");
 table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.05);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.Winchester73");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 0.5);
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, "Firearms.4440Box");
+table.insert(SuburbsDistributions["armyhanger"]["locker"].items, 5);

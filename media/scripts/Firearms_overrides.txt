@@ -1267,7 +1267,25 @@ module Base
 				    {
 				        4440Box,
 
-				        Result:4440Bullets=8,
+				        Result:4440Bullets=4,
+				        Sound:PutItemInBag,
+				        Time:5.0,
+				    }
+
+						recipe Place 7.62x51mm in Box
+				    {
+				        762Bullets=40,
+
+				        Result:762Box,
+				        Sound:PutItemInBag,
+				        Time:5.0,
+				    }
+
+						recipe Place .44-40 WCF in Box
+				    {
+				        4440Bullets=12,
+
+				        Result:4440Box,
 				        Sound:PutItemInBag,
 				        Time:5.0,
 				    }

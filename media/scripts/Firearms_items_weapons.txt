@@ -451,7 +451,6 @@ module Firearms
 					AttachmentType = Holster,
 		}
 
-
 				item Winchester94
 			    {
 			       ImpactSound	=	null,

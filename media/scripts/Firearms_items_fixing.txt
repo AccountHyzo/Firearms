@@ -12,7 +12,7 @@ module Firearms
 			 Fixer : ColtPeacemaker,
     }
 
-    fixing Fix Glock17
+		fixing Fix Glock17
     {
        Require : Glock17,
 
@@ -81,6 +81,13 @@ module Firearms
 			Require : Winchester94,
 
 			Fixer : Winchester94,
+		}
+
+		fixing Fix Winchester73
+		{
+			Require : Winchester73,
+
+			Fixer : Winchester73,
 		}
 
 		fixing Fix M60

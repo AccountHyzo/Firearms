@@ -900,7 +900,7 @@ module Firearms
 	        RecoilDelay = 0,
 					PiercingBullets = TRUE,
 	        SoundGain = 2,
-	        ReloadTime = 70,
+	        ReloadTime = 150,
 	        AimingTime = 30,
 	        RequiresEquippedBothHands = TRUE,
 	        BreakSound  =   BreakMetalItem,

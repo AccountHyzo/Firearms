@@ -8,6 +8,32 @@ module Base
 		 Fixer : Shotgun; Aiming=2,
 	}
 
+	model Bullet
+	{
+		mesh = ammo/Bullet,
+	}
+
+	model RifleBullet
+	{
+		mesh = ammo/RifleBullet,
+		texture = ammo/Bullet,
+	}
+
+	model ShotgunShell
+	{
+		mesh = ammo/ShotgunShells,
+	}
+
+	model Ammobox
+	{
+		mesh = ammo/Ammobox,
+	}
+
+	model 556_Mag
+	{
+		mesh = ammo/Stanag_Mag,
+	}
+
 	model ShotgunDoubleBarrelSawn_OPEN
 	{
 	mesh = Weapons/Firearm/DoubleBarrelSawn_OPEN,
@@ -1237,6 +1263,15 @@ module Base
 				        Time:5.0,
 				    }
 
+						recipe Open Box of .44-40 WCF Ammo
+				    {
+				        4440Box,
+
+				        Result:4440Bullets=8,
+				        Sound:PutItemInBag,
+				        Time:5.0,
+				    }
+
 						item Laser
 				    {
 				        Type = WeaponPart,
@@ -1320,27 +1355,328 @@ module Base
 		        SurvivalGear = TRUE,
 						}
 
-						item 762Bullets
+						/************************Ammo************************/
+					    item Bullets9mm
+					    {
+					        Count	=	5,
+					        Weight	=	0.01,
+					        Type	=	Normal,
+					        DisplayCategory = Ammo,
+					        DisplayName	=	9mm Rounds,
+					        Icon	=	9mm_Round,
+					        MetalValue = 1,
+									StaticModel = Bullet,
+					    }
+
+					    item Bullets9mmBox
+					    {
+					        Weight	=	0.35,
+					        Type	=	Normal,
+					        DisplayName	=	Box of 9mm Bullets,
+					        DisplayCategory = Ammo,
+					        Icon	=	HandgunAmmoBox,
+					        MetalValue = 30,
+									StaticModel = Ammobox,
+					    }
+
+					    item 9mmClip
+					    {
+					        CanStack	=	FALSE,
+					        Weight	=	0.2,
+					        Type	=	Normal,
+					        DisplayName	=	9mm Magazine,
+					        Icon	=	9mm_Mag,
+					        MaxAmmo = 15,
+					        AmmoType = Base.Bullets9mm,
+					        StaticModel = GunMagazine,
+					    }
+
+					    item Bullets45
+					    {
+					        Count	=	5,
+					        Weight	=	0.02,
+					        Type	=	Normal,
+					        DisplayCategory = Ammo,
+					        DisplayName	=	.45 Auto,
+					        Icon	=	45_Round,
+					        MetalValue = 1,
+									StaticModel = Bullet,
+					    }
+
+					    item Bullets45Box
+					    {
+					        Weight	=	0.65,
+					        Type	=	Normal,
+					        DisplayName	=	Box of .45 Auto Bullets,
+					        DisplayCategory = Ammo,
+					        Icon	=	HandgunAmmoBox,
+					        MetalValue = 30,
+									StaticModel = Ammobox,
+					    }
+
+					    item 45Clip
+					    {
+					        CanStack	=	FALSE,
+					        Weight	=	0.2,
+					        Type	=	Normal,
+					        DisplayName	=	.45 Auto Magazine,
+					        Icon	=	45_Mag,
+					        MaxAmmo = 7,
+					        AmmoType = Base.Bullets45,
+					        StaticModel = GunMagazine,
+					    }
+
+					    item Bullets44
+					    {
+					        Count	=	3,
+					        Weight	=	0.02,
+					        Type	=	Normal,
+					        DisplayCategory = Ammo,
+					        DisplayName	=	.44 Magnum Bullets,
+					        Icon	=	45_Round,
+					        MetalValue = 1,
+									StaticModel = Bullet,
+					    }
+
+					    item Bullets44Box
+					    {
+					        Weight	=	0.65,
+					        Type	=	Normal,
+					        DisplayName	=	Box of .44 Magnum Bullets,
+					        DisplayCategory = Ammo,
+					        Icon	=	HandgunAmmoBox,
+					        MetalValue = 30,
+									StaticModel = Ammobox,
+					    }
+
+					    item 44Clip
+					    {
+					        CanStack	=	FALSE,
+					        Weight	=	0.2,
+					        Type	=	Normal,
+					        DisplayName	=	.44 Magnum Magazine,
+					        Icon	=	44_Mag,
+					        MaxAmmo = 8,
+					        AmmoType = Base.Bullets44,
+					        StaticModel = GunMagazine,
+					    }
+
+
+					    item 4440Bullets
+					    {
+					        Count	=	3,
+					        Weight	=	0.02,
+					        Type	=	Normal,
+					        DisplayCategory = Ammo,
+					        DisplayName	=	.44-40 WCF Bullets,
+					        Icon	=	45_Round,
+					        MetalValue = 1,
+									StaticModel = Bullet,
+					    }
+
+					    item 4440Box
+					    {
+					        Weight	=	0.65,
+					        Type	=	Normal,
+					        DisplayName	=	Box of .44-40 WCF Bullets,
+					        DisplayCategory = Ammo,
+					        Icon	=	HandgunAmmoBox,
+					        MetalValue = 30,
+									StaticModel = Ammobox,
+					    }
+
+					    item Bullets38
+					    {
+					        Count	=	5,
+					        Weight	=	0.015,
+					        Type	=	Normal,
+					        DisplayCategory = Ammo,
+					        DisplayName	=	.38 Special Bullets,
+					        Icon	=	38_Round,
+					        MetalValue = 1,
+									StaticModel = Bullet,
+					    }
+
+					    item Bullets38Box
+					    {
+					        Weight	=	0.5,
+					        Type	=	Normal,
+					        DisplayName	=	Box of .38 Special Bullets,
+					        DisplayCategory = Ammo,
+					        Icon	=	HandgunAmmoBox,
+					        MetalValue = 30,
+									StaticModel = Ammobox,
+					    }
+
+						item ShotgunShells
 						{
-								Count	=	5,
-								Weight	=	0.02,
-								AlwaysWelcomeGift	=	TRUE,
-								Type	=	Normal,
-								DisplayName	=	7.62 Ammo,
-								DisplayCategory = Ammo,
-								Icon	=	RifleAmmo308loose,
-								MetalValue = 1,
+							Count	=	6,
+							Weight	=	0.04,
+							AlwaysWelcomeGift	=	TRUE,
+							Type	=	Normal,
+							DisplayCategory = Ammo,
+							DisplayName	=	Shotgun Shells,
+							Icon	=	ShotgunShells,
+							MetalValue = 1,
 						}
 
-						item 762Box
-						{
-								Weight	=	0.85,
-								AlwaysWelcomeGift	=	TRUE,
-								Type	=	Normal,
-								DisplayName	=	Box of 7.62 Bullets,
-								DisplayCategory = Ammo,
-								Icon	=	RifleAmmo308,
-								MetalValue = 40,
-						}
+					    item ShotgunShellsBox
+					    {
+					        Weight	=	1.0,
+					        Type	=	Normal,
+					        DisplayName	=	Box of Shotgun Shells,
+					        DisplayCategory = Ammo,
+					        Icon	=	ShotgunAmmoBox,
+					        MetalValue = 24,
+									StaticModel = Ammobox,
+					    }
+
+						item 223Bullets
+					    {
+					        Count	=	5,
+					        Weight	=	0.01,
+					        AlwaysWelcomeGift	=	TRUE,
+					        Type	=	Normal,
+					        DisplayName	=	.223 Ammo,
+					        DisplayCategory = Ammo,
+					        Icon	=	308_Round,
+					        MetalValue = 1,
+									StaticModel = RifleBullet,
+					    }
+
+					    item 223Box
+					    {
+					        Weight	=	0.45,
+					        AlwaysWelcomeGift	=	TRUE,
+					        Type	=	Normal,
+					        DisplayName	=	Box of .223 Bullets,
+					        DisplayCategory = Ammo,
+					        Icon	=	RifleAmmo223,
+					        MetalValue = 40,
+									StaticModel = Ammobox,
+					    }
+
+					    item 223Clip
+					    {
+					        CanStack	=	FALSE,
+					        Weight	=	0.2,
+					        Type	=	Normal,
+					        DisplayName	=	.223 Magazine,
+					        Icon	=	308_Mag,
+					        MaxAmmo = 3,
+					        AmmoType = Base.223Bullets,
+					        StaticModel = GunMagazine,
+					    }
+
+					    item 308Bullets
+					    {
+					        Count	=	5,
+					        Weight	=	0.02,
+					        AlwaysWelcomeGift	=	TRUE,
+					        Type	=	Normal,
+					        DisplayName	=	.308 Ammo,
+					        DisplayCategory = Ammo,
+					        Icon	=	308_Round,
+					        MetalValue = 1,
+									StaticModel = RifleBullet,
+					    }
+
+					    item 308Box
+					    {
+					        Weight	=	0.85,
+					        AlwaysWelcomeGift	=	TRUE,
+					        Type	=	Normal,
+					        DisplayName	=	Box of .308 Bullets,
+					        DisplayCategory = Ammo,
+					        Icon	=	RifleAmmo308,
+					        MetalValue = 40,
+									StaticModel = Ammobox,
+					    }
+
+					    item 308Clip
+					    {
+					        CanStack	=	FALSE,
+					        Weight	=	0.2,
+					        Type	=	Normal,
+					        DisplayName	=	.308 Magazine,
+					        Icon	=	308_Mag,
+					        MaxAmmo = 3,
+					        AmmoType = Base.308Bullets,
+					        StaticModel = GunMagazine,
+					    }
+
+					    item 556Bullets
+					    {
+					        Count	=	5,
+					        Weight	=	0.025,
+					        AlwaysWelcomeGift	=	TRUE,
+					        Type	=	Normal,
+					        DisplayName	=	.556 Ammo,
+					        DisplayCategory = Ammo,
+					        Icon	=	308_Round,
+					        MetalValue = 1,
+									StaticModel = RifleBullet,
+					    }
+
+					    item 556Box
+					    {
+					        Weight	=	1,
+					        AlwaysWelcomeGift	=	TRUE,
+					        Type	=	Normal,
+					        DisplayName	=	Box of .556 Bullets,
+					        DisplayCategory = Ammo,
+					        Icon	=	RifleAmmo308,
+					        MetalValue = 40,
+									StaticModel = Ammobox,
+					    }
+
+					    item 556Clip
+					    {
+					        CanStack	=	FALSE,
+					        Weight	=	0.2,
+					        Type	=	Normal,
+					        DisplayName	=	5.56 STANAG,
+					        Icon	=	556_Stanag_Mag,
+					        MaxAmmo = 30,
+					        AmmoType = Base.556Bullets,
+					        StaticModel = 556_Mag,
+					    }
+
+					    item 762Bullets
+					    {
+					        Count	=	5,
+					        Weight	=	0.025,
+					        AlwaysWelcomeGift	=	TRUE,
+					        Type	=	Normal,
+					        DisplayName	=	7.62 Ammo,
+					        DisplayCategory = Ammo,
+					        Icon	=	308_Round,
+					        MetalValue = 1,
+									StaticModel = RifleBullet,
+					    }
+
+					    item 762Box
+					    {
+					        Weight	=	1,
+					        AlwaysWelcomeGift	=	TRUE,
+					        Type	=	Normal,
+					        DisplayName	=	Box of .556 Bullets,
+					        DisplayCategory = Ammo,
+					        Icon	=	RifleAmmo308,
+					        MetalValue = 40,
+									StaticModel = Ammobox,
+					    }
+
+					    item M14Clip
+					    {
+					        CanStack	=	FALSE,
+					        Weight	=	0.2,
+					        Type	=	Normal,
+					        DisplayName	=	.308 Magazine,
+					        Icon	=	308_Mag2,
+					        MaxAmmo = 20,
+					        AmmoType = Base.308Bullets,
+					        StaticModel = GunMagazine,
+					    }
 
 }

@@ -29,6 +29,7 @@ ItemName_EN = {
     ItemName_Firearms.Remington870Wood = "Remington 870",
     ItemName_Firearms.Remington870Sawnoff = "Sawed-off Remington 870",
     ItemName_Firearms.Winchester94 = "Winchester Model 1894"
+    ItemName_Firearms.Winchester73 = "Winchester Model 1873"
 
 
     ItemName_Base.x2Scope = "ACOG x2",
@@ -66,7 +67,26 @@ ItemName_EN = {
     ItemName_Firearms.MP5Mag = "MP5 Magazine",
     ItemName_Firearms.M60Mag = "M60 Magazine"
 
+    ItemName_Base.223Box = "Box of .223 Remington Rounds",
+    ItemName_Base.308Box = "Box of .308 Winchester Rounds",
+    ItemName_Base.556Box = "Box of 5.56x45mm Rounds",
+    ItemName_Base.Bullets38Box = "Box of .38 Special Rounds",
+    ItemName_Base.Bullets44Box = "Box of .44 Magnum Rounds",
+    ItemName_Base.Bullets45Box = "Box of .45 ACP Rounds",
+    ItemName_Base.Bullets9mmBox = "Box of 9x19mm Parabellum Rounds",
+    ItemName_Base.ShotgunShellsBox = "Box of Shotgun Shells",
+
+    ItemName_Base.223Bullets = ".223 Remington Round",
+    ItemName_Base.308Bullets = ".308 Winchester Round",
+    ItemName_Base.556Bullets = "5.56x45mm Round",
+    ItemName_Base.Bullets38 = ".38 Special Round",
+    ItemName_Base.Bullets44 = ".44 Magnum Round",
+    ItemName_Base.Bullets45 = ".45 ACP Round",
+    ItemName_Base.Bullets9mm = "9x19mm Parabellum Round",
+    ItemName_Base.ShotgunShells = "Shotgun Shells",
     ItemName_Base.762Box = "Box of 7.62x51mm Ammo",
     ItemName_Base.762Bullets = "7.62x51mm Round",
+    ItemName_Base.4440Box = "Box of .44-40 WCF Ammo",
+    ItemName_Base.4440Bullets = ".44-40 WCF Round",
 
 }

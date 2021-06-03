@@ -67,7 +67,7 @@ module Firearms
 			{
 	      223Bullets,
 
-	      Result:556Bullets,
+	      Result:556Bullets=1,
 	      Time:0,
 			}
 
@@ -75,7 +75,7 @@ module Firearms
 			{
 	      556Bullets,
 
-	      Result:223Bullets,
+	      Result:223Bullets=1,
 	      Time:0,
 			}
 
@@ -83,7 +83,7 @@ module Firearms
 			{
 	      308Bullets,
 
-	      Result:762Bullets,
+	      Result:762Bullets=1,
 	      Time:0,
 			}
 
@@ -91,7 +91,7 @@ module Firearms
 			{
 	      762Bullets,
 
-	      Result:308Bullets,
+	      Result:308Bullets=1,
 	      Time:0,
 			}
 }

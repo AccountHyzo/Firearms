@@ -123,6 +123,25 @@ module Base
 		}
 	}
 
+	sound StormyRevolverInsertRound
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/StormyRevolverInsertRound.wav,
+		}
+	}
+
+	sound FirearmAR15Shot
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FirearmAR15Shot.wav,
+			volume = 2,
+		}
+	}
+
 	sound Stormy9mmRack
 	{
 		category = Item,
@@ -1058,8 +1077,8 @@ module Base
 	        MetalValue = 45,
 	        AmmoBox = 556Box,
 	        MaxAmmo = 30,
-	        InsertAmmoSound = Stormy9mmClipLoad,
-	        EjectAmmoSound = Stormy9mmClipEject,
+	        InsertAmmoSound = FirearmAR15InsertMagazine,
+	        EjectAmmoSound = FirearmAR15RemoveMagazine,
 	        RackSound = Stormy9mmRack,
 	        MagazineType = Base.556Clip,
 	        AmmoType = Base.556Bullets,
@@ -1071,7 +1090,7 @@ module Base
 					ModelWeaponPart = AmmoStraps Firearms.Rifle_Ammostrap sling sling,
 	        ModelWeaponPart = Sling Firearms.Sling sling sling,
 	        ModelWeaponPart = RecoilPad Firearms.Recoil_Pad recoilpad recoilpad,
-			 		ModelWeaponPart = Firearms.556Silencer Firearms.Silencer silencer silencer,
+			 		ModelWeaponPart = Firearms.223Silencer Firearms.Silencer silencer silencer,
 	        JamGunChance = 2,
 	        AttachmentType = Rifle,
 	        FireMode = Single,
@@ -1180,7 +1199,7 @@ module Base
 			        WeightModifier = 0.3,
 			        MaxRangeModifier = 7,
 			        MinRangeModifier = 6,
-			        MountOn = HuntingRifle; VarmintRifle; Firearms.HuntingRifle_Sawn; AssaultRifle; Firearms.M60; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.MP5; Firearms.Mossberg500Tactical; Firearms.Mossberg500; Shotgun; ShotgunSawnoff; Firearms.Remington870Sawnoff; Firearms.Remington870Wood,
+			        MountOn = HuntingRifle; VarmintRifle; Firearms.HuntingRifle_Sawn; AssaultRifle; Firearms.M60; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.MP5; Firearms.UZI; Firearms.Mossberg500Tactical; Firearms.Mossberg500; Shotgun; ShotgunSawnoff; Firearms.Remington870Sawnoff; Firearms.Remington870Wood,
 			        PartType = Scope,
 			        Tooltip = Tooltip_Scope,
 			        MetalValue = 22,
@@ -1223,7 +1242,7 @@ module Base
 			        Icon = GunSling,
 			        Weight = 0.5,
 			        WeightModifier = -0.3,
-			        MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Firearms.Winchester94; Firearms.M60; Firearms.HuntingRifle_Sawn; Firearms.Remington870Sawnoff; Shotgun; Firearms.Mossberg500; AssaultRifle; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.Remington870Wood; Firearms.Mossberg500Tactical; Firearms.MP5,
+			        MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Firearms.Winchester94; Firearms.M60; Firearms.HuntingRifle_Sawn; Firearms.Remington870Sawnoff; Shotgun; Firearms.Mossberg500; AssaultRifle; Firearms.M16A2; AssaultRifle2; Firearms.M24Rifle; Firearms.Remington870Wood; Firearms.Mossberg500Tactical; Firearms.MP5; Firearms.UZI,
 			        PartType = Sling,
 			        Tooltip = Tooltip_Sling,
 			    }
@@ -1312,7 +1331,7 @@ module Base
 				        Weight = 0.2,
 				        WeightModifier = 0.2,
 				        AimingTimeModifier = 5,
-				        MountOn = Pistol; Pistol2; Pistol3; Firearms.Glock17; Firearms.HuntingRifle_Sawn; Shotgun; ShotgunSawnoff; Firearms.Remington870Sawnoff; Firearms.Mossberg500; Firearms.Mossberg500Tactical; Firearms.Remington870Wood; Firearms.MP5; AssaultRifle; AssaultRifle2; Firearms.M24Rifle; Firearms.M16A2,
+				        MountOn = Pistol; Pistol2; Pistol3; Firearms.Glock17; Firearms.HuntingRifle_Sawn; Shotgun; ShotgunSawnoff; Firearms.Remington870Sawnoff; Firearms.Mossberg500; Firearms.Mossberg500Tactical; Firearms.Remington870Wood; Firearms.MP5; Firearms.UZI; AssaultRifle; AssaultRifle2; Firearms.M24Rifle; Firearms.M16A2,
 				        PartType = Scope,
 				        Tooltip = Tooltip_RedDot,
 				        MetalValue = 15,

@@ -14,11 +14,13 @@ ItemName_EN = {
     ItemName_Firearms.HuntingRifle_Sawn = "Sawed-off Remington Model 788",
 
     ItemName_Base.AssaultRifle = "M16A1",
-    ItemName_Base.AssaultRifle2 = "M14",
     ItemName_Firearms.M16A2 = "M16A2",
+    ItemName_Base.AssaultRifle2 = "M14",
     ItemName_Firearms.M24Rifle = "M24",
     ItemName_Firearms.M60 = "M60"
     ItemName_Firearms.MP5 = "MP5A1",
+
+    ItemName_Firearms.UZI = "UZI Carbine"
 
     ItemName_Base.Shotgun = "Mossberg 500",
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
@@ -46,12 +48,11 @@ ItemName_EN = {
     ItemName_Firearms.MP5_Stock_Extended = "MP5 Stock",
     ItemName_Firearms.MP5_Stock_Detracted = "MP5 Stock",
 
-    ItemName_Firearms.45Silencer = ".45 Silencer",
-    ItemName_Firearms.9mmSilencer = "9mm Silencer",
-    ItemName_Firearms.223Silencer = ".223 Silencer",
-    ItemName_Firearms.308Silencer = ".308 Silencer",
-    ItemName_Firearms.556Silencer = "5.56 Silencer",
-    ItemName_Firearms.ImprovisedSilencer = "Improvised Silencer",
+    ItemName_Firearms.45Silencer = ".45 Suppressor",
+    ItemName_Firearms.9mmSilencer = "9mm Suppressor",
+    ItemName_Firearms.223Silencer = ".223/5.56mm Suppressor",
+    ItemName_Firearms.308Silencer = ".308/7.62mm Suppressor",
+    ItemName_Firearms.ImprovisedSilencer = "Improvised Suppressor",
 
     ItemName_Firearms.9mmCompensator = "9mm Compensator",
 

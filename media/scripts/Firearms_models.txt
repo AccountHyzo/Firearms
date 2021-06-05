@@ -820,6 +820,58 @@ attachment silencer
 	rotate = 180.0000 0.0000 180.0000,
 }
 }
+	model UZI
+	{
+		mesh = Weapons/Firearm/UZI,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1650 0.0160,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment sling
+		{
+			offset = 0.0000 0.2200 0.0180,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0160 0.0340,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0190 0.0340,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment gunlight
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment stock
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment silencer
+		{
+			offset = 0.0000 0.1570 0.0160,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
 	model Model700
 	{
 		mesh = weapons/firearm/Model700,
@@ -1033,7 +1085,7 @@ attachment bipod
 	rotate = -180.0000 0.0000 -180.0000,
 }
 }
-model Winchester73
+	model Winchester73
 {
 	mesh = weapons/firearm/Winchester,
 	texture = weapons/firearm/Winchester73,
@@ -1104,7 +1156,7 @@ model Winchester73
 		rotate = -180.0000 0.0000 -180.0000,
 	}
 }
-model Winchester94
+	model Winchester94
 {
 	mesh = weapons/firearm/Winchester,
 	texture = weapons/firearm/Winchester94,

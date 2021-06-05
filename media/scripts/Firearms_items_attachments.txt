@@ -26,7 +26,7 @@ module Firearms
 			Icon = Silencer,
 			Weight = 0.3,
 			WeightModifier = 0.3,
-			MountOn = Glock17; Pistol; MP5,
+			MountOn = Glock17; Pistol; MP5; UZI,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
 	}
@@ -38,7 +38,7 @@ module Firearms
 			Icon = Silencer,
 			Weight = 0.3,
 			WeightModifier = 0.3,
-			MountOn = VarmintRifle,
+			MountOn = VarmintRifle; AssaultRifle; M16A2,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
 	}
@@ -55,18 +55,6 @@ module Firearms
 			Tooltip = Tooltip_Silencer,
 	}
 
-	item 556Silencer
-	{
-			Type = WeaponPart,
-			DisplayName = Silencer,
-			Icon = Silencer,
-			Weight = 0.3,
-			WeightModifier = 0.3,
-			MountOn = AssaultRifle; M16A2,
-			PartType = Canon,
-			Tooltip = Tooltip_Silencer,
-	}
-
 	item ImprovisedSilencer
 	{
 			Type = WeaponPart,
@@ -74,7 +62,7 @@ module Firearms
 			Icon = Silencer,
 			Weight = 0.2,
 			WeightModifier = 0.2,
-			MountOn = Pistol; Pistol2; Glock17; MP5,
+			MountOn = Pistol; Pistol2; Glock17,
 			PartType = Canon,
 			Tooltip = Tooltip_ImprovisedSilencer,
 	}

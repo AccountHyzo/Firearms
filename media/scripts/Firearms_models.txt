@@ -1,5 +1,45 @@
-module Firearms
+module Base
 {
+
+	model Bullet
+	{
+		mesh = ammo/Bullet,
+	}
+
+	model RifleBullet
+	{
+		mesh = ammo/RifleBullet,
+		texture = ammo/Bullet,
+	}
+
+	model ShotgunShell
+	{
+		mesh = ammo/ShotgunShells,
+	}
+
+	model Ammobox
+	{
+		mesh = ammo/Ammobox,
+	}
+
+	model 556_Mag
+	{
+		mesh = ammo/Stanag_Mag,
+	}
+
+	model ShotgunDoubleBarrelSawn_OPEN
+	{
+	mesh = Weapons/Firearm/DoubleBarrelSawn_OPEN,
+	texture = Weapons/firearm/Mossberg500_Wood,
+	}
+
+
+	model ShotgunDoubleBarrel_OPEN
+	{
+	mesh = Weapons/Firearm/DoubleBarrel_OPEN,
+	texture = Weapons/firearm/Mossberg500_Wood,
+	}
+
 	model DoubleBarrelSawn
 {
 	mesh = Weapons/Firearm/DoubleBarrelSawn,
@@ -1429,31 +1469,81 @@ rotate = 180.0000 0.0000 180.0000,
 								mesh = weapons/firearm/attachments/Sling,
 								texture = weapons/firearm/attachments/Sling_Leather,
 					}
-	model MP5_Sling_Short
+	model Sling_Olive
+					{
+								mesh = weapons/firearm/attachments/Sling,
+								texture = weapons/firearm/attachments/Sling_OliveGreen,
+					}
+	model Sling_Camo
+					{
+								mesh = weapons/firearm/attachments/Sling,
+								texture = weapons/firearm/attachments/Sling_Camo,
+					}
+	model Sling_Short
 	{
 					mesh = weapons/firearm/attachments/MP5_Sling_Short,
 					texture = weapons/firearm/attachments/Sling,
   }
+	model Sling_Short_Leather
+					{
+								mesh = weapons/firearm/attachments/MP5_Sling_Short,
+								texture = weapons/firearm/attachments/Sling_Leather,
+					}
+	model Sling_Short_Olive
+					{
+								mesh = weapons/firearm/attachments/MP5_Sling_Short,
+								texture = weapons/firearm/attachments/Sling_OliveGreen,
+					}
+	model Sling_Short_Camo
+					{
+								mesh = weapons/firearm/attachments/MP5_Sling_Short,
+								texture = weapons/firearm/attachments/Sling_Camo,
+					}
 	model Rifle_Ammostrap
 						{
 							mesh = weapons/firearm/attachments/Rifle_AmmoStrap,
 							texture = Weapons/firearm/attachments/Sling_Ammo,
 						}
 	model Shotgun_Sling
-						{
-							mesh = Weapons/Firearm/attachments/Sling_Shotgun,
+					{
+							mesh = weapons/firearm/attachments/Sling_Shotgun,
 							texture = Weapons/firearm/attachments/Sling,
-						}
+					}
 	model Shotgun_Sling_Leather
-						{
-							mesh = Weapons/Firearm/attachments/Sling_Shotgun,
-							texture = Weapons/firearm/attachments/Sling_Leather,
-						}
+					{
+								mesh = weapons/firearm/attachments/Sling_Shotgun,
+								texture = weapons/firearm/attachments/Sling_Leather,
+					}
+	model Shotgun_Sling_Olive
+					{
+								mesh = weapons/firearm/attachments/Sling_Shotgun,
+								texture = weapons/firearm/attachments/Sling_OliveGreen,
+					}
+	model Shotgun_Sling_Camo
+					{
+								mesh = weapons/firearm/attachments/Sling_Shotgun,
+								texture = weapons/firearm/attachments/Sling_Camo,
+					}
 	model Shotgun_Sling_Short
 						{
 							mesh = Weapons/Firearm/attachments/Sling_Short,
 							texture = Weapons/firearm/attachments/Sling,
 						}
+	model Shotgun_Sling_Short_Leather
+					{
+								mesh = weapons/firearm/attachments/Sling_Shotgun,
+								texture = weapons/firearm/attachments/Sling_Leather,
+					}
+	model Shotgun_Sling_Short_Olive
+					{
+								mesh = weapons/firearm/attachments/Sling_Shotgun,
+								texture = weapons/firearm/attachments/Sling_OliveGreen,
+					}
+	model Shotgun_Sling_Short_Camo
+					{
+								mesh = weapons/firearm/attachments/Sling_Shotgun,
+								texture = weapons/firearm/attachments/Sling_Camo,
+					}
 	model Shotgun_AmmoSling
 						{
 							mesh = Weapons/Firearm/attachments/Sling_Shotgun_Ammo,

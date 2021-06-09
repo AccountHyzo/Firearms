@@ -1,0 +1,293 @@
+module Base
+{
+
+	/************************Ammo************************/
+    item Bullets9mm
+    {
+        Count	=	5,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayCategory = Ammo,
+        DisplayName	=	9mm Round,
+        Icon	=	9mm_Round,
+        MetalValue = 1,
+				StaticModel = Bullet,
+    }
+
+    item Bullets9mmBox
+    {
+        Weight	=	0.35,
+        Type	=	Normal,
+        DisplayName	=	Box of 9mm Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	HandgunRoundBox,
+        MetalValue = 30,
+				StaticModel = Ammobox,
+    }
+
+    item Bullets45
+    {
+        Count	=	5,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayCategory = Ammo,
+        DisplayName	=	.45 Auto Round,
+        Icon	=	45_Round,
+        MetalValue = 1,
+				StaticModel = Bullet,
+    }
+
+    item Bullets45Box
+    {
+        Weight	=	0.65,
+        Type	=	Normal,
+        DisplayName	=	Box of .45 Auto Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	HandgunRoundBox,
+        MetalValue = 30,
+				StaticModel = Ammobox,
+    }
+
+    item Bullets44
+    {
+        Count	=	3,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayCategory = Ammo,
+        DisplayName	=	.44 Magnum Round,
+        Icon	=	45_Round,
+        MetalValue = 1,
+				StaticModel = Bullet,
+    }
+
+    item Bullets44Box
+    {
+        Weight	=	0.65,
+        Type	=	Normal,
+        DisplayName	=	Box of .44 Magnum Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	RevolverRoundBox,
+        MetalValue = 30,
+				StaticModel = Ammobox,
+    }
+
+    item 4440Bullets
+    {
+        Count	=	3,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayCategory = Ammo,
+        DisplayName	=	.44-40 WCF Round,
+        Icon	=	45_Round,
+        MetalValue = 1,
+				StaticModel = Bullet,
+    }
+
+    item 4440Box
+    {
+        Weight	=	0.65,
+        Type	=	Normal,
+        DisplayName	=	Box of .44-40 WCF Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	RevolverRoundBox,
+        MetalValue = 30,
+				StaticModel = Ammobox,
+    }
+
+    item Bullets38
+    {
+        Count	=	5,
+        Weight	=	0.015,
+        Type	=	Normal,
+        DisplayCategory = Ammo,
+        DisplayName	=	.38 Special Round,
+        Icon	=	38_Round,
+        MetalValue = 1,
+				StaticModel = Bullet,
+    }
+
+    item Bullets38Box
+    {
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	Box of .38 Special Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	RevolverRoundBox,
+        MetalValue = 30,
+				StaticModel = Ammobox,
+    }
+
+	item ShotgunShells
+	{
+		Count	=	6,
+		Weight	=	0.04,
+		AlwaysWelcomeGift	=	TRUE,
+		Type	=	Normal,
+		DisplayCategory = Ammo,
+		DisplayName	=	Shotgun Shells,
+		Icon	=	ShotgunShells,
+		MetalValue = 1,
+	}
+
+    item ShotgunShellsBox
+    {
+        Weight	=	1.0,
+        Type	=	Normal,
+        DisplayName	=	Box of Shotgun Shells,
+        DisplayCategory = Ammo,
+        Icon	=	ShotgunShellsBox,
+        MetalValue = 24,
+				StaticModel = Ammobox,
+    }
+
+	item 223Bullets
+    {
+        Count	=	5,
+        Weight	=	0.01,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	.223 Round,
+        DisplayCategory = Ammo,
+        Icon	=	308_Round,
+        MetalValue = 1,
+				StaticModel = RifleBullet,
+    }
+
+    item 223Box
+    {
+        Weight	=	0.45,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of .223 Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	RifleRoundBox,
+        MetalValue = 40,
+				StaticModel = Ammobox,
+    }
+
+    item 308Bullets
+    {
+        Count	=	5,
+        Weight	=	0.02,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	.308 Round,
+        DisplayCategory = Ammo,
+        Icon	=	308_Round,
+        MetalValue = 1,
+				StaticModel = RifleBullet,
+    }
+
+    item 308Box
+    {
+        Weight	=	0.85,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of .308 Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	RifleRoundBox,
+        MetalValue = 40,
+				StaticModel = Ammobox,
+    }
+
+    item 556Bullets
+    {
+        Count	=	5,
+        Weight	=	0.025,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	5.56x45mm Round,
+        DisplayCategory = Ammo,
+        Icon	=	308_Round,
+        MetalValue = 1,
+				StaticModel = RifleBullet,
+    }
+
+    item 556Box
+    {
+        Weight	=	1,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of 5.56x45mm Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	ARRoundBox,
+        MetalValue = 40,
+				StaticModel = Ammobox,
+    }
+
+    item 762Bullets
+    {
+        Count	=	5,
+        Weight	=	0.025,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	7.62x51mm Round,
+        DisplayCategory = Ammo,
+        Icon	=	308_Round,
+        MetalValue = 1,
+				StaticModel = RifleBullet,
+    }
+
+    item 762Box
+    {
+        Weight	=	1,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of 7.62x51mm Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	ARRoundBox,
+        MetalValue = 40,
+				StaticModel = Ammobox,
+    }
+
+		item 762x39Bullets
+    {
+        Count	=	5,
+        Weight	=	0.025,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	762x39mm Round,
+        DisplayCategory = Ammo,
+        Icon	=	308_Round,
+        MetalValue = 1,
+				StaticModel = RifleBullet,
+    }
+
+    item 762x39Box
+    {
+        Weight	=	1,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of 7.62×39mm Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	ARRoundBox,
+        MetalValue = 40,
+				StaticModel = Ammobox,
+    }
+
+		item 22LRBullets
+	    {
+	        Count	=	5,
+	        Weight	=	0.01,
+	        AlwaysWelcomeGift	=	TRUE,
+	        Type	=	Normal,
+	        DisplayName	=	.22 LR6 Round,
+	        DisplayCategory = Ammo,
+	        Icon	=	22LR_Round,
+	        MetalValue = 1,
+					StaticModel = RifleBullet,
+	    }
+
+	    item 22LRBox
+	    {
+	        Weight	=	0.45,
+	        AlwaysWelcomeGift	=	TRUE,
+	        Type	=	Normal,
+	        DisplayName	=	Box of .22 LR Rounds,
+	        DisplayCategory = Ammo,
+	        Icon	=	RifleRoundBox,
+	        MetalValue = 40,
+					StaticModel = Ammobox,
+	    }
+
+}

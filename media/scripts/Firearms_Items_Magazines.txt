@@ -1,0 +1,150 @@
+module Base
+{
+
+	/************************Magazines************************/
+
+	item 9mmClip
+	{
+			CanStack	=	FALSE,
+			Weight	=	0.2,
+			Type	=	Normal,
+			DisplayName	=	9mm Magazine,
+			Icon	=	9mm_Mag,
+			MaxAmmo = 15,
+			AmmoType = Base.Bullets9mm,
+			StaticModel = GunMagazine,
+	}
+
+	item 45Clip
+	{
+			CanStack	=	FALSE,
+			Weight	=	0.2,
+			Type	=	Normal,
+			DisplayName	=	.45 Auto Magazine,
+			Icon	=	45_Mag,
+			MaxAmmo = 7,
+			AmmoType = Base.Bullets45,
+			StaticModel = GunMagazine,
+	}
+
+	item 44Clip
+	{
+			CanStack	=	FALSE,
+			Weight	=	0.2,
+			Type	=	Normal,
+			DisplayName	=	.44 Magnum Magazine,
+			Icon	=	44_Mag,
+			MaxAmmo = 8,
+			AmmoType = Base.Bullets44,
+			StaticModel = GunMagazine,
+	}
+
+	item Glock17Mag
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Glock 17 Magazine,
+		Icon	=	Glock_Mag,
+		MaxAmmo = 17,
+		AmmoType = Base.Bullets9mm,
+		StaticModel = GunMagazine,
+	}
+
+	item MP5Mag
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.4,
+		Type	=	Normal,
+		DisplayName	=	MP5 Magazine,
+		Icon	=	Mp5_Mag,
+		MaxAmmo = 30,
+		AmmoType = Base.Bullets9mm,
+		StaticModel = GunMagazine,
+	}
+
+	item UZIMag
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.4,
+		Type	=	Normal,
+		DisplayName	=	UZI Carbine Magazine,
+		Icon	=	UZIMag,
+		MaxAmmo = 20,
+		AmmoType = Base.Bullets9mm,
+		StaticModel = GunMagazine,
+	}
+
+	item 223Clip
+	{
+			CanStack	=	FALSE,
+			Weight	=	0.2,
+			Type	=	Normal,
+			DisplayName	=	.223 Magazine,
+			Icon	=	308_Mag,
+			MaxAmmo = 3,
+			AmmoType = Base.223Bullets,
+			StaticModel = GunMagazine,
+	}
+
+	item 308Clip
+	{
+			CanStack	=	FALSE,
+			Weight	=	0.2,
+			Type	=	Normal,
+			DisplayName	=	.308 Magazine,
+			Icon	=	308_Mag,
+			MaxAmmo = 3,
+			AmmoType = Base.308Bullets,
+			StaticModel = GunMagazine,
+	}
+
+	item 556Clip
+	{
+			CanStack	=	FALSE,
+			Weight	=	0.2,
+			Type	=	Normal,
+			DisplayName	=	5.56 STANAG,
+			Icon	=	556_Stanag_Mag,
+			MaxAmmo = 30,
+			AmmoType = Base.556Bullets,
+			StaticModel = 556_Mag,
+	}
+
+	item 556Clip2
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	20rnd 5.56x45mm STANAG,
+		Icon	=	556_Stanag_Mag,
+		MaxAmmo = 20,
+		AmmoType = Base.556Bullets,
+		StaticModel = GunMagazine,
+	}
+
+	item M14Clip
+	{
+			CanStack	=	FALSE,
+			Weight	=	0.2,
+			Type	=	Normal,
+			DisplayName	=	.308 Magazine,
+			Icon	=	308_Mag2,
+			MaxAmmo = 20,
+			AmmoType = Base.308Bullets,
+			StaticModel = GunMagazine,
+	}
+
+	item M60Mag
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.4,
+		Type	=	Normal,
+		DisplayName	=	M60 Magazine,
+		Icon	=	M60Mag,
+		MaxAmmo = 100,
+		AmmoType = Base.762Bullets,
+		StaticModel = GunMagazine,
+	}
+
+}

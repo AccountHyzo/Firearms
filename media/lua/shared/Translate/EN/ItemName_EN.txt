@@ -1,73 +1,79 @@
 ItemName_EN = {
-    ItemName_Base.Pistol = "Beretta M9",
-    ItemName_Base.Pistol2 = "Colt M1911",
+    ItemName_Base.Pistol = "Beretta 92FS",
+    ItemName_Base.Pistol2 = "Colt M1911A1",
     ItemName_Base.Pistol3 = "Desert Eagle",
-    ItemName_Firearms.Glock17 = "Glock 17",
+    ItemName_Base.Glock17 = "Glock 17",
 
     ItemName_Base.Revolver = "S&W M625",
     ItemName_Base.Revolver_Long = "S&W M29",
     ItemName_Base.Revolver_Short = "S&W M36",
-    ItemName_Firearms.ColtPeacemaker = "Colt Single Action Army",
+    ItemName_Base.ColtPeacemaker = "Colt Single Action Army",
 
     ItemName_Base.VarmintRifle = "Remington Model 700",
     ItemName_Base.HuntingRifle = "Remington Model 788",
-    ItemName_Firearms.HuntingRifle_Sawn = "Sawed-off Remington Model 788",
+    ItemName_Base.HuntingRifle_Sawn = "Sawed-off Remington Model 788",
 
     ItemName_Base.AssaultRifle = "M16A1",
-    ItemName_Firearms.M16A2 = "M16A2",
+    ItemName_Base.M16A2 = "M16A2",
     ItemName_Base.AssaultRifle2 = "M14",
-    ItemName_Firearms.M24Rifle = "M24",
-    ItemName_Firearms.M60 = "M60"
-    ItemName_Firearms.MP5 = "MP5A1",
+    ItemName_Base.M24Rifle = "M24",
+    ItemName_Base.M60 = "M60"
+    ItemName_Base.MP5 = "MP5A1",
 
-    ItemName_Firearms.UZI = "UZI Carbine"
+    ItemName_Base.UZI = "UZI Carbine"
 
     ItemName_Base.Shotgun = "Mossberg 500",
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
     ItemName_Base.DoubleBarrelShotgun = "Rossi Overland Coach Gun",
     ItemName_Base.DoubleBarrelShotgunSawnoff = "Sawed-off Rossi Overland Coach Gun",
-    ItemName_Firearms.Mossberg500 = "Mossberg 590",
-    ItemName_Firearms.Mossberg500Tactical = "Mossberg 590A1 Tactical",
-    ItemName_Firearms.Remington870Wood = "Remington 870",
-    ItemName_Firearms.Remington870Sawnoff = "Sawed-off Remington 870",
-    ItemName_Firearms.Winchester94 = "Winchester Model 1894"
-    ItemName_Firearms.Winchester73 = "Winchester Model 1873"
+    ItemName_Base.Mossberg500 = "Mossberg 590",
+    ItemName_Base.Mossberg500Tactical = "Mossberg 590A1 Tactical",
+    ItemName_Base.Remington870Wood = "Remington 870",
+    ItemName_Base.Remington870Sawnoff = "Sawed-off Remington 870",
+    ItemName_Base.Winchester94 = "Winchester Model 1894"
+    ItemName_Base.Winchester73 = "Winchester Model 1873"
 
 
-    ItemName_Base.x2Scope = "ACOG x2",
-    ItemName_Base.x4Scope = "x4 Scope",
+    ItemName_Base.x2Scope = "ACOG x2 Scope",
+    ItemName_Base.x4Scope = "ACOG x4 Scope",
     ItemName_Base.x8Scope = "x8 Scope",
 
     ItemName_Base.GunToolKit = "Gun Tool Kit",
 
-    ItemName_Firearms.ExtendedRecoilPad = "Extended Recoil Pad",
-    ItemName_Firearms.AmmoStock = "Shotgun Shell Ammostrap",
-    ItemName_Firearms.TacticalStock = "Tactical Stock",
-    ItemName_Firearms.ShotgunStock = "Shotgun Stock",
-    ItemName_Firearms.LightShotgunStock = "Light Shotgun Stock",
-    ItemName_Firearms.MP5_Stock_Extended = "MP5 Stock",
-    ItemName_Firearms.MP5_Stock_Detracted = "MP5 Stock",
+    ItemName_Base.ExtendedRecoilPad = "Extended Recoil Pad",
+    ItemName_Base.AmmoStock = "Shotgun Shell Ammostrap",
+    ItemName_Base.TacticalStock = "Tactical Stock",
+    ItemName_Base.ShotgunStock = "Shotgun Stock",
+    ItemName_Base.LightShotgunStock = "Light Shotgun Stock",
+    ItemName_Base.MP5_Stock_Extended = "MP5 Stock",
+    ItemName_Base.MP5_Stock_Detracted = "MP5 Stock",
 
-    ItemName_Firearms.45Silencer = ".45 Suppressor",
-    ItemName_Firearms.9mmSilencer = "9mm Suppressor",
-    ItemName_Firearms.223Silencer = ".223/5.56mm Suppressor",
-    ItemName_Firearms.308Silencer = ".308/7.62mm Suppressor",
-    ItemName_Firearms.ImprovisedSilencer = "Improvised Suppressor",
+    ItemName_Base.Sling = "Two Point Rifle Sling (Black)"
+    ItemName_Base.Sling_Leather = "Two Point Rifle Sling (Leather)"
+    ItemName_Base.Sling_Olive = "Two Point Rifle Sling (Olive)"
+    ItemName_Base.Sling_Camo = "Two Point Rifle Sling (Woodland)"
 
-    ItemName_Firearms.9mmCompensator = "9mm Compensator",
+    ItemName_Base.45Silencer = ".45 Suppressor",
+    ItemName_Base.9mmSilencer = "9mm Suppressor",
+    ItemName_Base.223Silencer = ".223/5.56mm Suppressor",
+    ItemName_Base.308Silencer = ".308/7.62mm Suppressor",
+    ItemName_Base.ImprovisedSilencer = "Improvised Suppressor",
+
+    ItemName_Base.9mmCompensator = "9mm Compensator",
 
     ItemName_Base.223Clip = ".223 Remington Internal Magazine",
     ItemName_Base.308Clip = ".308 Winchester Internal Magazine",
     ItemName_Base.Magazine = "Magazine",
-    ItemName_Base.9mmClip = "Beretta M9 Magazine",
+    ItemName_Base.9mmClip = "Beretta 92FS Magazine",
     ItemName_Base.556Clip = "5.56x45mm STANAG Magazine",
     ItemName_Base.M14Clip = "M14 Magazine",
     ItemName_Base.44Clip = "Desert Eagle Magazine",
     ItemName_Base.45Clip = "M1911 Magazine",
-    ItemName_Firearms.Glock17Mag = "Glock 17 Magazine",
-    ItemName_Firearms.MP5Mag = "MP5 Magazine",
-    ItemName_Firearms.M60Mag = "M60 Magazine"
+    ItemName_Base.Glock17Mag = "Glock 17 Magazine",
+    ItemName_Base.MP5Mag = "MP5 Magazine",
+    ItemName_Base.M60Mag = "M60 Magazine"
 
+    ItemName_Base.22LRBox = "Box of .22 LR Rounds",
     ItemName_Base.223Box = "Box of .223 Remington Rounds",
     ItemName_Base.308Box = "Box of .308 Winchester Rounds",
     ItemName_Base.556Box = "Box of 5.56x45mm Rounds",
@@ -76,7 +82,11 @@ ItemName_EN = {
     ItemName_Base.Bullets45Box = "Box of .45 ACP Rounds",
     ItemName_Base.Bullets9mmBox = "Box of 9x19mm Parabellum Rounds",
     ItemName_Base.ShotgunShellsBox = "Box of Shotgun Shells",
+    ItemName_Base.762Box = "Box of 7.62x51mm Rounds",
+    ItemName_Base.762x39Box = "Box of 7.62x39mm Rounds",
+    ItemName_Base.4440Box = "Box of .44-40 WCF Rounds",
 
+    ItemName_Base.22LRBullets = ".22 LR Round",
     ItemName_Base.223Bullets = ".223 Remington Round",
     ItemName_Base.308Bullets = ".308 Winchester Round",
     ItemName_Base.556Bullets = "5.56x45mm Round",
@@ -85,9 +95,8 @@ ItemName_EN = {
     ItemName_Base.Bullets45 = ".45 ACP Round",
     ItemName_Base.Bullets9mm = "9x19mm Parabellum Round",
     ItemName_Base.ShotgunShells = "Shotgun Shells",
-    ItemName_Base.762Box = "Box of 7.62x51mm Ammo",
     ItemName_Base.762Bullets = "7.62x51mm Round",
-    ItemName_Base.4440Box = "Box of .44-40 WCF Ammo",
+    ItemName_Base.762x39Bullets = "7.62x39mm Round",
     ItemName_Base.4440Bullets = ".44-40 WCF Round",
 
 }

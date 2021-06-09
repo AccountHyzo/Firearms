@@ -259,7 +259,7 @@ AttachedWeaponDefinitions.handgunHolster = {
 	daySurvived = 0,
 	ensureItem = "Base.HolsterSimple",
 	weapons = {
-		"Firearms.Pistol",
+		"Base.Pistol",
 		"Base.Revolver_Short",
 	},
 }
@@ -274,12 +274,12 @@ AttachedWeaponDefinitions.shotgunPolice = {
 	daySurvived = 0,
 	weapons = {
 		"Base.Shotgun",
-		"Firearms.Mossberg500",
-		"Firearms.Mossberg500Tactical",
-		"Firearms.Remington870Wood",
+		"Base.Mossberg500",
+		"Base.Mossberg500Tactical",
+		"Base.Remington870Wood",
 		"Base.M16A2",
 		"Base.VarmintRifle",
-		"Firearms.MP5",
+		"Base.MP5",
 	},
 }
 -- assault rifle on back
@@ -293,7 +293,7 @@ AttachedWeaponDefinitions.assaultRifleOnBack = {
 	daySurvived = 0,
 	weapons = {
 		"Base.AssaultRifle",
-		"Firearms.M16A2",
+		"Base.M16A2",
 	},
 }
 -- varmint/hunting rifle on back
@@ -308,7 +308,7 @@ AttachedWeaponDefinitions.huntingRifleOnBack = {
 	weapons = {
 		"Base.HuntingRifle",
 		"Base.VarmintRifle",
-		"Firearms.M24Rifle",
+		"Base.M24Rifle",
 	},
 }
 -- random construction tools on construction worker

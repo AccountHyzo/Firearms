@@ -111,7 +111,7 @@ function onExtendStock_OnCreate(items, result, player, firstHand, secondHand)
 			result:attachWeaponPart(canon)
 			end
 			if stock then
-				newstock = InventoryItemFactory.CreateItem('Firearms.' .. result:getType() .. '_Stock_Extended');
+				newstock = InventoryItemFactory.CreateItem('Base.' .. result:getType() .. '_Stock_Extended');
 				if newstock then
 					result:attachWeaponPart(newstock)
 				end
@@ -162,7 +162,7 @@ function onDetractStock_OnCreate(items, result, player, firstHand, secondHand)
 			result:attachWeaponPart(canon)
 			end
 			if stock then
-				newstock = InventoryItemFactory.CreateItem('Firearms.' .. result:getType() .. '_Stock_Detracted');
+				newstock = InventoryItemFactory.CreateItem('Base.' .. result:getType() .. '_Stock_Detracted');
 				if newstock then
 					result:attachWeaponPart(newstock)
 				end

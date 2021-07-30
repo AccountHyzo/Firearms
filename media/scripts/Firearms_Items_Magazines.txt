@@ -13,6 +13,7 @@ module Base
 			MaxAmmo = 15,
 			AmmoType = Base.Bullets9mm,
 			StaticModel = GunMagazine,
+			GunType = Base.Pistol,
 	}
 
 	item 45Clip
@@ -25,6 +26,7 @@ module Base
 			MaxAmmo = 7,
 			AmmoType = Base.Bullets45,
 			StaticModel = GunMagazine,
+			GunType = Base.Pistol2,
 	}
 
 	item 44Clip
@@ -37,6 +39,7 @@ module Base
 			MaxAmmo = 8,
 			AmmoType = Base.Bullets44,
 			StaticModel = GunMagazine,
+			GunType = Base.Pistol3,
 	}
 
 	item Glock17Mag
@@ -49,6 +52,7 @@ module Base
 		MaxAmmo = 17,
 		AmmoType = Base.Bullets9mm,
 		StaticModel = GunMagazine,
+			GunType = Base.Glock17,
 	}
 
 	item MP5Mag
@@ -61,6 +65,7 @@ module Base
 		MaxAmmo = 30,
 		AmmoType = Base.Bullets9mm,
 		StaticModel = GunMagazine,
+		GunType = Base.MP5,
 	}
 
 	item UZIMag
@@ -73,6 +78,7 @@ module Base
 		MaxAmmo = 20,
 		AmmoType = Base.Bullets9mm,
 		StaticModel = GunMagazine,
+		GunType = Base.UZI,
 	}
 
 	item 223Clip
@@ -82,9 +88,10 @@ module Base
 			Type	=	Normal,
 			DisplayName	=	.223 Magazine,
 			Icon	=	308_Mag,
-			MaxAmmo = 3,
+			MaxAmmo = 10,
 			AmmoType = Base.223Bullets,
 			StaticModel = GunMagazine,
+			GunType = Base.VarmintRifle,
 	}
 
 	item 308Clip
@@ -92,11 +99,12 @@ module Base
 			CanStack	=	FALSE,
 			Weight	=	0.2,
 			Type	=	Normal,
-			DisplayName	=	.308 Magazine,
+			DisplayName	=	10-rd Remington 700 Magazine,
 			Icon	=	308_Mag,
-			MaxAmmo = 3,
+			MaxAmmo = 10,
 			AmmoType = Base.308Bullets,
 			StaticModel = GunMagazine,
+			/*GunType = Base.HuntingRifle,*/
 	}
 
 	item 556Clip
@@ -109,18 +117,7 @@ module Base
 			MaxAmmo = 30,
 			AmmoType = Base.556Bullets,
 			StaticModel = 556_Mag,
-	}
-
-	item 556Clip2
-	{
-		CanStack	=	FALSE,
-		Weight	=	0.2,
-		Type	=	Normal,
-		DisplayName	=	20rnd 5.56x45mm STANAG,
-		Icon	=	556_Stanag_Mag,
-		MaxAmmo = 20,
-		AmmoType = Base.556Bullets,
-		StaticModel = GunMagazine,
+			GunType = Base.AssaultRifle,
 	}
 
 	item M14Clip
@@ -131,8 +128,9 @@ module Base
 			DisplayName	=	.308 Magazine,
 			Icon	=	308_Mag2,
 			MaxAmmo = 20,
-			AmmoType = Base.308Bullets,
+			AmmoType = Base.762Bullets,
 			StaticModel = GunMagazine,
+			GunType = Base.AssaultRifle2,
 	}
 
 	item M60Mag
@@ -145,6 +143,20 @@ module Base
 		MaxAmmo = 100,
 		AmmoType = Base.762Bullets,
 		StaticModel = GunMagazine,
+		GunType = Base.M60,
+	}
+
+	item FN_FAL_Mag
+	{
+			CanStack	=	FALSE,
+			Weight	=	0.2,
+			Type	=	Normal,
+			DisplayName	=	FN FAL Magazine,
+			Icon	=	308_Mag2,
+			MaxAmmo = 20,
+			AmmoType = Base.762Bullets,
+			StaticModel = GunMagazine,
+			GunType = Base.FN_FAL,
 	}
 
 }

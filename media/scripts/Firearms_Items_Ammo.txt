@@ -271,7 +271,7 @@ module Base
 	        Weight	=	0.01,
 	        AlwaysWelcomeGift	=	TRUE,
 	        Type	=	Normal,
-	        DisplayName	=	.22 LR6 Round,
+	        DisplayName	=	.22 LR Round,
 	        DisplayCategory = Ammo,
 	        Icon	=	22LR_Round,
 	        MetalValue = 1,

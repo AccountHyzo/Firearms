@@ -12,7 +12,7 @@ module Base
 	   OnCreate:onSawnOff_OnCreate,
 	}
 
-	recipe Make Improvised Silencer
+	recipe Make Improvised Flashlight Silencer
 	{
 	   destroy HandTorch,
 		 ScrapMetal,
@@ -24,6 +24,15 @@ module Base
 		 SkillRequired:MetalWelding=1,
 	 	 OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
 	   OnCreate:onImprovisedSilencer_OnCreate,
+	}
+
+	recipe Make Improvised Bottle Silencer
+	{
+	   destroy PopBottleEmpty/WaterBottleEmpty,
+	   DuctTape=2,
+
+	   Result:Silencer_PopBottle,
+	   Time:300.0,
 	}
 
 	recipe Saw Off Shotgun
@@ -151,18 +160,6 @@ module Base
 					Override:true,
 			}
 
-			recipe Open Box of .223 Ammo
-			{
-					223Box,
-
-					Result:223Bullets=8,
-					Sound:OpenAmmoBox,
-					Time:30.0,
-					Prop1:Bullet_Casing,
-					Prop2:Ammobox,
-					Override:true,
-			}
-
 			recipe Open Box of .308 Ammo
 			{
 					308Box,
@@ -204,6 +201,18 @@ module Base
 					556Bullets=60,
 
 					Result:556Box,
+					Sound:OpenAmmoBox,
+					Time:30.0,
+					Prop1:Bullet_Casing,
+					Prop2:Ammobox,
+					Override:true,
+			}
+
+			recipe Open Box of .223 Ammo
+			{
+					223Box,
+
+					Result:223Bullets=8,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -321,7 +330,7 @@ module Base
 
 		recipe Open Box of 7.62x39mm Ammo
 		{
-				762Box,
+				762x39Box,
 
 				Result:762x39Bullets=8,
 				Sound:OpenAmmoBox,
@@ -333,7 +342,7 @@ module Base
 
 		recipe Place 7.62x39mm in Box
 		{
-				762Bullets=40,
+				762x39Bullets=40,
 
 				Result:762x39Box,
 				Sound:OpenAmmoBox,
@@ -360,6 +369,30 @@ module Base
 				4440Bullets=12,
 
 				Result:4440Box,
+				Sound:OpenAmmoBox,
+				Time:30.0,
+				Prop1:Bullet_Casing,
+				Prop2:Ammobox,
+				Override:true,
+		}
+
+		recipe Open Box of .22 LR Ammo
+		{
+				22LRBox,
+
+				Result:22LRBullets=8,
+				Sound:OpenAmmoBox,
+				Time:30.0,
+				Prop1:Bullet_Casing,
+				Prop2:Ammobox,
+				Override:true,
+		}
+
+		recipe Place .22 LR Ammo in Box
+		{
+				22LRBullets=40,
+
+				Result:22LRBox,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,

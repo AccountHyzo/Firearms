@@ -54,6 +54,8 @@ table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.M16A2")
 table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 2);
 table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.M60");
 table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 1);
+table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.FN_FAL");
+table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 1);
 
 local function isMod(mod_Name)
 	local mods = getActivatedMods();

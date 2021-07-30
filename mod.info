@@ -1,5 +1,5 @@
-name=Firearms B41 BETA
-id=firearmmodbeta
+name=Firearms B41.53
+id=firearmmod
 description=Overall firearm overhaul. Adds several new guns: Glock 17, Colt Peacemaker and an M24 to name a few.
 description=Adds silencers to specific weapons by caliber. Excluded from silencers are the hunting rifle, desert eagle and shotguns.
 description=3D Models for attachments such as slings, recoil pads and bipods.
@@ -9,4 +9,6 @@ poster=Firearms.png
 poster=Firearms1.png
 poster=Firearms2.png
 poster=Firearms3.png
+poster=Firearms4.png
+poster=Firearms5.png
 poster=AmmoMags.png

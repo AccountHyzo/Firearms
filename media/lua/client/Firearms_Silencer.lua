@@ -17,11 +17,11 @@ local function silence(wielder, weapon)
   			if weapon:getWeaponReloadType() == "handgun" then
           if weapon:getAmmoType() == "Bullets9mm" then
     	      soundVolume = soundVolume *  (1)
-    	      soundRadius = soundRadius * (0.6)
+    	      soundRadius = soundRadius * (0.5)
             swingSound = 'Firearm9mmSuppressed'
           elseif weapon:getAmmoType() == "Bullets45" then
             soundVolume = soundVolume *  (1)
-    	      soundRadius = soundRadius * (0.7)
+    	      soundRadius = soundRadius * (0.6)
             swingSound = 'Firearm45Suppressed'
           else
           soundVolume = soundVolume *  (1)
@@ -37,6 +37,24 @@ local function silence(wielder, weapon)
         if weapon:getWeaponReloadType() == "handgun" then
           if weapon:getAmmoType() == "Bullets9mm" then
             soundVolume = soundVolume *  (1.3)
+            soundRadius = soundRadius * (0.6)
+          elseif weapon:getAmmoType() == "Bullets45" then
+            soundVolume = soundVolume *  (1.3)
+            soundRadius = soundRadius * (0.7)
+          else
+            soundVolume = soundVolume *  (1)
+            soundRadius = soundRadius * (0.6)
+          end
+          swingSound = 'Firearm45Suppressed'
+        elseif weapon:getWeaponReloadType() == "boltaction" or weapon:getWeaponReloadType() == "boltactionnomag " then
+          soundVolume = soundVolume *  (1.3)
+          soundRadius = soundRadius * (0.7)
+          swingSound = 'FirearmARSuppressed'
+        end
+      elseif string.find(canon:getType(), "Silencer_PopBottle") then
+        if weapon:getWeaponReloadType() == "handgun" then
+          if weapon:getAmmoType() == "Bullets9mm" then
+            soundVolume = soundVolume *  (1.3)
             soundRadius = soundRadius * (0.7)
           elseif weapon:getAmmoType() == "Bullets45" then
             soundVolume = soundVolume *  (1.3)
@@ -48,7 +66,7 @@ local function silence(wielder, weapon)
           swingSound = 'Firearm45Suppressed'
         elseif weapon:getWeaponReloadType() == "boltaction" or weapon:getWeaponReloadType() == "boltactionnomag " then
           soundVolume = soundVolume *  (1.3)
-          soundRadius = soundRadius * (0.7)
+          soundRadius = soundRadius * (0.8)
           swingSound = 'FirearmARSuppressed'
         end
       end

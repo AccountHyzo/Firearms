@@ -21,7 +21,7 @@ local function silence(wielder, weapon)
             swingSound = 'Firearm9mmSuppressed'
           elseif weapon:getAmmoType() == "Bullets45" then
             soundVolume = soundVolume *  (1)
-    	      soundRadius = soundRadius * (0.6)
+    	      soundRadius = soundRadius * (0.55)
             swingSound = 'Firearm45Suppressed'
           else
           soundVolume = soundVolume *  (1)
@@ -40,7 +40,7 @@ local function silence(wielder, weapon)
             soundRadius = soundRadius * (0.6)
           elseif weapon:getAmmoType() == "Bullets45" then
             soundVolume = soundVolume *  (1.3)
-            soundRadius = soundRadius * (0.7)
+            soundRadius = soundRadius * (0.65)
           else
             soundVolume = soundVolume *  (1)
             soundRadius = soundRadius * (0.6)
@@ -58,7 +58,7 @@ local function silence(wielder, weapon)
             soundRadius = soundRadius * (0.7)
           elseif weapon:getAmmoType() == "Bullets45" then
             soundVolume = soundVolume *  (1.3)
-            soundRadius = soundRadius * (0.8)
+            soundRadius = soundRadius * (0.75)
           else
             soundVolume = soundVolume *  (1)
             soundRadius = soundRadius * (0.7)

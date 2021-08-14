@@ -5,41 +5,44 @@ module Base
 
 	item 9mmClip
 	{
-			CanStack	=	FALSE,
-			Weight	=	0.2,
-			Type	=	Normal,
-			DisplayName	=	9mm Magazine,
-			Icon	=	9mm_Mag,
-			MaxAmmo = 15,
-			AmmoType = Base.Bullets9mm,
-			StaticModel = GunMagazine,
-			GunType = Base.Pistol,
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Beretta M9 Magazine,
+		DisplayCategory = Magazine9mm,
+		Icon	=	9mm_Mag,
+		MaxAmmo = 15,
+		AmmoType = Base.Bullets9mm,
+		StaticModel = GunMagazine,
+		GunType = Base.Pistol,
 	}
 
 	item 45Clip
 	{
-			CanStack	=	FALSE,
-			Weight	=	0.2,
-			Type	=	Normal,
-			DisplayName	=	.45 Auto Magazine,
-			Icon	=	45_Mag,
-			MaxAmmo = 7,
-			AmmoType = Base.Bullets45,
-			StaticModel = GunMagazine,
-			GunType = Base.Pistol2,
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	M1911A1 Magazine,
+		DisplayCategory = Magazine45,
+		Icon	=	45_Mag,
+		MaxAmmo = 7,
+		AmmoType = Base.Bullets45,
+		StaticModel = GunMagazine,
+		GunType = Base.Pistol2,
 	}
 
 	item 44Clip
 	{
-			CanStack	=	FALSE,
-			Weight	=	0.2,
-			Type	=	Normal,
-			DisplayName	=	.44 Magnum Magazine,
-			Icon	=	44_Mag,
-			MaxAmmo = 8,
-			AmmoType = Base.Bullets44,
-			StaticModel = GunMagazine,
-			GunType = Base.Pistol3,
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Desert Eagle Magazine,
+		DisplayCategory = Magazine44,
+		Icon	=	44_Mag,
+		MaxAmmo = 8,
+		AmmoType = Base.Bullets44,
+		StaticModel = GunMagazine,
+		GunType = Base.Pistol3,
 	}
 
 	item Glock17Mag
@@ -48,11 +51,12 @@ module Base
 		Weight	=	0.2,
 		Type	=	Normal,
 		DisplayName	=	Glock 17 Magazine,
+		DisplayCategory = Magazine9mm,
 		Icon	=	Glock_Mag,
 		MaxAmmo = 17,
 		AmmoType = Base.Bullets9mm,
 		StaticModel = GunMagazine,
-			GunType = Base.Glock17,
+		GunType = Base.Glock17,
 	}
 
 	item MP5Mag
@@ -61,6 +65,7 @@ module Base
 		Weight	=	0.4,
 		Type	=	Normal,
 		DisplayName	=	MP5 Magazine,
+		DisplayCategory = Magazine9mm,
 		Icon	=	Mp5_Mag,
 		MaxAmmo = 30,
 		AmmoType = Base.Bullets9mm,
@@ -74,6 +79,7 @@ module Base
 		Weight	=	0.4,
 		Type	=	Normal,
 		DisplayName	=	UZI Carbine Magazine,
+		DisplayCategory = Magazine9mm,
 		Icon	=	UZIMag,
 		MaxAmmo = 20,
 		AmmoType = Base.Bullets9mm,
@@ -83,54 +89,58 @@ module Base
 
 	item 223Clip
 	{
-			CanStack	=	FALSE,
-			Weight	=	0.2,
-			Type	=	Normal,
-			DisplayName	=	.223 Magazine,
-			Icon	=	308_Mag,
-			MaxAmmo = 10,
-			AmmoType = Base.223Bullets,
-			StaticModel = GunMagazine,
-			GunType = Base.VarmintRifle,
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	.223 Magazine,
+		DisplayCategory = Magazine223,
+		Icon	=	308_Mag,
+		MaxAmmo = 10,
+		AmmoType = Base.223Bullets,
+		StaticModel = GunMagazine,
+		GunType = Base.VarmintRifle,
 	}
 
 	item 308Clip
 	{
-			CanStack	=	FALSE,
-			Weight	=	0.2,
-			Type	=	Normal,
-			DisplayName	=	10-rd Remington 700 Magazine,
-			Icon	=	308_Mag,
-			MaxAmmo = 10,
-			AmmoType = Base.308Bullets,
-			StaticModel = GunMagazine,
-			/*GunType = Base.HuntingRifle,*/
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	.308 Magazine,
+		DisplayCategory = Magazine308,
+		Icon	=	308_Mag,
+		MaxAmmo = 10,
+		AmmoType = Base.308Bullets,
+		StaticModel = GunMagazine,
+		/*GunType = Base.HuntingRifle,*/
 	}
 
 	item 556Clip
 	{
-			CanStack	=	FALSE,
-			Weight	=	0.2,
-			Type	=	Normal,
-			DisplayName	=	5.56 STANAG,
-			Icon	=	556_Stanag_Mag,
-			MaxAmmo = 30,
-			AmmoType = Base.556Bullets,
-			StaticModel = 556_Mag,
-			GunType = Base.AssaultRifle,
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	5.56 STANAG,
+		DisplayCategory = Magazine556,
+		Icon	=	556_Stanag_Mag,
+		MaxAmmo = 30,
+		AmmoType = Base.556Bullets,
+		StaticModel = 556_Mag,
+		GunType = Base.AssaultRifle,
 	}
 
 	item M14Clip
 	{
-			CanStack	=	FALSE,
-			Weight	=	0.2,
-			Type	=	Normal,
-			DisplayName	=	.308 Magazine,
-			Icon	=	308_Mag2,
-			MaxAmmo = 20,
-			AmmoType = Base.762Bullets,
-			StaticModel = GunMagazine,
-			GunType = Base.AssaultRifle2,
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	.308 Magazine,
+		DisplayCategory = Magazine762,
+		Icon	=	308_Mag2,
+		MaxAmmo = 20,
+		AmmoType = Base.762Bullets,
+		StaticModel = GunMagazine,
+		GunType = Base.AssaultRifle2,
 	}
 
 	item M60Mag
@@ -139,6 +149,7 @@ module Base
 		Weight	=	0.4,
 		Type	=	Normal,
 		DisplayName	=	M60 Magazine,
+		DisplayCategory = Magazine762,
 		Icon	=	M60Mag,
 		MaxAmmo = 100,
 		AmmoType = Base.762Bullets,
@@ -148,15 +159,16 @@ module Base
 
 	item FN_FAL_Mag
 	{
-			CanStack	=	FALSE,
-			Weight	=	0.2,
-			Type	=	Normal,
-			DisplayName	=	FN FAL Magazine,
-			Icon	=	308_Mag2,
-			MaxAmmo = 20,
-			AmmoType = Base.762Bullets,
-			StaticModel = GunMagazine,
-			GunType = Base.FN_FAL,
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	FN FAL Magazine,
+		DisplayCategory = Magazine308,
+		Icon	=	308_Mag2,
+		MaxAmmo = 20,
+		AmmoType = Base.762Bullets,
+		StaticModel = GunMagazine,
+		GunType = Base.FN_FAL,
 	}
 
 }

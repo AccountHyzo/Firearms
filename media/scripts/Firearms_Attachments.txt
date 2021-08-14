@@ -55,7 +55,7 @@ module Base
 	{
 			Type = WeaponPart,
 			DisplayName = Silencer,
-			Icon = Silencer,
+			Icon = FlashlightSilencer,
 			Weight = 0.2,
 			WeightModifier = 0.2,
 			MountOn = Pistol; Pistol2; Glock17,
@@ -231,7 +231,7 @@ module Base
 	 			Icon = Sling,
 	 			Weight = 0.5,
 	 			WeightModifier = -0.3,
-	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Base.Winchester94; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
+	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
 	 			PartType = Sling,
 	 			Tooltip = Tooltip_Sling,
 	 	}
@@ -243,7 +243,7 @@ module Base
 	 			Icon = Sling_Leather,
 	 			Weight = 0.5,
 	 			WeightModifier = -0.3,
-	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Base.Winchester94; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
+	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
 	 			PartType = Sling,
 	 			Tooltip = Tooltip_Sling,
 	 	}
@@ -255,7 +255,7 @@ module Base
 	 			Icon = Sling_Olive,
 	 			Weight = 0.5,
 	 			WeightModifier = -0.3,
-	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Base.Winchester94; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
+	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
 	 			PartType = Sling,
 	 			Tooltip = Tooltip_Sling,
 	 	}
@@ -267,7 +267,7 @@ module Base
 	 			Icon = Sling_Camo,
 	 			Weight = 0.5,
 	 			WeightModifier = -0.3,
-	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Base.Winchester94; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
+	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
 	 			PartType = Sling,
 	 			Tooltip = Tooltip_Sling,
 	 	}

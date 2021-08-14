@@ -277,7 +277,6 @@ AttachedWeaponDefinitions.shotgunPolice = {
 		"Base.Mossberg500",
 		"Base.Mossberg500Tactical",
 		"Base.Remington870Wood",
-		"Base.M16A2",
 		"Base.VarmintRifle",
 		"Base.MP5",
 	},
@@ -309,6 +308,8 @@ AttachedWeaponDefinitions.huntingRifleOnBack = {
 		"Base.HuntingRifle",
 		"Base.VarmintRifle",
 		"Base.M24Rifle",
+		"Base.Winchester73",
+		"Base.Winchester94",
 	},
 }
 -- random construction tools on construction worker

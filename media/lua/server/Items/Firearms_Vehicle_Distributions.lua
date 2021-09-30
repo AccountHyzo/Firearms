@@ -30,33 +30,6 @@ table.insert(VehicleDistributions.TrunkHeavy.items, 0.1);
 table.insert(VehicleDistributions.TrunkSports.items, "Base.Civilian_Small");
 table.insert(VehicleDistributions.TrunkSports.items, 0.1);
 
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.Glock17");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 3);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.ColtPeacemaker");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 3);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.Remington870Wood");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 3);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.Mossberg500");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 3);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.Mossberg500Tactical");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 3);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.Winchester94");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 3);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.Winchester73");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 3);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.UZI");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 3);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.MP5");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 3);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.M24Rifle");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 2);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.M16A2");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 2);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.M60");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 1);
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, "Base.FN_FAL");
-table.insert(ProceduralDistributions.list["FirearmWeapons"].items, 1);
-
 local function isMod(mod_Name)
 	local mods = getActivatedMods();
 	for i=0, mods:size()-1, 1 do

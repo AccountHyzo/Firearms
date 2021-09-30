@@ -13,6 +13,7 @@ module Base
 			MountOn = Pistol2,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
+			WorldStaticModel = Silencer,
 	}
 
 	item 9mmSilencer
@@ -25,6 +26,7 @@ module Base
 			MountOn = Glock17; Pistol; MP5; UZI,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
+			WorldStaticModel = Silencer,
 	}
 
 	item 223Silencer
@@ -37,6 +39,7 @@ module Base
 			MountOn = VarmintRifle; AssaultRifle; M16A2,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
+			WorldStaticModel = Silencer,
 	}
 
 	item 308Silencer
@@ -49,6 +52,7 @@ module Base
 			MountOn = AssaultRifle2; M24Rifle; FN_FAL,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
+			WorldStaticModel = Silencer,
 	}
 
 	item ImprovisedSilencer
@@ -61,6 +65,7 @@ module Base
 			MountOn = Pistol; Pistol2; Glock17,
 			PartType = Canon,
 			Tooltip = Tooltip_ImprovisedSilencer,
+			WorldStaticModel = Silencer_Improvised,
 	}
 
 	item Silencer_PopBottle
@@ -73,6 +78,7 @@ module Base
 			MountOn = Pistol; Pistol2; Glock17; AssaultRifle2; M24Rifle; FN_FAL; VarmintRifle; HuntingRifle; AssaultRifle; M16A2; MP5; UZI,
 			PartType = Canon,
 			Tooltip = Tooltip_ImprovisedSilencer,
+			WorldStaticModel = Silencer_PopBottle,
 	}
 
 	item 9mmCompensator
@@ -87,6 +93,7 @@ module Base
 			MountOn = Pistol; Glock17,
 			PartType = Canon,
 			Tooltip = Tooltip_Compensator,
+			WorldStaticModel = Compensator_Pistol,
 	}
 
 	item GunLightImprovised
@@ -116,6 +123,7 @@ module Base
 					MountOn = HuntingRifle; VarmintRifle; Base.Winchester94; Base.M24Rifle ; Shotgun; Base.Mossberg500; Base.Remington870Wood; Rugerm7722,
 					PartType = RecoilPad,
 					Tooltip = Tooltip_RecoilPad,
+					WorldStaticModel = Recoil_Pad,
 			}
 
 	    item ExtendedRecoilPad
@@ -129,6 +137,7 @@ module Base
 	        MountOn = HuntingRifle; VarmintRifle; M24Rifle,
 	        PartType = RecoilPad,
 	        Tooltip = Tooltip_RecoilPad,
+					WorldStaticModel = ExtendedRecoil_Pad,
 	   }
 
 		 item Rifle_Bipod
@@ -143,6 +152,7 @@ module Base
          MountOn = HuntingRifle; VarmintRifle; M24Rifle; HuntingRifle_Sawn; AssaultRifle2; FN_FAL,
          PartType = Stock,
          Tooltip = Tooltip_Bipod,
+				 WorldStaticModel = Compensator_Pistol,
      }
 
 
@@ -171,6 +181,7 @@ module Base
          MountOn =  Mossberg500Tactical,
          PartType = RecoilPad,
          Tooltip = Tooltip_TacticalStock,
+				 WorldStaticModel = Stock_Tactical,
      }
 
 		 item ShotgunStock
@@ -184,6 +195,7 @@ module Base
          MountOn =  Mossberg500Tactical,
          PartType = RecoilPad,
          Tooltip = Tooltip_TacticalStock,
+				 WorldStaticModel = Stock,
      }
 
 		 item LightShotgunStock
@@ -197,6 +209,7 @@ module Base
          MountOn =  Mossberg500Tactical,
          PartType = RecoilPad,
          Tooltip = Tooltip_TacticalStock,
+				 WorldStaticModel = Stock_Light,
      }
 
 		 item MP5_Stock_Extended
@@ -210,6 +223,7 @@ module Base
          MountOn =  MP5,
          PartType = Stock,
          Tooltip = Tooltip_ExtendableStock,
+				 WorldStaticModel = MP5_Stock_Extended,
      }
 
 		 item MP5_Stock_Detracted
@@ -222,6 +236,34 @@ module Base
          MountOn =  MP5,
          PartType = Stock,
          Tooltip = Tooltip_ExtendableStock,
+				 WorldStaticModel = MP5_Stock_Detracted,
+     }
+
+		 item UZI_Stock_Extended
+     {
+         Type = WeaponPart,
+         DisplayName = UZI Stock,
+         Icon = MP5_Stock,
+         Weight = 1,
+				 WeightModifier = 1,
+				 RecoilDelayModifier = -20.0,
+         MountOn =  UZI,
+         PartType = Stock,
+         Tooltip = Tooltip_ExtendableStock,
+				 WorldStaticModel = UZI_Stock_Extended,
+     }
+
+		 item UZI_Stock_Detracted
+     {
+         Type = WeaponPart,
+         DisplayName = UZI Stock,
+         Icon = MP5_Stock,
+         Weight = 1,
+				 WeightModifier = 0.2,
+         MountOn =  UZI,
+         PartType = Stock,
+         Tooltip = Tooltip_ExtendableStock,
+				 WorldStaticModel = UZI_Stock_Detracted,
      }
 
 	 	item Sling
@@ -359,6 +401,7 @@ module Base
 				PartType = Scope,
 				Tooltip = Tooltip_RedDot,
 				MetalValue = 15,
+				WorldStaticModel = Reddot,
 		}
 
 		item x2Scope
@@ -374,6 +417,7 @@ module Base
 		    PartType = Scope,
 		    Tooltip = Tooltip_Scope,
 		    MetalValue = 22,
+				WorldStaticModel = Acog,
 		}
 
 		item x4Scope
@@ -389,6 +433,7 @@ module Base
 		    PartType = Scope,
 		    Tooltip = Tooltip_Scope,
 		    MetalValue = 22,
+				WorldStaticModel = Acog,
 		}
 
 		item x8Scope
@@ -404,6 +449,7 @@ module Base
 			 	PartType = Scope,
 				Tooltip = Tooltip_Scope,
 				MetalValue = 22,
+				WorldStaticModel = Scope,
 		}
 
 		item x4-x12Scope
@@ -419,6 +465,7 @@ module Base
 				PartType = Scope,
 				Tooltip = Tooltip_Scope,
 				MetalValue = 22,
+				WorldStaticModel = Scope,
 		}
 
 }

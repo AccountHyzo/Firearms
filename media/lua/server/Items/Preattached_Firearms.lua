@@ -13,7 +13,7 @@ WeaponUpgrades = {
   Winchester94		= {"Sling_Leather", "Sling"},
 
   MP5		= {"Sling", "RedDot", "x2Scope", "x4Scope", "9mmSilencer", "MP5_Stock_Detracted"},
-  UZI    = {"9mmSilencer", "RedDot", "x2Scope", "Sling"},
+  UZI    = {"9mmSilencer", "RedDot", "x2Scope", "Sling", "UZI_Stock_Detracted", "UZI_Stock_Extended"},
 
   Glock17		= {"RedDot", "9mmCompensator", "Laser"},
 

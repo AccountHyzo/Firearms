@@ -11,6 +11,7 @@ module Base
       Icon	=	GunToolKit,
       Tooltip = Tooltip_ServiceFirearms,
       SurvivalGear = TRUE,
+      WorldStaticModel = GunToolKit,
     }
 
     item Solvent
@@ -23,6 +24,7 @@ module Base
       Icon	=	WD40,
       Tooltip = Tooltip_ServiceFirearms,
       SurvivalGear = TRUE,
+      WorldStaticModel = WMD,
     }
 
     fixing Fix ColtPeacemaker
@@ -243,6 +245,15 @@ module Base
 		fixing Fix M60
 		{
 			Require : M60,
+
+      Fixer : GunToolKit=2; Aiming=7,
+      Fixer : GunToolKit=3; Aiming=3,
+      Fixer : Solvent=3; Aiming=1,
+		}
+
+		fixing Fix FN FAL
+		{
+			Require : FN_FAL,
 
       Fixer : GunToolKit=2; Aiming=7,
       Fixer : GunToolKit=3; Aiming=3,

@@ -16,6 +16,7 @@ module Base
 			MetalValue = 15,
 			ReplaceInSecondHand = Bag_AmmoCan_LHand holdingbagleft,
 			ReplaceInPrimaryHand = Bag_AmmoCan_RHand holdingbagright,
+			WorldStaticModel = AmmoCan,
 	}
 
 	item AmmoCan762x39
@@ -31,6 +32,7 @@ module Base
 			MetalValue = 15,
 			ReplaceInSecondHand = Bag_AmmoCan_LHand holdingbagleft,
 			ReplaceInPrimaryHand = Bag_AmmoCan_RHand holdingbagright,
+			WorldStaticModel = AmmoCan,
 	}
 
 	item AmmoCan556
@@ -46,6 +48,7 @@ module Base
 			MetalValue = 15,
 			ReplaceInSecondHand = Bag_AmmoCan_LHand holdingbagleft,
 			ReplaceInPrimaryHand = Bag_AmmoCan_RHand holdingbagright,
+			WorldStaticModel = AmmoCan,
 	}
 
 	item AmmoCan308
@@ -61,6 +64,7 @@ module Base
 			MetalValue = 15,
 			ReplaceInSecondHand = Bag_AmmoCan_LHand holdingbagleft,
 			ReplaceInPrimaryHand = Bag_AmmoCan_RHand holdingbagright,
+			WorldStaticModel = AmmoCan,
 	}
 
 	item AmmoCan9mm
@@ -76,6 +80,7 @@ module Base
 			MetalValue = 15,
 			ReplaceInSecondHand = Bag_AmmoCan_LHand holdingbagleft,
 			ReplaceInPrimaryHand = Bag_AmmoCan_RHand holdingbagright,
+			WorldStaticModel = AmmoCan,
 	}
 
 }

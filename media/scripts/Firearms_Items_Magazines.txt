@@ -13,8 +13,9 @@ module Base
 		Icon	=	9mm_Mag,
 		MaxAmmo = 15,
 		AmmoType = Base.Bullets9mm,
-		StaticModel = GunMagazine,
 		GunType = Base.Pistol,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item 45Clip
@@ -27,8 +28,9 @@ module Base
 		Icon	=	45_Mag,
 		MaxAmmo = 7,
 		AmmoType = Base.Bullets45,
-		StaticModel = GunMagazine,
 		GunType = Base.Pistol2,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item 44Clip
@@ -41,8 +43,9 @@ module Base
 		Icon	=	44_Mag,
 		MaxAmmo = 8,
 		AmmoType = Base.Bullets44,
-		StaticModel = GunMagazine,
 		GunType = Base.Pistol3,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item Glock17Mag
@@ -55,8 +58,9 @@ module Base
 		Icon	=	Glock_Mag,
 		MaxAmmo = 17,
 		AmmoType = Base.Bullets9mm,
-		StaticModel = GunMagazine,
 		GunType = Base.Glock17,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item MP5Mag
@@ -69,8 +73,9 @@ module Base
 		Icon	=	Mp5_Mag,
 		MaxAmmo = 30,
 		AmmoType = Base.Bullets9mm,
-		StaticModel = GunMagazine,
 		GunType = Base.MP5,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item UZIMag
@@ -83,8 +88,9 @@ module Base
 		Icon	=	UZIMag,
 		MaxAmmo = 20,
 		AmmoType = Base.Bullets9mm,
-		StaticModel = GunMagazine,
 		GunType = Base.UZI,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item 223Clip
@@ -97,8 +103,9 @@ module Base
 		Icon	=	308_Mag,
 		MaxAmmo = 10,
 		AmmoType = Base.223Bullets,
-		StaticModel = GunMagazine,
 		GunType = Base.VarmintRifle,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item 308Clip
@@ -111,8 +118,9 @@ module Base
 		Icon	=	308_Mag,
 		MaxAmmo = 10,
 		AmmoType = Base.308Bullets,
-		StaticModel = GunMagazine,
 		/*GunType = Base.HuntingRifle,*/
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item 556Clip
@@ -125,8 +133,9 @@ module Base
 		Icon	=	556_Stanag_Mag,
 		MaxAmmo = 30,
 		AmmoType = Base.556Bullets,
-		StaticModel = 556_Mag,
 		GunType = Base.AssaultRifle,
+		StaticModel = 556_Mag,
+		WorldStaticModel = 556_Mag,
 	}
 
 	item M14Clip
@@ -139,8 +148,9 @@ module Base
 		Icon	=	308_Mag2,
 		MaxAmmo = 20,
 		AmmoType = Base.762Bullets,
-		StaticModel = GunMagazine,
 		GunType = Base.AssaultRifle2,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item M60Mag
@@ -153,8 +163,9 @@ module Base
 		Icon	=	M60Mag,
 		MaxAmmo = 100,
 		AmmoType = Base.762Bullets,
-		StaticModel = GunMagazine,
 		GunType = Base.M60,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 	item FN_FAL_Mag
@@ -167,8 +178,9 @@ module Base
 		Icon	=	308_Mag2,
 		MaxAmmo = 20,
 		AmmoType = Base.762Bullets,
-		StaticModel = GunMagazine,
 		GunType = Base.FN_FAL,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
 	}
 
 }

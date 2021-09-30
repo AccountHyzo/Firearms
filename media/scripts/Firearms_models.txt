@@ -17,6 +17,20 @@ module Base
 	{
 		mesh = ammo/Ammobox,
 	}
+	model AmmoCan
+	{
+		mesh = ammo/AmmoCan,
+		texture = clothes/bag/ammocan,
+	}
+	model GunToolKit
+	{
+		mesh = GunToolKit,
+		texture = tools,
+	}
+	model WMD
+	{
+		mesh = WMD,
+	}
 	model 556_Mag
 	{
 		mesh = ammo/Stanag_Mag,
@@ -855,15 +869,45 @@ attachment silencer
 	{
 		mesh = Weapons/Firearm/UZI,
 
+		attachment bipod
+		{
+			offset = 0.0000 -0.0967 0.0000,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment foregrip
+		{
+			offset = 0.0000 -0.0227 0.0042,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment side
+		{
+			offset = 0.0055 0.1435 -0.0170,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+
+		attachment light
+		{
+			offset = 0.0055 0.1435 -0.0170,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+
+		attachment suppressor
+		{
+			offset = 0.0000 0.2010 -0.0181,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
 		attachment muzzle
 		{
-			offset = 0.0000 0.1650 0.0160,
+			offset = 0.0000 0.2010 0.0160,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
-		attachment sling
+		attachment reddot
 		{
-			offset = 0.0000 0.2200 0.0180,
+			offset = 0.0000 0.0190 0.0340,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
@@ -873,9 +917,27 @@ attachment silencer
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
-		attachment reddot
+		attachment scope2
 		{
-			offset = 0.0000 0.0190 0.0340,
+			offset = 0.0000 -0.0147 -0.0066,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+
+		attachment mag
+		{
+			offset = 0.0000 -0.0640 -0.0325,
+			rotate = 16.0000 180.0000 0.0000,
+		}
+
+		attachment drum
+		{
+			offset = 0.0000 -0.0678 0.0192,
+			rotate = 15.0000 -180.0000 0.0000,
+		}
+
+		attachment sling
+		{
+			offset = 0.0000 0.2200 0.0180,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
@@ -893,13 +955,13 @@ attachment silencer
 
 		attachment stock
 		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 -0.0880 0.0100,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment silencer
 		{
-			offset = 0.0000 0.1570 0.0160,
+			offset = 0.0000 0.2030 0.0160,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 	}
@@ -1712,6 +1774,16 @@ rotate = 180.0000 0.0000 180.0000,
 					{
 						mesh = weapons/firearm/attachments/MP5_Stock_Extended,
 						texture = Weapons/firearm/MP5,
+					}
+	model UZI_Stock_Detracted
+					{
+						mesh = weapons/firearm/attachments/uzi_stock,
+						texture = Weapons/firearm/UZI,
+					}
+	model UZI_Stock_Extended
+					{
+						mesh = weapons/firearm/attachments/uzi_extendedstock,
+						texture = Weapons/firearm/UZI,
 					}
 	model Stock_Tactical
 					{

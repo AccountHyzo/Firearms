@@ -63,7 +63,7 @@ module Base
      MP5,
 
      Result:MP5,
-     Time:30,
+     Time:15,
      OnTest:onExtendStock_OnTest,
      OnCreate:onExtendStock_OnCreate,
    }
@@ -73,6 +73,26 @@ module Base
       MP5,
 
       Result:MP5,
+      Time:30,
+      OnTest:onDetractStock_OnTest,
+      OnCreate:onDetractStock_OnCreate,
+    }
+
+			recipe Extend Stock
+		   {
+		     UZI,
+
+		     Result:UZI,
+		     Time:15,
+		     OnTest:onExtendStock_OnTest,
+		     OnCreate:onExtendStock_OnCreate,
+		   }
+
+ 		recipe Detract Stock
+    {
+      UZI,
+
+      Result:UZI,
       Time:30,
       OnTest:onDetractStock_OnTest,
       OnCreate:onDetractStock_OnCreate,
@@ -98,13 +118,13 @@ module Base
 		{
       308Bullets,
 
-      Result:762Bullets=1,
+      Result:762x51Bullets=1,
       Time:0,
 		}
 
 		recipe Convert to .308
 		{
-      762Bullets,
+      762x51Bullets,
 
       Result:308Bullets=1,
       Time:0,
@@ -268,7 +288,7 @@ module Base
 					Override:true,
 			}
 
-			recipe Place .38 Speciam Bullets in Box
+			recipe Place .38 Special Bullets in Box
 			{
 					Bullets38=30,
 
@@ -306,9 +326,9 @@ module Base
 
 		recipe Open Box of 7.62x51mm Ammo
 		{
-				762Box,
+				762x51Box,
 
-				Result:762Bullets=8,
+				Result:762x51Bullets=8,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,
@@ -318,9 +338,9 @@ module Base
 
 		recipe Place 7.62x51mm in Box
 		{
-				762Bullets=40,
+				762x51Bullets=40,
 
-				Result:762Box,
+				Result:762x51Box,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,
@@ -354,9 +374,9 @@ module Base
 
 		recipe Open Box of .44-40 WCF Ammo
 		{
-				4440Box,
+				Bullets4440Box,
 
-				Result:4440Bullets=4,
+				Result:Bullets4440=4,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,
@@ -366,9 +386,9 @@ module Base
 
 		recipe Place .44-40 WCF in Box
 		{
-				4440Bullets=12,
+				Bullets4440=12,
 
-				Result:4440Box,
+				Result:Bullets4440Box,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,
@@ -378,9 +398,9 @@ module Base
 
 		recipe Open Box of .22 LR Ammo
 		{
-				22LRBox,
+				Bullets22Box,
 
-				Result:22LRBullets=8,
+				Result:Bullets22=8,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,
@@ -390,9 +410,9 @@ module Base
 
 		recipe Place .22 LR Ammo in Box
 		{
-				22LRBullets=40,
+				Bullets22=40,
 
-				Result:22LRBox,
+				Result:Bullets22Box,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,

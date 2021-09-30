@@ -77,7 +77,7 @@ ItemName_EN = {
     ItemName_Base.MP5Mag = "MP5 Magazine",
     ItemName_Base.M60Mag = "M60 Magazine"
 
-    ItemName_Base.22LRBox = "Box of .22 LR Rounds",
+    ItemName_Base.Bullets22Box = "Box of .22 LR Rounds",
     ItemName_Base.223Box = "Box of .223 Remington Rounds",
     ItemName_Base.308Box = "Box of .308 Winchester Rounds",
     ItemName_Base.556Box = "Box of 5.56x45mm Rounds",
@@ -86,11 +86,11 @@ ItemName_EN = {
     ItemName_Base.Bullets45Box = "Box of .45 ACP Rounds",
     ItemName_Base.Bullets9mmBox = "Box of 9x19mm Parabellum Rounds",
     ItemName_Base.ShotgunShellsBox = "Box of 12ga Shotgun Shells",
-    ItemName_Base.762Box = "Box of 7.62x51mm Rounds",
+    ItemName_Base.762x51Box = "Box of 7.62x51mm Rounds",
     ItemName_Base.762x39Box = "Box of 7.62x39mm Rounds",
-    ItemName_Base.4440Box = "Box of .44-40 WCF Rounds",
+    ItemName_Base.Bullets4440Box = "Box of .44-40 WCF Rounds",
 
-    ItemName_Base.22LRBullets = ".22 LR Round",
+    ItemName_Base.Bullets22 = ".22 LR Round",
     ItemName_Base.223Bullets = ".223 Remington Round",
     ItemName_Base.308Bullets = ".308 Winchester Round",
     ItemName_Base.556Bullets = "5.56x45mm Round",
@@ -99,9 +99,9 @@ ItemName_EN = {
     ItemName_Base.Bullets45 = ".45 ACP Round",
     ItemName_Base.Bullets9mm = "9x19mm Parabellum Round",
     ItemName_Base.ShotgunShells = "12ga Shotgun Shell",
-    ItemName_Base.762Bullets = "7.62x51mm Round",
+    ItemName_Base.762x51Bullets = "7.62x51mm Round",
     ItemName_Base.762x39Bullets = "7.62x39mm Round",
-    ItemName_Base.4440Bullets = ".44-40 WCF Round",
+    ItemName_Base.Bullets4440 = ".44-40 WCF Round",
 
     ItemName_Base.762Can = "7.62x51mm Ammo Canister",
     ItemName_Base.762x39Can = "7.62x39mm Ammo Canister",

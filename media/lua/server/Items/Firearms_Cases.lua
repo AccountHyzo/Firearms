@@ -28,7 +28,7 @@ require "Items/ItemPicker"
 			"Base.M24Rifle",			0.5,
       "Base.M60",       0.1,
       "Base.M60Mag",    1,
-      "Base.762Box",          10,
+      "Base.762x51Box",          10,
 		},
 	};
 
@@ -41,8 +41,8 @@ require "Items/ItemPicker"
       "Base.Winchester94",    1,
 			"Base.Rugerm7722",			3,
 			"Base.HuntingRifle",			3,
-      "Base.762Box",          10,
-			"Base.22LRBox",          10,
+      "Base.762x51Box",          10,
+			"Base.Bullets22Box",          10,
       "Base.4440Box",          10,
 			"Base.GunToolKit",				1,
 		},

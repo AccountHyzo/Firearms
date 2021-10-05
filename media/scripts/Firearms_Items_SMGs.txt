@@ -19,7 +19,7 @@ module Base
 				        SwingAmountBeforeImpact	=	0,
 				        ProjectileCount	=	1,
 				        ConditionLowerChanceOneIn	=	60,
-				        Weight	=	4,
+				        Weight	=	2,
 				        SplatNumber	=	3,
 				        PushBackMod	=	0.3,
 				        SubCategory	=	Firearm,

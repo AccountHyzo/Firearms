@@ -48,7 +48,10 @@ local myDistTableFirearmsAttachments = {
 local myDistTableFirearmsPolice = {
   "PoliceStorageGuns", 1,
   "PrisonGuardLockers", 1,
-  "SchoolLockers", 0.01,
+}
+
+local myDistTableFirearmsSchoolLocker = {
+  "SchoolLockers", 0.1,
 }
 
 local myDistTableFirearmsCleaning = {
@@ -121,23 +124,42 @@ for i = 1, #myDistTableFirearms, 2 do
   table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, myDistTableFirearms[i+1]*2)
 end
 
+for i = 1, #myDistTableFirearmsSchoolLocker, 2 do
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, "Base.Remington870Wood")
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, myDistTableFirearmsSchoolLocker[i+1]/2)
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, "Base.Revolver_Short")
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, myDistTableFirearmsSchoolLocker[i+1]*2)
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, "Base.Glock17")
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, myDistTableFirearmsSchoolLocker[i+1])
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, "Base.Glock17Mag")
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, myDistTableFirearmsSchoolLocker[i+1]/2)
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, "Base.Rugerm7722")
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, myDistTableFirearmsSchoolLocker[i+1]/5)
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, "Base.UZI")
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, myDistTableFirearmsSchoolLocker[i+1]/10)
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, "Base.UZIMag")
+  table.insert(ProceduralDistributions.list[myDistTableFirearms[i]].items, myDistTableFirearmsSchoolLocker[i+1]/10)
+end
+
 for i = 1, #myDistTableFirearmsPolice, 2 do
   table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, "AssaultRifle");
-  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, 0.15);
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, myDistTableFirearmsPolice[i+1]/4);
   table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, "M16A2");
-  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, 0.5);
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, myDistTableFirearmsPolice[i+1]/2);
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, "556Clip");
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, myDistTableFirearmsPolice[i+1]/2);
   table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, "MP5");
-  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, 0.5);
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, myDistTableFirearmsPolice[i+1]);
   table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, "MP5Mag");
-  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, 0.25);
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, myDistTableFirearmsPolice[i+1]/2);
   table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, "Revolver_Short");
-  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, 8);
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, myDistTableFirearmsPolice[i+1]*6);
   table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, "Glock17");
-  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, 8);
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, myDistTableFirearmsPolice[i+1]*4);
   table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, "Glock17Mag");
-  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, 4);
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, myDistTableFirearmsPolice[i+1]*2);
   table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, "GunToolKit");
-  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, 5);
+  table.insert(ProceduralDistributions.list[myDistTableFirearmsPolice[i]].items, myDistTableFirearmsPolice[i+1]/2);
 end
 
 for i = 1, #myDistTableFirearmsShotguns, 2 do

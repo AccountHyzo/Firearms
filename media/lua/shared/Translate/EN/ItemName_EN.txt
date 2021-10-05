@@ -19,10 +19,10 @@ ItemName_EN = {
     ItemName_Base.AssaultRifle2 = "M14",
     ItemName_Base.FN_FAL = "FN Fal",
     ItemName_Base.M24Rifle = "M24",
-    ItemName_Base.M60 = "M60"
+    ItemName_Base.M60 = "M60",
     ItemName_Base.MP5 = "MP5A1",
 
-    ItemName_Base.UZI = "UZI Carbine"
+    ItemName_Base.UZI = "UZI Carbine",
 
     ItemName_Base.Shotgun = "Mossberg 500",
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
@@ -32,15 +32,17 @@ ItemName_EN = {
     ItemName_Base.Mossberg500Tactical = "Mossberg 590A1 Tactical",
     ItemName_Base.Remington870Wood = "Remington 870",
     ItemName_Base.Remington870Sawnoff = "Sawed-off Remington 870",
-    ItemName_Base.Winchester94 = "Winchester Model 1894"
-    ItemName_Base.Winchester73 = "Winchester Model 1873"
+    ItemName_Base.Winchester94 = "Winchester Model 1894",
+    ItemName_Base.Winchester73 = "Winchester Model 1873",
 
 
     ItemName_Base.x2Scope = "ACOG x2 Scope",
     ItemName_Base.x4Scope = "ACOG x4 Scope",
     ItemName_Base.x8Scope = "x8 Scope",
+    ItemName_Base.x4-x12Scope = "x4-x12 Scope",
 
     ItemName_Base.GunToolKit = "Gun Tool Kit",
+    ItemName_Base.Solvent = "WD-40",
 
     ItemName_Base.ExtendedRecoilPad = "Extended Recoil Pad",
     ItemName_Base.AmmoStock = "Shotgun Shell Ammostrap",
@@ -49,6 +51,9 @@ ItemName_EN = {
     ItemName_Base.LightShotgunStock = "Light Shotgun Stock",
     ItemName_Base.MP5_Stock_Extended = "MP5 Stock",
     ItemName_Base.MP5_Stock_Detracted = "MP5 Stock",
+    ItemName_Base.UZI_Stock_Detracted = "UZI Stock",
+    ItemName_Base.UZI_Stock_Extended = "UZI Stock",
+    ItemName_Base.Rifle_Bipod = "Rifle Bipod",
 
     ItemName_Base.Sling = "Two Point Rifle Sling (Black)"
     ItemName_Base.Sling_Leather = "Two Point Rifle Sling (Leather)"
@@ -64,17 +69,19 @@ ItemName_EN = {
 
     ItemName_Base.9mmCompensator = "9mm Compensator",
 
+
     ItemName_Base.223Clip = "Remington Model 700 Magazine",
     ItemName_Base.308Clip = "Internal Magazine",
     ItemName_Base.Magazine = "Magazine",
-    ItemName_Base.9mmClip = "Beretta 92FS Magazine",
+    ItemName_Base.9mmClip = "Beretta M9 Magazine",
     ItemName_Base.556Clip = "STANAG magazine",
-    ItemName_Base.FNFALMag = "FN FAL Magazine",
+    ItemName_Base.FN_FAL_Mag = "FN FAL Magazine",
     ItemName_Base.M14Clip = "M14 Magazine",
     ItemName_Base.44Clip = "Desert Eagle Magazine",
     ItemName_Base.45Clip = "M1911 Magazine",
     ItemName_Base.Glock17Mag = "Glock 17 Magazine",
     ItemName_Base.MP5Mag = "MP5 Magazine",
+    ItemName_Base.UZIMag = "UZI Carbine Magazine",
     ItemName_Base.M60Mag = "M60 Magazine"
 
     ItemName_Base.Bullets22Box = "Box of .22 LR Rounds",
@@ -103,10 +110,10 @@ ItemName_EN = {
     ItemName_Base.762x39Bullets = "7.62x39mm Round",
     ItemName_Base.Bullets4440 = ".44-40 WCF Round",
 
-    ItemName_Base.762Can = "7.62x51mm Ammo Canister",
-    ItemName_Base.762x39Can = "7.62x39mm Ammo Canister",
-    ItemName_Base.556Can = "5.56x45mm Ammo Canister",
-    ItemName_Base.308Can = ".308 Winchester Ammo Canister",
-    ItemName_Base.9mmCan = "9mm Ammo Canister",
+    ItemName_Base.AmmoCan762 = "7.62x51mm Ammo Canister",
+    ItemName_Base.AmmoCan762x39 = "7.62x39mm Ammo Canister",
+    ItemName_Base.AmmoCan556 = "5.56x45mm Ammo Canister",
+    ItemName_Base.AmmoCan308 = ".308 Winchester Ammo Canister",
+    ItemName_Base.AmmoCan9mm = "9mm Ammo Canister",
 
 }

@@ -7,7 +7,7 @@ require "Items/ItemPicker"
 		rolls = 2,
 		items = {
 			"Base.Remington870Wood",		10,
-      "Base.Mossberg590",     10,
+      "Base.Remington870",     10,
       "Base.Mossberg500Tactical", 10,
 			"Base.Glock17",	1,
 			"Base.Glock17Mag",			5,
@@ -15,6 +15,8 @@ require "Items/ItemPicker"
 			"Base.308Clip",			3,
       "Base.MP5",       0.5,
       "Base.MP5Mag",      1,
+      "Base.AR15",      0.3,
+      "Base.556Clip",      0.5,
 		},
 	};
 
@@ -23,7 +25,7 @@ require "Items/ItemPicker"
 		items = {
       "Base.AssaultRifle", 5,
 			"Base.M16A2",		5,
-      "Base.Mossberg590",     10,
+      "Base.Remington870",     10,
       "Base.Mossberg500Tactical", 10,
 			"Base.M24Rifle",			0.5,
       "Base.M60",       0.1,
@@ -37,13 +39,16 @@ require "Items/ItemPicker"
 		items = {
       "Base.Mossberg500",     10,
       "Base.Mossberg500Tactical", 10,
+			"Base.M37",				1,
       "Base.Winchester73",      1,
       "Base.Winchester94",    1,
 			"Base.Rugerm7722",			3,
 			"Base.HuntingRifle",			3,
+			"Base.AR15",				0.3,
+			"Base.556Clip",				0.5,
       "Base.762x51Box",          10,
 			"Base.Bullets22Box",          10,
-      "Base.4440Box",          10,
+      "Base.Bullets4440Box",          10,
 			"Base.GunToolKit",				1,
 		},
 	};
@@ -66,7 +71,7 @@ require "Items/ItemPicker"
       "Base.Bullets44Box",		3,
       "Base.Bullets45Box",		4,
       "Base.Bullets9mmBox",		4,
-      "Base.4440Box",		5,
+      "Base.Bullets4440Box",		5,
     },
 		};
 

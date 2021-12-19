@@ -84,6 +84,7 @@ module Base
 				ModelWeaponPart = Base.9mmCompensator Base.Compensator_Pistol silencer silencer,
 				AttachmentType = Holster,
         StopPower = 5,
+				Tags = Gun,
 	}
 
 		item Pistol2
@@ -165,6 +166,7 @@ module Base
 	        WeaponReloadType = handgun,
 	        JamGunChance = 2,
 	        AttachmentType = Holster,
+					Tags = Gun,
 	    }
 
 			item Pistol3
@@ -243,6 +245,7 @@ module Base
 	        WeaponReloadType = handgun,
 	        JamGunChance = 2,
 	        AttachmentType = Holster,
+					Tags = Gun,
 	    }
 
 		item Glock17
@@ -325,6 +328,7 @@ module Base
 					WeaponReloadType = handgun,
 					JamGunChance = 1,
 					AttachmentType = Holster,
+					Tags = Gun,
 		}
 
 }

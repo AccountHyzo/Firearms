@@ -16,6 +16,7 @@ ItemName_EN = {
 
     ItemName_Base.AssaultRifle = "M16A1",
     ItemName_Base.M16A2 = "M16A2",
+    ItemName_Base.AR15 = "AR-15",
     ItemName_Base.AssaultRifle2 = "M14",
     ItemName_Base.FN_FAL = "FN Fal",
     ItemName_Base.M24Rifle = "M24",
@@ -32,6 +33,8 @@ ItemName_EN = {
     ItemName_Base.Mossberg500Tactical = "Mossberg 590A1 Tactical",
     ItemName_Base.Remington870Wood = "Remington 870",
     ItemName_Base.Remington870Sawnoff = "Sawed-off Remington 870",
+    ItemName_Base.M37 = "Ithaca 37",
+    ItemName_Base.M37Sawnoff = "Sawed-off Ithaca 37",
     ItemName_Base.Winchester94 = "Winchester Model 1894",
     ItemName_Base.Winchester73 = "Winchester Model 1873",
 

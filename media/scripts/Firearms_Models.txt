@@ -35,6 +35,25 @@ module Base
 	{
 		mesh = ammo/Stanag_Mag,
 	}
+	model Glock_Mag
+	{
+		mesh = ammo/glock_mag,
+	}
+	model Mp5_Mag
+	{
+		mesh = ammo/mp5_mag,
+		texture = ammo/glock_mag,
+	}
+	model fn_fal_mag
+	{
+		mesh = ammo/fn_fal_mag,
+		texture = Weapons/firearm/FN_FAL,
+	}
+	model M60_mag
+	{
+		mesh = ammo/M60_mag,
+		texture = Weapons/firearm/M60,
+	}
 	model ShotgunDoubleBarrelSawn_OPEN
 	{
 	mesh = Weapons/Firearm/DoubleBarrelSawn_OPEN,
@@ -1625,9 +1644,19 @@ rotate = 180.0000 0.0000 180.0000,
 							mesh = weapons/firearm/attachments/Scope,
 							texture = weapons/firearm/VarmintRifle_Scope,
 						}
+	model Scope_wm
+						{
+							mesh = weapons/firearm/attachments/Scope_wm,
+							texture = weapons/firearm/VarmintRifle_Scope,
+						}
 	model Acog
 							{
 								mesh = weapons/firearm/attachments/ACOG,
+								texture = weapons/firearm/VarmintRifle_Scope,
+							}
+	model Acog_wm
+							{
+								mesh = weapons/firearm/attachments/ACOG_wm,
 								texture = weapons/firearm/VarmintRifle_Scope,
 							}
 	model Reddot_PicatinnyShort
@@ -1638,6 +1667,11 @@ rotate = 180.0000 0.0000 180.0000,
 	model Reddot
 	{
 		mesh = Weapons/Firearm/attachments/RedDot,
+		texture = Weapons/firearm/attachments/RedDot,
+	}
+	model Reddot_wm
+	{
+		mesh = Weapons/Firearm/attachments/RedDot_wm,
 		texture = Weapons/firearm/attachments/RedDot,
 	}
 	model Reddot_Small
@@ -1672,6 +1706,25 @@ rotate = 180.0000 0.0000 180.0000,
 					{
 								mesh = weapons/firearm/attachments/Sling,
 								texture = weapons/firearm/attachments/Sling_Camo,
+					}
+	model Sling_wm
+					{
+							mesh = weapons/firearm/attachments/Sling_wm,
+					}
+	model Sling_Leather_wm
+					{
+								mesh = weapons/firearm/attachments/Sling_wm,
+								texture = weapons/firearm/attachments/Sling_Leather_wm,
+					}
+	model Sling_Olive_wm
+					{
+								mesh = weapons/firearm/attachments/Sling_wm,
+								texture = weapons/firearm/attachments/Sling_OliveGreen_wm,
+					}
+	model Sling_Camo_wm
+					{
+								mesh = weapons/firearm/attachments/Sling_wm,
+								texture = weapons/firearm/attachments/Sling_Camo_wm,
 					}
 	model Sling_Short
 	{
@@ -1747,6 +1800,10 @@ rotate = 180.0000 0.0000 180.0000,
 					{
 							mesh = weapons/firearm/attachments/Bipod,
 					}
+	model Bipod_wm
+					{
+							mesh = weapons/firearm/attachments/Bipod_wm,
+					}
 	model Silencer
 					{
 							mesh = weapons/firearm/attachments/Silencer,
@@ -1760,9 +1817,29 @@ rotate = 180.0000 0.0000 180.0000,
 	{
 				mesh = weapons/firearm/attachments/PopBottle_Silencer,
 				}
+	model Silencer_wm
+					{
+							mesh = weapons/firearm/attachments/Silencer_wm,
+							texture = weapons/firearm/attachments/Silencer,
+					}
+	model Silencer_Improvised_wm
+					{
+								mesh = weapons/firearm/attachments/Silencer_Improvised_wm,
+								texture = weapons/firearm/attachments/Silencer_Improvised,
+					}
+	model Silencer_PopBottle_wm
+	{
+				mesh = weapons/firearm/attachments/Silencer_PopBottle_wm,
+				texture = weapons/firearm/attachments/Silencer_PopBottle,
+				}
 	model Compensator_Pistol
 									{
 											mesh = weapons/firearm/attachments/Compensator_Pistol,
+											texture = weapons/firearm/attachments/Compensator,
+									}
+	model Compensator_Pistol_wm
+									{
+											mesh = weapons/firearm/attachments/Compensator_Pistol_wm,
 											texture = weapons/firearm/attachments/Compensator,
 									}
 	model MP5_Stock_Detracted
@@ -1775,6 +1852,11 @@ rotate = 180.0000 0.0000 180.0000,
 						mesh = weapons/firearm/attachments/MP5_Stock_Extended,
 						texture = Weapons/firearm/MP5,
 					}
+	model MP5_Stock_wm
+					{
+						mesh = weapons/firearm/attachments/MP5_Stock_wm,
+						texture = Weapons/firearm/MP5,
+					}
 	model UZI_Stock_Detracted
 					{
 						mesh = weapons/firearm/attachments/uzi_stock,
@@ -1783,6 +1865,11 @@ rotate = 180.0000 0.0000 180.0000,
 	model UZI_Stock_Extended
 					{
 						mesh = weapons/firearm/attachments/uzi_extendedstock,
+						texture = Weapons/firearm/UZI,
+					}
+	model UZI_Stock_wm
+					{
+						mesh = weapons/firearm/attachments/uzi_stock_wm,
 						texture = Weapons/firearm/UZI,
 					}
 	model Stock_Tactical
@@ -1800,6 +1887,21 @@ rotate = 180.0000 0.0000 180.0000,
 							mesh = Weapons/Firearm/attachments/Stock_Light,
 							texture = Weapons/firearm/Mossberg500,
 						}
+	model Stock_Tactical_wm
+					{
+							mesh = Weapons/Firearm/attachments/Stock_Tactical_wm,
+							texture = Weapons/firearm/Mossberg500,
+					}
+	model Stock_wm
+					{
+								mesh = Weapons/Firearm/attachments/Stock_wm,
+								texture = Weapons/firearm/Mossberg500,
+					}
+	model Stock_Light_wm
+						{
+							mesh = Weapons/Firearm/attachments/Stock_Light_wm,
+							texture = Weapons/firearm/Mossberg500,
+						}
 	model Choke_Tube
 					{
 						mesh = Weapons/Firearm/attachments/ChokeTube,
@@ -1815,9 +1917,19 @@ rotate = 180.0000 0.0000 180.0000,
 							mesh = Weapons/Firearm/attachments/ShotgunShellsStrap,
 							texture = Weapons/firearm/attachments/ammosling,
 						}
+	model Shotgun_AmmoStrap_wm
+						{
+							mesh = Weapons/Firearm/attachments/ShotgunShellsStrap_wm,
+							texture = Weapons/firearm/attachments/ammosling,
+						}
 	model TacticalLaser
 	{
 		mesh = Weapons/Firearm/attachments/Laser,
+		texture = Weapons/firearm/attachments/Laser,
+	}
+	model TacticalLaser_wm
+	{
+		mesh = Weapons/Firearm/attachments/Laser_wm,
 		texture = Weapons/firearm/attachments/Laser,
 	}
 	model PopBottle

@@ -15,7 +15,8 @@ module Base
 		AmmoType = Base.Bullets9mm,
 		GunType = Base.Pistol,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Glock_Mag,
+		Tags = GunMagazine,
 	}
 
 	item 45Clip
@@ -30,7 +31,8 @@ module Base
 		AmmoType = Base.Bullets45,
 		GunType = Base.Pistol2,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Glock_Mag,
+		Tags = GunMagazine,
 	}
 
 	item 44Clip
@@ -45,7 +47,8 @@ module Base
 		AmmoType = Base.Bullets44,
 		GunType = Base.Pistol3,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Glock_Mag,
+		Tags = GunMagazine,
 	}
 
 	item Glock17Mag
@@ -60,7 +63,8 @@ module Base
 		AmmoType = Base.Bullets9mm,
 		GunType = Base.Glock17,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Glock_Mag,
+		Tags = GunMagazine,
 	}
 
 	item MP5Mag
@@ -75,7 +79,8 @@ module Base
 		AmmoType = Base.Bullets9mm,
 		GunType = Base.MP5,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Mp5_Mag,
+		Tags = GunMagazine,
 	}
 
 	item UZIMag
@@ -91,6 +96,7 @@ module Base
 		GunType = Base.UZI,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Gun_Magazine_Ground,
+		Tags = GunMagazine,
 	}
 
 	item 223Clip
@@ -106,6 +112,7 @@ module Base
 		GunType = Base.VarmintRifle,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Gun_Magazine_Ground,
+		Tags = GunMagazine,
 	}
 
 	item 308Clip
@@ -121,6 +128,7 @@ module Base
 		/*GunType = Base.HuntingRifle,*/
 		StaticModel = GunMagazine,
 		WorldStaticModel = Gun_Magazine_Ground,
+		Tags = GunMagazine,
 	}
 
 	item 556Clip
@@ -136,6 +144,7 @@ module Base
 		GunType = Base.AssaultRifle,
 		StaticModel = 556_Mag,
 		WorldStaticModel = 556_Mag,
+		Tags = GunMagazine,
 	}
 
 	item M14Clip
@@ -151,6 +160,7 @@ module Base
 		GunType = Base.AssaultRifle2,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Gun_Magazine_Ground,
+		Tags = GunMagazine,
 	}
 
 	item M60Mag
@@ -165,7 +175,8 @@ module Base
 		AmmoType = Base.762x51Bullets,
 		GunType = Base.M60,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = M60_mag,
+		Tags = GunMagazine,
 	}
 
 	item FN_FAL_Mag
@@ -180,7 +191,8 @@ module Base
 		AmmoType = Base.762x51Bullets,
 		GunType = Base.FN_FAL,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = fn_fal_mag,
+		Tags = GunMagazine,
 	}
 
 }

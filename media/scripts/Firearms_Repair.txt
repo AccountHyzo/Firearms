@@ -152,6 +152,15 @@ module Base
        Fixer : Solvent=2; Aiming=1,
     }
 
+		fixing Fix AR15
+    {
+       Require : AR15,
+
+			 Fixer : GunToolKit=1; Aiming=6,
+			 Fixer : GunToolKit=2; Aiming=3,
+       Fixer : Solvent=2; Aiming=1,
+    }
+
 		fixing Fix M16A2
     {
        Require : M16A2,
@@ -215,9 +224,36 @@ module Base
        Fixer : Solvent=1; Aiming=1,
     }
 
+		fixing Fix M37
+    {
+       Require : M37,
+
+       Fixer : GunToolKit=1; Aiming=2,
+			 Fixer : GunToolKit=2; Aiming=1,
+       Fixer : Solvent=2; Aiming=1,
+    }
+
+		fixing Fix M37Sawnoff
+    {
+       Require : M37Sawnoff,
+
+       Fixer : GunToolKit=1; Aiming=2,
+			 Fixer : GunToolKit=2; Aiming=1,
+       Fixer : Solvent=1; Aiming=1,
+    }
+
 		fixing Fix MP5
     {
        Require : MP5,
+
+       Fixer : GunToolKit=1; Aiming=5,
+			 Fixer : GunToolKit=2; Aiming=2,
+       Fixer : Solvent=1; Aiming=1,
+    }
+
+		fixing Fix UZI
+    {
+       Require : UZI,
 
        Fixer : GunToolKit=1; Aiming=5,
 			 Fixer : GunToolKit=2; Aiming=2,

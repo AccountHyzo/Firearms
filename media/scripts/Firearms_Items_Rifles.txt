@@ -97,6 +97,7 @@ module Base
 						       JamGunChance = 5,
 						       AttachmentType = Rifle,
        		 				StopPower = 15,
+									Tags = Gun,
 						    }
 
 		item HuntingRifle
@@ -190,6 +191,7 @@ module Base
         JamGunChance = 5,
         AttachmentType = Rifle,
        StopPower = 20,
+			 Tags = Gun,
     }
 
 		item HuntingRifle_Sawn
@@ -285,6 +287,7 @@ module Base
 		JamGunChance = 7,
 		AttachmentType = Holster,
     StopPower = 30,
+		Tags = Gun,
     }
 
 		item Rugerm7722
@@ -377,6 +380,7 @@ module Base
         JamGunChance = 5,
         AttachmentType = Rifle,
        StopPower = 7,
+			 Tags = Gun,
     }
 
 	/************************Military************************/
@@ -474,6 +478,7 @@ module Base
 	       JamGunChance = 5,
 	       AttachmentType = Rifle,
        	StopPower = 30,
+				Tags = Gun,
 	    }
 
 }

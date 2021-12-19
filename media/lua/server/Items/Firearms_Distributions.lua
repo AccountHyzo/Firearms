@@ -18,7 +18,6 @@ local distributionTable = {
 			rolls = 2,
 			items = {
 				"308Box", 100,
-				"308Box", 50,
 				"308Box", 25,
 				"308Box", 10,
 				"308Box", 5,
@@ -34,6 +33,18 @@ local distributionTable = {
 					"556Box", 25,
 					"556Box", 10,
 					"556Box", 5,
+			},
+			fillRand = 0,
+	},
+
+	AmmoCan223 = {
+			rolls = 2,
+			items = {
+					"223Box", 100,
+					"223Box", 50,
+					"223Box", 25,
+					"223Box", 10,
+					"223Box", 5,
 			},
 			fillRand = 0,
 	},

@@ -49,6 +49,17 @@ module Base
 
 	recipe Saw Off Shotgun
 	{
+		 M37,
+		 keep [Recipe.GetItemTypes.Saw],
+
+		 Result:M37Sawnoff,
+		 Sound:Sawing,
+		 Time:200.0,
+		 OnCreate:onSawnOff_OnCreate,
+	}
+
+	recipe Saw Off Shotgun
+	{
 		Remington870Wood,
 		keep [Recipe.GetItemTypes.Saw],
 

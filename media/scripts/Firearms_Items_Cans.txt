@@ -51,6 +51,22 @@ module Base
 			WorldStaticModel = AmmoCan,
 	}
 
+	item AmmoCan223
+	{
+			WeightReduction	=	10,
+			Weight	=	0.5,
+			Type	=	Container,
+			Capacity	=	8,
+			DisplayName	=	.223 Ammo Canister,
+			DisplayCategory = Canister,
+			Icon	=	Ammocan,
+			RunSpeedModifier = 0.99,
+			MetalValue = 15,
+			ReplaceInSecondHand = Bag_AmmoCan_LHand holdingbagleft,
+			ReplaceInPrimaryHand = Bag_AmmoCan_RHand holdingbagright,
+			WorldStaticModel = AmmoCan,
+	}
+
 	item AmmoCan308
 	{
 			WeightReduction	=	10,

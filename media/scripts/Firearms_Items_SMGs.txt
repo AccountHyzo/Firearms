@@ -95,6 +95,7 @@ module Base
 				        AttachmentType = Rifle,
 				        FireMode = Auto,
 				        FireModePossibilities = Auto/Single,
+								Tags = Gun,
 				    }
 
 									item UZI
@@ -187,6 +188,7 @@ module Base
 											AttachmentType = Rifle,
 											FireMode = Auto,
 							        FireModePossibilities = Auto/Single,
+											Tags = Gun,
 								}
 
 }

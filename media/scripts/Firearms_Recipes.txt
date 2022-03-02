@@ -215,7 +215,7 @@ module Base
 					Override:true,
 			}
 
-			recipe Open Box of .556 Ammo
+			recipe Open Box of 5.56 Ammo
 			{
 					556Box,
 
@@ -227,7 +227,7 @@ module Base
 					Override:true,
 			}
 
-			recipe Place .556 Ammo in Box
+			recipe Place 5.56 Ammo in Box
 			{
 					556Bullets=60,
 

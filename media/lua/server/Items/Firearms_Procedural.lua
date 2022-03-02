@@ -99,6 +99,8 @@ for i = 1, #FirearmsDistributionAmmoBoxes, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1])
   table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.Bullets22Box")
   table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1]*10)
+  table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.762x39Box")
+  table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1]*5)
 end
 
 for i = 1, #FirearmsDistributionArmyAmmoBoxes, 2 do
@@ -133,6 +135,12 @@ for i = 1, #FirearmsDistribution, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.UZIMag")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.AK47")
+  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/2)
+  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.AK_Mag")
+  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.SKS")
+  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Solvent")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
 end
@@ -144,6 +152,14 @@ for i = 1, #FirearmsArmyDistribution, 2 do
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.FN_FAL_Mag")
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/3)
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.AK47")
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.AK_Mag")
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/3)
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M60")
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/4)
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M60Mag")
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.MP5")
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.MP5Mag")
@@ -198,6 +214,10 @@ for i = 1, #FirearmsDistributionPolice, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]*4);
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "Glock17Mag");
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]*2);
+  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "AK47");
+  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/4);
+  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "AK_Mag");
+  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/2);
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "GunToolKit");
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/2);
 end
@@ -220,6 +240,8 @@ for i = 1, #FirearmsDistributionOld, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1])
   table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.Winchester73")
   table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/2)
+  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.SKS")
+  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/4)
 end
 
 for i = 1, #FirearmsDistributionSilencers, 2 do
@@ -240,6 +262,8 @@ table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, "A
 table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, FirearmsDistributionCans[i+1]/2);
 table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, "AmmoCan308");
 table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, FirearmsDistributionCans[i+1]);
+table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, "AmmoCan762x39");
+table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, FirearmsDistributionCans[i+1]/2);
 end
 
 for i = 1, #FirearmsDistributionArmyCans, 2 do

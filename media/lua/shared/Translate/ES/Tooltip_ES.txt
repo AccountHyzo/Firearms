@@ -1,0 +1,11 @@
+Tooltip_ES = {
+  /*Attachments*/
+  Tooltip_Silencer = "Suprime el sonido al disparar un arma."
+  Tooltip_ImprovisedSilencer = "Silenciador improvisado que suprime el sonido. Esto es mejor que nada."
+  Tooltip_Bipod = "Disminuye el retroceso y a su vez aumenta la posibilidad de impactar."
+  Tooltip_AmmoStock = "Disminuye la velocidad de recarga."
+  Tooltip_TacticalStock = "Disminuye el retroceso y a su vez aumenta la posibilidad de impactar."
+  Tooltip_ExtendableStock = "Disminuye el retroceso y a su vez aumenta la posibilidad de impactar."
+  Tooltip_Compensator = "Disminuye el retroceso y a su vez aumenta la posibilidad de impactar."
+  Tooltip_ServiceFirearms  = "Puede utilizarse para el mantenimiento de armas de fuego."
+}

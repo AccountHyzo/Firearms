@@ -124,14 +124,24 @@ module Base
        Fixer : Solvent=2; Aiming=1,
        Override:true,
     }
-
+    
     fixing Fix HuntingRifle_Sawn
     {
-       Require : HuntingRifle_Sawn,
+    Require : HuntingRifle_Sawn,
 
-			 Fixer : GunToolKit=1; Aiming=4,
+    Fixer : GunToolKit=1; Aiming=4,
+    Fixer : GunToolKit=2; Aiming=2,
+    Fixer : Solvent=2; Aiming=1,
+    }
+
+    fixing Fix RugerM7722
+    {
+       Require : Rugerm7722,
+
+			 Fixer : GunToolKit=1; Aiming=5,
 			 Fixer : GunToolKit=2; Aiming=2,
        Fixer : Solvent=2; Aiming=1,
+       Override:true,
     }
 
     fixing Fix M24Rifle
@@ -182,6 +192,24 @@ module Base
 		fixing Fix Shotgun
 		{
 			 Require : Shotgun,
+
+			 Fixer : GunToolKit=1; Aiming=2,
+			 Fixer : GunToolKit=2; Aiming=1,
+       Fixer : Solvent=2; Aiming=1,
+		}
+
+		fixing Fix DoubleBarrelShotgun
+		{
+			 Require : DoubleBarrelShotgun,
+
+			 Fixer : GunToolKit=1; Aiming=2,
+			 Fixer : GunToolKit=2; Aiming=1,
+       Fixer : Solvent=2; Aiming=1,
+		}
+
+		fixing Fix DoubleBarrelShotgunSawnoff
+		{
+			 Require : DoubleBarrelShotgunSawnoff,
 
 			 Fixer : GunToolKit=1; Aiming=2,
 			 Fixer : GunToolKit=2; Aiming=1,
@@ -293,6 +321,24 @@ module Base
 
       Fixer : GunToolKit=2; Aiming=7,
       Fixer : GunToolKit=3; Aiming=3,
+      Fixer : Solvent=3; Aiming=1,
+		}
+
+		fixing Fix AK47
+		{
+			Require : AK47,
+
+      Fixer : GunToolKit=2; Aiming=5,
+      Fixer : GunToolKit=3; Aiming=2,
+      Fixer : Solvent=3; Aiming=1,
+		}
+
+		fixing Fix SKS
+		{
+			Require : SKS,
+
+      Fixer : GunToolKit=2; Aiming=5,
+      Fixer : GunToolKit=3; Aiming=2,
       Fixer : Solvent=3; Aiming=1,
 		}
 }

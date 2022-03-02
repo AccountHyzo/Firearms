@@ -19,6 +19,8 @@ ItemName_EN = {
     ItemName_Base.AR15 = "AR-15",
     ItemName_Base.AssaultRifle2 = "M14",
     ItemName_Base.FN_FAL = "FN Fal",
+    ItemName_Base.AK47 = "AK-47",
+    ItemName_Base.SKS = "SKS",
     ItemName_Base.M24Rifle = "M24",
     ItemName_Base.M60 = "M60",
     ItemName_Base.MP5 = "MP5A1",
@@ -86,6 +88,7 @@ ItemName_EN = {
     ItemName_Base.MP5Mag = "MP5 Magazine",
     ItemName_Base.UZIMag = "UZI Carbine Magazine",
     ItemName_Base.M60Mag = "M60 Magazine"
+    ItemName_Base.AK_Mag = "AK-47 Magazine"
 
     ItemName_Base.Bullets22Box = "Box of .22 LR Rounds",
     ItemName_Base.223Box = "Box of .223 Remington Rounds",

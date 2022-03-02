@@ -5,7 +5,7 @@ module Base
     item Bullets9mm
     {
         Count	=	5,
-        Weight	=	0.01,
+        Weight	=	0.02,
         Type	=	Normal,
         DisplayCategory = Ammunition,
         DisplayName	=	9mm Round,
@@ -17,7 +17,7 @@ module Base
 
     item Bullets9mmBox
     {
-        Weight	=	0.35,
+        Weight	=	0.5,
         Type	=	Normal,
         DisplayName	=	Box of 9mm Rounds,
         DisplayCategory = AmmunitionBox,
@@ -30,7 +30,7 @@ module Base
     item Bullets45
     {
         Count	=	5,
-        Weight	=	0.02,
+        Weight	=	0.025,
         Type	=	Normal,
         DisplayCategory = Ammunition,
         DisplayName	=	.45 Auto Round,
@@ -42,7 +42,7 @@ module Base
 
     item Bullets45Box
     {
-        Weight	=	0.65,
+        Weight	=	0.75,
         Type	=	Normal,
         DisplayName	=	Box of .45 Auto Rounds,
         DisplayCategory = AmmunitionBox,
@@ -55,7 +55,7 @@ module Base
     item Bullets44
     {
         Count	=	3,
-        Weight	=	0.02,
+        Weight	=	0.025,
         Type	=	Normal,
         DisplayCategory = Ammunition,
         DisplayName	=	.44 Magnum Round,
@@ -67,7 +67,7 @@ module Base
 
     item Bullets44Box
     {
-        Weight	=	0.65,
+        Weight	=	0.75,
         Type	=	Normal,
         DisplayName	=	Box of .44 Magnum Rounds,
         DisplayCategory = AmmunitionBox,
@@ -80,7 +80,7 @@ module Base
     item Bullets4440
     {
         Count	=	3,
-        Weight	=	0.02,
+        Weight	=	0.025,
         Type	=	Normal,
         DisplayCategory = Ammunition,
         DisplayName	=	.44-40 WCF Round,
@@ -92,7 +92,7 @@ module Base
 
     item Bullets4440Box
     {
-        Weight	=	0.65,
+        Weight	=	0.75,
         Type	=	Normal,
         DisplayName	=	Box of .44-40 WCF Rounds,
         DisplayCategory = AmmunitionBox,
@@ -105,7 +105,7 @@ module Base
     item Bullets38
     {
         Count	=	5,
-        Weight	=	0.015,
+        Weight	=	0.025,
         Type	=	Normal,
         DisplayCategory = Ammunition,
         DisplayName	=	.38 Special Round,
@@ -117,7 +117,7 @@ module Base
 
     item Bullets38Box
     {
-        Weight	=	0.5,
+        Weight	=	0.75,
         Type	=	Normal,
         DisplayName	=	Box of .38 Special Rounds,
         DisplayCategory = AmmunitionBox,
@@ -156,7 +156,7 @@ module Base
 	item 223Bullets
     {
         Count	=	5,
-        Weight	=	0.01,
+        Weight	=	0.02,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	.223 Round,
@@ -169,7 +169,7 @@ module Base
 
     item 223Box
     {
-        Weight	=	0.45,
+        Weight	=	0.5,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of .223 Rounds,
@@ -183,7 +183,7 @@ module Base
     item 308Bullets
     {
         Count	=	5,
-        Weight	=	0.02,
+        Weight	=	0.025,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	.308 Round,
@@ -196,7 +196,7 @@ module Base
 
     item 308Box
     {
-        Weight	=	0.85,
+        Weight	=	0.75,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of .308 Rounds,
@@ -210,7 +210,7 @@ module Base
     item 556Bullets
     {
         Count	=	5,
-        Weight	=	0.025,
+        Weight	=	0.02,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	5.56x45mm Round,
@@ -223,7 +223,7 @@ module Base
 
     item 556Box
     {
-        Weight	=	1,
+        Weight	=	0.5,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of 5.56x45mm Rounds,
@@ -250,7 +250,7 @@ module Base
 
     item 762x51Box
     {
-        Weight	=	1,
+        Weight	=	0.75,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of 7.62x51mm Rounds,
@@ -269,7 +269,7 @@ module Base
         Type	=	Normal,
         DisplayName	=	762x39mm Round,
         DisplayCategory = Ammunition,
-        Icon	=	308_Round,
+        Icon	=	762x39_Round,
         MetalValue = 1,
 				StaticModel = RifleBullet,
 				WorldStaticModel = RifleAmmo,
@@ -277,7 +277,7 @@ module Base
 
     item 762x39Box
     {
-        Weight	=	1,
+        Weight	=	0.75,
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of 7.62×39mm Rounds,
@@ -304,7 +304,7 @@ module Base
 
 	    item Bullets22Box
 	    {
-	        Weight	=	0.45,
+	        Weight	=	0.4,
 	        AlwaysWelcomeGift	=	TRUE,
 	        Type	=	Normal,
 	        DisplayName	=	Box of .22 LR Rounds,

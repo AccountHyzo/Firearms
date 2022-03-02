@@ -14,6 +14,18 @@ local distributionTable = {
 			fillRand = 0,
 	},
 
+	AmmoCan762x39 = {
+			rolls = 2,
+			items = {
+					"762x39Box", 100,
+					"762x39Box", 50,
+					"762x39Box", 25,
+					"762x39Box", 10,
+					"762x39Box", 5,
+			},
+			fillRand = 0,
+	},
+
 	AmmoCan308 = {
 			rolls = 2,
 			items = {

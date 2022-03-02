@@ -1268,6 +1268,82 @@ attachment bipod
 			rotate = -0.0000 0.0000 -0.0000,
 		}
 	}
+	model SKS
+	{
+		mesh = weapons/firearm/SKS,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.5300 -0.0340,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment bayonnet
+		{
+			offset = 0.0000 0.4800 -0.0024,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment sling
+		{
+			offset = 0.0000 0.2990 -0.0390,
+			rotate = -4.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.1120 -0.0430,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.1050 -0.0470,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment gunlight
+		{
+			offset = 0.0000 0.4020 -0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.4020 -0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment stock
+		{
+			offset = 0.0000 0.0000 -0.0000,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment silencer
+		{
+			offset = 0.0000 0.4950 -0.0280,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 -0.1650 0.0300,
+			rotate = -2.0000 0.0000 0.0000,
+		}
+
+		attachment bipod
+		{
+			offset = 0.0000 0.3170 -0.0150,
+			rotate = -0.0000 0.0000 -0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1800 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+	}
 	model FN_FAL
 	{
 		mesh = weapons/firearm/FN_FAL,
@@ -1586,6 +1662,65 @@ offset = 0.0000 0.4020 0.0270,
 rotate = 180.0000 0.0000 180.0000,
 }
 }
+	model AK47
+	{
+		mesh = Weapons/Firearm/AK47,
+		texture = weapons/firearm/AK,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.3850 -0.0120,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+
+		attachment sling
+		{
+			offset = 0.0000 0.3450 -0.0240,
+			rotate = 3.0000 14.0000 -2.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0510 0.0580,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0040 0.0470 0.0610,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment gunlight
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment stock
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment silencer
+		{
+			offset = 0.0000 0.3740 -0.0120,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1800 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
+	}
 	model M60
 	{
 		mesh = Weapons/Firearm/M60,
@@ -1638,6 +1773,71 @@ rotate = 180.0000 0.0000 180.0000,
 			offset = 0.0000 0.5130 0.0420,
 			rotate = 180.0000 0.0000 180.0000,
 		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.2
+			rotate = -15.000 90.000 0.0000
+		}
+	}
+	model M60_World
+	{
+		mesh = Weapons/Firearm/M60_World,
+		texture = weapons/firearm/M60,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.4900 0.0410,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment sling
+		{
+			offset = 0.0000 0.2870 -0.0030,
+			rotate = 174.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0380 0.0700,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0040 0.0470 0.0710,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment gunlight
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.2680 -0.0050,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment stock
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment silencer
+		{
+			offset = 0.0000 0.5130 0.0420,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+		}
 	}
 	model Scope
 						{
@@ -1685,7 +1885,7 @@ rotate = 180.0000 0.0000 180.0000,
 						}
 	model ExtendedRecoil_Pad
 						{
-							mesh = weapons/firearm/attachments/Rifle_ExtendedPad,
+							mesh = weapons/firearm/attachments/Extended_Recoil_Pad,
 							texture = weapons/firearm/attachments/Recoil_Pad,
 						}
 	model Sling

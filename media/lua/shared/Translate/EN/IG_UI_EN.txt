@@ -7,6 +7,7 @@ IGUI_EN = {
     IGUI_ItemCat_Magazine223 = "Magazine, .223",
     IGUI_ItemCat_Magazine556 = "Magazine, 5.56x45mm",
     IGUI_ItemCat_Magazine762 = "Magazine, 7.62x51mm"
+    IGUI_ItemCat_Magazine762x39 = "Magazine, 7.62x39mm"
 
     IGUI_ItemCat_Handgun9mm = "Handgun, 9mm",
     IGUI_ItemCat_Handgun22 = "Handgun, .22 LR",
@@ -24,6 +25,7 @@ IGUI_EN = {
     IGUI_ItemCat_Rifle223 = "Rifle, .223",
     IGUI_ItemCat_Rifle556 = "Rifle, 5.56x45mm",
     IGUI_ItemCat_Rifle762 = "Rifle, 7.62x51mm"
+    IGUI_ItemCat_Rifle762x39 = "Rifle, 7.62x39mm"
 
     IGUI_ItemCat_Shotgun12ga = "Shotgun, 12ga"
 
@@ -33,6 +35,7 @@ IGUI_EN = {
     IGUI_ItemCat_AssaultRifle223 = "Assault Rifle, .223",
     IGUI_ItemCat_AssaultRifle556 = "Assault Rifle, 5.56x45mm",
     IGUI_ItemCat_AssaultRifle762 = "Assault Rifle, 7.62x51mm"
+    IGUI_ItemCat_AssaultRifle762x39 = "Assault Rifle, 7.62x39mm"
 
     IGUI_ItemCat_MG762 = "Machinegun, 7.62x51mm"
 

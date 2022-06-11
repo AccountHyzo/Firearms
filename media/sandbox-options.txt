@@ -1,0 +1,127 @@
+VERSION = 1,
+
+option Firearms.SuppressorBreak
+{
+	type = boolean, default = true,
+	page = Firearms, translation = Firearms_SuppressorBreak,
+}
+
+option Firearms.ScrewdriverReq
+{
+	type = boolean, default = false,
+	page = Firearms, translation = Firearms_ScrewdriverReq,
+}
+
+option Firearms.BottleSuppressorBreakChance
+{
+type = enum, numValues = 4, default = 1,
+page = Firearms, translation = Firearms_BottleSuppressorBreakChance,
+valueTranslation = Firearms_BreakChance,
+}
+
+option Firearms.FlashlightSuppressorBreakChance
+{
+	type = enum, numValues = 4, default = 2,
+	page = Firearms, translation = Firearms_FlashlightSuppressorBreakChance,
+	valueTranslation = Firearms_BreakChance,
+}
+
+option Firearms.SuppressorEffectiveness22
+{
+	type = enum, numValues = 10, default = 3,
+	page = Firearms, translation = Firearms_SuppressorEffectiveness22,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
+option Firearms.SuppressorEffectiveness9mm
+{
+	type = enum, numValues = 10, default = 4,
+	page = Firearms, translation = Firearms_SuppressorEffectiveness9mm,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
+option Firearms.SuppressorEffectiveness45
+{
+	type = enum, numValues = 10, default = 4,
+	page = Firearms, translation = Firearms_SuppressorEffectiveness45,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
+option Firearms.SuppressorEffectiveness44
+{
+	type = enum, numValues = 10, default = 4,
+	page = Firearms, translation = Firearms_SuppressorEffectiveness44,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
+option Firearms.SuppressorEffectiveness38
+{
+	type = enum, numValues = 10, default = 4,
+	page = Firearms, translation = Firearms_SuppressorEffectiveness38,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
+option Firearms.SuppressorEffectiveness223
+{
+	type = enum, numValues = 10, default = 5,
+	page = Firearms, translation = Firearms_SuppressorEffectiveness223,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
+option Firearms.SuppressorEffectiveness308
+{
+	type = enum, numValues = 10, default = 6,
+	page = Firearms, translation = Firearms_SuppressorEffectiveness308,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
+option Firearms.SuppressorEffectivenessShotgunShells
+{
+	type = enum, numValues = 10, default = 8,
+	page = Firearms, translation = Firearms_SuppressorEffectivenessShotgunShells,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
+option Firearms.SuppressorEffectivenessImprovised
+{
+	type = enum, numValues = 10, default = 9,
+	page = Firearms, translation = Firearms_SuppressorEffectivenessImprovised,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
+option Firearms.SpawnSuppressors
+{
+	type = boolean, default = true,
+	page = Firearms, translation = Firearms_SpawnSuppressors,
+}
+
+option Firearms.SpawnHandgunSuppressors
+{
+	type = boolean, default = true,
+	page = Firearms, translation = Firearms_SpawnHandgunSuppressors,
+}
+
+option Firearms.SpawnRifleSuppressors
+{
+	type = boolean, default = true,
+	page = Firearms, translation = Firearms_SpawnRifleSuppressors,
+}
+
+option Firearms.SpawnShotgunSuppressors
+{
+	type = boolean, default = false,
+	page = Firearms, translation = Firearms_SpawnShotgunSuppressors,
+}
+
+option Firearms.SpawnAmmoCans
+{
+	type = boolean, default = true,
+	page = Firearms, translation = Firearms_SpawnAmmoCans,
+}
+
+option Firearms.LootSuppressor
+{
+type = enum, numValues = 5, default = 2,
+page = LootRarity, translation = Firearms_LootSuppressor,
+valueTranslation = Rarity,
+}

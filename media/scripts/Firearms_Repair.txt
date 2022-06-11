@@ -14,6 +14,19 @@ module Base
       WorldStaticModel = GunToolKit,
     }
 
+    item ImprovisedGunToolKit
+    {
+      Weight	=	1,
+      Type	=	Drainable,
+      UseDelta	=	0.05,
+      UseWhileEquipped	=	FALSE,
+      DisplayName	=	Gun Tool Kit,
+      Icon	=	Improvised_GunToolKit,
+      Tooltip = Tooltip_ServiceFirearms,
+      SurvivalGear = TRUE,
+      WorldStaticModel = Improvised_GunToolKit,
+    }
+
     item Solvent
     {
       Weight	=	1,
@@ -32,8 +45,7 @@ module Base
        Require : ColtPeacemaker,
 
 			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
     }
 
 		fixing Fix Revolver
@@ -41,8 +53,7 @@ module Base
        Require : Revolver,
 
 			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
        Override:true,
     }
 
@@ -51,8 +62,7 @@ module Base
        Require : Revolver_Long,
 
 			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
        Override:true,
     }
 
@@ -61,8 +71,7 @@ module Base
 			 Require : Revolver_Short,
 
 			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
        Override:true,
 		}
 
@@ -71,8 +80,7 @@ module Base
        Require : Pistol,
 
        Fixer : GunToolKit=1; Aiming=3,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
        Override:true,
     }
 
@@ -81,8 +89,7 @@ module Base
        Require : Pistol2,
 
 			 Fixer : GunToolKit=1; Aiming=3,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
        Override:true,
     }
 
@@ -91,8 +98,7 @@ module Base
        Require : Pistol3,
 
 			 Fixer : GunToolKit=1; Aiming=3,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
        Override:true,
     }
 
@@ -101,8 +107,7 @@ module Base
        Require : Glock17,
 
 			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
     }
 
 		fixing Fix Varmint Rifle
@@ -110,8 +115,7 @@ module Base
        Require : VarmintRifle,
 
 			 Fixer : GunToolKit=1; Aiming=6,
-			 Fixer : GunToolKit=2; Aiming=3,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
        Override:true,
     }
 
@@ -120,18 +124,16 @@ module Base
        Require : HuntingRifle,
 
 			 Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : GunToolKit=2; Aiming=2,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
        Override:true,
     }
-    
+
     fixing Fix HuntingRifle_Sawn
     {
     Require : HuntingRifle_Sawn,
 
     Fixer : GunToolKit=1; Aiming=4,
-    Fixer : GunToolKit=2; Aiming=2,
-    Fixer : Solvent=2; Aiming=1,
+    Fixer : ImprovisedGunToolKit=2; Aiming=2,
     }
 
     fixing Fix RugerM7722
@@ -139,8 +141,7 @@ module Base
        Require : Rugerm7722,
 
 			 Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : GunToolKit=2; Aiming=2,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
        Override:true,
     }
 
@@ -149,8 +150,7 @@ module Base
        Require : M24Rifle,
 
 			 Fixer : GunToolKit=1; Aiming=7,
-			 Fixer : GunToolKit=2; Aiming=3,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
     }
 
 		fixing Fix Assault Rifle
@@ -158,8 +158,7 @@ module Base
        Require : AssaultRifle,
 
 			 Fixer : GunToolKit=1; Aiming=6,
-			 Fixer : GunToolKit=2; Aiming=3,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
     }
 
 		fixing Fix AR15
@@ -167,8 +166,7 @@ module Base
        Require : AR15,
 
 			 Fixer : GunToolKit=1; Aiming=6,
-			 Fixer : GunToolKit=2; Aiming=3,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
     }
 
 		fixing Fix M16A2
@@ -176,8 +174,7 @@ module Base
        Require : M16A2,
 
 			 Fixer : GunToolKit=1; Aiming=6,
-			 Fixer : GunToolKit=2; Aiming=3,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
     }
 
 		fixing Fix AssaultRifle2
@@ -185,8 +182,7 @@ module Base
        Require : AssaultRifle2,
 
 			 Fixer : GunToolKit=1; Aiming=7,
-			 Fixer : GunToolKit=2; Aiming=3,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
     }
 
 		fixing Fix Shotgun
@@ -194,8 +190,7 @@ module Base
 			 Require : Shotgun,
 
 			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
 		}
 
 		fixing Fix DoubleBarrelShotgun
@@ -203,8 +198,7 @@ module Base
 			 Require : DoubleBarrelShotgun,
 
 			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
 		}
 
 		fixing Fix DoubleBarrelShotgunSawnoff
@@ -212,8 +206,7 @@ module Base
 			 Require : DoubleBarrelShotgunSawnoff,
 
 			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
 		}
 
 		fixing Fix Mossberg500
@@ -221,8 +214,7 @@ module Base
        Require : Mossberg500,
 
        Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
     }
 
 		fixing Fix Mossberg500Tactical
@@ -230,8 +222,7 @@ module Base
        Require : Mossberg500Tactical,
 
        Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
     }
 
 		fixing Fix Remington870Wood
@@ -239,8 +230,7 @@ module Base
        Require : Remington870Wood,
 
        Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
     }
 
 		fixing Fix Remington870Sawnoff
@@ -248,8 +238,7 @@ module Base
        Require : Remington870Sawnoff,
 
        Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
     }
 
 		fixing Fix M37
@@ -257,8 +246,7 @@ module Base
        Require : M37,
 
        Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
     }
 
 		fixing Fix M37Sawnoff
@@ -266,8 +254,7 @@ module Base
        Require : M37Sawnoff,
 
        Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
     }
 
 		fixing Fix MP5
@@ -275,8 +262,7 @@ module Base
        Require : MP5,
 
        Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : GunToolKit=2; Aiming=2,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
     }
 
 		fixing Fix UZI
@@ -284,8 +270,15 @@ module Base
        Require : UZI,
 
        Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : GunToolKit=2; Aiming=2,
-       Fixer : Solvent=1; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
+    }
+
+		fixing Fix MAC 10
+    {
+       Require : Mac10,
+
+       Fixer : GunToolKit=1; Aiming=5,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
     }
 
 		fixing Fix Winchester94
@@ -293,8 +286,7 @@ module Base
 			Require : Winchester94,
 
 			 Fixer : GunToolKit=1; Aiming=3,
-			 Fixer : GunToolKit=2; Aiming=1,
-       Fixer : Solvent=2; Aiming=1,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
 		}
 
 		fixing Fix Winchester73
@@ -302,17 +294,15 @@ module Base
 			Require : Winchester73,
 
       Fixer : GunToolKit=1; Aiming=3,
-      Fixer : GunToolKit=2; Aiming=1,
-      Fixer : Solvent=2; Aiming=1,
+      Fixer : ImprovisedGunToolKit=2; Aiming=1,
 		}
 
 		fixing Fix M60
 		{
 			Require : M60,
 
-      Fixer : GunToolKit=2; Aiming=7,
-      Fixer : GunToolKit=3; Aiming=3,
-      Fixer : Solvent=3; Aiming=1,
+      Fixer : GunToolKit=3; Aiming=7,
+      Fixer : ImprovisedGunToolKit=3; Aiming=3,
 		}
 
 		fixing Fix FN FAL
@@ -320,8 +310,7 @@ module Base
 			Require : FN_FAL,
 
       Fixer : GunToolKit=2; Aiming=7,
-      Fixer : GunToolKit=3; Aiming=3,
-      Fixer : Solvent=3; Aiming=1,
+      Fixer : ImprovisedGunToolKit=3; Aiming=3,
 		}
 
 		fixing Fix AK47
@@ -329,8 +318,7 @@ module Base
 			Require : AK47,
 
       Fixer : GunToolKit=2; Aiming=5,
-      Fixer : GunToolKit=3; Aiming=2,
-      Fixer : Solvent=3; Aiming=1,
+      Fixer : ImprovisedGunToolKit=3; Aiming=2,
 		}
 
 		fixing Fix SKS
@@ -338,7 +326,30 @@ module Base
 			Require : SKS,
 
       Fixer : GunToolKit=2; Aiming=5,
-      Fixer : GunToolKit=3; Aiming=2,
-      Fixer : Solvent=3; Aiming=1,
+      Fixer : ImprovisedGunToolKit=3; Aiming=2,
+		}
+
+		fixing Fix SPAS12
+		{
+			Require : SPAS12,
+
+      Fixer : GunToolKit=2; Aiming=5,
+      Fixer : ImprovisedGunToolKit=3; Aiming=2,
+		}
+
+		fixing Fix LAW12
+		{
+			Require : LAW12,
+
+      Fixer : GunToolKit=2; Aiming=5,
+      Fixer : ImprovisedGunToolKit=3; Aiming=2,
+		}
+
+		fixing Fix M733
+		{
+			Require : M733,
+
+      Fixer : GunToolKit=2; Aiming=5,
+      Fixer : ImprovisedGunToolKit=3; Aiming=2,
 		}
 }

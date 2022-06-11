@@ -16,6 +16,7 @@ ItemName_EN = {
 
     ItemName_Base.AssaultRifle = "M16A1",
     ItemName_Base.M16A2 = "M16A2",
+    ItemName_Base.M733 = "Colt Commando",
     ItemName_Base.AR15 = "AR-15",
     ItemName_Base.AssaultRifle2 = "M14",
     ItemName_Base.FN_FAL = "FN Fal",
@@ -26,6 +27,7 @@ ItemName_EN = {
     ItemName_Base.MP5 = "MP5A1",
 
     ItemName_Base.UZI = "UZI Carbine",
+    ItemName_Base.Mac10 = "Ingram MAC 10",
 
     ItemName_Base.Shotgun = "Mossberg 500",
     ItemName_Base.ShotgunSawnoff = "Sawed-off Mossberg 500",
@@ -36,6 +38,8 @@ ItemName_EN = {
     ItemName_Base.Remington870Wood = "Remington 870",
     ItemName_Base.Remington870Sawnoff = "Sawed-off Remington 870",
     ItemName_Base.M37 = "Ithaca 37",
+    ItemName_Base.SPAS12 = "Franchi SPAS-12",
+    ItemName_Base.LAW12 = "Franchi LAW-12",
     ItemName_Base.M37Sawnoff = "Sawed-off Ithaca 37",
     ItemName_Base.Winchester94 = "Winchester Model 1894",
     ItemName_Base.Winchester73 = "Winchester Model 1873",
@@ -47,6 +51,7 @@ ItemName_EN = {
     ItemName_Base.x4-x12Scope = "x4-x12 Scope",
 
     ItemName_Base.GunToolKit = "Gun Tool Kit",
+    ItemName_Base.ImprovisedGunToolKit = "Improvised Gun Tool Kit",
     ItemName_Base.Solvent = "WD-40",
 
     ItemName_Base.ExtendedRecoilPad = "Extended Recoil Pad",
@@ -58,6 +63,8 @@ ItemName_EN = {
     ItemName_Base.MP5_Stock_Detracted = "MP5 Stock",
     ItemName_Base.UZI_Stock_Detracted = "UZI Stock",
     ItemName_Base.UZI_Stock_Extended = "UZI Stock",
+    ItemName_Base.Mac10_Stock_Detracted = "MAC 10 Stock",
+    ItemName_Base.Mac10_Stock_Extended = "MAC 10 Stock",
     ItemName_Base.Rifle_Bipod = "Rifle Bipod",
 
     ItemName_Base.Sling = "Two Point Rifle Sling (Black)"
@@ -65,12 +72,16 @@ ItemName_EN = {
     ItemName_Base.Sling_Olive = "Two Point Rifle Sling (Olive)"
     ItemName_Base.Sling_Camo = "Two Point Rifle Sling (Woodland)"
 
-    ItemName_Base.45Silencer = ".45 Suppressor",
+    ItemName_Base.22Silencer = ".22 LR Suppressor",
     ItemName_Base.9mmSilencer = "9mm Suppressor",
+    ItemName_Base.45Silencer = ".45 Suppressor",
     ItemName_Base.223Silencer = ".223/5.56mm Suppressor",
     ItemName_Base.308Silencer = ".308/7.62mm Suppressor",
-    ItemName_Base.ImprovisedSilencer = "Improvised Flashlight Suppressor",
-    ItemName_Base.Silencer_PopBottle = "Improvised Bottle Suppressor",
+    ItemName_Base.ShotgunSilencer = "Shotgun Suppressor",
+    ItemName_Base.ImprovisedSilencer = "Flashlight Suppressor",
+    ItemName_Base.Silencer_PopBottle = "Bottle Suppressor",
+    ItemName_Base.ImprovisedSilencer_Broken = "Flashlight Suppressor(Broken)",
+    ItemName_Base.Silencer_PopBottle_Broken = "Bottle Suppressor(Broken)",
 
     ItemName_Base.9mmCompensator = "9mm Compensator",
 
@@ -87,17 +98,18 @@ ItemName_EN = {
     ItemName_Base.Glock17Mag = "Glock 17 Magazine",
     ItemName_Base.MP5Mag = "MP5 Magazine",
     ItemName_Base.UZIMag = "UZI Carbine Magazine",
+    ItemName_Base.Mac10Mag = "MAC 10 Magazine",
     ItemName_Base.M60Mag = "M60 Magazine"
     ItemName_Base.AK_Mag = "AK-47 Magazine"
 
     ItemName_Base.Bullets22Box = "Box of .22 LR Rounds",
-    ItemName_Base.223Box = "Box of .223 Remington Rounds",
-    ItemName_Base.308Box = "Box of .308 Winchester Rounds",
+    ItemName_Base.223Box = "Box of .223 Rounds",
+    ItemName_Base.308Box = "Box of .308 Rounds",
     ItemName_Base.556Box = "Box of 5.56x45mm Rounds",
     ItemName_Base.Bullets38Box = "Box of .38 Special Rounds",
     ItemName_Base.Bullets44Box = "Box of .44 Magnum Rounds",
     ItemName_Base.Bullets45Box = "Box of .45 ACP Rounds",
-    ItemName_Base.Bullets9mmBox = "Box of 9x19mm Parabellum Rounds",
+    ItemName_Base.Bullets9mmBox = "Box of 9x19mm Rounds",
     ItemName_Base.ShotgunShellsBox = "Box of 12ga Shotgun Shells",
     ItemName_Base.762x51Box = "Box of 7.62x51mm Rounds",
     ItemName_Base.762x39Box = "Box of 7.62x39mm Rounds",

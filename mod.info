@@ -1,5 +1,6 @@
-name=Firearms B41.61
+name=Firearms B41
 id=firearmmod
+icon=icon.png
 description=Overall firearm overhaul.
 description=
 description=Adds several new guns:

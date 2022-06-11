@@ -5,10 +5,10 @@ module Base
 
 	item AmmoCan762
 	{
-			WeightReduction	=	10,
+			WeightReduction	=	50,
 			Weight	=	0.5,
 			Type	=	Container,
-			Capacity	=	10,
+			Capacity	=	25,
 			DisplayName	=	7.62x51mm Ammo Canister,
 			DisplayCategory = Canister,
 			Icon	=	Ammocan,
@@ -21,10 +21,10 @@ module Base
 
 	item AmmoCan762x39
 	{
-			WeightReduction	=	10,
+			WeightReduction	=	26,
 			Weight	=	0.5,
 			Type	=	Container,
-			Capacity	=	10,
+			Capacity	=	13,
 			DisplayName	=	7.62x39mm Ammo Canister,
 			DisplayCategory = Canister,
 			Icon	=	Ammocan,
@@ -37,10 +37,10 @@ module Base
 
 	item AmmoCan556
 	{
-			WeightReduction	=	10,
+			WeightReduction	=	20,
 			Weight	=	0.5,
 			Type	=	Container,
-			Capacity	=	8,
+			Capacity	=	10,
 			DisplayName	=	5.56x45mm Ammo Canister,
 			DisplayCategory = Canister,
 			Icon	=	Ammocan,
@@ -53,10 +53,10 @@ module Base
 
 	item AmmoCan223
 	{
-			WeightReduction	=	10,
+			WeightReduction	=	20,
 			Weight	=	0.5,
 			Type	=	Container,
-			Capacity	=	8,
+			Capacity	=	10,
 			DisplayName	=	.223 Ammo Canister,
 			DisplayCategory = Canister,
 			Icon	=	Ammocan,
@@ -69,10 +69,10 @@ module Base
 
 	item AmmoCan308
 	{
-			WeightReduction	=	10,
+			WeightReduction	=	26,
 			Weight	=	0.5,
 			Type	=	Container,
-			Capacity	=	10,
+			Capacity	=	13,
 			DisplayName	=	.308 Winchester Ammo Canister,
 			DisplayCategory = Canister,
 			Icon	=	Ammocan,
@@ -85,10 +85,10 @@ module Base
 
 	item AmmoCan9mm
 	{
-			WeightReduction	=	10,
+			WeightReduction	=	20,
 			Weight	=	0.5,
 			Type	=	Container,
-			Capacity	=	6,
+			Capacity	=	10,
 			DisplayName	=	9mm Ammo Canister,
 			DisplayCategory = Canister,
 			Icon	=	Ammocan,

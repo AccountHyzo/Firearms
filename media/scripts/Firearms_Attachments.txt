@@ -3,6 +3,34 @@ module Base
 
 	/************************Silencers************************/
 
+	item 22Silencer
+	{
+	Type = WeaponPart,
+	DisplayName = Silencer,
+	DisplayCategory = WeaponPart,
+	Icon = Silencer,
+	Weight = 0.3,
+	WeightModifier = 0.3,
+	MountOn = Rugerm7722,
+	PartType = Canon,
+	Tooltip = Tooltip_Silencer,
+	WorldStaticModel = Silencer_wm,
+	}
+
+	item 9mmSilencer
+	{
+	Type = WeaponPart,
+	DisplayName = Silencer,
+	DisplayCategory = WeaponPart,
+	Icon = Silencer,
+	Weight = 0.3,
+	WeightModifier = 0.3,
+	MountOn = Glock17; Pistol; MP5; UZI,
+	PartType = Canon,
+	Tooltip = Tooltip_Silencer,
+	WorldStaticModel = Silencer_wm,
+	}
+
 	item 45Silencer
 	{
 			Type = WeaponPart,
@@ -11,21 +39,7 @@ module Base
 			Icon = Silencer,
 			Weight = 0.3,
 			WeightModifier = 0.3,
-			MountOn = Pistol2,
-			PartType = Canon,
-			Tooltip = Tooltip_Silencer,
-			WorldStaticModel = Silencer_wm,
-	}
-
-	item 9mmSilencer
-	{
-			Type = WeaponPart,
-			DisplayName = Silencer,
-			DisplayCategory = WeaponPart,
-			Icon = Silencer,
-			Weight = 0.3,
-			WeightModifier = 0.3,
-			MountOn = Glock17; Pistol; MP5; UZI,
+			MountOn = Pistol2; Mac10,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
 			WorldStaticModel = Silencer_wm,
@@ -39,7 +53,7 @@ module Base
 			Icon = Silencer,
 			Weight = 0.3,
 			WeightModifier = 0.3,
-			MountOn = VarmintRifle; AssaultRifle; M16A2,
+			MountOn = VarmintRifle; AssaultRifle; M16A2; M733,
 			PartType = Canon,
 			Tooltip = Tooltip_Silencer,
 			WorldStaticModel = Silencer_wm,
@@ -59,6 +73,20 @@ module Base
 			WorldStaticModel = Silencer_wm,
 	}
 
+	item ShotgunSilencer
+	{
+			Type = WeaponPart,
+			DisplayName = Silencer,
+			DisplayCategory = WeaponPart,
+			Icon = ShotgunSuppressor,
+			Weight = 0.3,
+			WeightModifier = 0.3,
+			MountOn = Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12,
+			PartType = Canon,
+			Tooltip = Tooltip_Silencer,
+			WorldStaticModel = ShotgunSilencer_wm,
+	}
+
 	item ImprovisedSilencer
 	{
 			Type = WeaponPart,
@@ -67,7 +95,7 @@ module Base
 			DisplayCategory = WeaponPart,
 			Weight = 0.2,
 			WeightModifier = 0.2,
-			MountOn = Pistol; Pistol2; Glock17,
+			MountOn = Pistol; Pistol2; Glock17; AR15; AssaultRifle2; M24Rifle; FN_FAL; SKS; AK47; VarmintRifle; AssaultRifle; M16A2; M733; MP5; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94,
 			PartType = Canon,
 			Tooltip = Tooltip_ImprovisedSilencer,
 			WorldStaticModel = Silencer_Improvised_wm,
@@ -81,7 +109,7 @@ module Base
 			Icon = BottleSilencer,
 			Weight = 0.2,
 			WeightModifier = 0.2,
-			MountOn = Pistol; Pistol2; Glock17; AssaultRifle2; M24Rifle; FN_FAL; VarmintRifle; HuntingRifle; AssaultRifle; M16A2; MP5; UZI,
+			MountOn = Pistol; Pistol2; Glock17; AR15; AssaultRifle2; M24Rifle; FN_FAL; SKS; AK47; VarmintRifle; HuntingRifle; AssaultRifle; M16A2; M733; MP5; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94,
 			PartType = Canon,
 			Tooltip = Tooltip_ImprovisedSilencer,
 			WorldStaticModel = Silencer_PopBottle_wm,
@@ -112,11 +140,11 @@ module Base
 			Weight = 0.2,
 			WeightModifier = 0.2,
 			AimingTimeModifier = 5,
-			MountOn = Shotgun; ShotgunSawnoff; Mossberg500; Mossberg500Tactical; Remington870Wood; Remington870Sawnoff,
+			MountOn = Shotgun; ShotgunSawnoff; Mossberg500; Mossberg500Tactical; SPAS12; LAW12; Remington870Wood; Remington870Sawnoff,
 			PartType = Canon,
-			StaticModel = GunLight,
+			StaticModel = Flashlight_Improvised,
 			MetalValue = 15,
-			WorldStaticModel = Handgun_Light_Ground,
+			WorldStaticModel = Flashlight_Improvised,
 	}
 
 	/************************Pads************************/
@@ -176,9 +204,9 @@ module Base
          Icon = AmmoStock,
          Weight = 0.5,
 				 WeightModifier = 0.5,
-				 ReloadTimeModifier = -6,
+				 ReloadTimeModifier = 5,
 				 RecoilDelayModifier = -5.0,
-         MountOn =  ShotgunSawnoff; Remington870Sawnoff; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood,
+         MountOn =  ShotgunSawnoff; Remington870Sawnoff; Shotgun; Mossberg500; Mossberg500Tactical; SPAS12; LAW12; Remington870Wood,
          PartType = Stock,
          Tooltip = Tooltip_AmmoStock,
 				 WorldStaticModel = Shotgun_AmmoStrap_wm,
@@ -287,6 +315,64 @@ module Base
 				 WorldStaticModel = UZI_Stock_wm,
      }
 
+		 item Mac10_Stock_Extended
+     {
+         Type = WeaponPart,
+         DisplayName = Mac10 Stock,
+				 DisplayCategory = WeaponPart,
+         Icon = MP5_Stock,
+         Weight = 1,
+				 WeightModifier = 1,
+				 RecoilDelayModifier = -20.0,
+         MountOn =  Mac10,
+         PartType = Stock,
+         Tooltip = Tooltip_ExtendableStock,
+				 WorldStaticModel = Mac10_Stock_Extended,
+     }
+
+		 item Mac10_Stock_Detracted
+     {
+         Type = WeaponPart,
+         DisplayName = Mac10 Stock,
+				 DisplayCategory = WeaponPart,
+         Icon = MP5_Stock,
+         Weight = 1,
+				 WeightModifier = 0.2,
+         MountOn =  Mac10,
+         PartType = Stock,
+         Tooltip = Tooltip_ExtendableStock,
+				 WorldStaticModel = Mac10_Stock_Extended,
+     }
+
+		 item SPAS12_Stock_Extended
+     {
+         Type = WeaponPart,
+         DisplayName = SPAS-12 Stock,
+				 DisplayCategory = WeaponPart,
+         Icon = MP5_Stock,
+         Weight = 1,
+				 WeightModifier = 1,
+				 RecoilDelayModifier = -20.0,
+         MountOn =  SPAS12,
+         PartType = Stock,
+         Tooltip = Tooltip_ExtendableStock,
+				 WorldStaticModel = SPAS_Stock_wm,
+     }
+
+		 item SPAS12_Stock_Detracted
+     {
+         Type = WeaponPart,
+         DisplayName = SPAS-12 Stock,
+				 DisplayCategory = WeaponPart,
+         Icon = MP5_Stock,
+         Weight = 1,
+				 WeightModifier = 0.2,
+         MountOn =  SPAS12,
+         PartType = Stock,
+         Tooltip = Tooltip_ExtendableStock,
+				 WorldStaticModel = SPAS_Stock_wm,
+     }
+
 	 	item Sling
 	 	{
 	 			Type = WeaponPart,
@@ -295,7 +381,7 @@ module Base
 	 			Icon = Sling,
 	 			Weight = 0.5,
 	 			WeightModifier = -0.3,
-	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
+	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
 	 			PartType = Sling,
 	 			Tooltip = Tooltip_Sling,
 				WorldStaticModel = Sling_wm,
@@ -309,7 +395,7 @@ module Base
 	 			Icon = Sling_Leather,
 	 			Weight = 0.5,
 	 			WeightModifier = -0.3,
-	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
+	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
 	 			PartType = Sling,
 	 			Tooltip = Tooltip_Sling,
 				WorldStaticModel = Sling_Leather_wm,
@@ -323,7 +409,7 @@ module Base
 	 			Icon = Sling_Olive,
 	 			Weight = 0.5,
 	 			WeightModifier = -0.3,
-	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
+	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
 	 			PartType = Sling,
 	 			Tooltip = Tooltip_Sling,
 				WorldStaticModel = Sling_Olive_wm,
@@ -337,7 +423,7 @@ module Base
 	 			Icon = Sling_Camo,
 	 			Weight = 0.5,
 	 			WeightModifier = -0.3,
-	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Base.Mossberg500Tactical; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
+	 			MountOn = HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; Base.UZI; Rugerm7722; FN_FAL,
 	 			PartType = Sling,
 	 			Tooltip = Tooltip_Sling,
 				WorldStaticModel = Sling_Camo_wm,
@@ -351,7 +437,7 @@ module Base
 				Icon = AmmoStrap,
 				Weight = 0.5,
 				WeightModifier = 0.5,
-				ReloadTimeModifier = -5,
+				ReloadTimeModifier = 5,
 				MountOn = HuntingRifle; VarmintRifle; Base.M24Rifle; Shotgun; Base.Mossberg500; Base.Remington870Wood,
 				PartType = Sling,
 				Tooltip = Tooltip_AmmoStrap,
@@ -370,7 +456,7 @@ module Base
 				WeightModifier = 0.1,
 				AngleModifier = 0.05,
 				DamageModifier = 0.5,
-				MountOn = Shotgun; Base.Mossberg500; Base.Mossberg500Tactical; Base.Remington870Wood,
+				MountOn = Shotgun; Base.Mossberg500; Mossberg500Tactical; SPAS12; LAW12; Base.Remington870Wood,
 				PartType = Canon,
 				Tooltip = Tooltip_ChokeTubeFull,
 				MetalValue = 12,
@@ -387,7 +473,7 @@ module Base
 				WeightModifier = 0.1,
 				AngleModifier = -0.1,
 				DamageModifier = -0.5,
-				MountOn = Shotgun; Base.Mossberg500; Base.Mossberg500Tactical; Base.Remington870Wood,
+				MountOn = Shotgun; Base.Mossberg500; Mossberg500Tactical; SPAS12; LAW12; Base.Remington870Wood,
 				PartType = Canon,
 				Tooltip = Tooltip_ChokeTubeImproved,
 				MetalValue = 12,
@@ -437,7 +523,7 @@ module Base
 				Weight = 0.2,
 				WeightModifier = 0.2,
 				AimingTimeModifier = 5,
-				MountOn = Pistol; Pistol2; Pistol3; Base.Glock17; Base.HuntingRifle_Sawn; Shotgun; ShotgunSawnoff; Base.Remington870Sawnoff; Base.Mossberg500; Base.Mossberg500Tactical; Base.Remington870Wood; Base.MP5; Base.UZI; AssaultRifle; AssaultRifle2; Base.M24Rifle; Base.M16A2; Rugerm7722; FN_FAL,
+				MountOn = Pistol; Pistol2; Pistol3; Base.Glock17; Base.HuntingRifle_Sawn; Shotgun; ShotgunSawnoff; Base.Remington870Sawnoff; Base.Mossberg500; Mossberg500Tactical; LAW12; Base.Remington870Wood; Base.MP5; Base.UZI; AssaultRifle; AssaultRifle2; Base.M24Rifle; Base.M16A2; M733; Rugerm7722; FN_FAL,
 				PartType = Scope,
 				Tooltip = Tooltip_RedDot,
 				MetalValue = 15,
@@ -453,8 +539,8 @@ module Base
 		    Weight = 0.3,
 		    WeightModifier = 0.3,
 		    MaxRangeModifier = 7,
-		    MinRangeModifier = 6,
-		    MountOn = HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle; Base.M60; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.MP5; Base.UZI; Base.Mossberg500Tactical; Base.Mossberg500; Shotgun; ShotgunSawnoff; Base.Remington870Sawnoff; Base.Remington870Wood; Rugerm7722; FN_FAL,
+		    MinRangeModifier = 1,
+		    MountOn = HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle; Base.M60; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.MP5; Base.UZI; Mossberg500Tactical; LAW12; Base.Mossberg500; Shotgun; ShotgunSawnoff; Base.Remington870Sawnoff; Base.Remington870Wood; Rugerm7722; FN_FAL,
 		    PartType = Scope,
 		    Tooltip = Tooltip_Scope,
 		    MetalValue = 22,
@@ -470,8 +556,8 @@ module Base
 		    Weight = 0.4,
 		    WeightModifier = 0.4,
 		    MaxRangeModifier = 13,
-		    MinRangeModifier = 8,
-		    MountOn = HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle; Base.M16A2; AssaultRifle2; Base.M24Rifle; Base.MP5; Base.Mossberg500Tactical; Rugerm7722; FN_FAL,
+		    MinRangeModifier = 2,
+		    MountOn = HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.MP5; Mossberg500Tactical; LAW12; Rugerm7722; FN_FAL,
 		    PartType = Scope,
 		    Tooltip = Tooltip_Scope,
 		    MetalValue = 22,
@@ -486,13 +572,13 @@ module Base
 				Icon = Scope8x,
 			  Weight = 0.8,
 				WeightModifier = 0.8,
-				MaxRangeModifier = 20,
-				MinRangeModifier = 10,
+				MaxRangeModifier = 16,
+				MinRangeModifier = 5,
 				MountOn = HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle2; Base.M24Rifle; Rugerm7722,
 			 	PartType = Scope,
 				Tooltip = Tooltip_Scope,
 				MetalValue = 22,
-				WorldStaticModel = Scope_wm,
+				WorldStaticModel = 12xScope,
 		}
 
 		item x4-x12Scope
@@ -504,12 +590,12 @@ module Base
 				Weight = 1.2,
 				WeightModifier = 1,
 				MaxRangeModifier = 20,
-				MinRangeModifier = 8,
+				MinRangeModifier = 2,
 				MountOn = HuntingRifle; VarmintRifle; HuntingRifle_Sawn; AssaultRifle2; M24Rifle; Rugerm7722,
 				PartType = Scope,
 				Tooltip = Tooltip_Scope,
 				MetalValue = 22,
-				WorldStaticModel = Scope_wm,
+				WorldStaticModel = 12xScope,
 		}
 
 }

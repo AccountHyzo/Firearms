@@ -148,6 +148,26 @@ module Base
 			}
 		}
 
+		sound FirearmPistolSilencerShot
+		{
+			category = Item,
+			clip
+			{
+				file = media/sound/FirearmPistolSilencerShot.wav,
+				volume = 2,
+			}
+		}
+
+		sound FirearmShotgunSilencerShot
+		{
+			category = Item,
+			clip
+			{
+				file = media/sound/FirearmShotgunSilencerShot.wav,
+				volume = 2,
+			}
+		}
+
 		sound Stormy9mmRack
 		{
 			category = Item,

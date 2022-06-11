@@ -1,5 +1,18 @@
 module Base
 {
+
+recipe Make Improvised Gun Cleaning Kit
+{
+	 RippedSheets/DishCloth,
+	 Toothbrush,
+	 Solvent=1,
+
+	 Result:ImprovisedGunToolKit,
+	 Time:20.0,
+	 Category:Firearms,
+	 OnCreate:onImprovisedSilencer_OnCreate,
+}
+
 	/************************Guns************************/
 	recipe Saw Off Rifle
 	{
@@ -14,7 +27,7 @@ module Base
 
 	recipe Make Improvised Flashlight Silencer
 	{
-	   destroy HandTorch,
+	   destroy HandTorch/ImprovisedSilencer_Broken,
 		 ScrapMetal,
 	   DuctTape=1,
 
@@ -109,6 +122,46 @@ module Base
       OnCreate:onDetractStock_OnCreate,
     }
 
+			recipe Extend Stock
+		   {
+		     Mac10,
+
+		     Result:Mac10,
+		     Time:15,
+		     OnTest:onExtendStock_OnTest,
+		     OnCreate:onExtendStock_OnCreate,
+		   }
+
+ 		recipe Detract Stock
+    {
+      Mac10,
+
+      Result:Mac10,
+      Time:30,
+      OnTest:onDetractStock_OnTest,
+      OnCreate:onDetractStock_OnCreate,
+    }
+
+			recipe Extend Stock
+		   {
+		     SPAS12,
+
+		     Result:SPAS12,
+		     Time:15,
+		     OnTest:onExtendStock_OnTest,
+		     OnCreate:onExtendStock_OnCreate,
+		   }
+
+ 		recipe Detract Stock
+    {
+      SPAS12,
+
+      Result:SPAS12,
+      Time:30,
+      OnTest:onDetractStock_OnTest,
+      OnCreate:onDetractStock_OnCreate,
+    }
+
 		recipe Convert to 5.56x45mm
 		{
       223Bullets,
@@ -147,7 +200,7 @@ module Base
 			{
 					Bullets9mmBox,
 
-					Result:Bullets9mm=6,
+					Result:Bullets9mm=10,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -159,7 +212,7 @@ module Base
 			{
 					Bullets45Box,
 
-					Result:Bullets45=6,
+					Result:Bullets45=10,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -171,7 +224,7 @@ module Base
 			{
 					Bullets38Box,
 
-					Result:Bullets38=6,
+					Result:Bullets38=10,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -183,7 +236,7 @@ module Base
 			{
 					Bullets44Box,
 
-					Result:Bullets44=4,
+					Result:Bullets44=10,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -195,7 +248,7 @@ module Base
 			{
 					308Box,
 
-					Result:308Bullets=8,
+					Result:308Bullets=4,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -207,7 +260,7 @@ module Base
 			{
 					ShotgunShellsBox,
 
-					Result:ShotgunShells=4,
+					Result:ShotgunShells=5,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -215,11 +268,11 @@ module Base
 					Override:true,
 			}
 
-			recipe Open Box of 5.56 Ammo
+			recipe Open Box of .556 Ammo
 			{
 					556Box,
 
-					Result:556Bullets=12,
+					Result:556Bullets=4,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -227,9 +280,9 @@ module Base
 					Override:true,
 			}
 
-			recipe Place 5.56 Ammo in Box
+			recipe Place .556 Ammo in Box
 			{
-					556Bullets=60,
+					556Bullets=20,
 
 					Result:556Box,
 					Sound:OpenAmmoBox,
@@ -243,7 +296,7 @@ module Base
 			{
 					223Box,
 
-					Result:223Bullets=8,
+					Result:223Bullets=4,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -253,7 +306,7 @@ module Base
 
 			recipe Place .223 Ammo in Box
 			{
-					223Bullets=40,
+					223Bullets=20,
 
 					Result:223Box,
 					Sound:OpenAmmoBox,
@@ -265,7 +318,7 @@ module Base
 
 			recipe Place .308 Ammo in Box
 			{
-					308Bullets=40,
+					308Bullets=20,
 
 					Result:308Box,
 					Sound:OpenAmmoBox,
@@ -277,7 +330,7 @@ module Base
 
 			recipe Place 9mm Bullets in Box
 			{
-					Bullets9mm=30,
+					Bullets9mm=50,
 
 					Result:Bullets9mmBox,
 					Sound:OpenAmmoBox,
@@ -289,7 +342,7 @@ module Base
 
 			recipe Place .45 Auto Bullets in Box
 			{
-					Bullets45=30,
+					Bullets45=50,
 
 					Result:Bullets45Box,
 					Sound:OpenAmmoBox,
@@ -299,9 +352,9 @@ module Base
 					Override:true,
 			}
 
-			recipe Place .38 Special Bullets in Box
+			recipe Place .38 Speciam Bullets in Box
 			{
-					Bullets38=30,
+					Bullets38=50,
 
 					Result:Bullets38Box,
 					Sound:OpenAmmoBox,
@@ -313,7 +366,7 @@ module Base
 
 			recipe Place .44 Magnum Bullets in Box
 			{
-					Bullets44=12,
+					Bullets44=50,
 
 					Result:Bullets44Box,
 					Sound:OpenAmmoBox,
@@ -325,7 +378,7 @@ module Base
 
 			recipe Place Shotgun Shells in Box
 			{
-					ShotgunShells=24,
+					ShotgunShells=25,
 
 					Result:ShotgunShellsBox,
 					Sound:OpenAmmoBox,
@@ -339,7 +392,7 @@ module Base
 		{
 				762x51Box,
 
-				Result:762x51Bullets=8,
+				Result:762x51Bullets=4,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,
@@ -349,7 +402,7 @@ module Base
 
 		recipe Place 7.62x51mm in Box
 		{
-				762x51Bullets=40,
+				762x51Bullets=20,
 
 				Result:762x51Box,
 				Sound:OpenAmmoBox,
@@ -363,7 +416,7 @@ module Base
 		{
 				762x39Box,
 
-				Result:762x39Bullets=8,
+				Result:762x39Bullets=4,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,
@@ -373,7 +426,7 @@ module Base
 
 		recipe Place 7.62x39mm in Box
 		{
-				762x39Bullets=40,
+				762x39Bullets=20,
 
 				Result:762x39Box,
 				Sound:OpenAmmoBox,
@@ -387,7 +440,7 @@ module Base
 		{
 				Bullets4440Box,
 
-				Result:Bullets4440=4,
+				Result:Bullets4440=10,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,
@@ -397,7 +450,7 @@ module Base
 
 		recipe Place .44-40 WCF in Box
 		{
-				Bullets4440=12,
+				Bullets4440=50,
 
 				Result:Bullets4440Box,
 				Sound:OpenAmmoBox,
@@ -411,7 +464,7 @@ module Base
 		{
 				Bullets22Box,
 
-				Result:Bullets22=8,
+				Result:Bullets22=10,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,
@@ -421,7 +474,7 @@ module Base
 
 		recipe Place .22 LR Ammo in Box
 		{
-				Bullets22=40,
+				Bullets22=50,
 
 				Result:Bullets22Box,
 				Sound:OpenAmmoBox,

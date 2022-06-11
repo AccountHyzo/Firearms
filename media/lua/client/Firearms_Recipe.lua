@@ -98,8 +98,10 @@ function onExtendStock_OnCreate(items, result, player, firstHand, secondHand)
 			local stock = item:getStock()
 			local pad = item:getRecoilpad()
 			if clip then
-			result:setContainsClip(true)
-			result:setCurrentAmmoCount(item:getCurrentAmmoCount())
+				result:setContainsClip(true)
+				result:setCurrentAmmoCount(item:getCurrentAmmoCount())
+			elseif item:getWeaponReloadType() == "shotgun" then
+				result:setCurrentAmmoCount(item:getCurrentAmmoCount())
 			end
 			if scope then
 			result:attachWeaponPart(scope)
@@ -149,8 +151,10 @@ function onDetractStock_OnCreate(items, result, player, firstHand, secondHand)
 			local stock = item:getStock()
 			local pad = item:getRecoilpad()
 			if clip then
-			result:setContainsClip(true)
-			result:setCurrentAmmoCount(item:getCurrentAmmoCount())
+				result:setContainsClip(true)
+				result:setCurrentAmmoCount(item:getCurrentAmmoCount())
+			elseif item:getWeaponReloadType() == "shotgun" then
+				result:setCurrentAmmoCount(item:getCurrentAmmoCount())
 			end
 			if scope then
 			result:attachWeaponPart(scope)

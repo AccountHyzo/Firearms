@@ -3,6 +3,7 @@ ISInventoryPaneContextMenu.onRemoveUpgradeWeapon = function(weapon, part, player
     ISTimedActionQueue.add(ISRemoveWeaponUpgrade:new(playerObj, weapon, part, 50));
 end
 
+
 ISInventoryPaneContextMenu.onUpgradeWeapon = function(weapon, part, player)
     ISInventoryPaneContextMenu.transferIfNeeded(player, weapon)
     ISInventoryPaneContextMenu.transferIfNeeded(player, part)
@@ -15,7 +16,6 @@ function ISRemoveWeaponUpgrade:perform()
     self.character:getInventory():AddItem(self.part);
     self.character:resetEquippedHandsModels();
     self.character:removeFromHands(self.weapon);
-    print(self.weapon:getSoundRadius())
     -- needed to remove from queue / start next.
     ISBaseTimedAction.perform(self);
 end
@@ -46,36 +46,37 @@ local function predicateNotBroken(item)
 end
 
 local function addAttachment(player, context, items)
+  if SandboxVars.Firearms.ScrewdriverReq then return end;
 
-	local playerObj = getSpecificPlayer(player)
-	local playerInv = playerObj:getInventory()
+  local playerObj = getSpecificPlayer(player)
+  local playerInv = playerObj:getInventory()
 
-	local isHandWeapon = nil;
+  local isHandWeapon = nil;
 
-	local testItem = nil;
-	local editItem = nil;
-	for i,v in ipairs(items) do
-			testItem = v;
-			if not instanceof(v, "InventoryItem") then
-					--print(#v.items);
-					if #v.items == 2 then
-							editItem = v.items[1];
-					end
-					testItem = v.items[1];
-			else
-					editItem = v
-			end
-			if instanceof(testItem, "HandWeapon") then
-					isHandWeapon = testItem
-			end
-	end
+  local testItem = nil;
+  local editItem = nil;
+  for i,v in ipairs(items) do
+  		testItem = v;
+  		if not instanceof(v, "InventoryItem") then
+  				--print(#v.items);
+  				if #v.items == 2 then
+  						editItem = v.items[1];
+  				end
+  				testItem = v.items[1];
+  		else
+  				editItem = v
+  		end
+  		if instanceof(testItem, "HandWeapon") then
+  				isHandWeapon = testItem
+  		end
+  end
   isWeapon = isHandWeapon -- to allow upgrading broken weapons
 
   -- weapon upgrades
   if isWeapon and instanceof(isWeapon, "HandWeapon") then
     -- add parts
     local weaponParts = playerInv:getItemsFromCategory("WeaponPart");
-		local hasScrewdriver = playerInv:containsTagEvalRecurse("Screwdriver", predicateNotBroken)
+  	local hasScrewdriver = playerInv:containsTagEvalRecurse("Screwdriver", predicateNotBroken)
     if isWeapon and instanceof(isWeapon, "HandWeapon") and not hasScrewdriver then
       local subMenuUp = context:getNew(context);
       local doIt = false;
@@ -106,35 +107,35 @@ local function addAttachment(player, context, items)
       end
     end
     	if doIt then
-	      local upgradeOption = context:addOption(getText("ContextMenu_Add_Weapon_Upgrade"), items, nil);
-	    	context:addSubMenu(upgradeOption, subMenuUp);
+        local upgradeOption = context:addOption(getText("ContextMenu_Add_Weapon_Upgrade"), items, nil);
+      	context:addSubMenu(upgradeOption, subMenuUp);
   		end
-		end
-		-- remove parts
+  	end
+  	-- remove parts
         if not hasScrewdriver and (isWeapon:getScope() or isWeapon:getClip() or isWeapon:getSling() or isWeapon:getStock() or isWeapon:getCanon() or isWeapon:getRecoilpad()) then
-		  local removeUpgradeOption = context:addOption(getText("ContextMenu_Remove_Weapon_Upgrade"), items, nil);
-		  local subMenuRemove = context:getNew(context);
-		  context:addSubMenu(removeUpgradeOption, subMenuRemove);
-		  if isWeapon:getScope() then
-		    subMenuRemove:addOption(isWeapon:getScope():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getScope(), getSpecificPlayer(player));
-		  end
-		  if isWeapon:getClip() then
-		    subMenuRemove:addOption(isWeapon:getClip():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getClip(), getSpecificPlayer(player));
-		  end
-		  if isWeapon:getSling() then
-		  	subMenuRemove:addOption(isWeapon:getSling():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getSling(), getSpecificPlayer(player));
-		  end
-		  if isWeapon:getStock() then
-		    subMenuRemove:addOption(isWeapon:getStock():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getStock(), getSpecificPlayer(player));
-		  end
-		  if isWeapon:getCanon() then
-		    subMenuRemove:addOption(isWeapon:getCanon():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getCanon(), getSpecificPlayer(player));
-		  end
-		  if isWeapon:getRecoilpad() then
-		  	subMenuRemove:addOption(isWeapon:getRecoilpad():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getRecoilpad(), getSpecificPlayer(player));
-		  end
-		end
-	end
+  	  local removeUpgradeOption = context:addOption(getText("ContextMenu_Remove_Weapon_Upgrade"), items, nil);
+  	  local subMenuRemove = context:getNew(context);
+  	  context:addSubMenu(removeUpgradeOption, subMenuRemove);
+  	  if isWeapon:getScope() then
+  	    subMenuRemove:addOption(isWeapon:getScope():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getScope(), getSpecificPlayer(player));
+  	  end
+  	  if isWeapon:getClip() then
+  	    subMenuRemove:addOption(isWeapon:getClip():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getClip(), getSpecificPlayer(player));
+  	  end
+  	  if isWeapon:getSling() then
+  	  	subMenuRemove:addOption(isWeapon:getSling():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getSling(), getSpecificPlayer(player));
+  	  end
+  	  if isWeapon:getStock() then
+  	    subMenuRemove:addOption(isWeapon:getStock():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getStock(), getSpecificPlayer(player));
+  	  end
+  	  if isWeapon:getCanon() then
+  	    subMenuRemove:addOption(isWeapon:getCanon():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getCanon(), getSpecificPlayer(player));
+  	  end
+  	  if isWeapon:getRecoilpad() then
+  	  	subMenuRemove:addOption(isWeapon:getRecoilpad():getName(), isWeapon, ISInventoryPaneContextMenu.onRemoveUpgradeWeapon, isWeapon:getRecoilpad(), getSpecificPlayer(player));
+  	  end
+  	end
+  end
 end
 
 Events.OnFillInventoryObjectContextMenu.Add(addAttachment);

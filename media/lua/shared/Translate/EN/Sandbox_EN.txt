@@ -1,0 +1,76 @@
+Sandbox_EN = {
+	Sandbox_Firearms = "Firearms B41",
+
+	Sandbox_Firearms_SuppressorBreak = "Improvised Suppressor Breakage"
+	Sandbox_Firearms_SuppressorBreak_tooltip = "With this activated improvised will not break no matter what the break chance is."
+
+	Sandbox_Firearms_ScrewdriverReq = "Screwdriver Requirement"
+	Sandbox_Firearms_ScrewdriverReq_tooltip = "Whether or not a screwdriver is required to put attachments on firearms."
+
+	Sandbox_Firearms_FlashlightSuppressorBreakChance = "Flashlight Suppressor Break Chance"
+	Sandbox_Firearms_FlashlightSuppressorBreakChance_tooltip = "Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use."
+
+	Sandbox_Firearms_BottleSuppressorBreakChance = "Bottle Suppressor Break Chance"
+	Sandbox_Firearms_BottleSuppressorBreakChance_tooltip = "Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use."
+
+	Sandbox_Firearms_BreakChance_option1 = "One Use"
+	Sandbox_Firearms_BreakChance_option2 = "High",
+	Sandbox_Firearms_BreakChance_option3 = "Medium",
+	Sandbox_Firearms_BreakChance_option4 = "Low",
+
+	Sandbox_Firearms_SuppressorEffectiveness_option1 = "100%"
+	Sandbox_Firearms_SuppressorEffectiveness_option2 = "90%",
+	Sandbox_Firearms_SuppressorEffectiveness_option3 = "80%",
+	Sandbox_Firearms_SuppressorEffectiveness_option4 = "70%",
+	Sandbox_Firearms_SuppressorEffectiveness_option5 = "60%",
+	Sandbox_Firearms_SuppressorEffectiveness_option6 = "50%",
+	Sandbox_Firearms_SuppressorEffectiveness_option7 = "40%",
+	Sandbox_Firearms_SuppressorEffectiveness_option8 = "30%",
+	Sandbox_Firearms_SuppressorEffectiveness_option9 = "20%",
+	Sandbox_Firearms_SuppressorEffectiveness_option10 = "10%",
+
+	Sandbox_Firearms_SuppressorEffectiveness22 = ".22 LR Suppressor Effectiveness",
+	Sandbox_Firearms_SuppressorEffectiveness22_tooltip = "How effective a suppressor is on a firearm that uses .22 LR rounds.",
+
+  Sandbox_Firearms_SuppressorEffectiveness9mm = "9mm Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectiveness9mm_tooltip = "How effective a suppressor is on a firearm that uses 9mm rounds.",
+
+  Sandbox_Firearms_SuppressorEffectiveness45 = ".45 ACP Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectiveness45_tooltip = "How effective a suppressor is on a firearm that uses 9mm rounds.",
+
+  Sandbox_Firearms_SuppressorEffectiveness38 = ".38 Special Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectiveness38_tooltip = "How effective a suppressor is on a firearm that uses 9mm rounds.",
+
+  Sandbox_Firearms_SuppressorEffectiveness44 = ".44 Magnum Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectiveness44_tooltip = "How effective a suppressor is on a firearm that uses 9mm rounds.",
+
+  Sandbox_Firearms_SuppressorEffectiveness223 = ".223 and 5.56x45mm Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectiveness223_tooltip = "How effective a suppressor is on a firearm that uses .223 and 5.56x45mm rounds.",
+
+  Sandbox_Firearms_SuppressorEffectiveness308 = ".308 and 7.62x51mm Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectiveness308_tooltip = "How effective a suppressor is on a firearm that uses .308 and 7.62x51mm rounds.",
+
+  Sandbox_Firearms_SuppressorEffectivenessShotgunShells = "Shotgun Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectivenessShotgunShells_tooltip = "How effective a suppressor is on shotgun.",
+
+  Sandbox_Firearms_SuppressorEffectivenessImprovised = "Improvised Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectivenessImprovised_tooltip = "How effective improvised suppressors are, on top of the effectiveness based on caliber.",
+
+  Sandbox_Firearms_SpawnSuppressors = "Suppressor Spawn",
+  Sandbox_Firearms_SpawnSuppressors_tooltip = "Whether or not any suppressors can be found in the world.",
+
+  Sandbox_Firearms_SpawnHandgunSuppressors = "Handgun Suppressor Spawn",
+  Sandbox_Firearms_SpawnHandgunSuppressors_tooltip = "Whether or not handgun suppressors(9mm, .45 ACP) can be found in the world.",
+
+  Sandbox_Firearms_SpawnRifleSuppressors = "Rifle Suppressor Spawn",
+  Sandbox_Firearms_SpawnRifleSuppressors_tooltip = "Whether or not rifle suppressors(.22 LR, .223/5.56x45mm, and .308/7.62x51mm) can be found in the world.",
+
+  Sandbox_Firearms_SpawnShotgunSuppressors = "Shotgun Suppressor Spawn",
+  Sandbox_Firearms_SpawnShotgunSuppressors_tooltip = "Whether or not shotgun suppressors can be found in the world.",
+
+  Sandbox_Firearms_SpawnAmmoCans = "Ammo case Spawn",
+  Sandbox_Firearms_SpawnAmmoCans_tooltip = "Whether or not Ammo Cases can be found in containers.",
+
+  Sandbox_Firearms_LootSuppressor = "Suppressors",
+
+}

@@ -99,6 +99,22 @@ module Base
 		Tags = GunMagazine,
 	}
 
+	item Mac10Mag
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.4,
+		Type	=	Normal,
+		DisplayName	=	MAC 10 Magazine,
+		DisplayCategory = Magazine45,
+		Icon	=	UZIMag,
+		MaxAmmo = 30,
+		AmmoType = Base.Bullets45,
+		GunType = Base.Mac10,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Gun_Magazine_Ground,
+		Tags = GunMagazine,
+	}
+
 	item 223Clip
 	{
 		CanStack	=	FALSE,
@@ -110,22 +126,6 @@ module Base
 		MaxAmmo = 10,
 		AmmoType = Base.223Bullets,
 		GunType = Base.VarmintRifle,
-		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
-		Tags = GunMagazine,
-	}
-
-	item 308Clip
-	{
-		CanStack	=	FALSE,
-		Weight	=	0.2,
-		Type	=	Normal,
-		DisplayName	=	.308 Magazine,
-		DisplayCategory = Magazine308,
-		Icon	=	308_Mag,
-		MaxAmmo = 10,
-		AmmoType = Base.308Bullets,
-		/*GunType = Base.HuntingRifle,*/
 		StaticModel = GunMagazine,
 		WorldStaticModel = Gun_Magazine_Ground,
 		Tags = GunMagazine,
@@ -154,12 +154,12 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	AK Magazine,
 		DisplayCategory = Magazine762x39,
-		Icon	=	556_Stanag_Mag,
+		Icon	=	AK_Mag,
 		MaxAmmo = 30,
 		AmmoType = Base.762x39Bullets,
-		GunType = Base.AssaultRifle,
-		StaticModel = 556_Mag,
-		WorldStaticModel = 556_Mag,
+		GunType = Base.AK47,
+		StaticModel = AK_Mag,
+		WorldStaticModel = AK_Mag,
 		Tags = GunMagazine,
 	}
 

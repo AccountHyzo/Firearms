@@ -36,13 +36,13 @@ Sandbox_EN = {
   Sandbox_Firearms_SuppressorEffectiveness9mm_tooltip = "How effective a suppressor is on a firearm that uses 9mm rounds.",
 
   Sandbox_Firearms_SuppressorEffectiveness45 = ".45 ACP Suppressor Effectiveness",
-  Sandbox_Firearms_SuppressorEffectiveness45_tooltip = "How effective a suppressor is on a firearm that uses 9mm rounds.",
+  Sandbox_Firearms_SuppressorEffectiveness45_tooltip = "How effective a suppressor is on a firearm that uses .45 ACP rounds.",
 
   Sandbox_Firearms_SuppressorEffectiveness38 = ".38 Special Suppressor Effectiveness",
-  Sandbox_Firearms_SuppressorEffectiveness38_tooltip = "How effective a suppressor is on a firearm that uses 9mm rounds.",
+  Sandbox_Firearms_SuppressorEffectiveness38_tooltip = "How effective a suppressor is on a firearm that uses .38 Special rounds.",
 
   Sandbox_Firearms_SuppressorEffectiveness44 = ".44 Magnum Suppressor Effectiveness",
-  Sandbox_Firearms_SuppressorEffectiveness44_tooltip = "How effective a suppressor is on a firearm that uses 9mm rounds.",
+  Sandbox_Firearms_SuppressorEffectiveness44_tooltip = "How effective a suppressor is on a firearm that uses .44 Magnum rounds.",
 
   Sandbox_Firearms_SuppressorEffectiveness223 = ".223 and 5.56x45mm Suppressor Effectiveness",
   Sandbox_Firearms_SuppressorEffectiveness223_tooltip = "How effective a suppressor is on a firearm that uses .223 and 5.56x45mm rounds.",
@@ -56,6 +56,9 @@ Sandbox_EN = {
   Sandbox_Firearms_SuppressorEffectivenessImprovised = "Improvised Suppressor Effectiveness",
   Sandbox_Firearms_SuppressorEffectivenessImprovised_tooltip = "How effective improvised suppressors are, on top of the effectiveness based on caliber.",
 
+  Sandbox_Firearms_SuppressorEffectivenessRevolver = "Revolver Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectivenessRevolver_tooltip = "How effective suppressors are on revolvers are, on top of the effectiveness based on caliber.",
+
   Sandbox_Firearms_SpawnSuppressors = "Suppressor Spawn",
   Sandbox_Firearms_SpawnSuppressors_tooltip = "Whether or not any suppressors can be found in the world.",
 
@@ -67,6 +70,9 @@ Sandbox_EN = {
 
   Sandbox_Firearms_SpawnShotgunSuppressors = "Shotgun Suppressor Spawn",
   Sandbox_Firearms_SpawnShotgunSuppressors_tooltip = "Whether or not shotgun suppressors can be found in the world.",
+
+  Sandbox_Firearms_SpawnRevolverSuppressors = "Revolver Suppressor Spawn",
+  Sandbox_Firearms_SpawnRevolverSuppressors_tooltip = "Whether or not .38 Special & .357 caliber suppressors can be found in the world.",
 
   Sandbox_Firearms_SpawnAmmoCans = "Ammo case Spawn",
   Sandbox_Firearms_SpawnAmmoCans_tooltip = "Whether or not Ammo Cases can be found in containers.",

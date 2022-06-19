@@ -9,4 +9,6 @@ Tooltip_EN = {
   Tooltip_ExtendableStock = "Decreases recoil which in turn increases chance to hit. Can be detracted."
   Tooltip_Compensator = "Decreases recoil which in turn increases chance to hit."
   Tooltip_ServiceFirearms  = "Can be used to service firearms."
+  Tooltip_22  = ".22 LR"
+  Tooltip_9mm  = "9x19mm"
 }

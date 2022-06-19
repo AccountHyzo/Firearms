@@ -1,3 +1,4 @@
+-- 	self.character:getEmitter():playSound("M1EnBloc");
 local original_attackHook
 
 ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapon)

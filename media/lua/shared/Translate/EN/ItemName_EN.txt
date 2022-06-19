@@ -3,11 +3,16 @@ ItemName_EN = {
     ItemName_Base.Pistol2 = "Colt M1911A1",
     ItemName_Base.Pistol3 = "Desert Eagle",
     ItemName_Base.Glock17 = "Glock 17",
+    ItemName_Base.ColtAce = "Colt Ace",
 
     ItemName_Base.Revolver = "S&W M625",
     ItemName_Base.Revolver_Long = "S&W M29",
     ItemName_Base.Revolver_Short = "S&W M36",
     ItemName_Base.ColtPeacemaker = "Colt Single Action Army",
+    ItemName_Base.ColtSingleAction22 = "Colt Single Action Frontier Scout",
+    ItemName_Base.ColtAnaconda = "Colt Anaconda",
+    ItemName_Base.ColtPython = "Colt Python",
+    ItemName_Base.ColtPythonHunter = "Colt Python Hunter",
 
     ItemName_Base.VarmintRifle = "Remington Model 700",
     ItemName_Base.HuntingRifle = "Ruger M77",
@@ -19,6 +24,7 @@ ItemName_EN = {
     ItemName_Base.M733 = "Colt Commando",
     ItemName_Base.AR15 = "AR-15",
     ItemName_Base.AssaultRifle2 = "M14",
+    ItemName_Base.M1Garand = "M1 Garand",
     ItemName_Base.FN_FAL = "FN Fal",
     ItemName_Base.AK47 = "AK-47",
     ItemName_Base.SKS = "SKS",
@@ -43,8 +49,10 @@ ItemName_EN = {
     ItemName_Base.M37Sawnoff = "Sawed-off Ithaca 37",
     ItemName_Base.Winchester94 = "Winchester Model 1894",
     ItemName_Base.Winchester73 = "Winchester Model 1873",
+    ItemName_Base.Rossi92 = "Rossi Model 92",
 
 
+    ItemName_Base.x2LeupoldScope = "x2 Leupold Scope",
     ItemName_Base.x2Scope = "ACOG x2 Scope",
     ItemName_Base.x4Scope = "ACOG x4 Scope",
     ItemName_Base.x8Scope = "x8 Scope",
@@ -73,10 +81,11 @@ ItemName_EN = {
     ItemName_Base.Sling_Camo = "Two Point Rifle Sling (Woodland)"
 
     ItemName_Base.22Silencer = ".22 LR Suppressor",
+    ItemName_Base.38Silencer = ".38 & .357 Suppressor",
     ItemName_Base.9mmSilencer = "9mm Suppressor",
     ItemName_Base.45Silencer = ".45 Suppressor",
-    ItemName_Base.223Silencer = ".223/5.56mm Suppressor",
-    ItemName_Base.308Silencer = ".308/7.62mm Suppressor",
+    ItemName_Base.223Silencer = ".223 & 5.56mm Suppressor",
+    ItemName_Base.308Silencer = ".308 & 7.62mm Suppressor",
     ItemName_Base.ShotgunSilencer = "Shotgun Suppressor",
     ItemName_Base.ImprovisedSilencer = "Flashlight Suppressor",
     ItemName_Base.Silencer_PopBottle = "Bottle Suppressor",
@@ -90,9 +99,10 @@ ItemName_EN = {
     ItemName_Base.308Clip = "Internal Magazine",
     ItemName_Base.Magazine = "Magazine",
     ItemName_Base.9mmClip = "Beretta M9 Magazine",
-    ItemName_Base.556Clip = "STANAG magazine",
+    ItemName_Base.556Clip = "STANAG Magazine",
     ItemName_Base.FN_FAL_Mag = "FN FAL Magazine",
     ItemName_Base.M14Clip = "M14 Magazine",
+    ItemName_Base.M1GarandClip = "M1 Garand Clip",
     ItemName_Base.44Clip = "Desert Eagle Magazine",
     ItemName_Base.45Clip = "M1911 Magazine",
     ItemName_Base.Glock17Mag = "Glock 17 Magazine",
@@ -101,6 +111,7 @@ ItemName_EN = {
     ItemName_Base.Mac10Mag = "MAC 10 Magazine",
     ItemName_Base.M60Mag = "M60 Magazine"
     ItemName_Base.AK_Mag = "AK-47 Magazine"
+    ItemName_Base.22Clip = "Colt Ace Magazine",
 
     ItemName_Base.Bullets22Box = "Box of .22 LR Rounds",
     ItemName_Base.223Box = "Box of .223 Rounds",
@@ -114,6 +125,8 @@ ItemName_EN = {
     ItemName_Base.762x51Box = "Box of 7.62x51mm Rounds",
     ItemName_Base.762x39Box = "Box of 7.62x39mm Rounds",
     ItemName_Base.Bullets4440Box = "Box of .44-40 WCF Rounds",
+    ItemName_Base.Bullets357Box = "Box of .357 Rounds",
+    ItemName_Base.Bullets3006Box = "Box of .30-06 Rounds",
 
     ItemName_Base.Bullets22 = ".22 LR Round",
     ItemName_Base.223Bullets = ".223 Remington Round",
@@ -127,6 +140,8 @@ ItemName_EN = {
     ItemName_Base.762x51Bullets = "7.62x51mm Round",
     ItemName_Base.762x39Bullets = "7.62x39mm Round",
     ItemName_Base.Bullets4440 = ".44-40 WCF Round",
+    ItemName_Base.Bullets357 = ".357 Round",
+    ItemName_Base.Bullets3006 = ".30-06 Round",
 
     ItemName_Base.AmmoCan762 = "7.62x51mm Ammo Canister",
     ItemName_Base.AmmoCan762x39 = "7.62x39mm Ammo Canister",

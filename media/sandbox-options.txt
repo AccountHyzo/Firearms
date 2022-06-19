@@ -56,7 +56,7 @@ option Firearms.SuppressorEffectiveness44
 
 option Firearms.SuppressorEffectiveness38
 {
-	type = enum, numValues = 10, default = 4,
+	type = enum, numValues = 10, default = 3,
 	page = Firearms, translation = Firearms_SuppressorEffectiveness38,
 	valueTranslation = Firearms_SuppressorEffectiveness,
 }
@@ -89,6 +89,13 @@ option Firearms.SuppressorEffectivenessImprovised
 	valueTranslation = Firearms_SuppressorEffectiveness,
 }
 
+option Firearms.SuppressorEffectivenessRevolver
+{
+	type = enum, numValues = 10, default = 5,
+	page = Firearms, translation = Firearms_SuppressorEffectivenessRevolver,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
 option Firearms.SpawnSuppressors
 {
 	type = boolean, default = true,
@@ -111,6 +118,12 @@ option Firearms.SpawnShotgunSuppressors
 {
 	type = boolean, default = false,
 	page = Firearms, translation = Firearms_SpawnShotgunSuppressors,
+}
+
+option Firearms.SpawnRevolverSuppressors
+{
+	type = boolean, default = false,
+	page = Firearms, translation = Firearms_SpawnRevolverSuppressors,
 }
 
 option Firearms.SpawnAmmoCans

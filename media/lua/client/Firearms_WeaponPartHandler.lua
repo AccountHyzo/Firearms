@@ -1,3 +1,6 @@
+-- ISEquipWeaponAction:isValid
+-- ISEquipWeaponAction:start
+
 ISInventoryPaneContextMenu.onRemoveUpgradeWeapon = function(weapon, part, playerObj)
     ISInventoryPaneContextMenu.transferIfNeeded(playerObj, weapon)
     ISTimedActionQueue.add(ISRemoveWeaponUpgrade:new(playerObj, weapon, part, 50));
@@ -12,21 +15,27 @@ ISInventoryPaneContextMenu.onUpgradeWeapon = function(weapon, part, player)
 end
 
 function ISRemoveWeaponUpgrade:perform()
+    local playerObj = self.character
+    local wep = self.weapon
     self.weapon:detachWeaponPart(self.part)
     self.character:getInventory():AddItem(self.part);
     self.character:resetEquippedHandsModels();
     self.character:removeFromHands(self.weapon);
+    ISTimedActionQueue.add(ISEquipWeaponAction:new(playerObj, wep, 20, true, wep:isTwoHandWeapon()));
     -- needed to remove from queue / start next.
     ISBaseTimedAction.perform(self);
 end
 
 function ISUpgradeWeapon:perform()
+    local playerObj = self.character
+    local wep = self.weapon
     self.weapon:setJobDelta(0.0);
     self.part:setJobDelta(0.0);
     self.weapon:attachWeaponPart(self.part)
     self.character:getInventory():Remove(self.part);
     self.character:setSecondaryHandItem(nil);
     self.character:removeFromHands(self.weapon);
+    ISTimedActionQueue.add(ISEquipWeaponAction:new(playerObj, wep, 20, true, wep:isTwoHandWeapon()));
     -- needed to remove from queue / start next.
     ISBaseTimedAction.perform(self);
 end

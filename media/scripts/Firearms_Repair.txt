@@ -40,6 +40,46 @@ module Base
       WorldStaticModel = WMD,
     }
 
+    fixing Fix ColtAce
+    {
+       Require : ColtAce,
+
+			 Fixer : GunToolKit=1; Aiming=2,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
+    }
+
+    fixing Fix ColtAnaconda
+    {
+       Require : ColtAnaconda,
+
+			 Fixer : GunToolKit=1; Aiming=2,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
+    }
+
+    fixing Fix ColtPython
+    {
+       Require : ColtPython,
+
+			 Fixer : GunToolKit=1; Aiming=2,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
+    }
+
+    fixing Fix ColtPythonHunter
+    {
+       Require : ColtPythonHunter,
+
+			 Fixer : GunToolKit=1; Aiming=2,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
+    }
+
+    fixing Fix ColtSingleAction22
+    {
+    Require : ColtSingleAction22,
+
+    Fixer : GunToolKit=1; Aiming=2,
+    Fixer : ImprovisedGunToolKit=2; Aiming=1,
+    }
+
     fixing Fix ColtPeacemaker
     {
        Require : ColtPeacemaker,
@@ -185,6 +225,14 @@ module Base
 			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
     }
 
+		fixing Fix M1Garand
+    {
+       Require : M1Garand,
+
+			 Fixer : GunToolKit=1; Aiming=7,
+			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
+    }
+
 		fixing Fix Shotgun
 		{
 			 Require : Shotgun,
@@ -292,6 +340,14 @@ module Base
 		fixing Fix Winchester73
 		{
 			Require : Winchester73,
+
+      Fixer : GunToolKit=1; Aiming=3,
+      Fixer : ImprovisedGunToolKit=2; Aiming=1,
+		}
+
+		fixing Fix Rossi92
+		{
+			Require : Rossi92,
 
       Fixer : GunToolKit=1; Aiming=3,
       Fixer : ImprovisedGunToolKit=2; Aiming=1,

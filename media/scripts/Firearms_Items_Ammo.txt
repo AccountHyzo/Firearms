@@ -20,7 +20,7 @@ module Base
         Weight	=	0.5,
         Type	=	Normal,
         DisplayName	=	Box of 9mm Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	Bullets9mmBox,
         MetalValue = 30,
 				StaticModel = Ammobox,
@@ -45,7 +45,7 @@ module Base
         Weight	=	0.75,
         Type	=	Normal,
         DisplayName	=	Box of .45 Auto Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	Bullets45Box,
         MetalValue = 30,
 				StaticModel = Ammobox,
@@ -70,7 +70,7 @@ module Base
         Weight	=	0.75,
         Type	=	Normal,
         DisplayName	=	Box of .44 Magnum Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	Bullets44Box,
         MetalValue = 30,
 				StaticModel = Ammobox,
@@ -95,7 +95,7 @@ module Base
         Weight	=	0.75,
         Type	=	Normal,
         DisplayName	=	Box of .44-40 WCF Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	Bullets44Box,
         MetalValue = 30,
 				StaticModel = Ammobox,
@@ -120,11 +120,36 @@ module Base
         Weight	=	0.75,
         Type	=	Normal,
         DisplayName	=	Box of .38 Special Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	Bullets38Box,
         MetalValue = 30,
 				StaticModel = Ammobox,
 				WorldStaticModel = Bullets38Ammobox,
+    }
+
+    item Bullets357
+    {
+        Count	=	5,
+        Weight	=	0.015,
+        Type	=	Normal,
+        DisplayCategory = Ammo,
+        DisplayName	=	.357 Round,
+        Icon	=	38_Round,
+        MetalValue = 1,
+				StaticModel = Bullet,
+				WorldStaticModel = 9mmRounds,
+    }
+
+    item Bullets357Box
+    {
+        Weight	=	0.75,
+        Type	=	Normal,
+        DisplayName	=	Box of .357 Rounds,
+        DisplayCategory = Ammo,
+        Icon	=	Bullets357Box,
+        MetalValue = 30,
+				StaticModel = Ammobox,
+				WorldStaticModel = Bullets357Ammobox,
     }
 
 	item ShotgunShells
@@ -146,7 +171,7 @@ module Base
         Weight	=	1.0,
         Type	=	Normal,
         DisplayName	=	Box of Shotgun Shells,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	ShotgunShellsBox,
         MetalValue = 24,
 				StaticModel = Ammobox,
@@ -173,7 +198,7 @@ module Base
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of .223 Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	223BulletsBox,
         MetalValue = 40,
 				StaticModel = Ammobox,
@@ -200,7 +225,7 @@ module Base
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of .308 Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	308BulletsBox,
         MetalValue = 40,
 				StaticModel = Ammobox,
@@ -227,7 +252,7 @@ module Base
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of 5.56x45mm Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	556BulletsBox,
         MetalValue = 40,
 				StaticModel = Ammobox,
@@ -254,7 +279,7 @@ module Base
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of 7.62x51mm Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	762x51BulletsBox,
         MetalValue = 40,
 				StaticModel = Ammobox,
@@ -281,7 +306,7 @@ module Base
         AlwaysWelcomeGift	=	TRUE,
         Type	=	Normal,
         DisplayName	=	Box of 7.62×39mm Rounds,
-        DisplayCategory = AmmunitionBox,
+        DisplayCategory = Ammo,
         Icon	=	762x39BulletsBox,
         MetalValue = 40,
 				StaticModel = Ammobox,
@@ -308,11 +333,38 @@ module Base
 	        AlwaysWelcomeGift	=	TRUE,
 	        Type	=	Normal,
 	        DisplayName	=	Box of .22 LR Rounds,
-	        DisplayCategory = AmmunitionBox,
+	        DisplayCategory = Ammo,
 	        Icon	=	Bullets22Box,
 	        MetalValue = 40,
 					StaticModel = Ammobox,
 					WorldStaticModel = Bullets22Ammobox,
+	    }
+
+		item Bullets3006
+	    {
+	        Count	=	5,
+	        Weight	=	0.025,
+	        AlwaysWelcomeGift	=	TRUE,
+	        Type	=	Normal,
+	        DisplayName	=	.30-06 Round,
+	        DisplayCategory = Ammo,
+	        Icon	=	308_Round,
+	        MetalValue = 1,
+					StaticModel = RifleBullet,
+					WorldStaticModel = RifleAmmo,
+	    }
+
+	    item Bullets3006Box
+	    {
+	        Weight	=	0.5,
+	        AlwaysWelcomeGift	=	TRUE,
+	        Type	=	Normal,
+	        DisplayName	=	Box of .30-06 Rounds,
+	        DisplayCategory = Ammo,
+	        Icon	=	Bullets3006Box,
+	        MetalValue = 40,
+					StaticModel = Ammobox,
+					WorldStaticModel = Bullets3006Ammobox,
 	    }
 
 }

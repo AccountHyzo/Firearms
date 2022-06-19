@@ -194,6 +194,14 @@ recipe Make Improvised Gun Cleaning Kit
       Time:0,
 		}
 
+		recipe Convert to .357
+		{
+      Bullets38,
+
+      Result:Bullets357=1,
+      Time:0,
+		}
+
 
 		/* Boxes */
 			recipe Open Box of 9mm Bullets
@@ -237,18 +245,6 @@ recipe Make Improvised Gun Cleaning Kit
 					Bullets44Box,
 
 					Result:Bullets44=10,
-					Sound:OpenAmmoBox,
-					Time:30.0,
-					Prop1:Bullet_Casing,
-					Prop2:Ammobox,
-					Override:true,
-			}
-
-			recipe Open Box of .308 Ammo
-			{
-					308Box,
-
-					Result:308Bullets=4,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -309,6 +305,18 @@ recipe Make Improvised Gun Cleaning Kit
 					223Bullets=20,
 
 					Result:223Box,
+					Sound:OpenAmmoBox,
+					Time:30.0,
+					Prop1:Bullet_Casing,
+					Prop2:Ammobox,
+					Override:true,
+			}
+
+			recipe Open Box of .308 Ammo
+			{
+					308Box,
+
+					Result:308Bullets=4,
 					Sound:OpenAmmoBox,
 					Time:30.0,
 					Prop1:Bullet_Casing,
@@ -477,6 +485,54 @@ recipe Make Improvised Gun Cleaning Kit
 				Bullets22=50,
 
 				Result:Bullets22Box,
+				Sound:OpenAmmoBox,
+				Time:30.0,
+				Prop1:Bullet_Casing,
+				Prop2:Ammobox,
+				Override:true,
+		}
+
+		recipe Open Box of .357 Ammo
+		{
+				Bullets357Box,
+
+				Result:Bullets357=10,
+				Sound:OpenAmmoBox,
+				Time:30.0,
+				Prop1:Bullet_Casing,
+				Prop2:Ammobox,
+				Override:true,
+		}
+
+		recipe Place .357 Ammo in Box
+		{
+				Bullets357=50,
+
+				Result:Bullets357Box,
+				Sound:OpenAmmoBox,
+				Time:30.0,
+				Prop1:Bullet_Casing,
+				Prop2:Ammobox,
+				Override:true,
+		}
+
+		recipe Open Box of .30-06 Ammo
+		{
+				Bullets3006Box,
+
+				Result:Bullets3006=4,
+				Sound:OpenAmmoBox,
+				Time:30.0,
+				Prop1:Bullet_Casing,
+				Prop2:Ammobox,
+				Override:true,
+		}
+
+		recipe Place .30-06 Ammo in Box
+		{
+				Bullets3006=20,
+
+				Result:Bullets3006Box,
 				Sound:OpenAmmoBox,
 				Time:30.0,
 				Prop1:Bullet_Casing,

@@ -21,6 +21,8 @@ WeaponUpgrades = {
 
   Glock17		= {"RedDot", "9mmCompensator", "Laser"},
 
+  ColtPythonHunter		= {"2xLeupoldScope"},
+
   HuntingRifle		= {"Sling_Leather", "RecoilPad", "AmmoStraps", "x2Scope", "x4Scope"},
   SKS		= {"Sling_Leather"},
   Rugerm7722		= {"Sling_Leather", "RecoilPad", "x2Scope", "x4Scope"},

@@ -97,3 +97,42 @@ function ISReloadWeaponAction.setReloadSpeed(character, rack)
 	end
 	character:setVariable("ReloadSpeed", baseReloadSpeed * GameTime.getAnimSpeedFix());
 end
+
+local function comparatorMagazineAmmoCount(item1, item2)
+	return item1:getCurrentAmmoCount() - item2:getCurrentAmmoCount()
+end
+
+local function predicateNotFullMagazine(item, magazineType)
+	return (item:getType() == magazineType or item:getFullType() == magazineType) and item:getCurrentAmmoCount() < item:getMaxAmmo()
+end
+
+local function predicateFullestMagazine(item1, item2)
+	return item1:getCurrentAmmoCount() - item2:getCurrentAmmoCount()
+end
+
+local function firearmsGetBestMagazine(playerObj, weapon)
+	if weapon == nil then return end
+	if playerObj == nil then return end
+	if not weapon:IsWeapon() or not weapon:isRanged() then return; end
+	if not weapon:getMagazineType() then return nil end
+
+	local inventory = playerObj:getInventory()
+	local magazine = inventory:getBestEvalArgRecurse(predicateNotFullMagazine, predicateFullestMagazine, weapon:getMagazineType())
+
+	if not magazine then return end
+	return magazine
+end
+
+ISReloadWeaponAction.ReloadBestMagazine = function(playerObj, gun)
+	local magazine = firearmsGetBestMagazine(playerObj, gun)
+	if not magazine then
+		magazine = playerObj:getInventory():getFirstTypeRecurse(gun:getMagazineType())
+	end
+	if not magazine then return end
+	local ammoCount = ISInventoryPaneContextMenu.transferBullets(playerObj, magazine:getAmmoType(), magazine:getCurrentAmmoCount(), magazine:getMaxAmmo())
+	if ammoCount == 0 then
+		return
+	end
+	ISTimedActionQueue.add(ISLoadBulletsInMagazine:new(playerObj, magazine, ammoCount))
+	ISTimedActionQueue.add(ISInsertMagazine:new(playerObj, gun, magazine))
+end

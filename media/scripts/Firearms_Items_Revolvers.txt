@@ -234,7 +234,7 @@ module Base
 					AimingTime = 10,
 					MetalValue = 30,
 					AmmoBox = Bullets38Box,
-					MaxAmmo = 6,
+					MaxAmmo = 5,
 					AmmoType = Base.Bullets38,
 					ModelWeaponPart = Base.38Silencer Base.Silencer silencer silencer,
 					ModelWeaponPart = Base.ImprovisedSilencer Base.Silencer_Improvised silencer silencer,

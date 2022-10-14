@@ -32,4 +32,5 @@ Recipes_EN = {
 		Recipe_Open_Box_of_.30-06_Ammo = "Open Box of .30-06 Ammo",
 		recipe_Place_.357_Ammo_in_Box = "Place .357 Rounds in Box"
 		Recipe_Open_Box_of_.357_Ammo = "Open Box of .357 Ammo",
+		Recipe_Clean_gun_part = "Clean gun part",
 }

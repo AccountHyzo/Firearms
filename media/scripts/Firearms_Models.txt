@@ -1067,7 +1067,7 @@ module Base
 	model Anaconda
 	{
 		mesh = Weapons/Firearm/Python,
-		texture = Weapons/Firearm/Anaconda,
+		texture = Weapons/Firearm/PythonHunter,
 
 		attachment muzzle
 		{

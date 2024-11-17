@@ -92,6 +92,7 @@ module Base
 								ModelWeaponPart = Base.Silencer_PopBottle Base.Silencer_PopBottle silencer silencer,
 				        ModelWeaponPart = Base.MP5_Stock_Extended Base.MP5_Stock_Extended stock stock,
 				        ModelWeaponPart = Base.MP5_Stock_Detracted Base.MP5_Stock_Detracted stock stock,
+				        ModelWeaponPart = Base.MP5_Magazine Base.MP5_Magazine magazine magazine,
 				        JamGunChance = 2,
 				        AttachmentType = Rifle,
 				        FireMode = Auto,

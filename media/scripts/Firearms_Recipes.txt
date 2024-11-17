@@ -13,22 +13,6 @@ recipe Make Improvised Gun Cleaning Kit
 	 OnCreate:onImprovisedSilencer_OnCreate,
 }
 
-recipe Clean gun part
-{
-	 [Recipe.GetItemTypes.Firearms_Part],
-	 keep [Recipe.GetItemTypes.Firearms_Service],
-	 keep [Recipe.GetItemTypes.Firearms_Brush],
-	 [Recipe.GetItemTypes.Firearms_Solvent]=1,
-
-	 Result:FirearmPart,
-	 RemoveResultItem:true,
-   OnGiveXP:Give10CookingXP,
-	 Time:30.0,
-	 Category:Firearms,
-	 OnCreate:onCleanPart_OnCreate,
-	 Tooltip:Tooltip_Recipe_CleanGun,
-}
-
 	/************************Guns************************/
 	recipe Saw Off Rifle
 	{

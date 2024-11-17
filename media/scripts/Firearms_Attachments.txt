@@ -609,7 +609,7 @@ module Base
 			 	PartType = Scope,
 				Tooltip = Tooltip_Scope,
 				MetalValue = 22,
-				WorldStaticModel = 12xScope,
+				WorldStaticModel = 12xScope_wm,
 		}
 
 		item x4-x12Scope
@@ -626,7 +626,36 @@ module Base
 				PartType = Scope,
 				Tooltip = Tooltip_Scope,
 				MetalValue = 22,
-				WorldStaticModel = 12xScope,
+				WorldStaticModel = 12xScope_wm,
+		}
+		/********Magazines********/
+		item MP5_Magazine
+		{
+				Type = WeaponPart,
+				DisplayName = MP5 Magazine,
+				DisplayCategory = WeaponPart,
+				Icon = Mp5_Mag,
+				Weight = 1.2,
+				WeightModifier = 1,
+				MountOn = MP5,
+				PartType = Clip,
+				Tooltip = Tooltip_Magazine,
+				MetalValue = 22,
+				WorldStaticModel = MP5_Magazine_wm,
+		}
+		item STANAG_Magazine
+		{
+				Type = WeaponPart,
+				DisplayName = STANAG Magazine,
+				DisplayCategory = WeaponPart,
+				Icon = 556_Stanag_Mag,
+				Weight = 1.2,
+				WeightModifier = 1,
+				MountOn = AssaultRifle;M16A2;M733,
+				PartType = Clip,
+				Tooltip = Tooltip_Magazine,
+				MetalValue = 22,
+				WorldStaticModel = 556_Mag,
 		}
 
 }

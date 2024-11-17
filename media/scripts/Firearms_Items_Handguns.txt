@@ -407,7 +407,7 @@ module Base
 	        MaxAmmo = 7,
 					ModelWeaponPart = Laser Base.TacticalLaser laser laser,
 					ModelWeaponPart = RedDot Base.Reddot_Small reddot reddot,
-				 	ModelWeaponPart = Base.45Silencer Base.Silencer silencer silencer,
+				 	ModelWeaponPart = Base.22Silencer Base.Silencer silencer silencer,
 				 	ModelWeaponPart = Base.ImprovisedSilencer Base.Silencer_Improvised silencer silencer,
 				 	ModelWeaponPart = Base.Silencer_PopBottle Base.Silencer_PopBottle silencer silencer,
 	        MagazineType = Base.22Clip,

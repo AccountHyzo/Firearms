@@ -40,6 +40,48 @@ module Base
       WorldStaticModel = WMD,
     }
 
+    item FirearmPart
+    {
+    		Type = Normal,
+    		DisplayName = Gun Part,
+    		DisplayCategory = WeaponPart,
+    		Icon = FlashlightSilencer,
+    		Weight = 0.2,
+    		WorldStaticModel = Silencer_Improvised_wm,
+    }
+
+    recipe Clean gun part
+    {
+    	 [Recipe.GetItemTypes.Firearms_Part],
+    	 keep [Recipe.GetItemTypes.Firearms_Service],
+    	 keep [Recipe.GetItemTypes.Firearms_Brush],
+    	 [Recipe.GetItemTypes.Firearms_Solvent]=1,
+
+    	 Result:FirearmPart,
+    	 RemoveResultItem:true,
+       OnGiveXP:GiveMaintenanceXP,
+    	 Time:30.0,
+    	 Category:Firearms,
+    	 OnCreate:onCleanPart_OnCreate,
+    	 Tooltip:Tooltip_Recipe_CleanGun,
+    }
+
+    recipe Service Firearm
+    {
+    	 [Recipe.GetItemTypes.Gun],
+    	 keep [Recipe.GetItemTypes.Firearms_Service],
+    	 keep [Recipe.GetItemTypes.Firearms_Brush],
+    	 [Recipe.GetItemTypes.Firearms_Solvent]=1,
+
+    	 Result:FirearmPart,
+    	 RemoveResultItem:true,
+       OnGiveXP:GiveMaintenanceXP,
+    	 Time:30.0,
+    	 Category:Firearms,
+    	 OnCreate:onServiceFirearm_OnCreate,
+    	 Tooltip:Tooltip_Recipe_CleanGun,
+    }
+
     fixing Fix ColtAce
     {
        Require : ColtAce,

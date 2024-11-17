@@ -16,6 +16,18 @@ local FirearmsSolvent = {
   "Base.Solvent",
 }
 
+local FirearmsSuppresors = {
+  "Base.22Silencer",
+  "Base.9mmSilencer",
+  "Base.45Silencer",
+  "Base.38Silencer",
+  "Base.223Silencer",
+  "Base.308Silencer",
+  "Base.ShotgunSilencer",
+  "Base.ImprovisedSilencer",
+  "Base.Silencer_PopBottle",
+}
+
 for i = 1, #FirearmsService, 1 do
   local scriptItem = ScriptManager.instance:getItem(FirearmsService[i])
   if scriptItem then

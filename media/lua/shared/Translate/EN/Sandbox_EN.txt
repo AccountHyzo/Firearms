@@ -1,6 +1,20 @@
 Sandbox_EN = {
 	Sandbox_Firearms = "Firearms B41",
 
+	Sandbox_Firearms_Service = "Advanced Firearms Repair"
+	Sandbox_Firearms_Service_tooltip = "This option enables a more advanced system of repairing firearms."
+
+	Sandbox_Firearms_HearingLoss = "Firearms Damage Hearing"
+	Sandbox_Firearms_HearingLoss_tooltip = "With this activated there is a chance of hearing loss while using firearms without proper hearing protection."
+
+	Sandbox_Firearms_HearingLossChance = "Hearing Loss Chance"
+	Sandbox_Firearms_HearingLossChance_tooltip = "Overall chance hearing loss per shot fired."
+
+	Sandbox_Firearms_HearingLossChance_option1 = "1/1"
+	Sandbox_Firearms_HearingLossChance_option2 = "1/25",
+	Sandbox_Firearms_HearingLossChance_option3 = "1/50",
+	Sandbox_Firearms_HearingLossChance_option4 = "1/100",
+
 	Sandbox_Firearms_SuppressorBreak = "Improvised Suppressor Breakage"
 	Sandbox_Firearms_SuppressorBreak_tooltip = "With this activated improvised will not break no matter what the break chance is."
 

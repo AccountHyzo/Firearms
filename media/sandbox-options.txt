@@ -1,5 +1,24 @@
 VERSION = 1,
 
+option Firearms.Service
+{
+	type = boolean, default = false,
+	page = Firearms, translation = Firearms_Service,
+}
+
+option Firearms.HearingLoss
+{
+	type = boolean, default = false,
+	page = Firearms, translation = Firearms_HearingLoss,
+}
+
+option Firearms.HearingLossChance
+{
+type = enum, numValues = 4, default = 1,
+page = Firearms, translation = Firearms_HearingLossChance,
+valueTranslation = Firearms_HearingLossChance,
+}
+
 option Firearms.SuppressorBreak
 {
 	type = boolean, default = true,

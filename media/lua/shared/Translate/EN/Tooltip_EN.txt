@@ -11,5 +11,6 @@ Tooltip_EN = {
   Tooltip_ServiceFirearms  = "Can be used to service firearms."
   Tooltip_22  = ".22 LR"
   Tooltip_9mm  = "9x19mm"
-  Tooltip_Recipe_CleanGun = "Requires worn Hockey Mask.<br>Use with caution.",
+  Tooltip_Recipe_CleanGun = "Service firearm.",
+  Tooltip_Magazine = "Magazine.",
 }

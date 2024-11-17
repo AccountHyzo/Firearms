@@ -1,0 +1,22 @@
+--function CEquipProtection:fillMenu(menu, weapon)
+--	local text = getText("IGUI_FirearmRadial_EquipHearingProtection")
+--	local xln = weapon:isRoundChambered() and "IGUI_FirearmRadial_AmmoCountChambered" or "IGUI_FirearmRadial_AmmoCount"
+--	local textCount = getText(xln, weapon:getCurrentAmmoCount(), weapon:getMaxAmmo())
+--	text = text .. '\\n' .. textCount
+--	text = text:gsub('\\n', '\n')
+--	menu:addSlice(text, getTexture("media/ui/FirearmRadial_BulletsFromFirearm.png"), self.invoke, self)
+--end
+--
+--function CEquipProtection:invoke()
+--	local weapon = self:getWeapon()
+--	if not weapon then return end
+--	if weapon:getMagazineType() then return end
+--	if weapon:getCurrentAmmoCount() == 0 then return end
+--  if luautils.haveToBeTransfered(playerObj, item) then
+--		local action = ISInventoryTransferAction:new(playerObj, item, item:getContainer(), playerObj:getInventory())
+--		action:setOnComplete(onFermentationUI, playerObj, item)
+--		ISTimedActionQueue.add(action)
+--	else
+--	   ISTimedActionQueue.add(ISWearClothing:new(self.character, v, 50))
+--  end
+--end

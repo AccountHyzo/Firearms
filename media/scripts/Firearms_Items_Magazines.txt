@@ -11,7 +11,7 @@ module Base
 		DisplayName	=	Colt Ace Magazine,
 		DisplayCategory = Ammo,
 		Icon	=	45_Mag,
-		MaxAmmo = 7
+		MaxAmmo = 7,
 		AmmoType = Base.Bullets22,
 		GunType = Base.ColtAce,
 		StaticModel = GunMagazine,

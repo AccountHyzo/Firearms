@@ -133,6 +133,7 @@ function onExtendStock_OnCreate(items, result, player, firstHand, secondHand)
 			end
 			if stock then
 				newstock = InventoryItemFactory.CreateItem('Base.' .. result:getType() .. '_Stock_Extended');
+				print('Base.' .. result:getType() .. '_Stock_Extended')
 				if newstock then
 					result:attachWeaponPart(newstock)
 				end

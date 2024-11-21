@@ -1,4 +1,0 @@
-ContextMenu_EN = {
-	ContextMenu_InspectFirearm = "Firearms Inspection",
-	ContextMenu_FirearmRepair = "Firearms Inspection",
-}

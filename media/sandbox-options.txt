@@ -1,24 +1,5 @@
 VERSION = 1,
 
-option Firearms.Service
-{
-	type = boolean, default = false,
-	page = Firearms, translation = Firearms_Service,
-}
-
-option Firearms.HearingLoss
-{
-	type = boolean, default = false,
-	page = Firearms, translation = Firearms_HearingLoss,
-}
-
-option Firearms.HearingLossChance
-{
-type = enum, numValues = 4, default = 1,
-page = Firearms, translation = Firearms_HearingLossChance,
-valueTranslation = Firearms_HearingLossChance,
-}
-
 option Firearms.SuppressorBreak
 {
 	type = boolean, default = true,
@@ -115,45 +96,101 @@ option Firearms.SuppressorEffectivenessRevolver
 	valueTranslation = Firearms_SuppressorEffectiveness,
 }
 
-option Firearms.SpawnSuppressors
-{
-	type = boolean, default = true,
-	page = Firearms, translation = Firearms_SpawnSuppressors,
-}
-
-option Firearms.SpawnHandgunSuppressors
-{
-	type = boolean, default = true,
-	page = Firearms, translation = Firearms_SpawnHandgunSuppressors,
-}
-
-option Firearms.SpawnRifleSuppressors
-{
-	type = boolean, default = true,
-	page = Firearms, translation = Firearms_SpawnRifleSuppressors,
-}
-
-option Firearms.SpawnShotgunSuppressors
-{
-	type = boolean, default = false,
-	page = Firearms, translation = Firearms_SpawnShotgunSuppressors,
-}
-
-option Firearms.SpawnRevolverSuppressors
-{
-	type = boolean, default = false,
-	page = Firearms, translation = Firearms_SpawnRevolverSuppressors,
-}
-
-option Firearms.SpawnAmmoCans
-{
-	type = boolean, default = true,
-	page = Firearms, translation = Firearms_SpawnAmmoCans,
-}
 
 option Firearms.LootSuppressor
 {
 type = enum, numValues = 5, default = 2,
 page = LootRarity, translation = Firearms_LootSuppressor,
 valueTranslation = Rarity,
+}
+
+option Firearms.LootAmmoCans
+{
+type = enum, numValues = 5, default = 2,
+page = LootRarity, translation = Firearms_LootAmmoCans,
+valueTranslation = Rarity,
+}
+
+option Firearms.SpawnSuppressors
+{
+type = boolean, default = true,
+page = Firearms, translation = Firearms_SpawnSuppressors,
+}
+
+option Firearms.SpawnHandgunSuppressors
+{
+type = boolean, default = true,
+page = Firearms, translation = Firearms_SpawnHandgunSuppressors,
+}
+
+option Firearms.SpawnRifleSuppressors
+{
+type = boolean, default = true,
+page = Firearms, translation = Firearms_SpawnRifleSuppressors,
+}
+
+option Firearms.SpawnShotgunSuppressors
+{
+type = boolean, default = false,
+page = Firearms, translation = Firearms_SpawnShotgunSuppressors,
+}
+
+option Firearms.SpawnRevolverSuppressors
+{
+type = boolean, default = false,
+page = Firearms, translation = Firearms_SpawnRevolverSuppressors,
+}
+
+option Firearms.SpawnAmmoCans
+{
+type = boolean, default = true,
+page = Firearms, translation = Firearms_SpawnAmmoCans,
+}
+
+option Firearms.SpawnAK47
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnAK47,
+}
+
+option Firearms.Spawn1800s
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_Spawn1800s,
+}
+
+option Firearms.SpawnM60
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnM60,
+}
+
+option Firearms.SpawnMAC10
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnMAC10,
+}
+
+option Firearms.SpawnMP5
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnMP5,
+}
+
+option Firearms.SpawnSKS
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnSKS,
+}
+
+option Firearms.SpawnSPAS12
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnSPAS12,
+}
+
+option Firearms.SpawnUZI
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnUZI,
 }

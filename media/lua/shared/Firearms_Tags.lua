@@ -16,7 +16,7 @@ local FirearmsSolvent = {
   "Base.Solvent",
 }
 
-local FirearmsSuppresors = {
+local FirearmsSuppressors = {
   "Base.22Silencer",
   "Base.9mmSilencer",
   "Base.45Silencer",
@@ -31,23 +31,35 @@ local FirearmsSuppresors = {
 for i = 1, #FirearmsService, 1 do
   local scriptItem = ScriptManager.instance:getItem(FirearmsService[i])
   if scriptItem then
-      print(scriptItem:getType())
-      scriptItem:getTags():add("Firearms_Service")
+	print("Setting Firearms_Service")
+    print(scriptItem:getName())
+    scriptItem:getTags():add("Firearms_Service")
   end
 end
 
 for i = 1, #FirearmsBrush, 1 do
-  local scriptItem = ScriptManager.instance:getItem(FirearmsService[i])
+  local scriptItem = ScriptManager.instance:getItem(FirearmsBrush[i])
   if scriptItem then
-      print(scriptItem:getType())
-      scriptItem:getTags():add("Firearms_Brush")
+	print("Setting Firearms_Brush")
+    print(scriptItem:getName())
+    scriptItem:getTags():add("Firearms_Brush")
   end
 end
 
 for i = 1, #FirearmsSolvent, 1 do
-  local scriptItem = ScriptManager.instance:getItem(FirearmsService[i])
+  local scriptItem = ScriptManager.instance:getItem(FirearmsSolvent[i])
   if scriptItem then
-      print(scriptItem:getType())
-      scriptItem:getTags():add("Firearms_Solvent")
+    print("Setting Firearms_Solvent")
+	print(scriptItem:getName())
+    scriptItem:getTags():add("Firearms_Solvent")
+  end
+end
+
+for i = 1, #FirearmsSuppressors, 1 do
+  local scriptItem = ScriptManager.instance:getItem(FirearmsSuppressors[i])
+  if scriptItem then
+    print("Setting Firearms_Suppressors")
+	print(scriptItem:getName())
+    scriptItem:getTags():add("Firearms_Suppressors")
   end
 end

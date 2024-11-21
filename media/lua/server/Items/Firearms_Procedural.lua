@@ -1,6 +1,25 @@
 require "Items/ProceduralDistributions"
 require "Items/ItemPicker"
 
+LootSuppressor = (SandboxVars.Firearms.LootSuppressor)
+LootAmmoCans = (SandboxVars.Firearms.LootAmmoCans)
+
+SpawnAK47 = (SandboxVars.Firearms.SpawnAK47)
+SpawnSKS = (SandboxVars.Firearms.SpawnSKS)
+SpawnM1Garand = (SandboxVars.Firearms.SpawnM1Garand)
+SpawnMP5 = (SandboxVars.Firearms.SpawnMP5)
+SpawnMAC10 = (SandboxVars.Firearms.SpawnMAC10)
+SpawnUZI = (SandboxVars.Firearms.SpawnUZI)
+SpawnSPAS12 = (SandboxVars.Firearms.SpawnSPAS12)
+Spawn1800s = (SandboxVars.Firearms.Spawn1800s)
+
+SpawnSuppressors = (SandboxVars.Firearms.SpawnSuppressors)
+SpawnHandgunSuppressors = (SandboxVars.Firearms.SpawnHandgunSuppressors)
+SpawnRifleSuppressors = (SandboxVars.Firearms.SpawnRifleSuppressors)
+SpawnShotgunSuppressors = (SandboxVars.Firearms.SpawnShotgunSuppressors)
+
+SpawnAmmoCans = (SandboxVars.Firearms.SpawnAmmoCans)
+
 local i, j, d
 
 -- Distributions for ProceduralDistributions.lua
@@ -16,16 +35,16 @@ local FirearmsDistributionArmyAmmoBoxes = {
 }
 
 local FirearmsDistributionCans = {
-  "GunStoreAmmunition", 0.5,
-  "GunStoreCounter", 0.5,
-  "GunStoreDisplayCase", 0.5,
-  "HuntingLockers", 1,
-  "PoliceStorageGuns", 2,
+  "GunStoreAmmunition", 0.5 * (LootAmmoCans * 1.5),
+  "GunStoreCounter", 0.5 * (LootAmmoCans * 1.25),
+  "GunStoreDisplayCase", 0.5 * (LootAmmoCans * 1.25),
+  "HuntingLockers", 1 * (LootAmmoCans * 1.5),
+  "PoliceStorageGuns", 2 * (LootAmmoCans * 1.5),
 }
 
 local FirearmsDistributionArmyCans = {
-  "LockerArmyBedroom", 1,
-  "ArmyStorageGuns", 2,
+  "LockerArmyBedroom", 1 * (LootAmmoCans * 1.25),
+  "ArmyStorageGuns", 2 * (LootAmmoCans * 1.5),
 }
 
 local FirearmsDistribution = {
@@ -45,10 +64,10 @@ local FirearmsDistributionShotguns = {
 }
 
 local FirearmsDistributionSilencers = {
-  "PoliceStorageGuns", 0.25,
-  "LockerArmyBedroom", 0.3,
-  "ArmyStorageGuns", 0.5,
-  "GunStoreDisplayCase", 0.1,
+  "PoliceStorageGuns", 0.05 * (LootSuppressor * 1.25),
+  "LockerArmyBedroom", 0.075 * (LootSuppressor * 1.25),
+  "ArmyStorageGuns", 0.15  * (LootSuppressor * 2),
+  "GunStoreDisplayCase", 0.025  * (LootSuppressor * 1.2),
 }
 
 local FirearmsDistributionAttachments = {
@@ -103,18 +122,22 @@ local FirearmsDistributionOld = {
 }
 
 for i = 1, #FirearmsDistributionAmmoBoxes, 2 do
-  table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.Bullets4440Box")
-  table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1])
   table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.Bullets44Box")
   table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1])
   table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.Bullets357Box")
   table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1])
-  table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.Bullets3006Box")
-  table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1])
   table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.Bullets22Box")
   table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1]*10)
-  table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.762x39Box")
-  table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1]*5)
+  if Spawn1800s then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.Bullets3006Box")
+    table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1])
+    table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.Bullets4440Box")
+    table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1])
+  end
+  if SpawnAK47 or SpawnSKS then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, "Base.762x39Box")
+    table.insert(ProceduralDistributions.list[FirearmsDistributionAmmoBoxes[i]].items, FirearmsDistributionAmmoBoxes[i+1]*5)
+  end
 end
 
 for i = 1, #FirearmsDistributionArmyAmmoBoxes, 2 do
@@ -129,17 +152,11 @@ for i = 1, #FirearmsDistribution, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/10)
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.FN_FAL_Mag")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/8)
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.MP5")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/2)
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.MP5Mag")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/3)
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Remington870Wood")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Mossberg500")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Mossberg500Tactical")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.SPAS12")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Glock17")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
@@ -153,30 +170,52 @@ for i = 1, #FirearmsDistribution, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/2)
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.ColtSingleAction22")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Rossi92");
+  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/2);
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.ColtAce")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.22Clip")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.M1Garand")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.M1GarandClip")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Rugerm7722")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.UZI")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.UZIMag")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Mac10")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Mac10Mag")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.AK47")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/2)
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.AK_Mag")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.SKS")
-  table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
+  if SpawnM1Garand then
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.M1Garand")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.M1GarandClip")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+  end
+  if SpawnMP5 then
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.MP5")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/2)
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.MP5Mag")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/3)
+  end
+  if SpawnUZI then
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.UZI")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.UZIMag")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+  end
+  if SpawnMAC10 then
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Mac10")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Mac10Mag")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+  end
+  if SpawnSPAS12 then
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.SPAS12")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
+  end
+  if SpawnAK47 then
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.AK47")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]/2)
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.AK_Mag")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+  end
+  if SpawnSKS then
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.SKS")
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
+  end
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Solvent")
   table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
 end
@@ -184,26 +223,30 @@ end
 for i = 1, #FirearmsArmyDistribution, 2 do
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M16A2")
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1])
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M24Rifle")
+  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.FN_FAL")
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.FN_FAL_Mag")
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/3)
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M60")
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/4)
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M60Mag")
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.MP5")
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.MP5Mag")
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
+  if SpawnM60 then
+    table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M60")
+    table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/4)
+    table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M60Mag")
+    table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
+  end
+  if SpawnMP5 then
+    table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "MP5");
+    table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]);
+    table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "MP5Mag");
+    table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2);
+  end
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.Mossberg500Tactical")
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]*2)
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M733")
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/4)
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.Remington870Wood")
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]*2)
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.M24Rifle")
-  table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]/2)
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, "Base.GunToolKit")
   table.insert(ProceduralDistributions.list[FirearmsArmyDistribution[i]].items, FirearmsArmyDistribution[i+1]*2)
 end
@@ -228,10 +271,12 @@ for i = 1, #FirearmsDistributionSchoolLocker, 2 do
 end
 
 for i = 1, #FirearmsDistributionPolice, 2 do
+  if SpawnMP5 then
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "MP5");
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]);
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "MP5Mag");
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/2);
+  end
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "AR15");
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/4);
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "556Clip");
@@ -246,12 +291,16 @@ for i = 1, #FirearmsDistributionPolice, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]*4);
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "Glock17Mag");
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]*2);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "LAW12");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "AK47");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/6);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "AK_Mag");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/3);
+  if SpawnSPAS12 then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "LAW12");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]);
+  end
+  if SpawnAK47 then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "AK47");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/6);
+    table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "AK_Mag");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/3);
+  end
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, "GunToolKit");
   table.insert(ProceduralDistributions.list[FirearmsDistributionPolice[i]].items, FirearmsDistributionPolice[i+1]/2);
 end
@@ -259,8 +308,10 @@ end
 for i = 1, #FirearmsDistributionPoliceAmmo, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistributionPoliceAmmo[i]].items, "Bullets357Box");
   table.insert(ProceduralDistributions.list[FirearmsDistributionPoliceAmmo[i]].items, FirearmsDistributionPoliceAmmo[i+1]);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionPoliceAmmo[i]].items, "762x39Box");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionPoliceAmmo[i]].items, FirearmsDistributionPoliceAmmo[i+1]/8);
+  if SpawnAK47 or SpawnSKS then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionPoliceAmmo[i]].items, "762x39Box");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionPoliceAmmo[i]].items, FirearmsDistributionPoliceAmmo[i+1]/6);
+  end
 end
 
 for i = 1, #FirearmsDistributionShotguns, 2 do
@@ -270,31 +321,37 @@ for i = 1, #FirearmsDistributionShotguns, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistributionShotguns[i]].items, FirearmsDistributionShotguns[i+1]);
   table.insert(ProceduralDistributions.list[FirearmsDistributionShotguns[i]].items, "Mossberg500Tactical");
   table.insert(ProceduralDistributions.list[FirearmsDistributionShotguns[i]].items, FirearmsDistributionShotguns[i+1]);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionShotguns[i]].items, "SPAS12");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionShotguns[i]].items, FirearmsDistributionShotguns[i+1]);
   table.insert(ProceduralDistributions.list[FirearmsDistributionShotguns[i]].items, "Base.M37");
   table.insert(ProceduralDistributions.list[FirearmsDistributionShotguns[i]].items, FirearmsDistributionShotguns[i+1]);
+  if SpawnSPAS12 then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionShotguns[i]].items, "SPAS12");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionShotguns[i]].items, FirearmsDistributionShotguns[i+1]);
+  end
 end
 
 for i = 1, #FirearmsDistributionOld, 2 do
+  if Spawn1800s then
   table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.ColtPeacemaker");
   table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]);
   table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.Winchester94");
   table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]);
   table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.Winchester73");
   table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/2);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.Rossi92");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/2);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.SKS");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/4)
-  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.M1Garand");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/2)
-  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.M1GarandClip");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/2)
+  end
+  if SpawnM1Garand then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.M1Garand");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/2)
+    table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.M1GarandClip");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/2)
+  end
+  if SpawnSKS then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, "Base.SKS");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionOld[i]].items, FirearmsDistributionOld[i+1]/4)
+  end
 end
 
-if SandboxVars.Firearms.SpawnSuppressors then
-  if SandboxVars.Firearms.SpawnHandgunSuppressors then
+if SpawnSuppressors then
+  if SpawnHandgunSuppressors then
     for i = 1, #FirearmsDistributionSilencers, 2 do
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, "9mmSilencer");
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, FirearmsDistributionSilencers[i+1]*SandboxVars.Firearms.LootSuppressor);
@@ -302,7 +359,7 @@ if SandboxVars.Firearms.SpawnSuppressors then
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, FirearmsDistributionSilencers[i+1]*SandboxVars.Firearms.LootSuppressor);
     end
   end
-  if SandboxVars.Firearms.SpawnRifleSuppressors then
+  if SpawnRifleSuppressors then
     for i = 1, #FirearmsDistributionSilencers, 2 do
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, "223Silencer");
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, (FirearmsDistributionSilencers[i+1]/2)*SandboxVars.Firearms.LootSuppressor);
@@ -312,13 +369,13 @@ if SandboxVars.Firearms.SpawnSuppressors then
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, (FirearmsDistributionSilencers[i+1]/4)*SandboxVars.Firearms.LootSuppressor);
     end
   end
-  if SandboxVars.Firearms.SpawnShotgunSuppressors then
+  if SpawnShotgunSuppressors then
     for i = 1, #FirearmsDistributionSilencers, 2 do
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, "ShotgunSilencer");
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, (FirearmsDistributionSilencers[i+1]/4)*SandboxVars.Firearms.LootSuppressor);
     end
   end
-  if SandboxVars.Firearms.SpawnRevolverSuppressors then
+  if SpawnRevolverSuppressors then
     for i = 1, #FirearmsDistributionSilencers, 2 do
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, "38Silencer");
       table.insert(ProceduralDistributions.list[FirearmsDistributionSilencers[i]].items, (FirearmsDistributionSilencers[i+1]/2)*SandboxVars.Firearms.LootSuppressor);
@@ -327,7 +384,7 @@ if SandboxVars.Firearms.SpawnSuppressors then
 end
 
 
-if SandboxVars.Firearms.SpawnAmmoCans then
+if SpawnAmmoCans then
   for i = 1, #FirearmsDistributionCans, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, "AmmoCan9mm");
   table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, FirearmsDistributionCans[i+1]*2);
@@ -335,8 +392,10 @@ if SandboxVars.Firearms.SpawnAmmoCans then
   table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, FirearmsDistributionCans[i+1]);
   table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, "AmmoCan308");
   table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, FirearmsDistributionCans[i+1]);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, "AmmoCan762x39");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, FirearmsDistributionCans[i+1]);
+  if SpawnAK47 or SpawnSKS then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, "AmmoCan762x39");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionCans[i]].items, FirearmsDistributionCans[i+1]);
+  end
   end
 
   for i = 1, #FirearmsDistributionArmyCans, 2 do
@@ -373,14 +432,22 @@ for i = 1, #FirearmsDistributionStocks, 2 do
   table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]);
   table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, "TacticalStock");
   table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, "SPAS12_Stock_Detracted");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]/4);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, "MAC10_Stock_Detracted");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]/4);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, "UZI_Stock_Detracted");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]/4);
-  table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, "MP5_Stock_Detracted");
-  table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]/4);
+  if SpawnSPAS12 then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, "SPAS12_Stock_Detracted");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]/4);
+  end
+  if SpawnMAC10 then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, "MAC10_Stock_Detracted");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]/4);
+  end
+  if SpawnUZI then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, "UZI_Stock_Detracted");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]/4);
+  end
+  if SpawnMP5 then
+    table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, "MP5_Stock_Detracted");
+    table.insert(ProceduralDistributions.list[FirearmsDistributionStocks[i]].items, FirearmsDistributionAttachments[i+1]/4);
+  end
 end
 
 for i = 1, #FirearmsDistributionCleaning, 2 do

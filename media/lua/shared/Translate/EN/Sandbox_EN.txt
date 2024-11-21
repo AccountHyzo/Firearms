@@ -1,5 +1,6 @@
 Sandbox_EN = {
 	Sandbox_Firearms = "Firearms B41",
+	Sandbox_FirearmsSpawns = "Firearms B41 - Spawns",
 
 	Sandbox_Firearms_Service = "Advanced Firearms Repair"
 	Sandbox_Firearms_Service_tooltip = "This option enables a more advanced system of repairing firearms."
@@ -91,6 +92,35 @@ Sandbox_EN = {
   Sandbox_Firearms_SpawnAmmoCans = "Ammo case Spawn",
   Sandbox_Firearms_SpawnAmmoCans_tooltip = "Whether or not Ammo Cases can be found in containers.",
 
+	Sandbox_Firearms_SpawnSPAS12 = "SPAS12/LAW12 Spawn",
+	Sandbox_Firearms_SpawnSPAS12_tooltip = "Whether or not SPAS12 and LAW12 spawn.",
+
+  Sandbox_Firearms_SpawnAK47 = "AK-47 Spawn",
+  Sandbox_Firearms_SpawnAK47_tooltip = "Whether or not AK47 rifles spawn.",
+
+  Sandbox_Firearms_SpawnSKS = "SKS Spawn",
+  Sandbox_Firearms_SpawnSKS_tooltip = "Whether or not SKS rifles spawn.",
+
+  Sandbox_Firearms_SpawnMAC10 = "MAC-10 Spawn",
+  Sandbox_Firearms_SpawnMAC10_tooltip = "Whether or not MAC-10 SMGs spawn.",
+
+  Sandbox_Firearms_SpawnMP5 = "MP5 Spawn",
+  Sandbox_Firearms_SpawnMP5_tooltip = "Whether or not MP5 SMGs spawn.",
+
+  Sandbox_Firearms_SpawnUZI = "UZI Spawn",
+  Sandbox_Firearms_SpawnUZI_tooltip = "Whether or not UZI SMGs spawn.",
+
+  Sandbox_Firearms_Spawn1800s = "1800s Era Firearms Spawn",
+  Sandbox_Firearms_Spawn1800s_tooltip = "Whether firearms mainly produced at the end of the 1800s spawn.(Winchester Model 73 and 94 as well as Colt Single Action Army Revolvers)",
+
+  Sandbox_Firearms_SpawnM1Garand = "M1 Garand Spawn",
+  Sandbox_Firearms_SpawnM1Garand_tooltip = "Whether M1Garand rifles spawn.",
+
+  Sandbox_Firearms_SpawnM60 = "M60 Spawn",
+  Sandbox_Firearms_SpawnM60_tooltip = "Whether the M60 spawns.",
+
   Sandbox_Firearms_LootSuppressor = "Suppressors",
+
+  Sandbox_Firearms_LootAmmoCans = "Ammo Cans",
 
 }

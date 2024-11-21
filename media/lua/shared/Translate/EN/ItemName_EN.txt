@@ -75,6 +75,8 @@ ItemName_EN = {
     ItemName_Base.Mac10_Stock_Extended = "MAC 10 Stock",
     ItemName_Base.Rifle_Bipod = "Rifle Bipod",
 
+    ItemName_Base.ChokeTubeImproved = "Choke Tube - Duckbill",
+
     ItemName_Base.Sling = "Two Point Rifle Sling (Black)"
     ItemName_Base.Sling_Leather = "Two Point Rifle Sling (Leather)"
     ItemName_Base.Sling_Olive = "Two Point Rifle Sling (Olive)"

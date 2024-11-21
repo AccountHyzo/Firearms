@@ -290,7 +290,149 @@ module Base
 	}
 	model Mossberg500Wood
 	{
+		mesh = Weapons/Firearm/Mossberg_Wood,
+		texture = Weapons/firearm/shotguns,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.4270 0.0290,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment sling
+		{
+			offset = 0.0000 0.3630 0.0250,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.1010 0.0370,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0890 0.0380,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment gunlight
+		{
+			offset = 0.0000 0.3290 0.0090,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment stock
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment silencer
+		{
+			offset = 0.0000 0.4050 0.0280,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 1.0000 -180.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 -0.1500 -0.0300,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment ammostrap
+		{
+			offset = 0.0140 0.1090 0.0230,
+			rotate = 180.0000 0.0000 -180.0000,
+		}
+	}
+	model Mossberg500WoodBlack
+	{
 		mesh = Weapons/Firearm/Mossberg_Wood_Black,
+		texture = Weapons/firearm/shotguns,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.4270 0.0290,
+			rotate = -90.0000 0.0000 180.0000,
+		}
+
+		attachment sling
+		{
+			offset = 0.0000 0.3630 0.0250,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.1010 0.0370,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0890 0.0380,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment gunlight
+		{
+			offset = 0.0000 0.3290 0.0090,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment stock
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment silencer
+		{
+			offset = 0.0000 0.4050 0.0280,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1660 0.0000,
+			rotate = -180.0000 1.0000 -180.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 -0.1500 -0.0300,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment ammostrap
+		{
+			offset = 0.0140 0.1090 0.0230,
+			rotate = 180.0000 0.0000 -180.0000,
+		}
+	}
+	model Mossberg500WoodSawnOff
+	{
+		mesh = Weapons/Firearm/Mossberg_Wood_Sawed,
 		texture = Weapons/firearm/shotguns,
 
 		attachment muzzle
@@ -359,7 +501,7 @@ module Base
 			rotate = 180.0000 0.0000 -180.0000,
 		}
 	}
-	model Mossberg500WoodSawnOff
+	model Mossberg500WoodBlackSawnOff
 	{
 		mesh = Weapons/Firearm/Mossberg_Wood_Black_Sawed,
 		texture = Weapons/firearm/shotguns,
@@ -473,14 +615,14 @@ module Base
 
 		attachment stock
 		{
-			offset = 0.0000 0.4020 0.0270,
-			rotate = -90.0000 0.0000 -180.0000,
+			offset = 0.0000 0.0070 0.0040,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4230 0.0280,
-			rotate = 0.0000 0.0000 -180.0000,
+			offset = 0.0000 0.3840 0.0280,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment world
@@ -550,8 +692,8 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4230 0.0280,
-			rotate = 0.0000 0.0000 -180.0000,
+			offset = 0.0000 0.4050 0.0280,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment world
@@ -579,26 +721,26 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.4270 0.0290,
+			offset = 0.0000 0.4580 -0.0280,
 			rotate = -90.0000 0.0000 180.0000,
 		}
 
 		attachment sling
 		{
-			offset = 0.0000 0.3630 0.0250,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.3630 -0.0250,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment scope
 		{
-			offset = 0.0000 0.1010 0.0370,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.1010 -0.0370,
+			rotate = 0.0000 0.0000 180.0000,
 		}
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0890 0.0380,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0890 -0.0380,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment gunlight
@@ -621,8 +763,8 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4230 0.0280,
-			rotate = 0.0000 0.0000 -180.0000,
+			offset = 0.0000 0.4540 -0.0280,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment world
@@ -633,8 +775,8 @@ module Base
 
 		attachment recoilpad
 		{
-			offset = 0.0000 -0.1500 -0.0300,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 -0.1500 0.0300,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment ammostrap
@@ -650,26 +792,26 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.4270 0.0290,
+			offset = 0.0000 0.3480 -0.0290,
 			rotate = -90.0000 0.0000 180.0000,
 		}
 
 		attachment sling
 		{
-			offset = 0.0000 0.3630 0.0250,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.3630 -0.0250,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment scope
 		{
-			offset = 0.0000 0.1010 0.0370,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.1010 -0.0370,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0890 0.0380,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0890 -0.0380,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment gunlight
@@ -692,8 +834,8 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4230 0.0280,
-			rotate = 0.0000 0.0000 -180.0000,
+			offset = 0.0000 0.3420 -0.0390,
+			rotate = 180.0000 0.0000 0.0000,
 		}
 
 		attachment world
@@ -763,7 +905,7 @@ module Base
 		attachment silencer
 		{
 			offset = 0.0000 0.4320 -0.0280,
-			rotate = -180.0000 0.0000 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment world
@@ -785,7 +927,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.3900 -0.0280,
+			offset = 0.0000 0.4300 -0.0280,
 			rotate = -90.0000 0.0000 180.0000,
 		}
 
@@ -827,7 +969,7 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.3860 -0.0290,
+			offset = 0.0000 0.4300 -0.0290,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
@@ -867,8 +1009,8 @@ module Base
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0260 0.0200,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0260 -0.0270,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment gunlight
@@ -892,7 +1034,7 @@ module Base
 		attachment silencer
 		{
 			offset = 0.0000 0.1270 -0.0190,
-			rotate = 180.0000 0.0000 180.0000,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
 	model M9
@@ -919,7 +1061,7 @@ module Base
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0230 -0.0270,
+			offset = 0.0000 0.0230 -0.0240,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -953,7 +1095,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.1380 0.0240,
+			offset = 0.0000 0.1380 -0.0230,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -971,8 +1113,8 @@ module Base
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0820 0.0270,
-			rotate = -180.0000 0.0000 -180.0000,
+			offset = 0.0000 0.0820 -0.0260,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment gunlight
@@ -983,8 +1125,8 @@ module Base
 
 		attachment laser
 		{
-			offset = 0.0000 0.1100 0.0050,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0870 -0.0060,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment stock
@@ -995,8 +1137,8 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4020 0.0270,
-			rotate = -90.0000 0.0000 -180.0000,
+			offset = 0.0000 0.1380 -0.0240,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
 	model ColtPeacemaker
@@ -1011,7 +1153,7 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.2100 0.0280,
+			offset = 0.0000 0.2000 0.0280,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
@@ -1071,13 +1213,13 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.1860 0.0230,
+			offset = 0.0000 0.1790 -0.0230,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
 		attachment silencer
 		{
-			offset = 0.0000 0.1680 0.0230,
+			offset = 0.0000 0.1790 -0.0240,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
@@ -1087,13 +1229,13 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.1860 0.0230,
+			offset = 0.0000 0.1800 -0.0240,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
 		attachment silencer
 		{
-			offset = 0.0000 0.1680 0.0230,
+			offset = 0.0000 0.1800 -0.0240,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
@@ -1103,20 +1245,20 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.2080 0.0240,
+			offset = 0.0000 0.2080 -0.0240,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
 		attachment silencer
 		{
-			offset = 0.0000 0.2100 0.0240,
+			offset = 0.0000 0.2060 -0.0240,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment scope
 		{
-			offset = 0.0000 0.1190 0.0340,
-			rotate = 180.0000 1.0000 180.0000,
+			offset = 0.0000 0.1190 -0.0330,
+			rotate = 0.0000 0.0000 180.0000,
 		}
 	}
 	model Glock17
@@ -1143,8 +1285,8 @@ module Base
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0120 0.0260,
-			rotate = -180.0000 0.0000 -180.0000,
+			offset = 0.0000 0.0120 -0.0260,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment gunlight
@@ -1167,8 +1309,8 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.1200 0.0210,
-			rotate = -180.0000 0.0000 -180.0000,
+			offset = 0.0000 0.1160 -0.0200,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
 	model MP5
@@ -1177,7 +1319,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.2570 -0.0270,
+			offset = 0.0000 0.2450 0.0290,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -1307,8 +1449,8 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.1660 -0.0050,
-			rotate = 0.0000 17.0000 0.0000,
+			offset = 0.0000 0.1210 0.0030,
+			rotate = 0.0000 2.0000 0.0000,
 		}
 
 		attachment gunlight
@@ -1371,7 +1513,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.1240 0.0260,
+			offset = 0.0000 0.1450 -0.0130,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -1407,8 +1549,8 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.2200 0.0180,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.1160 0.0110,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment gunlight
@@ -1425,14 +1567,14 @@ module Base
 
 		attachment stock
 		{
-			offset = 0.0000 0.0270 0.0010,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment silencer
 		{
-			offset = 0.0000 0.1010 0.0260,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.1260 -0.0130,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
 	model Model700
@@ -1466,8 +1608,8 @@ module Base
 
 		attachment reddot
 		{
-			offset = 0.0000 0.1050 -0.0470,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.1050 0.0440,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment gunlight
@@ -1478,7 +1620,7 @@ module Base
 
 		attachment laser
 		{
-			offset = -0.0210 0.3210 -0.0360,
+			offset = -0.0120 0.3210 0.0280,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -1502,7 +1644,7 @@ module Base
 
 		attachment bipod
 		{
-			offset = 0.0000 0.3170 -0.0150,
+			offset = 0.0000 0.3170 -0.0050,
 			rotate = -0.0000 0.0000 -0.0000,
 		}
 	}
@@ -1532,7 +1674,7 @@ module Base
 		attachment scope
 		{
 			offset = 0.0000 0.1160 0.0370,
-			rotate = 0.0000 0.0000 -180.0000,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment reddot
@@ -1578,77 +1720,76 @@ module Base
 		}
 	}
 	model Model788_Sawn
-{
-mesh = weapons/firearm/BoltActionRifle_Sawn,
+	{
+		mesh = weapons/firearm/BoltActionRifle_Sawn,
+		texture = Weapons/firearm/BoltActionRifle_Wood,
 
-texture = Weapons/firearm/BoltActionRifle_Wood,
+		attachment bayonet
+		{
+			offset = 0.0000 0.3030 0.0080,
+			rotate = 0.0000 0.0000 0.0000,
+		}
 
-attachment bayonet
-{
-	offset = 0.0000 0.4340 0.0080,
-	rotate = 0.0000 0.0000 0.0000,
-}
+		attachment muzzle
+		{
+			offset = 0.0000 0.3530 0.0340,
+			rotate = -90.0000 0.0000 180.0000,
+		}
 
-attachment muzzle
-{
-	offset = 0.0000 0.353 0.034,
-	rotate = -90.0000 0.0000 180.0000,
-}
+		attachment sling
+		{
+			offset = 0.0000 0.3280 0.0420,
+			rotate = 180.0000 0.0000 180.0000,
+		}
 
-attachment sling
-{
-	offset = 0.0000 0.2950 0.0050,
-	rotate = 180.0000 0.0000 180.0000,
-}
+		attachment scope
+		{
+			offset = 0.0000 0.1160 0.0340,
+			rotate = 180.0000 0.0000 0.0000,
+		}
 
-attachment scope
-{
-	offset = 0.0000 0.1160 0.0370,
-	rotate = 0.0000 0.0000 -180.0000,
-}
+		attachment reddot
+		{
+			offset = 0.0000 0.1050 0.0470,
+			rotate = 180.0000 0.0000 180.0000,
+		}
 
-attachment reddot
-{
-	offset = 0.0000 0.1050 0.0470,
-	rotate = 180.0000 0.0000 180.0000,
-}
+		attachment gunlight
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
 
-attachment gunlight
-{
-	offset = 0.0000 0.4020 0.0270,
-	rotate = -90.0000 0.0000 -180.0000,
-}
+		attachment laser
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
 
-attachment laser
-{
-	offset = 0.0000 0.4020 0.0270,
-	rotate = -90.0000 0.0000 -180.0000,
-}
+		attachment stock
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
 
-attachment stock
-{
-	offset = 0.0000 0.0000 0.0000,
-	rotate = -90.0000 0.0000 -180.0000,
-}
+		attachment silencer
+		{
+			offset = 0.0000 0.3410 0.0340,
+			rotate = 180.0000 0.0000 180.0000,
+		}
 
-attachment silencer
-{
-	offset = 0.0000 0.4920 0.0340,
-	rotate = 180.0000 0.0000 180.0000,
-}
+		attachment recoilpad
+		{
+			offset = 0.0000 -0.1650 -0.0300,
+			rotate = -178.0000 0.0000 180.0000,
+		}
 
-attachment recoilpad
-{
-	offset = 0.0000 -0.1650 -0.0300,
-	rotate = -178.0000 0.0000 180.0000,
-}
-
-attachment bipod
-{
-	offset = 0.0000 0.3170 0.0150,
-	rotate = -180.0000 0.0000 -180.0000,
-}
-}
+		attachment bipod
+		{
+			offset = 0.0000 0.3170 0.0150,
+			rotate = -180.0000 0.0000 -180.0000,
+		}
+	}
 	model M14
 	{
 		mesh = weapons/firearm/M14,
@@ -1685,8 +1826,8 @@ attachment bipod
 
 		attachment reddot
 		{
-			offset = 0.0000 0.1050 -0.0470,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.1050 0.0440,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment gunlight
@@ -1721,7 +1862,7 @@ attachment bipod
 
 		attachment bipod
 		{
-			offset = 0.0000 0.3170 -0.0150,
+			offset = 0.0000 0.3170 0.0030,
 			rotate = -0.0000 0.0000 -0.0000,
 		}
 	}
@@ -1731,7 +1872,7 @@ attachment bipod
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.5300 -0.0340,
+			offset = 0.0000 0.4880 0.0310,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -1749,8 +1890,8 @@ attachment bipod
 
 		attachment sling
 		{
-			offset = 0.0000 0.3090 -0.0050,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.3090 0.0140,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment scope
@@ -1785,8 +1926,8 @@ attachment bipod
 
 		attachment silencer
 		{
-			offset = 0.0000 0.5490 -0.0360,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.4910 0.0310,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment recoilpad
@@ -1807,7 +1948,7 @@ attachment bipod
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.5300 -0.0340,
+			offset = 0.0000 0.4410 -0.0340,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -1819,8 +1960,8 @@ attachment bipod
 
 		attachment sling
 		{
-			offset = 0.0000 0.2990 -0.0390,
-			rotate = -4.0000 0.0000 0.0000,
+			offset = 0.0000 0.3050 -0.0390,
+			rotate = -1.0000 0.0000 0.0000,
 		}
 
 		attachment scope
@@ -1855,7 +1996,7 @@ attachment bipod
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4950 -0.0280,
+			offset = 0.0000 0.4400 -0.0280,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -1883,7 +2024,7 @@ attachment bipod
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.4180 -0.0200,
+			offset = 0.0000 0.4180 0.0200,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -1895,14 +2036,14 @@ attachment bipod
 
 		attachment sling
 		{
-			offset = 0.0000 0.2780 0.0020,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.2730 0.0020,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment scope
 		{
-			offset = 0.0000 0.1160 0.0370,
-			rotate = 0.0000 0.0000 -180.0000,
+			offset = 0.0000 0.0200 0.0390,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment reddot
@@ -1931,7 +2072,7 @@ attachment bipod
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4200 -0.0200,
+			offset = 0.0000 0.4200 0.0200,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -1943,8 +2084,8 @@ attachment bipod
 
 		attachment bipod
 		{
-			offset = 0.0000 0.3170 -0.0150,
-			rotate = -0.0000 0.0000 -0.0000,
+			offset = 0.0000 0.2950 0.0100,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 	}
 	model Winchester73
@@ -1954,20 +2095,20 @@ attachment bipod
 
 		attachment bayonnet
 		{
-			offset = 0.0000 0.4800 0.0024,
+			offset = 0.0000 0.3560 0.0020,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.3800 0.0340,
+			offset = 0.0000 0.3790 0.0330,
 			rotate = -90.0000 0.0000 180.0000,
 		}
 
 		attachment sling
 		{
-			offset = 0.0000 0.2950 -0.0170,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.2950 0.0180,
+			rotate = 180.0000 2.0000 180.0000,
 		}
 
 		attachment scope
@@ -2002,14 +2143,14 @@ attachment bipod
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4710 -0.0320,
+			offset = 0.0000 0.3790 0.0330,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment recoilpad
 		{
-			offset = 0.0000 -0.1650 0.0300,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 -0.1590 -0.0300,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment bipod
@@ -2025,7 +2166,7 @@ attachment bipod
 
 		attachment bayonnet
 		{
-			offset = 0.0000 0.4800 0.0024,
+			offset = 0.0000 0.3560 0.0020,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -2037,8 +2178,8 @@ attachment bipod
 
 		attachment sling
 		{
-			offset = 0.0000 0.2950 -0.0170,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.2950 0.0180,
+			rotate = 180.0000 2.0000 180.0000,
 		}
 
 		attachment scope
@@ -2073,14 +2214,14 @@ attachment bipod
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4680 -0.0320,
+			offset = 0.0000 0.3790 0.0330,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment recoilpad
 		{
-			offset = 0.0000 -0.1650 0.0300,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 -0.1590 -0.0300,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment bipod
@@ -2172,8 +2313,8 @@ attachment bipod
 
 		attachment sling
 		{
-			offset = 0.0000 0.3120 -0.0120,
-			rotate = 5.0000 -6.0000 1.0000,
+			offset = 0.0000 0.3120 0.0150,
+			rotate = 175.0000 -6.0000 -180.0000,
 		}
 
 		attachment scope
@@ -2196,8 +2337,8 @@ attachment bipod
 
 		attachment laser
 		{
-			offset = 0.0120 0.3710 -0.0500,
-			rotate = -90.0000 -86.0000 -90.0000,
+			offset = -0.0010 0.2850 0.0240,
+			rotate = 0.0000 -90.0000 0.0000,
 		}
 
 		attachment stock
@@ -2208,7 +2349,7 @@ attachment bipod
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4020 -0.0240,
+			offset = 0.0000 0.4020 0.0260,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
@@ -2249,8 +2390,8 @@ attachment bipod
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0470 -0.0610,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.0470 0.0640,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment gunlight
@@ -2694,24 +2835,44 @@ attachment bipod
 								mesh = weapons/firearm/attachments/Sling_wm,
 								texture = weapons/firearm/attachments/Sling_Camo_wm,
 					}
+	model Sling_Small
+	{
+					mesh = weapons/firearm/attachments/Sling_Small,
+					texture = weapons/firearm/attachments/Sling_Small,
+  }
+	model Sling_Small_Leather
+	{
+					mesh = weapons/firearm/attachments/Sling_Small_Leather,
+					texture = weapons/firearm/attachments/Sling_Small,
+  }
+	model Sling_Small_Olive
+	{
+					mesh = weapons/firearm/attachments/Sling_Small_Olive,
+					texture = weapons/firearm/attachments/Sling_Small,
+  }
+	model Sling_Small_Camo
+	{
+					mesh = weapons/firearm/attachments/Sling_Small_Camo,
+					texture = weapons/firearm/attachments/Sling_Small,
+  }
 	model Sling_Short
 	{
-					mesh = weapons/firearm/attachments/MP5_Sling_Short,
+					mesh = weapons/firearm/attachments/Sling_Short,
 					texture = weapons/firearm/attachments/Sling,
   }
 	model Sling_Short_Leather
 					{
-								mesh = weapons/firearm/attachments/MP5_Sling_Short,
+								mesh = weapons/firearm/attachments/Sling_Short,
 								texture = weapons/firearm/attachments/Sling_Leather,
 					}
 	model Sling_Short_Olive
 					{
-								mesh = weapons/firearm/attachments/MP5_Sling_Short,
+								mesh = weapons/firearm/attachments/Sling_Short,
 								texture = weapons/firearm/attachments/Sling_OliveGreen,
 					}
 	model Sling_Short_Camo
 					{
-								mesh = weapons/firearm/attachments/MP5_Sling_Short,
+								mesh = weapons/firearm/attachments/Sling_Short,
 								texture = weapons/firearm/attachments/Sling_Camo,
 					}
 	model Rifle_Ammostrap
@@ -2740,10 +2901,10 @@ attachment bipod
 								texture = weapons/firearm/attachments/Sling_Camo,
 					}
 	model Shotgun_Sling_Short
-						{
-							mesh = Weapons/Firearm/attachments/Sling_Short,
-							texture = Weapons/firearm/attachments/Sling,
-						}
+	{
+		mesh = Weapons/Firearm/attachments/Sling_Short,
+		texture = Weapons/firearm/attachments/Sling,
+	}
 	model Shotgun_Sling_Short_Leather
 					{
 								mesh = weapons/firearm/attachments/Sling_Short,

@@ -1,17 +1,6 @@
 module Base
 {
 
-recipe Make Improvised Gun Cleaning Kit
-{
-	 [Recipe.GetItemTypes.Firearms_Service],
-	 Toothbrush,
-	 Solvent=1,
-
-	 Result:ImprovisedGunToolKit,
-	 Time:20.0,
-	 Category:Firearms,
-	 OnCreate:onImprovisedSilencer_OnCreate,
-}
 
 	/************************Guns************************/
 	recipe Saw Off Rifle
@@ -90,6 +79,7 @@ recipe Make Improvised Gun Cleaning Kit
      Time:15,
      OnTest:onExtendStock_OnTest,
      OnCreate:onExtendStock_OnCreate,
+	 IsHidden:true,
    }
 
  		recipe Detract Stock
@@ -100,6 +90,7 @@ recipe Make Improvised Gun Cleaning Kit
       Time:30,
       OnTest:onDetractStock_OnTest,
       OnCreate:onDetractStock_OnCreate,
+	  IsHidden:true,
     }
 
 			recipe Extend Stock
@@ -110,6 +101,7 @@ recipe Make Improvised Gun Cleaning Kit
 		     Time:15,
 		     OnTest:onExtendStock_OnTest,
 		     OnCreate:onExtendStock_OnCreate,
+			 IsHidden:true,
 		   }
 
  		recipe Detract Stock
@@ -120,6 +112,7 @@ recipe Make Improvised Gun Cleaning Kit
       Time:30,
       OnTest:onDetractStock_OnTest,
       OnCreate:onDetractStock_OnCreate,
+	  IsHidden:true,
     }
 
 			recipe Extend Stock
@@ -130,6 +123,7 @@ recipe Make Improvised Gun Cleaning Kit
 		     Time:15,
 		     OnTest:onExtendStock_OnTest,
 		     OnCreate:onExtendStock_OnCreate,
+			 IsHidden:true,
 		   }
 
  		recipe Detract Stock
@@ -140,6 +134,7 @@ recipe Make Improvised Gun Cleaning Kit
       Time:30,
       OnTest:onDetractStock_OnTest,
       OnCreate:onDetractStock_OnCreate,
+	  IsHidden:true,
     }
 
 			recipe Extend Stock
@@ -150,6 +145,7 @@ recipe Make Improvised Gun Cleaning Kit
 		     Time:15,
 		     OnTest:onExtendStock_OnTest,
 		     OnCreate:onExtendStock_OnCreate,
+			 IsHidden:true,
 		   }
 
  		recipe Detract Stock
@@ -160,6 +156,7 @@ recipe Make Improvised Gun Cleaning Kit
       Time:30,
       OnTest:onDetractStock_OnTest,
       OnCreate:onDetractStock_OnCreate,
+	  IsHidden:true,
     }
 
 		recipe Convert to 5.56x45mm

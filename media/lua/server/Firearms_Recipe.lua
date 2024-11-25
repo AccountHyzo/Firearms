@@ -18,6 +18,14 @@ end
 
 GiveMaintenanceXP = Recipe.OnGiveXP.CleanGun
 
+function onImprovisedSilencer_OnTest(item)
+		if SandboxVars.Firearms.ImprovisedSuppressors then
+			return true;
+		else
+			return false;
+		end
+end
+
 function onImprovisedSilencer_OnCreate(items, result, player)
 	local inv = player:getInventory();
 	for i=0,items:size()-1 do
@@ -72,6 +80,7 @@ function onSawnOff_OnCreate(items, result, player)
     end
 end
 
+
 function onExtendStock_OnTest(item)
 		if item:getSubCategory() == "Firearm" then
 			local stock = item:getStock()
@@ -116,6 +125,7 @@ function onExtendStock_OnCreate(items, result, player, firstHand, secondHand)
 			local canon = item:getCanon()
 			local stock = item:getStock()
 			local pad = item:getRecoilpad()
+			local firemode = item:getFireMode()
 			if clip then
 				result:setContainsClip(true)
 				result:setCurrentAmmoCount(item:getCurrentAmmoCount())
@@ -170,6 +180,7 @@ function onDetractStock_OnCreate(items, result, player, firstHand, secondHand)
 			local canon = item:getCanon()
 			local stock = item:getStock()
 			local pad = item:getRecoilpad()
+			local firemode = item:getFireMode()
 			if clip then
 				result:setContainsClip(true)
 				result:setCurrentAmmoCount(item:getCurrentAmmoCount())

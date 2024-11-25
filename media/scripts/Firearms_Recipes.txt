@@ -26,6 +26,7 @@ module Base
 		 SkillRequired:MetalWelding=1,
 	 	 OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
 	   OnCreate:onImprovisedSilencer_OnCreate,
+		 OnTest:onImprovisedSilencer_OnTest,
 	}
 
 	recipe Make Improvised Bottle Silencer
@@ -34,6 +35,7 @@ module Base
 	   DuctTape=2,
 
 	   Result:Silencer_PopBottle,
+		 OnTest:onImprovisedSilencer_OnTest,
 	   Time:300.0,
 	}
 

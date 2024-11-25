@@ -1,4 +1,18 @@
--- 	self.character:getEmitter():playSound("M1EnBloc");
+function firearms_setRackAfterShoot(_player, _firearm)
+	if not player or not firearm then return; end
+	if string.find(firearm:getType(), "SPAS12") then
+		local firemode = firearm:getFireMode()
+		if not firearm then return; end
+		if "Auto" == firemode then
+			firearm:setRackAfterShoot(false);
+		elseif "Single" == firemode then
+			firearm:setRackAfterShoot(true)
+		end
+	end
+end
+
+Events.OnEquipPrimary.Add(firearms_setRackAfterShoot)
+
 local original_attackHook
 
 ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapon)
@@ -9,20 +23,26 @@ ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapo
 	end
 	if weapon:isRanged() and not character:isDoShove() then
     local canon = weapon:getCanon()
-		if ISReloadWeaponAction.canShoot(weapon) then
+		if not canon then
+			original_attackHook(character, chargeDelta, weapon)
+		elseif ISReloadWeaponAction.canShoot(weapon) then
 			character:playSound(weapon:getSwingSound());
 			local radius = weapon:getSoundRadius();
 			if isClient() then -- limit sound radius in MP
 				radius = radius / 2.2;
 			end
 			character:addWorldSoundUnlessInvisible(radius, weapon:getSoundVolume(), false);
-      if not canon then
-        if getDebug() then print(canon); end
-			  character:startMuzzleFlash()
-      elseif canon and not string.find(canon:getType(), "Silencer") then
-        if getDebug() then print(canon); end
-        character:startMuzzleFlash()
-      end
+			if not canon then
+				if getDebug() then print(canon); end
+				character:startMuzzleFlash()
+			--[[elseif canon and not string.find(canon:getType(), "Silencer") then
+				if getDebug() then print(canon); end
+				character:startMuzzleFlash()
+			end]]--
+			elseif canon and not canon:hasTag("Silencer") then
+				if getDebug() then print(canon); end
+				character:startMuzzleFlash()
+			end
 			character:DoAttack(0);
 		else
 			character:DoAttack(0);
@@ -30,11 +50,12 @@ ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapo
 		end
 	else
 		ISTimedActionQueue.clear(character)
-		if(chargeDelta == nil) then
+		original_attackHook(character, chargeDelta, weapon)
+		--[[if(chargeDelta == nil) then
 			character:DoAttack(0);
 		else
 			character:DoAttack(chargeDelta);
-		end
+		end]]--
 	end
 end
 
@@ -48,7 +69,7 @@ Events.OnGameBoot.Add(function()
     ISReloadWeaponAction.attackHook = ISReloadWeaponAction.attackHookFirearms
 end)
 
-local original_setReloadSpeed = ISReloadWeaponAction.setReloadSpeed
+--[[local original_setReloadSpeed = ISReloadWeaponAction.setReloadSpeed
 -- This is used by other timed actions.
 function ISReloadWeaponAction.setReloadSpeed(character, rack)
 	local baseReloadSpeed = 1
@@ -135,4 +156,4 @@ ISReloadWeaponAction.ReloadBestMagazine = function(playerObj, gun)
 	end
 	ISTimedActionQueue.add(ISLoadBulletsInMagazine:new(playerObj, magazine, ammoCount))
 	ISTimedActionQueue.add(ISInsertMagazine:new(playerObj, gun, magazine))
-end
+end]]--

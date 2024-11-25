@@ -3,6 +3,20 @@ local function predicateNotBroken(item)
 	return not item:isBroken()
 end
 
+local original_onChangefiremode = ISInventoryPaneContextMenu.onChangefiremode
+
+ISInventoryPaneContextMenu.onChangefiremode = function(playerObj, weapon, newfiremode)
+	if not string.find(weapon:getType(), "SPAS12") then
+		original_onChangefiremode(playerObj, weapon, newfiremode)
+	end
+	if "Auto" == newfiremode then
+		weapon:setRackAfterShoot(false);
+	elseif "Single" == newfiremode then
+		weapon:setRackAfterShoot(true)
+	end
+	original_onChangefiremode(playerObj, weapon, newfiremode)
+end
+
 --Override addAttachment function if the Screwdriver Requirement is turned off in the sandbox settings
 local function addAttachment(player, context, items)
   if SandboxVars.Firearms.ScrewdriverReq then return end;
@@ -98,4 +112,3 @@ local function addAttachment(player, context, items)
 end
 
 Events.OnFillInventoryObjectContextMenu.Add(addAttachment);
-

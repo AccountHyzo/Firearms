@@ -11,7 +11,12 @@
 - M24
 - Sawn-off Hunting Rifle
 
+
 **New models for all vanilla firearms**  
+![Firearms B41](/firearms1.png "Firearms1")
+![Firearms B41](/firearms2.png "Firearms2")
+![Firearms B41](/firearms3.png "Firearms3")
+![Firearms B41](/firearms4.png "Firearms4")
 
 **Working silencers to specific weapons by caliber.**  
 Excluded from silencers are:

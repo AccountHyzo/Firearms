@@ -1,15 +1,21 @@
 VERSION = 1,
 
-option Firearms.SuppressorBreak
-{
-	type = boolean, default = true,
-	page = Firearms, translation = Firearms_SuppressorBreak,
-}
-
 option Firearms.ScrewdriverReq
 {
 	type = boolean, default = false,
 	page = Firearms, translation = Firearms_ScrewdriverReq,
+}
+
+option Firearms.ImprovisedSuppressors
+{
+type = boolean, default = true,
+page = Firearms, translation = Firearms_ImprovisedSuppressors,
+}
+
+option Firearms.SuppressorBreak
+{
+type = boolean, default = true,
+page = Firearms, translation = Firearms_SuppressorBreak,
 }
 
 option Firearms.BottleSuppressorBreakChance
@@ -82,20 +88,19 @@ option Firearms.SuppressorEffectivenessShotgunShells
 	valueTranslation = Firearms_SuppressorEffectiveness,
 }
 
+option Firearms.SuppressorEffectivenessRevolver
+{
+type = enum, numValues = 10, default = 5,
+page = Firearms, translation = Firearms_SuppressorEffectivenessRevolver,
+valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
 option Firearms.SuppressorEffectivenessImprovised
 {
 	type = enum, numValues = 10, default = 9,
 	page = Firearms, translation = Firearms_SuppressorEffectivenessImprovised,
 	valueTranslation = Firearms_SuppressorEffectiveness,
 }
-
-option Firearms.SuppressorEffectivenessRevolver
-{
-	type = enum, numValues = 10, default = 5,
-	page = Firearms, translation = Firearms_SuppressorEffectivenessRevolver,
-	valueTranslation = Firearms_SuppressorEffectiveness,
-}
-
 
 option Firearms.LootSuppressor
 {
@@ -111,52 +116,82 @@ page = LootRarity, translation = Firearms_LootAmmoCans,
 valueTranslation = Rarity,
 }
 
-option Firearms.SpawnSuppressors
-{
-type = boolean, default = true,
-page = Firearms, translation = Firearms_SpawnSuppressors,
-}
-
-option Firearms.SpawnHandgunSuppressors
-{
-type = boolean, default = true,
-page = Firearms, translation = Firearms_SpawnHandgunSuppressors,
-}
-
-option Firearms.SpawnRifleSuppressors
-{
-type = boolean, default = true,
-page = Firearms, translation = Firearms_SpawnRifleSuppressors,
-}
-
-option Firearms.SpawnShotgunSuppressors
-{
-type = boolean, default = false,
-page = Firearms, translation = Firearms_SpawnShotgunSuppressors,
-}
-
-option Firearms.SpawnRevolverSuppressors
-{
-type = boolean, default = false,
-page = Firearms, translation = Firearms_SpawnRevolverSuppressors,
-}
-
-option Firearms.SpawnAmmoCans
-{
-type = boolean, default = true,
-page = Firearms, translation = Firearms_SpawnAmmoCans,
-}
-
 option Firearms.SpawnAK47
 {
 	type = boolean, default = true,
 	page = FirearmsSpawns, translation = Firearms_SpawnAK47,
 }
 
-option Firearms.Spawn1800s
+option Firearms.SpawnAR15
 {
 	type = boolean, default = true,
-	page = FirearmsSpawns, translation = Firearms_Spawn1800s,
+	page = FirearmsSpawns, translation = Firearms_SpawnAR15,
+}
+
+option Firearms.SpawnColtPeacemaker
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnColtPeacemaker,
+}
+
+option Firearms.SpawnColtAce
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnColtAce,
+}
+
+option Firearms.SpawnAnaconda
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnAnaconda,
+}
+
+option Firearms.SpawnM733
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnM733,
+}
+
+option Firearms.SpawnPython
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnPython,
+}
+
+option Firearms.ColtScout
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnColtScout,
+}
+
+option Firearms.SpawnFNFal
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnFNFal,
+}
+
+option Firearms.SpawnGlock17
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnGlock17,
+}
+
+option Firearms.SpawnM37
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnM37,
+}
+
+option Firearms.SpawnM16A2
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnM16A2,
+}
+
+option Firearms.SpawnM24
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnM24,
 }
 
 option Firearms.SpawnM60
@@ -171,10 +206,40 @@ type = boolean, default = true,
 page = FirearmsSpawns, translation = Firearms_SpawnMAC10,
 }
 
+option Firearms.SpawnMossberg500
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnMossberg500,
+}
+
+option Firearms.SpawnMossberg500Tactical
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnMossberg500Tactical,
+}
+
 option Firearms.SpawnMP5
 {
 	type = boolean, default = true,
 	page = FirearmsSpawns, translation = Firearms_SpawnMP5,
+}
+
+option Firearms.SpawnRemington870
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnRemington870,
+}
+
+option Firearms.SpawnRossi92
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnRossi92,
+}
+
+option Firearms.SpawnRuger22
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnRuger22,
 }
 
 option Firearms.SpawnSKS
@@ -193,4 +258,52 @@ option Firearms.SpawnUZI
 {
 	type = boolean, default = true,
 	page = FirearmsSpawns, translation = Firearms_SpawnUZI,
+}
+
+option Firearms.SpawnWinchester73
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnWinchester73,
+}
+
+option Firearms.SpawnWinchester94
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnWinchester94,
+}
+
+option Firearms.SpawnSuppressors
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnSuppressors,
+}
+
+option Firearms.SpawnHandgunSuppressors
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnHandgunSuppressors,
+}
+
+option Firearms.SpawnRifleSuppressors
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnRifleSuppressors,
+}
+
+option Firearms.SpawnShotgunSuppressors
+{
+type = boolean, default = false,
+page = FirearmsSpawns, translation = Firearms_SpawnShotgunSuppressors,
+}
+
+option Firearms.SpawnRevolverSuppressors
+{
+type = boolean, default = false,
+page = FirearmsSpawns, translation = Firearms_SpawnRevolverSuppressors,
+}
+
+option Firearms.SpawnAmmoCans
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnAmmoCans,
 }

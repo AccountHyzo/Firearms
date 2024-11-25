@@ -14,7 +14,8 @@ module Base
 		MountOn					=	Rugerm7722; ColtAce,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
-		WorldStaticModel		=	Silencer_wm,
+		WorldStaticModel		=	Silencer,
+		Tags								=	Silencer;Caliber22,
 	}
 
 
@@ -29,7 +30,8 @@ module Base
 		MountOn					=	Glock17; Pistol; MP5; UZI,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
-		WorldStaticModel		=	Silencer_wm,
+		WorldStaticModel		=	Silencer,
+		Tags								=	Silencer;Caliber9mm,
 	}
 
 	item 45Silencer
@@ -43,7 +45,8 @@ module Base
 		MountOn					=	Pistol2; Mac10,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
-		WorldStaticModel		=	Silencer_wm,
+		WorldStaticModel		=	Silencer,
+		Tags								=	Silencer;Caliber45,
 	}
 
 	item 38Silencer
@@ -57,7 +60,8 @@ module Base
 		MountOn					=	ColtPython; ColtPythonHunter,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
-		WorldStaticModel		=	Silencer_wm,
+		WorldStaticModel		=	Silencer,
+		Tags								=	Silencer;Caliber38,
 	}
 
 	item 223Silencer
@@ -71,7 +75,8 @@ module Base
 		MountOn					=	VarmintRifle; AssaultRifle; M16A2; M733,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
-		WorldStaticModel		=	Silencer_wm,
+		WorldStaticModel		=	Silencer,
+		Tags								=	Silencer;Caliber223,
 	}
 
 	item 308Silencer
@@ -85,7 +90,8 @@ module Base
 		MountOn					=	AssaultRifle2; M24Rifle; FN_FAL; SKS; AK47,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
-		WorldStaticModel		=	Silencer_wm,
+		WorldStaticModel		=	Silencer,
+		Tags								=	Silencer;Caliber308,
 	}
 
 	item ShotgunSilencer
@@ -99,7 +105,8 @@ module Base
 		MountOn					=	Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
-		WorldStaticModel		=	Silencer_wm,
+		WorldStaticModel		=	Silencer,
+		Tags								=	Silencer;Caliber12ga,
 	}
 
 	item ImprovisedSilencer
@@ -113,7 +120,8 @@ module Base
 		MountOn					=	Pistol; Pistol2; Glock17; AR15; AssaultRifle2; M24Rifle; FN_FAL; SKS; AK47; VarmintRifle; HuntingRifle; HuntingRifle_Sawn  ; AssaultRifle; M16A2; M733; MP5; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94; Rossi92; ColtSingleAction22; ColtAnaconda; ColtPython; ColtPythonHunter; ColtAce; M1Garand,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_ImprovisedSilencer,
-		WorldStaticModel		=	Silencer_Improvised_wm,
+		WorldStaticModel		=	Silencer_Improvised,
+		Tags								=	Silencer;ImprovisedSilencer;ImprovisedSilencerFlashlight,
 	}
 
 	item Silencer_PopBottle
@@ -127,7 +135,8 @@ module Base
 		MountOn					=	Pistol; Pistol2; Glock17; AR15; AssaultRifle2; M24Rifle; FN_FAL; SKS; AK47; VarmintRifle; HuntingRifle; HuntingRifle_Sawn  ; AssaultRifle; M16A2; M733; MP5; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94; Rossi92; ColtSingleAction22; ColtAnaconda; ColtPython; ColtPythonHunter; ColtAce; M1Garand,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_ImprovisedSilencer,
-		WorldStaticModel		=	Silencer_PopBottle_wm,
+		WorldStaticModel		=	Silencer_PopBottle,
+		Tags								=	Silencer;ImprovisedSilencer;ImprovisedSilencerBottle,
 	}
 
 	item 9mmCompensator
@@ -144,6 +153,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Compensator,
 		WorldStaticModel		=	Compensator_Pistol_wm,
+		Tags								=	Compensator;Caliber9mm,
 	}
 
 
@@ -210,10 +220,10 @@ module Base
 		MountOn					=	HuntingRifle; VarmintRifle; M24Rifle; HuntingRifle_Sawn; AssaultRifle2; FN_FAL,
 		PartType				=	Stock,
 		Tooltip					=	Tooltip_Bipod,
-		WorldStaticModel		=	Bipod_wm,
+		WorldStaticModel		=	Bipod,
 	}
 
-	item Rifle_Bipod
+	item AmmoStock
 	{
 		Type					=	WeaponPart,
 		DisplayName				=	Ammostrap,
@@ -238,11 +248,11 @@ module Base
 		Weight					=	0.5,
 		WeightModifier			=	0.25,
 		ReloadTimeModifier		=	5,
-		RecoilDelayModifier		=	-15.0,
+		RecoilDelayModifier		=	-20.0,
 		MountOn					=	Mossberg500Tactical,
 		PartType				=	RecoilPad,
 		Tooltip					=	Tooltip_TacticalStock,
-		WorldStaticModel		=	Stock_Tactical_wm,
+		WorldStaticModel		=	Stock_Tactical,
 	}
 
 	item ShotgunStock
@@ -254,11 +264,11 @@ module Base
 		Weight					=	0.5,
 		WeightModifier			=	0.5,
 		ReloadTimeModifier		=	1,
-		RecoilDelayModifier		=	-10.0,
+		RecoilDelayModifier		=	-15.0,
 		MountOn					=	Mossberg500Tactical,
 		PartType				=	RecoilPad,
 		Tooltip					=	Tooltip_TacticalStock,
-		WorldStaticModel		=	Stock_wm,
+		WorldStaticModel		=	Stock,
 	}
 
 	item LightShotgunStock
@@ -270,11 +280,11 @@ module Base
 		Weight					=	0.25,
 		WeightModifier			=	0.25,
 		ReloadTimeModifier		=	1,
-		RecoilDelayModifier		=	-7.5,
+		RecoilDelayModifier		=	-10,
 		MountOn					=	Mossberg500Tactical,
 		PartType				=	RecoilPad,
 		Tooltip					=	Tooltip_TacticalStock,
-		WorldStaticModel		=	Stock_Light_wm,
+		WorldStaticModel		=	Stock_Light,
 	}
 
 	item MP5_Stock_Extended

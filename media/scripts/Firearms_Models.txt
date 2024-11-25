@@ -437,7 +437,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.4270 0.0290,
+			offset = 0.0000 0.3890 0.0290,
 			rotate = -90.0000 0.0000 180.0000,
 		}
 
@@ -479,7 +479,7 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4230 0.0280,
+			offset = 0.0000 0.3880 0.0280,
 			rotate = 0.0000 0.0000 -180.0000,
 		}
 
@@ -508,7 +508,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.4270 0.0290,
+			offset = 0.0000 0.3890 0.0290,
 			rotate = -90.0000 0.0000 180.0000,
 		}
 
@@ -550,7 +550,7 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4230 0.0280,
+			offset = 0.0000 0.3890 0.0280,
 			rotate = 0.0000 0.0000 -180.0000,
 		}
 
@@ -579,7 +579,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.4270 0.0290,
+			offset = 0.0000 0.3880 0.0290,
 			rotate = -90.0000 0.0000 180.0000,
 		}
 
@@ -692,7 +692,7 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4050 0.0280,
+			offset = 0.0000 0.4260 0.0290,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -1267,7 +1267,7 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.1180 0.0200,
+			offset = 0.0000 0.1180 -0.0210,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -1309,7 +1309,7 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.1160 -0.0200,
+			offset = 0.0000 0.1160 -0.0210,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
@@ -2307,62 +2307,62 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.4190 0.0250,
+			offset = 0.0000 0.4250 -0.0250,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
 		attachment sling
 		{
-			offset = 0.0000 0.3120 0.0150,
-			rotate = 175.0000 -6.0000 -180.0000,
+			offset = 0.0000 0.3120 -0.0150,
+			rotate = 6.0000 20.0000 -4.0000,
 		}
 
 		attachment scope
 		{
-			offset = 0.0000 0.0410 0.0550,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0560 -0.0610,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0470 0.0600,
+			offset = 0.0000 0.0470 -0.0640,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.4020 0.0270,
-			rotate = -90.0000 0.0000 -180.0000,
+			offset = 0.0000 0.4020 -0.0270,
+			rotate = -90.0000 0.0000 180.0000,
 		}
 
 		attachment laser
 		{
-			offset = -0.0010 0.2850 0.0240,
-			rotate = 0.0000 -90.0000 0.0000,
+			offset = 0.0130 0.3710 -0.0410,
+			rotate = 0.0000 -90.0000 180.0000,
 		}
 
 		attachment stock
 		{
-			offset = 0.0000 0.4020 0.0270,
-			rotate = -90.0000 0.0000 -180.0000,
+			offset = 0.0000 0.4020 -0.0270,
+			rotate = -90.0000 0.0000 180.0000,
 		}
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4020 0.0260,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.4030 -0.0250,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment magazine
 		{
-			offset = 0.0000 0.0810 0.0200,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.0810 -0.0200,
+			rotate = 0.0000 0.0000 180.0000,
 		}
 
 		attachment world
 		{
-			offset = -0.0170 0.0860 0.0000,
-			rotate = 0.0000 0.0000 -1.0000,
+			offset = -0.0190 0.0830 -0.0120,
+			rotate = 0.0000 0.0000 180.0000,
 		}
 	}
 	model M16A2
@@ -2372,62 +2372,62 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.4150 0.0260,
+			offset = 0.0000 0.4250 -0.0250,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
 		attachment sling
 		{
-			offset = 0.0000 0.3120 0.0150,
-			rotate = 177.0000 -14.0000 178.0000,
+			offset = 0.0000 0.3120 -0.0150,
+			rotate = 6.0000 20.0000 -4.0000,
 		}
 
 		attachment scope
 		{
-			offset = 0.0000 0.0560 0.0610,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0560 -0.0610,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0470 0.0640,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0470 -0.0640,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.4020 0.0270,
-			rotate = -90.0000 0.0000 -180.0000,
+			offset = 0.0000 0.4020 -0.0270,
+			rotate = -90.0000 0.0000 180.0000,
 		}
 
 		attachment laser
 		{
 			offset = 0.0130 0.3710 -0.0410,
-			rotate = 0.0000 -90.0000 0.0000,
+			rotate = 0.0000 -90.0000 180.0000,
 		}
 
 		attachment stock
 		{
-			offset = 0.0000 0.4020 0.0270,
-			rotate = -90.0000 0.0000 -180.0000,
+			offset = 0.0000 0.4020 -0.0270,
+			rotate = -90.0000 0.0000 180.0000,
 		}
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4020 0.0250,
+			offset = 0.0000 0.4030 -0.0250,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment magazine
 		{
-			offset = 0.0000 0.0810 0.0200,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.0810 -0.0200,
+			rotate = 0.0000 0.0000 180.0000,
 		}
 
 		attachment world
 		{
-			offset = -0.0190 0.0830 0.0120,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = -0.0190 0.0830 -0.0120,
+			rotate = 0.0000 0.0000 180.0000,
 		}
 	}
 	model M733
@@ -2861,231 +2861,227 @@ module Base
 					texture = weapons/firearm/attachments/Sling,
   }
 	model Sling_Short_Leather
-					{
-								mesh = weapons/firearm/attachments/Sling_Short,
-								texture = weapons/firearm/attachments/Sling_Leather,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Short,
+		texture = weapons/firearm/attachments/Sling_Leather,
+	}
 	model Sling_Short_Olive
-					{
-								mesh = weapons/firearm/attachments/Sling_Short,
-								texture = weapons/firearm/attachments/Sling_OliveGreen,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Short,
+		texture = weapons/firearm/attachments/Sling_OliveGreen,
+	}
 	model Sling_Short_Camo
-					{
-								mesh = weapons/firearm/attachments/Sling_Short,
-								texture = weapons/firearm/attachments/Sling_Camo,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Short,
+		texture = weapons/firearm/attachments/Sling_Camo,
+	}
 	model Rifle_Ammostrap
-						{
-							mesh = weapons/firearm/attachments/Rifle_Ammo_Sling,
-							texture = Weapons/firearm/attachments/Sling_Ammo,
-						}
+	{
+		mesh = weapons/firearm/attachments/Rifle_Ammo_Sling,
+		texture = Weapons/firearm/attachments/Sling_Ammo,
+	}
 	model Shotgun_Sling
-					{
-							mesh = weapons/firearm/attachments/Sling_Shotgun,
-							texture = Weapons/firearm/attachments/Sling,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Shotgun,
+		texture = Weapons/firearm/attachments/Sling,
+	}
 	model Shotgun_Sling_Leather
-					{
-								mesh = weapons/firearm/attachments/Sling_Shotgun,
-								texture = weapons/firearm/attachments/Sling_Leather,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Shotgun,
+		texture = weapons/firearm/attachments/Sling_Leather,
+	}
 	model Shotgun_Sling_Olive
-					{
-								mesh = weapons/firearm/attachments/Sling_Shotgun,
-								texture = weapons/firearm/attachments/Sling_OliveGreen,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Shotgun,
+		texture = weapons/firearm/attachments/Sling_OliveGreen,
+	}
 	model Shotgun_Sling_Camo
-					{
-								mesh = weapons/firearm/attachments/Sling_Shotgun,
-								texture = weapons/firearm/attachments/Sling_Camo,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Shotgun,
+		texture = weapons/firearm/attachments/Sling_Camo,
+	}
 	model Shotgun_Sling_Short
 	{
 		mesh = Weapons/Firearm/attachments/Sling_Short,
 		texture = Weapons/firearm/attachments/Sling,
 	}
 	model Shotgun_Sling_Short_Leather
-					{
-								mesh = weapons/firearm/attachments/Sling_Short,
-								texture = weapons/firearm/attachments/Sling_Leather,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Short,
+		texture = weapons/firearm/attachments/Sling_Leather,
+	}
 	model Shotgun_Sling_Short_Olive
-					{
-								mesh = weapons/firearm/attachments/Sling_Short,
-								texture = weapons/firearm/attachments/Sling_OliveGreen,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Short,
+		texture = weapons/firearm/attachments/Sling_OliveGreen,
+	}
 	model Shotgun_Sling_Short_Camo
-					{
-								mesh = weapons/firearm/attachments/Sling_Short,
-								texture = weapons/firearm/attachments/Sling_Camo,
-					}
+	{
+		mesh = weapons/firearm/attachments/Sling_Short,
+		texture = weapons/firearm/attachments/Sling_Camo,
+	}
 	model Shotgun_AmmoSling
-						{
-							mesh = Weapons/Firearm/attachments/Sling_Shotgun_Ammo,
-							texture = Weapons/firearm/attachments/ammosling,
-						}
+	{
+		mesh = Weapons/Firearm/attachments/Sling_Shotgun_Ammo,
+		texture = Weapons/firearm/attachments/ammosling,
+	}
 	model Bipod
-					{
-							mesh = weapons/firearm/attachments/Bipod,
-					}
+	{
+		mesh = weapons/firearm/attachments/Bipod,
+	}
 	model Bipod_wm
-					{
-							mesh = weapons/firearm/attachments/Bipod_wm,
-					}
+	{
+		mesh = weapons/firearm/attachments/Bipod_wm,
+	}
 	model Silencer
-					{
-							mesh = weapons/firearm/attachments/Silencer,
-							texture = weapons/firearm/attachments/Silencer,
-					}
+	{
+		mesh = weapons/firearm/attachments/Silencer,
+		texture = weapons/firearm/attachments/Silencer,
+	}
 	model Silencer_wm
-					{
-					mesh = weapons/firearm/attachments/Silencer_wm,
-					texture = weapons/firearm/attachments/Silencer,
-					}
+	{
+		mesh = weapons/firearm/attachments/Silencer_wm,
+		texture = weapons/firearm/attachments/Silencer,
+	}
 	model ShotgunSilencer
-					{
-							mesh = weapons/firearm/attachments/ShotgunSuppressor,
-							texture = weapons/firearm/attachments/ShotgunSuppressor,
-					}
+	{
+		mesh = weapons/firearm/attachments/ShotgunSuppressor,
+		texture = weapons/firearm/attachments/ShotgunSuppressor,
+	}
 	model ShotgunSilencer_wm
-					{
-							mesh = weapons/firearm/attachments/ShotgunSuppressor_wm,
-							texture = weapons/firearm/attachments/ShotgunSuppressor,
-					}
+	{
+		mesh = weapons/firearm/attachments/ShotgunSuppressor_wm,
+		texture = weapons/firearm/attachments/ShotgunSuppressor,
+	}
 	model Silencer_Improvised
-					{
-								mesh = weapons/firearm/attachments/Silencer_Improvised,
-					}
+	{
+		mesh = weapons/firearm/attachments/Silencer_Improvised,
+	}
 	model Silencer_PopBottle
 	{
-				mesh = weapons/firearm/attachments/PopBottle_Silencer,
-				}
+		mesh = weapons/firearm/attachments/PopBottle_Silencer,
+	}
 	model Silencer_Improvised_wm
-					{
-								mesh = weapons/firearm/attachments/Silencer_Improvised_wm,
-								texture = weapons/firearm/attachments/Silencer_Improvised,
-					}
+	{
+		mesh = weapons/firearm/attachments/Silencer_Improvised_wm,
+		texture = weapons/firearm/attachments/Silencer_Improvised,
+	}
 	model Silencer_PopBottle_wm
 	{
-				mesh = weapons/firearm/attachments/Silencer_PopBottle_wm,
-				texture = weapons/firearm/attachments/PopBottle_Silencer,
-				}
+	mesh = weapons/firearm/attachments/Silencer_PopBottle_wm,
+	texture = weapons/firearm/attachments/PopBottle_Silencer,
+	}
 	model Compensator_Pistol
-									{
-											mesh = weapons/firearm/attachments/Compensator_Pistol,
-											texture = weapons/firearm/attachments/Compensator,
-									}
+	{
+			mesh = weapons/firearm/attachments/Compensator_Pistol,
+			texture = weapons/firearm/attachments/Compensator,
+	}
 	model Compensator_Pistol_wm
-									{
-											mesh = weapons/firearm/attachments/Compensator_Pistol_wm,
-											texture = weapons/firearm/attachments/Compensator,
-									}
+	{
+			mesh = weapons/firearm/attachments/Compensator_Pistol_wm,
+			texture = weapons/firearm/attachments/Compensator,
+	}
 	model MP5_Stock_Detracted
-					{
-						mesh = weapons/firearm/attachments/MP5_Stock_Detracted,
-						texture = Weapons/firearm/MP5,
-					}
+	{
+		mesh = weapons/firearm/attachments/MP5_Stock_Detracted,
+		texture = Weapons/firearm/MP5,
+	}
 	model MP5_Stock_Extended
-					{
-						mesh = weapons/firearm/attachments/MP5_Stock_Extended,
-						texture = Weapons/firearm/MP5,
-					}
+	{
+		mesh = weapons/firearm/attachments/MP5_Stock_Extended,
+		texture = Weapons/firearm/MP5,
+	}
 	model MP5_Stock_wm
-					{
-						mesh = weapons/firearm/attachments/MP5_Stock_wm,
-						texture = Weapons/firearm/MP5,
-					}
+	{
+		mesh = weapons/firearm/attachments/MP5_Stock_wm,
+		texture = Weapons/firearm/MP5,
+	}
 	model Mac10_Stock_Detracted
-					{
-						mesh = weapons/firearm/attachments/Mac10_Stock_Detracted,
-						texture = Weapons/firearm/Mac10,
-					}
+	{
+		mesh = weapons/firearm/attachments/Mac10_Stock_Detracted,
+		texture = Weapons/firearm/Mac10,
+	}
 	model Mac10_Stock_Extended
-					{
-						mesh = weapons/firearm/attachments/Mac10_Stock_Extended,
-						texture = Weapons/firearm/Mac10,
-					}
+	{
+		mesh = weapons/firearm/attachments/Mac10_Stock_Extended,
+		texture = Weapons/firearm/Mac10,
+	}
 	model UZI_Stock_Detracted
-					{
-						mesh = weapons/firearm/attachments/uzi_stock,
-						texture = Weapons/firearm/UZI,
-					}
+	{
+		mesh = weapons/firearm/attachments/uzi_stock,
+		texture = Weapons/firearm/UZI,
+	}
 	model UZI_Stock_Extended
-					{
-						mesh = weapons/firearm/attachments/uzi_extendedstock,
-						texture = Weapons/firearm/UZI,
-					}
+	{
+		mesh = weapons/firearm/attachments/uzi_extendedstock,
+		texture = Weapons/firearm/UZI,
+	}
 	model UZI_Stock_wm
-					{
-						mesh = weapons/firearm/attachments/uzi_stock_wm,
-						texture = Weapons/firearm/UZI,
-					}
+	{
+		mesh = weapons/firearm/attachments/uzi_stock_wm,
+		texture = Weapons/firearm/UZI,
+	}
 	model SPAS_Stock_Detracted
-					{
-					mesh = weapons/firearm/attachments/SPAS-12_Stock_Detracted,
-					texture = Weapons/firearm/SPAS-12,
-					}
+	{
+		mesh = weapons/firearm/attachments/SPAS-12_Stock_Detracted,
+		texture = Weapons/firearm/SPAS-12,
+	}
 	model SPAS_Stock_Extended
-					{
-					mesh = weapons/firearm/attachments/SPAS-12_Stock_Extended,
-					texture = Weapons/firearm/SPAS-12,
-					}
+	{
+		mesh = weapons/firearm/attachments/SPAS-12_Stock_Extended,
+		texture = Weapons/firearm/SPAS-12,
+	}
 	model SPAS_Stock_wm
-					{
-					mesh = weapons/firearm/attachments/SPAS-12_Stock_wm,
-					texture = Weapons/firearm/SPAS-12,
-					}
-	model Stock_Tactical
-					{
-							mesh = Weapons/Firearm/attachments/Stock_Tactical,
-							texture = Weapons/firearm/Mossberg500,
-					}
+	{
+		mesh = weapons/firearm/attachments/SPAS-12_Stock_wm,
+		texture = Weapons/firearm/SPAS-12,
+	}
 	model Stock
-					{
-								mesh = Weapons/Firearm/attachments/Stock,
-								texture = Weapons/firearm/Mossberg500,
-					}
+	{
+		mesh = Weapons/Firearm/attachments/Stock,
+		texture = Weapons/firearm/Shotguns,
+	}
 	model Stock_Light
-						{
-							mesh = Weapons/Firearm/attachments/Stock_Light,
-							texture = Weapons/firearm/Mossberg500,
-						}
-	model Stock_Tactical_wm
-					{
-							mesh = Weapons/Firearm/attachments/Stock_Tactical_wm,
-							texture = Weapons/firearm/Mossberg500,
-					}
-	model Stock_wm
-					{
-								mesh = Weapons/Firearm/attachments/Stock_wm,
-								texture = Weapons/firearm/Mossberg500,
-					}
-	model Stock_Light_wm
-						{
-							mesh = Weapons/Firearm/attachments/Stock_Light_wm,
-							texture = Weapons/firearm/Mossberg500,
-						}
-	model Choke_Tube
-					{
-						mesh = Weapons/Firearm/attachments/ChokeTube,
-						texture = Weapons/firearm/Mossberg500,
-					}
+	{
+		mesh = Weapons/Firearm/attachments/Stock_Light,
+		texture = Weapons/firearm/Shotguns,
+	}
+	model Stock_Tactical
+	{
+		mesh = Weapons/Firearm/attachments/Stock_Tactical,
+		texture = Weapons/firearm/M16,
+
+		attachment world
+		{
+			offset = -0.0140 -0.0590 -0.0070,
+			rotate = 0.0000 5.0000 0.0000,
+		}
+	}
+	model Choketube
+	{
+		mesh = Weapons/Firearm/attachments/choketube_full,
+		texture = Weapons/firearm/attachments/choketube,
+	}
+	model Choketube_Duckbill
+	{
+		mesh = Weapons/Firearm/attachments/choketube_duckbill,
+		texture = Weapons/firearm/attachments/choketube,
+	}
 	model Flashlight_Improvised
 	{
 		mesh = Weapons/Firearm/attachments/TapedFlashlight,
 		texture = Weapons/firearm/attachments/Silencer_Improvised,
 	}
 	model Shotgun_AmmoStrap
-						{
-							mesh = Weapons/Firearm/attachments/ShotgunShellsStrap,
-							texture = Weapons/firearm/attachments/ammosling,
-						}
+	{
+		mesh = Weapons/Firearm/attachments/ShotgunShellsStrap,
+		texture = Weapons/firearm/attachments/ammosling,
+	}
 	model Shotgun_AmmoStrap_wm
-						{
-							mesh = Weapons/Firearm/attachments/ShotgunShellsStrap_wm,
-							texture = Weapons/firearm/attachments/ammosling,
-						}
+	{
+		mesh = Weapons/Firearm/attachments/ShotgunShellsStrap_wm,
+		texture = Weapons/firearm/attachments/ammosling,
+	}
 	model TacticalLaser
 	{
 		mesh = Weapons/Firearm/attachments/Laser,
@@ -3097,15 +3093,15 @@ module Base
 		texture = Weapons/firearm/attachments/Laser,
 	}
 	model HandTorch
-{
-	mesh = Weapons/HDModels/Tools/Flashlight,
-}
+	{
+		mesh = Weapons/HDModels/Tools/Flashlight,
+	}
 	model FlashLight
-{
-	mesh = Weapons/HDModels/Tools/Flashlight,
-}
+	{
+		mesh = Weapons/HDModels/Tools/Flashlight,
+	}
 	model FlashLightGround
-{
-	mesh = Weapons/HDModels/Tools/Flashlight,
-}
+	{
+		mesh = Weapons/HDModels/Tools/Flashlight,
+	}
 }

@@ -61,7 +61,7 @@ local function silence(wielder, weapon)
 	local canon = weapon:getCanon()
 	if canon then
 	if getDebug() then print(canon:getType()) end
-		if string.find(canon:getType(), "Silencer") then
+		if canon:hasTag("Silencer") then
 			local weaponAmmo, replaced = string.gsub(weapon:getAmmoType(), "Base.", "")
 			local suppressor = "type" .. canon:getType()
 			local ammo = "caliber" .. weaponAmmo
@@ -108,14 +108,14 @@ function breakSuppressor(playerObj, weapon)
 
 	local canon = weapon:getCanon()
 	if canon then
-	if string.find(canon:getType(), "ImprovisedSilencer") then
+	if canon:hasTag("ImprovisedSilencer") then
 		if ZombRand(BREAKCHANCE[SandboxVars.Firearms.FlashlightSuppressorBreakChance]) == 1 then
 		weapon:detachWeaponPart(canon)
 		playerObj:getCurrentSquare():AddWorldInventoryItem(canon:getType() .. "_Broken", 0.0, 0.0, 0.0);
 		playerObj:resetEquippedHandsModels();
 		silence(playerObj, weapon)
 		end
-	elseif string.find(canon:getType(), "Silencer_PopBottle") then
+	elseif canon:hasTag("ImprovisedSilencerBottle") then
 		if ZombRand(BREAKCHANCE[SandboxVars.Firearms.BottleSuppressorBreakChance]) == 1 then
 		weapon:detachWeaponPart(canon)
 		playerObj:getCurrentSquare():AddWorldInventoryItem(canon:getType() .. "_Broken", 0.0, 0.0, 0.0);

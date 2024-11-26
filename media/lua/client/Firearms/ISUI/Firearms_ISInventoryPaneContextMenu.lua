@@ -6,7 +6,7 @@ end
 local original_onChangefiremode = ISInventoryPaneContextMenu.onChangefiremode
 
 ISInventoryPaneContextMenu.onChangefiremode = function(playerObj, weapon, newfiremode)
-	if not string.find(weapon:getType(), "SPAS12") then
+	if not weapon:hasTag("SemiShotgun") then
 		original_onChangefiremode(playerObj, weapon, newfiremode)
 	end
 	if "Auto" == newfiremode then

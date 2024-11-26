@@ -301,8 +301,8 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.3630 0.0250,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.3760 0.0060,
+			rotate = 178.0000 -2.0000 178.0000,
 		}
 
 		attachment scope
@@ -372,8 +372,8 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.3630 0.0250,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.3740 0.0040,
+			rotate = 178.0000 0.0000 178.0000,
 		}
 
 		attachment scope
@@ -585,7 +585,7 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.3630 0.0250,
+			offset = 0.0000 0.3470 0.0370,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
@@ -656,8 +656,8 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.3630 0.0250,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.3760 0.0040,
+			rotate = 178.0000 0.0000 178.0000,
 		}
 
 		attachment scope
@@ -868,7 +868,7 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.3810 -0.0110,
+			offset = 0.0000 0.3330 -0.0380,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -1319,26 +1319,26 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.2450 0.0290,
+			offset = 0.0000 0.2450 -0.0270,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
 		attachment sling
 		{
-			offset = 0.0000 0.2200 0.0180,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.2200 -0.0340,
+			rotate = 0.0000 -1.0000 0.0000,
 		}
 
 		attachment scope
 		{
-			offset = 0.0000 0.0900 0.0480,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0900 -0.0480,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0860 0.0500,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.0860 -0.0500,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment gunlight
@@ -1355,14 +1355,14 @@ module Base
 
 		attachment stock
 		{
-			offset = 0.0000 -0.0220 0.0260,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 -0.0220 -0.0260,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment silencer
 		{
-			offset = 0.0000 0.2240 0.0270,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.2390 -0.0270,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment magazine
@@ -1407,13 +1407,13 @@ module Base
 
 		attachment suppressor
 		{
-			offset = 0.0000 0.2010 -0.0181,
+			offset = 0.0000 0.1420 -0.0140,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.1660 0.0230,
+			offset = 0.0000 0.1590 -0.0100,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
@@ -1667,8 +1667,8 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.2950 0.0050,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.2940 0.0130,
+			rotate = 180.0000 0.0000 -180.0000,
 		}
 
 		attachment scope
@@ -1814,7 +1814,7 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.2950 0.0270,
+			offset = 0.0000 0.2660 0.0020,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
@@ -1890,7 +1890,7 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.3090 0.0140,
+			offset = 0.0000 0.2890 0.0000,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
@@ -1960,7 +1960,7 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.3050 -0.0390,
+			offset = 0.0000 0.3050 -0.0100,
 			rotate = -1.0000 0.0000 0.0000,
 		}
 
@@ -2036,8 +2036,8 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.2730 0.0020,
-			rotate = 180.0000 0.0000 180.0000,
+			offset = 0.0000 0.3010 0.0050,
+			rotate = 180.0000 0.0000 178.0000,
 		}
 
 		attachment scope
@@ -2313,8 +2313,8 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0000 0.3120 -0.0150,
-			rotate = 6.0000 20.0000 -4.0000,
+			offset = 0.0000 0.3120 -0.0280,
+			rotate = 0.0000 20.0000 -5.0000,
 		}
 
 		attachment scope
@@ -2809,7 +2809,7 @@ module Base
 	model Sling_Olive
 					{
 								mesh = weapons/firearm/attachments/Sling,
-								texture = weapons/firearm/attachments/Sling_OliveGreen,
+								texture = weapons/firearm/attachments/Sling_Olive,
 					}
 	model Sling_Camo
 					{
@@ -2817,24 +2817,24 @@ module Base
 								texture = weapons/firearm/attachments/Sling_Camo,
 					}
 	model Sling_wm
-					{
-							mesh = weapons/firearm/attachments/Sling_wm,
-					}
+	{
+			mesh = weapons/firearm/attachments/Sling_wm,
+	}
 	model Sling_Leather_wm
-					{
-								mesh = weapons/firearm/attachments/Sling_wm,
-								texture = weapons/firearm/attachments/Sling_Leather_wm,
-					}
+	{
+				mesh = weapons/firearm/attachments/Sling_wm,
+				texture = weapons/firearm/attachments/Sling_Leather_wm,
+	}
 	model Sling_Olive_wm
-					{
-								mesh = weapons/firearm/attachments/Sling_wm,
-								texture = weapons/firearm/attachments/Sling_OliveGreen_wm,
-					}
+	{
+				mesh = weapons/firearm/attachments/Sling_wm,
+				texture = weapons/firearm/attachments/Sling_OliveGreen_wm,
+	}
 	model Sling_Camo_wm
-					{
-								mesh = weapons/firearm/attachments/Sling_wm,
-								texture = weapons/firearm/attachments/Sling_Camo_wm,
-					}
+	{
+				mesh = weapons/firearm/attachments/Sling_wm,
+				texture = weapons/firearm/attachments/Sling_Camo_wm,
+	}
 	model Sling_Small
 	{
 					mesh = weapons/firearm/attachments/Sling_Small,
@@ -2868,57 +2868,97 @@ module Base
 	model Sling_Short_Olive
 	{
 		mesh = weapons/firearm/attachments/Sling_Short,
-		texture = weapons/firearm/attachments/Sling_OliveGreen,
+		texture = weapons/firearm/attachments/Sling_Olive,
 	}
 	model Sling_Short_Camo
 	{
 		mesh = weapons/firearm/attachments/Sling_Short,
 		texture = weapons/firearm/attachments/Sling_Camo,
 	}
+	model Sling_MP5
+	{
+		mesh = Weapons/Firearm/attachments/MP5_Sling,
+		texture = Weapons/firearm/attachments/Sling,
+	}
+	model Sling_MP5_Leather
+	{
+		mesh = weapons/firearm/attachments/MP5_Sling,
+		texture = weapons/firearm/attachments/Sling_Leather,
+	}
+	model Sling_MP5_Olive
+	{
+		mesh = weapons/firearm/attachments/MP5_Sling,
+		texture = weapons/firearm/attachments/Sling_Olive,
+	}
+	model Sling_MP5_Camo
+	{
+		mesh = weapons/firearm/attachments/MP5_Sling,
+		texture = weapons/firearm/attachments/Sling_Camo,
+	}
+	model Sling_Rifle
+	{
+		mesh = Weapons/Firearm/attachments/Rifle_Sling,
+		texture = Weapons/firearm/attachments/Sling,
+	}
+	model Sling_Rifle_Leather
+	{
+		mesh = weapons/firearm/attachments/Rifle_Sling,
+		texture = weapons/firearm/attachments/Sling_Leather,
+	}
+	model Sling_Rifle_Olive
+	{
+		mesh = weapons/firearm/attachments/Rifle_Sling,
+		texture = weapons/firearm/attachments/Sling_Olive,
+	}
+	model Sling_Rifle_Camo
+	{
+		mesh = weapons/firearm/attachments/Rifle_Sling,
+		texture = weapons/firearm/attachments/Sling_Camo,
+	}
+	model Sling_M14
+	{
+		mesh = Weapons/Firearm/attachments/M14_Sling,
+		texture = Weapons/firearm/attachments/Sling,
+	}
+	model Sling_M14_Leather
+	{
+		mesh = weapons/firearm/attachments/M14_Sling,
+		texture = weapons/firearm/attachments/Sling_Leather,
+	}
+	model Sling_M14_Olive
+	{
+		mesh = weapons/firearm/attachments/M14_Sling,
+		texture = weapons/firearm/attachments/Sling_Olive,
+	}
+	model Sling_M14_Camo
+	{
+		mesh = weapons/firearm/attachments/M14_Sling,
+		texture = weapons/firearm/attachments/Sling_Camo,
+	}
+	model Sling_M1
+	{
+		mesh = Weapons/Firearm/attachments/M1_Sling,
+		texture = Weapons/firearm/attachments/Sling,
+	}
+	model Sling_M1_Leather
+	{
+		mesh = weapons/firearm/attachments/M1_Sling,
+		texture = weapons/firearm/attachments/Sling_Leather,
+	}
+	model Sling_M1_Olive
+	{
+		mesh = weapons/firearm/attachments/M1_Sling,
+		texture = weapons/firearm/attachments/Sling_Olive,
+	}
+	model Sling_M1_Camo
+	{
+		mesh = weapons/firearm/attachments/M1_Sling,
+		texture = weapons/firearm/attachments/Sling_Camo,
+	}
 	model Rifle_Ammostrap
 	{
-		mesh = weapons/firearm/attachments/Rifle_Ammo_Sling,
-		texture = Weapons/firearm/attachments/Sling_Ammo,
-	}
-	model Shotgun_Sling
-	{
-		mesh = weapons/firearm/attachments/Sling_Shotgun,
-		texture = Weapons/firearm/attachments/Sling,
-	}
-	model Shotgun_Sling_Leather
-	{
-		mesh = weapons/firearm/attachments/Sling_Shotgun,
-		texture = weapons/firearm/attachments/Sling_Leather,
-	}
-	model Shotgun_Sling_Olive
-	{
-		mesh = weapons/firearm/attachments/Sling_Shotgun,
-		texture = weapons/firearm/attachments/Sling_OliveGreen,
-	}
-	model Shotgun_Sling_Camo
-	{
-		mesh = weapons/firearm/attachments/Sling_Shotgun,
-		texture = weapons/firearm/attachments/Sling_Camo,
-	}
-	model Shotgun_Sling_Short
-	{
-		mesh = Weapons/Firearm/attachments/Sling_Short,
-		texture = Weapons/firearm/attachments/Sling,
-	}
-	model Shotgun_Sling_Short_Leather
-	{
-		mesh = weapons/firearm/attachments/Sling_Short,
-		texture = weapons/firearm/attachments/Sling_Leather,
-	}
-	model Shotgun_Sling_Short_Olive
-	{
-		mesh = weapons/firearm/attachments/Sling_Short,
-		texture = weapons/firearm/attachments/Sling_OliveGreen,
-	}
-	model Shotgun_Sling_Short_Camo
-	{
-		mesh = weapons/firearm/attachments/Sling_Short,
-		texture = weapons/firearm/attachments/Sling_Camo,
+	mesh = weapons/firearm/attachments/Rifle_Ammo_Sling,
+	texture = Weapons/firearm/attachments/Sling_Ammo,
 	}
 	model Shotgun_AmmoSling
 	{

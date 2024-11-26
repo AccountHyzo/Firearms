@@ -1,6 +1,6 @@
 function firearms_setRackAfterShoot(_player, _firearm)
 	if not player or not firearm then return; end
-	if string.find(firearm:getType(), "SPAS12") then
+	if firearm:hasTag("SemiShotgun") then
 		local firemode = firearm:getFireMode()
 		if not firearm then return; end
 		if "Auto" == firemode then

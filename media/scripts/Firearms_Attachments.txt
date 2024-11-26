@@ -148,7 +148,7 @@ module Base
 		Weight					=	0.3,
 		WeightModifier			=	0.3,
 		HitChanceModifier		=	8,
-		RecoilDelayModifier		=	-5.0,
+		RecoilDelayModifier		=	-10.0,
 		MountOn					=	Glock17; Pistol; MP5; UZI,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Compensator,

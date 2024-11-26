@@ -15,8 +15,8 @@ ItemName_EN = {
     ItemName_Base.ColtPythonHunter = "Colt Python Hunter",
 
     ItemName_Base.VarmintRifle = "Remington Model 700",
-    ItemName_Base.HuntingRifle = "Ruger M77",
-    ItemName_Base.HuntingRifle_Sawn = "Sawed-off Ruger M77",
+    ItemName_Base.HuntingRifle = "Remington Model 788",
+    ItemName_Base.HuntingRifle_Sawn = "Sawed-off Remington Model 788",
     ItemName_Base.Rugerm7722 = "Ruger M77/22",
 
     ItemName_Base.AssaultRifle = "M16A1",

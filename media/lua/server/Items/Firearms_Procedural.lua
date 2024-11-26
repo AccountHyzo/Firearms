@@ -223,7 +223,7 @@ for i = 1, #FirearmsDistribution, 2 do
     table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.ColtAce")
     table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
     table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.22Clip")
-    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1])
+    table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, FirearmsDistribution[i+1]*2)
   end
   if SpawnRuger22 then
     table.insert(ProceduralDistributions.list[FirearmsDistribution[i]].items, "Base.Rugerm7722")

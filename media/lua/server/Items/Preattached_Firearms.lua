@@ -15,9 +15,6 @@ WeaponUpgrades = {
   Winchester73		= {"Sling_Leather", "Sling"},
   Winchester94		= {"Sling_Leather", "Sling"},
 
-  MP5		= {"Sling", "RedDot", "x2Scope", "x4Scope", "9mmSilencer", "MP5_Stock_Detracted"},
-  UZI    = {"9mmSilencer", "RedDot", "x2Scope", "Sling", "UZI_Stock_Detracted", "UZI_Stock_Extended"},
-  Mac10    = {"45Silencer", "Mac10_Stock_Detracted", "Uac10_Stock_Extended"},
 
   Glock17		= {"RedDot", "9mmCompensator", "Laser"},
 
@@ -27,6 +24,9 @@ WeaponUpgrades = {
   SKS		= {"Sling_Leather"},
   Rugerm7722		= {"Sling_Leather", "RecoilPad", "x2Scope", "x4Scope"},
   VarmintRifle		= {"Sling", "RecoilPad", "AmmoStraps", "8xScope"},
-  M24Rifle		= {"Sling_Olive", "Sling_Camo", "ExtendedRecoilPad", "Rifle_Bipod", "AmmoStraps", "8xScope", "x4-x12Scope", "308Silencer"},
 
+	MP5		= {"Sling", "RedDot", "x2Scope", "x4Scope", "MP5_Stock_Detracted"},
+	UZI    = {"RedDot", "x2Scope", "Sling", "UZI_Stock_Detracted", "UZI_Stock_Extended"},
+	Mac10    = {"Mac10_Stock_Detracted", "Uac10_Stock_Extended"},
+	M24Rifle		= {"Sling_Olive", "Sling_Camo", "ExtendedRecoilPad", "Rifle_Bipod", "AmmoStraps", "8xScope", "x4-x12Scope"},
 };

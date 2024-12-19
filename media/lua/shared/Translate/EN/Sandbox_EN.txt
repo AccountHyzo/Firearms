@@ -92,9 +92,6 @@ Sandbox_EN = {
   Sandbox_Firearms_SpawnRevolverSuppressors = "Revolver Suppressors",
   Sandbox_Firearms_SpawnRevolverSuppressors_tooltip = "Whether or not .38 Special & .357 caliber suppressors can be found in the world.",
 
-  Sandbox_Firearms_SpawnAmmoCans = "Ammo cases",
-  Sandbox_Firearms_SpawnAmmoCans_tooltip = "Whether or not Ammo Cases can be found in containers.",
-
 	Sandbox_Firearms_SpawnSPAS12 = "SPAS12/LAW12",
 	Sandbox_Firearms_SpawnSPAS12_tooltip = "Whether or not SPAS12 and LAW12 spawn.",
 
@@ -177,7 +174,5 @@ Sandbox_EN = {
 	Sandbox_Firearms_SpawnWinchester94_tooltip = "Whether Winchester '94 lever action rifles are spawned.",
 
   Sandbox_Firearms_LootSuppressor = "Suppressors",
-
-  Sandbox_Firearms_LootAmmoCans = "Ammo Cans",
 
 }

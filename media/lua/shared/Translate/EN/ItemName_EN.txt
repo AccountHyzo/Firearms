@@ -145,10 +145,4 @@ ItemName_EN = {
     ItemName_Base.Bullets357 = ".357 Round",
     ItemName_Base.Bullets3006 = ".30-06 Round",
 
-    ItemName_Base.AmmoCan762 = "7.62x51mm Ammo Canister",
-    ItemName_Base.AmmoCan762x39 = "7.62x39mm Ammo Canister",
-    ItemName_Base.AmmoCan556 = "5.56x45mm Ammo Canister",
-    ItemName_Base.AmmoCan308 = ".308 Winchester Ammo Canister",
-    ItemName_Base.AmmoCan9mm = "9mm Ammo Canister",
-
 }

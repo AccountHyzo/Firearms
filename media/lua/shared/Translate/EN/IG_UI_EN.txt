@@ -1,6 +1,4 @@
 IGUI_EN = {
-    IGUI_ItemCat_Canister = "Ammunition Canister",
-
     IGUI_Sandbox_FirearmsSection = "Firearms"
     IGUI_Firearms_SuppressorBreak = "Improvised Suppressor Breaking"
     IGUI_Firearms_SuppressorEffectiveness9mm = "9mm Suppressor Effectiveness"

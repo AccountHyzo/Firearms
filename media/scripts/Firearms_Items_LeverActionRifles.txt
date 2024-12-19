@@ -14,7 +14,7 @@ module Base
 		DisplayName						=	Winchester 94,
 		DisplayCategory					=	Weapon,
 		Icon							=	Winchester94,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -33,7 +33,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	25,
 		MinRange						=	0.61,
 		MinAngle						=	0.92,
 		MinimumSwingTime				=	0.5,
@@ -47,7 +47,7 @@ module Base
 		AimingPerkCritModifier			=	4,
 		AimingPerkHitChanceModifier		=	10,
 		AimingPerkMinAngleModifier		=	0.03,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	15,
 		ReloadTime						=	25,
 		AimingTime						=	20,
@@ -138,7 +138,7 @@ module Base
 		DisplayName						=	Winchester 73,
 		DisplayCategory					=	Weapon,
 		Icon							=	Winchester94,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -157,7 +157,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	25,
 		MinRange						=	0.61,
 		MinAngle						=	0.92,
 		MinimumSwingTime				=	0.5,
@@ -171,7 +171,7 @@ module Base
 		AimingPerkCritModifier			=	4,
 		AimingPerkHitChanceModifier		=	10,
 		AimingPerkMinAngleModifier		=	0.03,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	15,
 		ReloadTime						=	25,
 		AimingTime						=	20,
@@ -262,7 +262,7 @@ module Base
 		DisplayName						=	Rossi 92,
 		DisplayCategory					=	Weapon,
 		Icon							=	Winchester94,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -281,7 +281,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	25,
 		MinRange						=	0.61,
 		MinAngle						=	0.92,
 		MinimumSwingTime				=	0.5,
@@ -295,7 +295,7 @@ module Base
 		AimingPerkCritModifier			=	4,
 		AimingPerkHitChanceModifier		=	10,
 		AimingPerkMinAngleModifier		=	0.03,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	15,
 		ReloadTime						=	25,
 		AimingTime						=	20,

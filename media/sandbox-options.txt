@@ -105,14 +105,7 @@ option Firearms.SuppressorEffectivenessImprovised
 option Firearms.LootSuppressor
 {
 type = enum, numValues = 5, default = 2,
-page = LootRarity, translation = Firearms_LootSuppressor,
-valueTranslation = Rarity,
-}
-
-option Firearms.LootAmmoCans
-{
-type = enum, numValues = 5, default = 2,
-page = LootRarity, translation = Firearms_LootAmmoCans,
+page = Loot, translation = Firearms_LootSuppressor,
 valueTranslation = Rarity,
 }
 
@@ -300,10 +293,4 @@ option Firearms.SpawnRevolverSuppressors
 {
 type = boolean, default = false,
 page = FirearmsSpawns, translation = Firearms_SpawnRevolverSuppressors,
-}
-
-option Firearms.SpawnAmmoCans
-{
-type = boolean, default = true,
-page = FirearmsSpawns, translation = Firearms_SpawnAmmoCans,
 }

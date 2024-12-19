@@ -129,7 +129,7 @@ module Base
 		Type					=	WeaponPart,
 		DisplayName				=	Silencer,
 		DisplayCategory			=	WeaponPart,
-		Icon					=	FlashlightSilencer,
+		Icon					=	BottleSilencer,
 		Weight					=	0.2,
 		WeightModifier			=	0.1,
 		MountOn					=	Pistol; Pistol2; Glock17; AR15; AssaultRifle2; M24Rifle; FN_FAL; SKS; AK47; VarmintRifle; HuntingRifle; HuntingRifle_Sawn  ; AssaultRifle; M16A2; M733; MP5; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94; Rossi92; ColtSingleAction22; ColtAnaconda; ColtPython; ColtPythonHunter; ColtAce; M1Garand,
@@ -171,6 +171,14 @@ module Base
 		StaticModel				=	Flashlight_Improvised,
 		MetalValue				=	15,
 		WorldStaticModel		=	Flashlight_Improvised,
+		ActivatedItem = TRUE,
+		LightDistance = 15,
+		LightStrength = 1.3,
+		MetalValue = 10,
+		TorchCone = TRUE,
+		TorchDot = 0.66,
+		SoundMap = Activate FlashlightOn,
+		SoundMap = Deactivate FlashlightOff,
 	}
 
 	/************************Pads************************/
@@ -488,8 +496,8 @@ module Base
 		Icon					=	ShotgunChoke,
 		Weight					=	0.1,
 		WeightModifier			=	0.1,
-		AngleModifier			=	0.05,
-		DamageModifier			=	0.5,
+		ProjectileSpreadModifier	=	-0.40,
+		MaxRangeModifier	=	2,
 		MountOn					=	Shotgun; Base.Mossberg500; Mossberg500Tactical; SPAS12; LAW12; Base.Remington870Wood,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_ChokeTubeFull,
@@ -505,8 +513,8 @@ module Base
 		Icon					=	ShotgunChoke,
 		Weight					=	0.1,
 		WeightModifier			=	0.1,
-		AngleModifier			=	-0.075,
-		DamageModifier			=	-0.5,
+		ProjectileSpreadModifier	=	+0.25,
+		MaxRangeModifier	=	0,
 		MountOn					=	Shotgun; Base.Mossberg500; Mossberg500Tactical; SPAS12; LAW12; Base.Remington870Wood,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_ChokeTubeImproved,
@@ -648,6 +656,22 @@ module Base
 		Tooltip					=	Tooltip_Scope,
 		MetalValue				=	22,
 		WorldStaticModel		=	12xScope_wm,
+	}
+
+	item STANAG
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	STANAG,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	556_Stanag_Mag,
+		Weight					=	0.25,
+		WeightModifier			=	0.25,
+		ClipSizeModifier			=	20,
+		MountOn					=	AssaultRifle; M16A2; M733,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	STANAG,
 	}
 
 }

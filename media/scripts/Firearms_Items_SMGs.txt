@@ -12,7 +12,7 @@ module Base
 		DisplayName						=	MP5,
 		DisplayCategory					=	Weapon,
 		Icon							=	MP5,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -31,7 +31,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	18,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -44,7 +44,7 @@ module Base
 		HitChance						=	40,
 		AimingPerkHitChanceModifier		=	10,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	25,
 		AimingTime						=	25,
@@ -132,7 +132,7 @@ module Base
 		DisplayName						=	UZI,
 		DisplayCategory					=	Weapon,
 		Icon							=	UZI,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -151,7 +151,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	16,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -164,7 +164,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	13,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	25,
 		AimingTime						=	25,
@@ -252,7 +252,7 @@ module Base
 		DisplayName						=	Mac10,
 		DisplayCategory					=	Weapon,
 		Icon							=	Mac10,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -271,7 +271,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -284,7 +284,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	12,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	25,
 		AimingTime						=	25,

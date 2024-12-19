@@ -12,10 +12,6 @@ function Recipe.GetItemTypes.Gun(scriptItems)
 		scriptItems:addAll(getScriptManager():getItemsTag("Gun"))
 end
 
-function Recipe.OnGiveXP.CleanGun(recipe, ingredients, result, player)
-    player:getXp():AddXP(Perks.Maintenance, 1);
-end
-
 GiveMaintenanceXP = Recipe.OnGiveXP.CleanGun
 
 function onImprovisedSilencer_OnTest(item)
@@ -26,54 +22,36 @@ function onImprovisedSilencer_OnTest(item)
 		end
 end
 
-function onImprovisedSilencer_OnCreate(items, result, player)
-	local inv = player:getInventory();
+function onImprovisedSilencer_OnCreate(craftRecipeData, character)
+	local items = craftRecipeData:getAllConsumedItems();
+	local result = craftRecipeData:getAllCreatedItems():get(0);
 	for i=0,items:size()-1 do
 		local item = items:get(i)
-		if item:getType() == "HandTorch" and item:getUsedDelta() > 0 then
-			battery = inv:AddItem("Base.Battery");
-			battery:setUsedDelta(item:getUsedDelta());
+		if item:getType() == "Torch" or item:getType() == "HandTorch" then
+			if item:getCurrentUsesFloat() > 0 then
+				local battery = character:getInventory():AddItem("Base.Battery")
+				if battery then
+					battery:setUsedDelta(item:getCurrentUsesFloat())
+				end
+			end
 		end
     end
 end
 
 -- Sawn-off recipe callback, copies modData to the new sawn-off.
-function onSawnOff_OnCreate(items, result, player)
-	local inv = player:getInventory();
+function onSawnOff_OnCreate(craftRecipeData, character)
+	local items = craftRecipeData:getAllConsumedItems();
+	local result = craftRecipeData:getAllCreatedItems():get(0);
 	for i=0,items:size()-1 do
 		local item = items:get(i)
 		if item:getSubCategory() == "Firearm" then
-			result:setCurrentAmmoCount(item:getCurrentAmmoCount())
-			if result:haveChamber() and item:haveChamber() and item:isRoundChambered() then
-				result:setRoundChambered(true)
-			end
 			local modData = result:getModData()
 			for k,v in pairs(item:getModData()) do
 				modData[k] = v
 			end
-			local clip = item:getClip()
-			local scope = item:getScope()
-			local sling = item:getSling()
-			local canon = item:getCanon()
-			local stock = item:getStock()
-			local pad = item:getRecoilpad()
-			if clip then
-			result:attachWeaponPart(clip)
-			end
-			if scope then
-			inv:AddItem(scope)
-			end
-			if sling then
-			inv:AddItem(sling)
-			end
-			if canon then
-			inv:AddItem(canon)
-			end
-			if stock then
-			inv:AddItem(stock)
-			end
-			if pad then
-			inv:AddItem(pad)
+			local parts = item:getAllWeaponParts()
+			for i=1,parts:size() do
+				tryAttachPart(result, parts:get(i-1), character)
 			end
 			return
 		end
@@ -83,11 +61,11 @@ end
 
 function onExtendStock_OnTest(item)
 		if item:getSubCategory() == "Firearm" then
-			local stock = item:getStock()
+			local stock = item:getWeaponPart("Stock")
 			if stock and string.find(stock:getType(), "Detract") then
-			return true;
+				return true;
 			else
-			return false;
+				return false;
 			end
     else
 		return false;
@@ -96,65 +74,65 @@ end
 
 function onDetractStock_OnTest(item)
 		if item:getSubCategory() == "Firearm" then
-			local stock = item:getStock()
+			local stock = item:getWeaponPart("Stock")
 			if stock and string.find(stock:getType(), "Extend") then
-			return true;
+				return true;
 			else
-			return false;
+				return false;
 			end
     else
 		return false;
 		end
 end
 
-function onExtendStock_OnCreate(items, result, player, firstHand, secondHand)
-	local inv = player:getInventory();
+function onExtDetStock_OnCreate(craftRecipeData, character, firstHand, secondHand)
+	local items = craftRecipeData:getAllKeepInputItems();
+	local result = craftRecipeData:getAllCreatedItems():get(0);
 	for i=0,items:size()-1 do
 		local item = items:get(i)
 		if item:getSubCategory() == "Firearm" then
-			if result:haveChamber() and item:haveChamber() and item:isRoundChambered() then
-				result:setRoundChambered(true)
-			end
+			print("setWeaponpPart")
+			item:setWeaponPart(result)
+			character:getInventory():Remove(result);
+			--tryAttachPart(item, result, character)
+			--[[if secondHand or firstHand then
+	        character:setSecondaryHandItem(result);
+	        if not character:getPrimaryHandItem() then
+	            character:setPrimaryHandItem(result);
+	        end
+	    end]]--
+			return
+		end
+	end
+end
+
+function onExtendStock_OnCreate(craftRecipeData, character, firstHand, secondHand)
+	local items = craftRecipeData:getAllConsumedItems();
+	local result = craftRecipeData:getAllCreatedItems():get(0);
+	for i=0,items:size()-1 do
+		local item = items:get(i)
+		if item:getSubCategory() == "Firearm" then
 			local modData = result:getModData()
 			for k,v in pairs(item:getModData()) do
 				modData[k] = v
 			end
-			local clip = item:isContainsClip()
-			local scope = item:getScope()
-			local sling = item:getSling()
-			local canon = item:getCanon()
-			local stock = item:getStock()
-			local pad = item:getRecoilpad()
-			local firemode = item:getFireMode()
-			if clip then
-				result:setContainsClip(true)
-				result:setCurrentAmmoCount(item:getCurrentAmmoCount())
-			elseif item:getWeaponReloadType() == "shotgun" then
-				result:setCurrentAmmoCount(item:getCurrentAmmoCount())
-			end
-			if scope then
-			result:attachWeaponPart(scope)
-			end
-			if sling then
-			result:attachWeaponPart(sling)
-			end
-			if canon then
-			result:attachWeaponPart(canon)
-			end
-			if stock then
-				newstock = InventoryItemFactory.CreateItem('Base.' .. result:getType() .. '_Stock_Extended');
-				print('Base.' .. result:getType() .. '_Stock_Extended')
-				if newstock then
-					result:attachWeaponPart(newstock)
+			local stock = item:getWeaponPart("Stock")
+			local parts = item:getAllWeaponParts()
+			newstock = character:getInventory():AddItem('Base.' .. result:getType() .. '_Stock_Extended');
+			print('Base.' .. result:getType() .. '_Stock_Extended')
+			for i=1,parts:size() do
+				if parts:get(i-1) == stock then
+					if newstock then
+						tryAttachPart(result, newstock, character)
+					end
+				else
+					tryAttachPart(result, parts:get(i-1), character)
 				end
 			end
-			if pad then
-			result:attachWeaponPart(pad)
-			end
 			if secondHand or firstHand then
-	        player:setSecondaryHandItem(result);
-	        if not player:getPrimaryHandItem() then
-	            player:setPrimaryHandItem(result);
+	        character:setSecondaryHandItem(result);
+	        if not character:getPrimaryHandItem() then
+	            character:setPrimaryHandItem(result);
 	        end
 	    end
 			return
@@ -162,152 +140,35 @@ function onExtendStock_OnCreate(items, result, player, firstHand, secondHand)
     end
 end
 
-function onDetractStock_OnCreate(items, result, player, firstHand, secondHand)
-	local inv = player:getInventory();
+function onDetractStock_OnCreate(craftRecipeData, character, firstHand, secondHand)
+	local items = craftRecipeData:getAllConsumedItems();
+	local result = craftRecipeData:getAllCreatedItems():get(0);
 	for i=0,items:size()-1 do
 		local item = items:get(i)
 		if item:getSubCategory() == "Firearm" then
-			if result:haveChamber() and item:haveChamber() and item:isRoundChambered() then
-				result:setRoundChambered(true)
-			end
 			local modData = result:getModData()
 			for k,v in pairs(item:getModData()) do
 				modData[k] = v
 			end
-			local clip = item:isContainsClip()
-			local scope = item:getScope()
-			local sling = item:getSling()
-			local canon = item:getCanon()
-			local stock = item:getStock()
-			local pad = item:getRecoilpad()
-			local firemode = item:getFireMode()
-			if clip then
-				result:setContainsClip(true)
-				result:setCurrentAmmoCount(item:getCurrentAmmoCount())
-			elseif item:getWeaponReloadType() == "shotgun" then
-				result:setCurrentAmmoCount(item:getCurrentAmmoCount())
-			end
-			if scope then
-			result:attachWeaponPart(scope)
-			end
-			if sling then
-			result:attachWeaponPart(sling)
-			end
-			if canon then
-			result:attachWeaponPart(canon)
-			end
-			if stock then
-				newstock = InventoryItemFactory.CreateItem('Base.' .. result:getType() .. '_Stock_Detracted');
-				if newstock then
-					result:attachWeaponPart(newstock)
+			local stock = item:getWeaponPart("Stock")
+			local parts = item:getAllWeaponParts()
+			newstock = character:getInventory():AddItem('Base.' .. result:getType() .. '_Stock_Extended');
+			print('Base.' .. result:getType() .. '_Stock_Extended')
+			for i=1,parts:size() do
+				if parts:get(i-1) == stock then
+					if newstock then
+						tryAttachPart(result, newstock, character)
+					end
+				else
+					tryAttachPart(result, parts:get(i-1), character)
 				end
 			end
-			if pad then
-			result:attachWeaponPart(pad)
-			end
 			if secondHand or firstHand then
-	        player:setSecondaryHandItem(result);
-	        if not player:getPrimaryHandItem() then
-	            player:setPrimaryHandItem(result);
+	        character:setSecondaryHandItem(result);
+	        if not character:getPrimaryHandItem() then
+	            character:setPrimaryHandItem(result);
 	        end
 	    end
-			return
-		end
-    end
-end
-
-
-function onServiceFirearm_OnCreate(items, result, player)
-	local inv = player:getInventory();
-	for i=0,items:size()-1 do
-		local item = items:get(i)
-		if item:getSubCategory() == "Firearm" then
-			if instanceof(result, "HandWeapon") then
-			local condPerc = ZombRand(5 + (player:getPerkLevel(Perks.Blacksmith) * 5), 10 + (player:getPerkLevel(Perks.Blacksmith) * 10));
-			if not ballPeen then
-					condPerc = condPerc - 20;
-			end
-			if condPerc < 5 then
-					condPerc = 5;
-			elseif condPerc > 100 then
-					condPerc = 100;
-			end
-					result:setCondition(round(result:getConditionMax() * (condPerc/100)));
-			end
-			result:setCurrentAmmoCount(item:getCurrentAmmoCount())
-			if result:haveChamber() and item:haveChamber() and item:isRoundChambered() then
-				result:setRoundChambered(true)
-			end
-			local modData = result:getModData()
-			for k,v in pairs(item:getModData()) do
-				modData[k] = v
-			end
-			local clip = item:getClip()
-			local scope = item:getScope()
-			local sling = item:getSling()
-			local canon = item:getCanon()
-			local stock = item:getStock()
-			local pad = item:getRecoilpad()
-			if clip then
-			result:attachWeaponPart(clip)
-			end
-			if scope then
-			inv:AddItem(scope)
-			end
-			if sling then
-			inv:AddItem(sling)
-			end
-			if canon then
-			inv:AddItem(canon)
-			end
-			if stock then
-			inv:AddItem(stock)
-			end
-			if pad then
-			inv:AddItem(pad)
-			end
-			return
-		end
-    end
-end
-
-function onCleanPart_OnCreate(items, result, player)
-	local inv = player:getInventory();
-	for i=0,items:size()-1 do
-		local item = items:get(i)
-		if item:getSubCategory() == "Firearm" then
-			result:setCurrentAmmoCount(item:getCurrentAmmoCount())
-			if result:haveChamber() and item:haveChamber() and item:isRoundChambered() then
-				result:setRoundChambered(true)
-			end
-			local modData = result:getModData()
-			for k,v in pairs(item:getModData()) do
-				modData[k] = v
-			end
-			local clip = item:getClip()
-			local scope = item:getScope()
-			local sling = item:getSling()
-			local canon = item:getCanon()
-			local stock = item:getStock()
-			local pad = item:getRecoilpad()
-			if clip then
-			result:attachWeaponPart(clip)
-			end
-			if scope then
-			inv:AddItem(scope)
-			end
-			if sling then
-			inv:AddItem(sling)
-			end
-			if canon then
-			inv:AddItem(canon)
-			end
-			if stock then
-			inv:AddItem(stock)
-			end
-			if pad then
-			inv:AddItem(pad)
-			end
 			return
 		end
     end

@@ -33,7 +33,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	25,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -46,7 +46,7 @@ module Base
 		HitChance						=	50,
 		AimingPerkHitChanceModifier		=	7,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	35,
 		AimingTime						=	30,
@@ -150,7 +150,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	25,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -163,7 +163,7 @@ module Base
 		HitChance						=	50,
 		AimingPerkHitChanceModifier		=	7,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	35,
 		AimingTime						=	30,
@@ -267,7 +267,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	18,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -280,7 +280,7 @@ module Base
 		HitChance						=	50,
 		AimingPerkHitChanceModifier		=	7,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	35,
 		AimingTime						=	30,
@@ -384,7 +384,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	25,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -397,7 +397,7 @@ module Base
 		HitChance						=	50,
 		AimingPerkHitChanceModifier		=	7,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	35,
 		AimingTime						=	30,
@@ -501,7 +501,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	30,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -514,7 +514,7 @@ module Base
 		HitChance						=	50,
 		AimingPerkHitChanceModifier		=	5,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	35,
 		AimingTime						=	30,
@@ -619,7 +619,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	25,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -632,7 +632,7 @@ module Base
 		HitChance						=	50,
 		AimingPerkHitChanceModifier		=	10,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	35,
 		AimingTime						=	30,
@@ -737,7 +737,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	30,
 		MinRange						=	0.61,
 		MinAngle						=	0.985,
 		MinimumSwingTime				=	0.5,
@@ -750,7 +750,7 @@ module Base
 		HitChance						=	50,
 		AimingPerkHitChanceModifier		=	10,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1.5,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	35,
 		AimingTime						=	30,

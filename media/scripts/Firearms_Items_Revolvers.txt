@@ -14,7 +14,7 @@ module Base
 		DisplayName						=	SW625,
 		DisplayCategory					=	Weapon,
 		Icon							=	Revolver,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -33,7 +33,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -46,7 +46,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	12,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	35,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -128,7 +128,7 @@ module Base
 		DisplayName						=	SW29,
 		DisplayCategory					=	Weapon,
 		Icon							=	SW29,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -147,7 +147,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -160,7 +160,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	12,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	35,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -242,7 +242,7 @@ module Base
 		DisplayName						=	SW36,
 		DisplayCategory					=	Weapon,
 		Icon							=	RevolverShort,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -261,7 +261,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	12,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -274,7 +274,7 @@ module Base
 		HitChance						=	30,
 		AimingPerkHitChanceModifier		=	10,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	35,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -356,7 +356,7 @@ module Base
 		DisplayName						=	Colt Python,
 		DisplayCategory					=	Weapon,
 		Icon							=	ColtPython,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -375,7 +375,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -388,7 +388,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	12,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	35,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -470,7 +470,7 @@ module Base
 		DisplayName						=	Colt Python Hunter,
 		DisplayCategory					=	Weapon,
 		Icon							=	ColtPythonHunter,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -489,7 +489,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	16,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -502,7 +502,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	12,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	40,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -584,7 +584,7 @@ module Base
 		DisplayName						=	Colt Anaconda,
 		DisplayCategory					=	Weapon,
 		Icon							=	ColtAnaconda,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -603,7 +603,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	16,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -616,7 +616,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	12,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	35,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -698,7 +698,7 @@ module Base
 		DisplayName						=	Colt Single Action Army,
 		DisplayCategory					=	Weapon,
 		Icon							=	ColtPeacemaker,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -717,7 +717,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -730,7 +730,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	12,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	35,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -812,7 +812,7 @@ module Base
 		DisplayName						=	Colt Single Action Frontier Scout,
 		DisplayCategory					=	Weapon,
 		Icon							=	CSAFS,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -831,7 +831,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -844,7 +844,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	12,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	35,
 		ReloadTime						=	25,
 		AimingTime						=	40,

@@ -58,7 +58,7 @@ local function silence(wielder, weapon)
 	local soundRadius = scriptItem:getSoundRadius()
 	local swingSound = scriptItem:getSwingSound()
 
-	local canon = weapon:getCanon()
+	local canon = weapon:getWeaponPart("Canon")
 	if canon then
 	if getDebug() then print(canon:getType()) end
 		if canon:hasTag("Silencer") then
@@ -106,7 +106,7 @@ function breakSuppressor(playerObj, weapon)
 	if not weapon then return end;
 	if not weapon:isRanged() then return end;
 
-	local canon = weapon:getCanon()
+	local canon = weapon:getWeaponPart("Canon")
 	if canon then
 	if canon:hasTag("ImprovisedSilencer") then
 		if ZombRand(BREAKCHANCE[SandboxVars.Firearms.FlashlightSuppressorBreakChance]) == 1 then

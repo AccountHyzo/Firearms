@@ -21,6 +21,7 @@ module Base
       UseDelta	=	0.05,
       UseWhileEquipped	=	FALSE,
       DisplayName	=	Gun Tool Kit,
+      DisplayCategory = Material,
       Icon	=	Improvised_GunToolKit,
       Tooltip = Tooltip_ServiceFirearms,
       SurvivalGear = TRUE,
@@ -30,395 +31,100 @@ module Base
     item Solvent
     {
       Weight	=	1,
+      WeightEmpty = 0.1,
       Type	=	Drainable,
       UseDelta	=	0.05,
       UseWhileEquipped	=	FALSE,
       DisplayName	=	WD-40,
+      DisplayCategory = Material,
       Icon	=	WD40,
       Tooltip = Tooltip_ServiceFirearms,
+      cantBeConsolided = TRUE,
       SurvivalGear = TRUE,
       WorldStaticModel = WMD,
+      Tags = FirearmsSolvent;Solvent;HasMetal,
     }
-	
 
-	recipe Make Improvised Gun Cleaning Kit
+    item Toothbrush
+  	{
+  		DisplayName = Toothbrush,
+  		DisplayCategory = Material,
+  		Type = Normal,
+  		Weight = 0.2,
+  		Icon = Toothbrush,
+  		WorldStaticModel = Toothbrush,
+  		Tags = FirearmsBrush,
+  	}
+
+    /*craftRecipe MakeImprovisedGunCleaningKit
+  	{
+      timedAction = Making,
+      xpAward = Maintenance:5,
+      SkillRequired = Maintenance:1,
+  		AutoLearn = Maintenance:1,
+  		Time = 20,
+  		AllowBatchCraft = False,
+  		Tags = InHandCraft,
+  		category = Weaponry,
+  		OnCreate = onImprovisedSilencer_OnCreate,
+  		Tooltip = Tooltip_Recipe_ImprovisedSilencer,
+  		OnTest = onImprovisedSilencer_OnTest,
+  		inputs
+  		{
+  			item 1 tags[CleanStains] flags[AllowDestroyedItem;IsWorn],
+  			item 1 tags[FirearmsBrush] flags[AllowDestroyedItem;IsWorn],
+  			item 1 tags[FirearmsSolvent] flags[AllowDestroyedItem;IsWorn],
+  		}
+  		outputs
+  		{
+  			item 1 Base.ImprovisedGunToolKit,
+  		}
+  	}*/
+
+  craftRecipe RepairFirearm
 	{
-		[Recipe.GetItemTypes.Firearms_Service],
-		Toothbrush,
-		Solvent=5,
-	
-		Result:ImprovisedGunToolKit,
-		Time:20.0,
-		Category:Firearms,
-		OnCreate:onImprovisedSilencer_OnCreate,
+		Time = 180,
+		AllowBatchCraft = False,
+    tags = AnySurfaceCraft,
+    category = Repair,
+    timedAction = CraftWeapon1H,
+		xpAward = Maintenance:5,
+    SkillRequired = Maintenance:2,
+    OnCreate = CraftRecipeCode.GenericEvenBetterFixing.OnCreate,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		inputs
+		{
+			item 1 tags[Gun] mode:keep flags[Prop1;AllowDestroyedItem;IsDamaged],
+			item 2 [Base.GunToolKit] flags[Prop2],
+		}
+		outputs
+		{
+		}
 	}
 
-    fixing Fix ColtAce
-    {
-       Require : ColtAce,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-    fixing Fix ColtAnaconda
-    {
-       Require : ColtAnaconda,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-    fixing Fix ColtPython
-    {
-       Require : ColtPython,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-    fixing Fix ColtPythonHunter
-    {
-       Require : ColtPythonHunter,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-    fixing Fix ColtSingleAction22
-    {
-    Require : ColtSingleAction22,
-
-    Fixer : GunToolKit=1; Aiming=2,
-    Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-    fixing Fix ColtPeacemaker
-    {
-       Require : ColtPeacemaker,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-		fixing Fix Revolver
-    {
-       Require : Revolver,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-       Override:true,
-    }
-
-		fixing Fix Revolver_Long
-    {
-       Require : Revolver_Long,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-       Override:true,
-    }
-
-		fixing Fix Revolver_Short
+  craftRecipe RepairFirearmImprovised
+	{
+		Time = 180,
+		AllowBatchCraft = False,
+    tags = AnySurfaceCraft,
+    category = Repair,
+    timedAction = CraftWeapon1H,
+		xpAward = Maintenance:5,
+    SkillRequired = Maintenance:3,
+    AutoLearn = Maintenance:3,
+    OnCreate = CraftRecipeCode.GenericFixing.OnCreate,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		inputs
 		{
-			 Require : Revolver_Short,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-       Override:true,
+			item 1 tags[Gun] mode:keep flags[Prop1;IsDamaged],
+			item 2 tags[CleanStains] flags[Prop2],
+			item 1 tags[FirearmsBrush] mode:keep,
+			item 3 tags[FirearmsSolvent],
+			/*item 2 [Base.ImprovisedGunToolKit] flags[Prop2],*/
 		}
-
-		fixing Fix Pistol
-    {
-       Require : Pistol,
-
-       Fixer : GunToolKit=1; Aiming=3,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-       Override:true,
-    }
-
-		fixing Fix Pistol2
-    {
-       Require : Pistol2,
-
-			 Fixer : GunToolKit=1; Aiming=3,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-       Override:true,
-    }
-
-		fixing Fix Pistol3
-    {
-       Require : Pistol3,
-
-			 Fixer : GunToolKit=1; Aiming=3,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-       Override:true,
-    }
-
-		fixing Fix Glock17
-    {
-       Require : Glock17,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-		fixing Fix Varmint Rifle
-    {
-       Require : VarmintRifle,
-
-			 Fixer : GunToolKit=1; Aiming=6,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
-       Override:true,
-    }
-
-    fixing Fix Hunting Rifle
-    {
-       Require : HuntingRifle,
-
-			 Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
-       Override:true,
-    }
-
-    fixing Fix HuntingRifle_Sawn
-    {
-    Require : HuntingRifle_Sawn,
-
-    Fixer : GunToolKit=1; Aiming=4,
-    Fixer : ImprovisedGunToolKit=2; Aiming=2,
-    }
-
-    fixing Fix RugerM7722
-    {
-       Require : Rugerm7722,
-
-			 Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
-       Override:true,
-    }
-
-    fixing Fix M24Rifle
-    {
-       Require : M24Rifle,
-
-			 Fixer : GunToolKit=1; Aiming=7,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
-    }
-
-		fixing Fix Assault Rifle
-    {
-       Require : AssaultRifle,
-
-			 Fixer : GunToolKit=1; Aiming=6,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
-    }
-
-		fixing Fix AR15
-    {
-       Require : AR15,
-
-			 Fixer : GunToolKit=1; Aiming=6,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
-    }
-
-		fixing Fix M16A2
-    {
-       Require : M16A2,
-
-			 Fixer : GunToolKit=1; Aiming=6,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
-    }
-
-		fixing Fix AssaultRifle2
-    {
-       Require : AssaultRifle2,
-
-			 Fixer : GunToolKit=1; Aiming=7,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
-    }
-
-		fixing Fix M1Garand
-    {
-       Require : M1Garand,
-
-			 Fixer : GunToolKit=1; Aiming=7,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=3,
-    }
-
-		fixing Fix Shotgun
+		outputs
 		{
-			 Require : Shotgun,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
 		}
+	}
 
-		fixing Fix DoubleBarrelShotgun
-		{
-			 Require : DoubleBarrelShotgun,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-		}
-
-		fixing Fix DoubleBarrelShotgunSawnoff
-		{
-			 Require : DoubleBarrelShotgunSawnoff,
-
-			 Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-		}
-
-		fixing Fix Mossberg500
-    {
-       Require : Mossberg500,
-
-       Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-		fixing Fix Mossberg500Tactical
-    {
-       Require : Mossberg500Tactical,
-
-       Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-		fixing Fix Remington870Wood
-    {
-       Require : Remington870Wood,
-
-       Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-		fixing Fix Remington870Sawnoff
-    {
-       Require : Remington870Sawnoff,
-
-       Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-		fixing Fix M37
-    {
-       Require : M37,
-
-       Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-		fixing Fix M37Sawnoff
-    {
-       Require : M37Sawnoff,
-
-       Fixer : GunToolKit=1; Aiming=2,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-    }
-
-		fixing Fix MP5
-    {
-       Require : MP5,
-
-       Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
-    }
-
-		fixing Fix UZI
-    {
-       Require : UZI,
-
-       Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
-    }
-
-		fixing Fix MAC 10
-    {
-       Require : Mac10,
-
-       Fixer : GunToolKit=1; Aiming=5,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=2,
-    }
-
-		fixing Fix Winchester94
-		{
-			Require : Winchester94,
-
-			 Fixer : GunToolKit=1; Aiming=3,
-			 Fixer : ImprovisedGunToolKit=2; Aiming=1,
-		}
-
-		fixing Fix Winchester73
-		{
-			Require : Winchester73,
-
-      Fixer : GunToolKit=1; Aiming=3,
-      Fixer : ImprovisedGunToolKit=2; Aiming=1,
-		}
-
-		fixing Fix Rossi92
-		{
-			Require : Rossi92,
-
-      Fixer : GunToolKit=1; Aiming=3,
-      Fixer : ImprovisedGunToolKit=2; Aiming=1,
-		}
-
-		fixing Fix M60
-		{
-			Require : M60,
-
-      Fixer : GunToolKit=3; Aiming=7,
-      Fixer : ImprovisedGunToolKit=3; Aiming=3,
-		}
-
-		fixing Fix FN FAL
-		{
-			Require : FN_FAL,
-
-      Fixer : GunToolKit=2; Aiming=7,
-      Fixer : ImprovisedGunToolKit=3; Aiming=3,
-		}
-
-		fixing Fix AK47
-		{
-			Require : AK47,
-
-      Fixer : GunToolKit=2; Aiming=5,
-      Fixer : ImprovisedGunToolKit=3; Aiming=2,
-		}
-
-		fixing Fix SKS
-		{
-			Require : SKS,
-
-      Fixer : GunToolKit=2; Aiming=5,
-      Fixer : ImprovisedGunToolKit=3; Aiming=2,
-		}
-
-		fixing Fix SPAS12
-		{
-			Require : SPAS12,
-
-      Fixer : GunToolKit=2; Aiming=5,
-      Fixer : ImprovisedGunToolKit=3; Aiming=2,
-		}
-
-		fixing Fix LAW12
-		{
-			Require : LAW12,
-
-      Fixer : GunToolKit=2; Aiming=5,
-      Fixer : ImprovisedGunToolKit=3; Aiming=2,
-		}
-
-		fixing Fix M733
-		{
-			Require : M733,
-
-      Fixer : GunToolKit=2; Aiming=5,
-      Fixer : ImprovisedGunToolKit=3; Aiming=2,
-		}
 }

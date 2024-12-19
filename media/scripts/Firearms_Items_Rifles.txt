@@ -14,7 +14,7 @@ module Base
 		DisplayName						=	Remington Model 700,
 		DisplayCategory					=	Weapon,
 		Icon							=	Model700,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -33,7 +33,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	30,
 		MinRange						=	0.61,
 		MinAngle						=	0.97,
 		MinimumSwingTime				=	0.5,
@@ -46,7 +46,7 @@ module Base
 		HitChance						=	55,
 		AimingPerkHitChanceModifier		=	5,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	3,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	40,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -126,7 +126,7 @@ module Base
 		DisplayName						=	Remington Model 788,
 		DisplayCategory					=	Weapon,
 		Icon							=	Model788,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -145,7 +145,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	30,
 		MinRange						=	0.61,
 		MinAngle						=	0.97,
 		MinimumSwingTime				=	0.5,
@@ -158,7 +158,7 @@ module Base
 		HitChance						=	55,
 		AimingPerkHitChanceModifier		=	5,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	3,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	40,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -238,7 +238,7 @@ module Base
 		DisplayName						=	Remington Model 788,
 		DisplayCategory					=	Weapon,
 		Icon							=	Model788_Sawn,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -257,7 +257,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	17,
 		MinRange						=	0.61,
 		MinAngle						=	0.77,
 		MinimumSwingTime				=	0.5,
@@ -270,7 +270,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	7,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	55,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -350,7 +350,7 @@ module Base
 		DisplayName						=	Ruger M77/22,
 		DisplayCategory					=	Weapon,
 		Icon							=	Model788,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -369,7 +369,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	30,
 		MinRange						=	0.61,
 		MinAngle						=	0.97,
 		MinimumSwingTime				=	0.5,
@@ -382,7 +382,7 @@ module Base
 		HitChance						=	55,
 		AimingPerkHitChanceModifier		=	5,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	3,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	25,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -462,7 +462,7 @@ module Base
 		DisplayName						=	SKS,
 		DisplayCategory					=	Weapon,
 		Icon							=	SKS,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -481,7 +481,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	25,
 		MinRange						=	0.61,
 		MinAngle						=	0.97,
 		MinimumSwingTime				=	0.5,
@@ -494,7 +494,7 @@ module Base
 		HitChance						=	45,
 		AimingPerkHitChanceModifier		=	5,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	3,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	40,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -575,7 +575,7 @@ module Base
 		DisplayName						=	Remington Model 700,
 		DisplayCategory					=	Weapon,
 		Icon							=	Model700,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -594,7 +594,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	40,
 		MinRange						=	0.61,
 		MinAngle						=	0.97,
 		MinimumSwingTime				=	0.5,
@@ -607,7 +607,7 @@ module Base
 		HitChance						=	50,
 		AimingPerkHitChanceModifier		=	5,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	3,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	40,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -687,7 +687,7 @@ module Base
 		DisplayName						=	M14,
 		DisplayCategory					=	Weapon,
 		Icon							=	AssaultRifle2,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -706,7 +706,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	35,
 		MinRange						=	0.61,
 		MinAngle						=	0.97,
 		MinimumSwingTime				=	0.5,
@@ -719,7 +719,7 @@ module Base
 		HitChance						=	45,
 		AimingPerkHitChanceModifier		=	5,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	3,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	40,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -800,7 +800,7 @@ module Base
 		DisplayName						=	M1Garand,
 		DisplayCategory					=	Weapon,
 		Icon							=	M1Garand,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -819,7 +819,7 @@ module Base
 		PiercingBullets					=	TRUE,
 
 		/***********************Handling***********************/
-		MaxRange						=	10,
+		MaxRange						=	25,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -832,7 +832,7 @@ module Base
 		HitChance						=	45,
 		AimingPerkHitChanceModifier		=	5,
 		AimingPerkMinAngleModifier		=	0,
-		AimingPerkRangeModifier			=	1,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	35,
 		ReloadTime						=	15,
 		AimingTime						=	35,

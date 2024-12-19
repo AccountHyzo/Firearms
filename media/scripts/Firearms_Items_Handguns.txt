@@ -14,7 +14,7 @@ module Base
 		DisplayName						=	M9,
 		DisplayCategory					=	Weapon,
 		Icon							=	M9,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -33,7 +33,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -46,7 +46,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	15,
 		AimingPerkMinAngleModifier		=	0.02,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	15,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -126,7 +126,7 @@ module Base
 		DisplayName						=	M1911,
 		DisplayCategory					=	Weapon,
 		Icon							=	M1911,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -145,7 +145,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -158,7 +158,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	15,
 		AimingPerkMinAngleModifier		=	0.02,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	15,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -238,7 +238,7 @@ module Base
 		DisplayName						=	DEagle,
 		DisplayCategory					=	Weapon,
 		Icon							=	HandGun3,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -257,7 +257,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -270,7 +270,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	15,
 		AimingPerkMinAngleModifier		=	0.02,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	40,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -350,7 +350,7 @@ module Base
 		DisplayName						=	Glock17,
 		DisplayCategory					=	Weapon,
 		Icon							=	Glock17,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -369,7 +369,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -382,7 +382,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	15,
 		AimingPerkMinAngleModifier		=	0.02,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	15,
 		ReloadTime						=	25,
 		AimingTime						=	40,
@@ -462,7 +462,7 @@ module Base
 		DisplayName						=	ColtAce,
 		DisplayCategory					=	Weapon,
 		Icon							=	M1911,
-		Tags							=	Gun,
+		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -481,7 +481,7 @@ module Base
 		PiercingBullets					=	FALSE,
 
 		/***********************Handling***********************/
-		MaxRange						=	5,
+		MaxRange						=	15,
 		MinRange						=	0.61,
 		MinAngle						=	0.95,
 		MinimumSwingTime				=	0.5,
@@ -494,7 +494,7 @@ module Base
 		HitChance						=	35,
 		AimingPerkHitChanceModifier		=	15,
 		AimingPerkMinAngleModifier		=	0.02,
-		AimingPerkRangeModifier			=	2,
+		AimingPerkRangeModifier			=	0,
 		RecoilDelay						=	15,
 		ReloadTime						=	25,
 		AimingTime						=	40,

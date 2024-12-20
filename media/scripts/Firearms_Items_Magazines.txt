@@ -16,7 +16,7 @@ module Base
 		GunType = Base.ColtAce,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Glock_Mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;PistolMagazine,
 	}
 
 	item 9mmClip
@@ -32,7 +32,7 @@ module Base
 		GunType = Base.Pistol,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Glock_Mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;PistolMagazine,
 	}
 
 	item 45Clip
@@ -48,7 +48,7 @@ module Base
 		GunType = Base.Pistol2,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Glock_Mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;PistolMagazine,
 	}
 
 	item 44Clip
@@ -64,7 +64,7 @@ module Base
 		GunType = Base.Pistol3,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Glock_Mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;PistolMagazine,
 	}
 
 	item Glock17Mag
@@ -80,7 +80,7 @@ module Base
 		GunType = Base.Glock17,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Glock_Mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;PistolMagazine,
 	}
 
 	item MP5Mag
@@ -96,7 +96,7 @@ module Base
 		GunType = Base.MP5,
 		StaticModel = GunMagazine,
 		WorldStaticModel = MP5_Magazine_wm,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item MP510Mag
@@ -112,7 +112,7 @@ module Base
 		GunType = Base.MP510,
 		StaticModel = GunMagazine,
 		WorldStaticModel = MP5_Magazine_wm,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item UZIMag
@@ -128,7 +128,7 @@ module Base
 		GunType = Base.UZI,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Gun_Magazine_Ground,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item Mac10Mag
@@ -144,7 +144,7 @@ module Base
 		GunType = Base.Mac10,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Gun_Magazine_Ground,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item 223Clip
@@ -160,7 +160,7 @@ module Base
 		GunType = Base.VarmintRifle,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Gun_Magazine_Ground,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item 556Clip
@@ -176,7 +176,7 @@ module Base
 		GunType = Base.AssaultRifle,
 		StaticModel = 556_Mag,
 		WorldStaticModel = 556_Mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item AK_Mag
@@ -192,7 +192,7 @@ module Base
 		GunType = Base.AK47,
 		StaticModel = AK_Mag,
 		WorldStaticModel = AK_Mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item M14Clip
@@ -208,7 +208,7 @@ module Base
 		GunType = Base.AssaultRifle2,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Gun_Magazine_Ground,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item M60Mag
@@ -224,7 +224,7 @@ module Base
 		GunType = Base.M60,
 		StaticModel = GunMagazine,
 		WorldStaticModel = M60_mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item FN_FAL_Mag
@@ -240,7 +240,7 @@ module Base
 		GunType = Base.FN_FAL,
 		StaticModel = GunMagazine,
 		WorldStaticModel = fn_fal_mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item G3_Mag
@@ -256,7 +256,7 @@ module Base
 		GunType = Base.G3,
 		StaticModel = GunMagazine,
 		WorldStaticModel = fn_fal_mag,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 	item M1GarandClip
@@ -272,7 +272,7 @@ module Base
 		GunType = Base.M1Garand,
 		StaticModel = M1Clip,
 		WorldStaticModel = M1Clip,
-		Tags = GunMagazine,
+		Tags = HasMetal;RifleMagazine,
 	}
 
 }

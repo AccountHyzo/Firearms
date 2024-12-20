@@ -21,21 +21,21 @@ local BREAKCHANCE = {
 
 local function silence(wielder, weapon)
 	CALIBER = {
-		caliberBullets22		= {SandboxVars.Firearms.SuppressorEffectiveness22;'Weapon/Firearm/9mm/Firearm9mmSuppressed'};
-		caliberBullets9mm		= {SandboxVars.Firearms.SuppressorEffectiveness9mm;'Weapon/Firearm/9mm/Firearm9mmSuppressed'};
-		caliberBullets45		= {SandboxVars.Firearms.SuppressorEffectiveness45;'Weapon/Firearm/45/Firearm45Suppressed'};
-		caliberBullets44		= {SandboxVars.Firearms.SuppressorEffectiveness44;'Weapon/Firearm/45/Firearm45Suppressed'};
-		caliberBullets4440		= {SandboxVars.Firearms.SuppressorEffectiveness44;'Weapon/Firearm/45/Firearm45Suppressed'};
-		caliberBullets38		= {SandboxVars.Firearms.SuppressorEffectiveness38;'Weapon/Firearm/45/Firearm45Suppressed'};
-		caliber223Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness223;'Weapon/Firearm/AR/FirearmARSuppressed'};
-		caliber556Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness223;'Weapon/Firearm/AR/FirearmARSuppressed'};
-		caliber308Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness308;'Weapon/Firearm/AR/FirearmARSuppressed'};
-		caliber762x51Bullets	= {SandboxVars.Firearms.SuppressorEffectiveness308;'Weapon/Firearm/AR/FirearmARSuppressed'};
-		caliber762x39Bullets	= {SandboxVars.Firearms.SuppressorEffectiveness308;'Weapon/Firearm/AR/FirearmARSuppressed'};
-		caliberShotgunShells	= {SandboxVars.Firearms.SuppressorEffectivenessShotgunShells;'Weapon/Firearm/Shotgun/FirearmShotgunSilencerShot'};
-		caliberBullets357		= {SandboxVars.Firearms.SuppressorEffectiveness38;'Weapon/Firearm/45/Firearm45Suppressed'};
-		caliberBullets3006		= {SandboxVars.Firearms.SuppressorEffectiveness308;'Weapon/Firearm/AR/FirearmARSuppressed'};
-		caliberBullets10mm		= {SandboxVars.Firearms.SuppressorEffectiveness10mm;'Weapon/Firearm/45/Firearm45Suppressed'};
+		caliberBullets22		= {SandboxVars.Firearms.SuppressorEffectiveness22;'Firearm9mmSuppressed'};
+		caliberBullets9mm		= {SandboxVars.Firearms.SuppressorEffectiveness9mm;'Firearm9mmSuppressed'};
+		caliberBullets45		= {SandboxVars.Firearms.SuppressorEffectiveness45;'Firearm45Suppressed'};
+		caliberBullets44		= {SandboxVars.Firearms.SuppressorEffectiveness44;'Firearm45Suppressed'};
+		caliberBullets4440		= {SandboxVars.Firearms.SuppressorEffectiveness44;'Firearm45Suppressed'};
+		caliberBullets38		= {SandboxVars.Firearms.SuppressorEffectiveness38;'Firearm45Suppressed'};
+		caliber223Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness223;'FirearmARSuppressed'};
+		caliber556Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness223;'FirearmARSuppressed'};
+		caliber308Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness308;'FirearmARSuppressed'};
+		caliber762x51Bullets	= {SandboxVars.Firearms.SuppressorEffectiveness308;'FirearmARSuppressed'};
+		caliber762x39Bullets	= {SandboxVars.Firearms.SuppressorEffectiveness308;'FirearmARSuppressed'};
+		caliberShotgunShells	= {SandboxVars.Firearms.SuppressorEffectivenessShotgunShells;'FirearmShotgunSilencerShot'};
+		caliberBullets357		= {SandboxVars.Firearms.SuppressorEffectiveness38;'Firearm45Suppressed'};
+		caliberBullets3006		= {SandboxVars.Firearms.SuppressorEffectiveness308;'FirearmARSuppressed'};
+		caliberBullets10mm		= {SandboxVars.Firearms.SuppressorEffectiveness10mm;'Firearm45Suppressed'};
 	}
 
 	SUPPRESSORTYPE		= {

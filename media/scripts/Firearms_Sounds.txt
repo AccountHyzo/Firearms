@@ -9,7 +9,8 @@ module Base
 		maxInstancesPerEmitter = 2,
 		clip
 		{
-			event = Weapon/Firearm/9mm/Firearm9mmShot,
+			file = media/sound/Weapon/Firearm/9mm/Firearm9mmShot.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -17,9 +18,11 @@ module Base
 	{
 		category = Item,
 		maxInstancesPerEmitter = 2,
+		is3D = true,
 		clip
 		{
-			event = Weapon/Firearm/9mm/Firearm9mmSuppressed,
+			file = media/sound/Weapon/Firearm/9mm/Firearm9mmSuppressed.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -29,7 +32,8 @@ module Base
 		maxInstancesPerEmitter = 2,
 		clip
 		{
-			event = Weapon/Firearm/45/Firearm45Shot,
+			file = media/sound/Weapon/Firearm/45/Firearm45Shot.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -39,7 +43,8 @@ module Base
 		maxInstancesPerEmitter = 2,
 		clip
 		{
-			event = Weapon/Firearm/45/Firearm45Suppressed,
+			file = media/sound/Weapon/Firearm/45/Firearm45Suppressed.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -49,7 +54,8 @@ module Base
 		maxInstancesPerEmitter = 2,
 		clip
 		{
-			event = Weapon/Firearm/AR/FirearmAR15Shot,
+			file = media/sound/Weapon/Firearm/AR/FirearmAR15Shot.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -59,7 +65,8 @@ module Base
 		maxInstancesPerEmitter = 2,
 		clip
 		{
-			event = Weapon/Firearm/AR/FirearmARSuppressed,
+			file = media/sound/Weapon/Firearm/AR/FirearmARSuppressed.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -68,7 +75,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/AR/FirearmAR15RemoveMagazine,
+			file = media/sound/Weapon/Firearm/AR/FirearmAR15RemoveMagazine.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -77,7 +85,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/AR/FirearmAR15InsertMagazine,
+			file = media/sound/Weapon/Firearm/AR/FirearmAR15InsertMagazine.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -86,7 +95,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/AR/FirearmAR15Rack,
+			file = media/sound/Weapon/Firearm/AR/FirearmAR15Rack.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -95,7 +105,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/AR/FirearmAKRack,
+			file = media/sound/Weapon/Firearm/AR/FirearmAKRack.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -105,7 +116,8 @@ module Base
 		maxInstancesPerEmitter = 2,
 		clip
 		{
-			event = Weapon/Firearm/Rifle/FirearmRifleShot,
+			file = media/sound/Weapon/Firearm/Rifle/FirearmRifleShot.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -115,7 +127,8 @@ module Base
 		maxInstancesPerEmitter = 2,
 		clip
 		{
-			event = Weapon/Firearm/Rifle/FirearmRifleSilencerShot,
+			file = media/sound/Weapon/Firearm/Rifle/FirearmRifleSilencerShot.ogg,
+			distanceMax = 20,
 		}
 	}
 
@@ -125,7 +138,8 @@ module Base
 		maxInstancesPerEmitter = 2,
 		clip
 		{
-			event = Weapon/Firearm/Shotgun/FirearmShotgunFire,
+			file = media/sound/Weapon/Firearm/Shotgun/FirearmShotgunFire.ogg,
+			distanceMax = 20,
 		}
 	}
 
@@ -135,7 +149,8 @@ module Base
 		maxInstancesPerEmitter = 2,
 		clip
 		{
-			event = Weapon/Firearm/Shotgun/FirearmShotgunSilencerShot,
+			file = media/sound/Weapon/Firearm/Shotgun/FirearmShotgunSilencerShot.wav,
+			distanceMax = 20,
 		}
 	}
 
@@ -143,9 +158,12 @@ module Base
 	{
 		category = Item,
 		maxInstancesPerEmitter = 2,
+		is3D = true,
 		clip
 		{
-			event = Weapon/Firearm/M60/FirearmM60Fire,
+			file = media/sound/Weapon/Firearm/M60/FirearmM60Fire.wav,
+			SoundGain = 0.5,
+			distanceMax = 20,
 		}
 	}
 
@@ -154,7 +172,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/M60/FirearmM60Load,
+			file = media/sound/Weapon/Firearm/M60/FirearmM60Load.ogg,
+			distanceMax = 20,
 		}
 	}
 
@@ -163,7 +182,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/M60/FirearmM60LoadStart,
+			file = media/sound/Weapon/Firearm/M60/FirearmM60LoadStart.ogg,
+			distanceMax = 20,
 		}
 	}
 
@@ -172,7 +192,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/M60/FirearmM60LoadStop,
+			file = media/sound/Weapon/Firearm/M60/FirearmM60LoadStop.ogg,
+			distanceMax = 20,
 		}
 	}
 
@@ -181,7 +202,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/M60/FirearmM60Rack,
+			file = media/sound/Weapon/Firearm/M60/FirearmM60Rack.ogg,
+			distanceMax = 20,
 		}
 	}
 
@@ -190,7 +212,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/Leveraction/LeveractionCock,
+			file = media/sound/Weapon/Firearm/Leveraction/LeveractionCock.ogg,
+			distanceMax = 20,
 		}
 	}
 
@@ -199,7 +222,8 @@ module Base
 		category = Item,
 		clip
 		{
-			event = Weapon/Firearm/Leveraction/LeveractionLoad,
+			file = media/sound/Weapon/Firearm/Leveraction/LeveractionLoad.ogg,
+			distanceMax = 20,
 		}
 	}
 

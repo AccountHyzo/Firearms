@@ -16,6 +16,20 @@ module Base
 		Tags = Ammo,
 	}
 
+	item Bullets10mm
+	{
+		Count				=	5,
+		Weight				=	0.01,
+		Type				=	Normal,
+		DisplayCategory		=	Ammo,
+		DisplayName			=	10mm Round,
+		Icon				=	PistolAmmo,
+		MetalValue			=	1,
+		StaticModel			=	Bullet,
+		WorldStaticModel	=	9mmRounds,
+		Tags = Ammo,
+	}
+
 	item Bullets45
 	{
 		Count				=	5,
@@ -211,6 +225,20 @@ module Base
 		PlaceOneSound = BoxOfRoundsPlaceOne,
 		StaticModel			=	HandgunAmmoBox,
 		WorldStaticModel	=	Bullets9mmAmmobox,
+	}
+
+	item Bullets10mmBox
+	{
+		Weight				=	0.5,
+		Type				=	Normal,
+		DisplayName			=	Box of 10mm Rounds,
+		DisplayCategory		=	Ammo,
+		Icon				=	Bullets38Box,
+		MetalValue			=	30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel			=	HandgunAmmoBox,
+		WorldStaticModel	=	Bullets10mmAmmobox,
 	}
 
 	item Bullets45Box

@@ -46,6 +46,13 @@ option Firearms.SuppressorEffectiveness9mm
 	valueTranslation = Firearms_SuppressorEffectiveness,
 }
 
+option Firearms.SuppressorEffectiveness10mm
+{
+	type = enum, numValues = 10, default = 4,
+	page = Firearms, translation = Firearms_SuppressorEffectiveness10mm,
+	valueTranslation = Firearms_SuppressorEffectiveness,
+}
+
 option Firearms.SuppressorEffectiveness45
 {
 	type = enum, numValues = 10, default = 4,
@@ -163,10 +170,22 @@ option Firearms.SpawnFNFal
 	page = FirearmsSpawns, translation = Firearms_SpawnFNFal,
 }
 
+option Firearms.SpawnG3
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnG3,
+}
+
 option Firearms.SpawnGlock17
 {
 	type = boolean, default = true,
 	page = FirearmsSpawns, translation = Firearms_SpawnGlock17,
+}
+
+option Firearms.SpawnICA19
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnICA19,
 }
 
 option Firearms.SpawnM37

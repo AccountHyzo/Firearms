@@ -3,178 +3,204 @@ module Base
 
 	/************************Sounds************************/
 
-		sound BulletOutVarmint
+	sound Firearm9mmShot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/BoltRack.ogg,
-			}
+			event = Weapon/Firearm/9mm/Firearm9mmShot,
 		}
+	}
 
-		sound BulletInRifle
+	sound Firearm9mmSuppressed
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				event = bulletInRifle,
-			}
+			event = Weapon/Firearm/9mm/Firearm9mmSuppressed,
 		}
+	}
 
-		sound FirearmShotgun
+	sound Firearm45Shot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/FirearmShotgunFire.ogg,
-				distanceMax = 200, /* SoundRadius in items.txt */
-			}
+			event = Weapon/Firearm/45/Firearm45Shot,
 		}
+	}
 
-		sound FirearmShotgunSawnoff
+	sound Firearm45Suppressed
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/FirearmShotgunFire.ogg,
-				distanceMax = 250, /* SoundRadius in items.txt */
-			}
+			event = Weapon/Firearm/45/Firearm45Suppressed,
 		}
+	}
 
-		sound stormyShotgunPump
+	sound FirearmAR15Shot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/ShotgunCock.ogg,
-			}
+			event = Weapon/Firearm/AR/FirearmAR15Shot,
 		}
+	}
 
-		sound StormyShotgunInsertRound
+	sound FirearmARSuppressed
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/ShotgunLoad.ogg,
-			}
+			event = Weapon/Firearm/AR/FirearmARSuppressed,
 		}
+	}
 
-		sound StormyShotgunClick
+	sound FirearmAR15RemoveMagazine
+	{
+		category = Item,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/dryfire.ogg,
-				volume = 0.2,
-			}
+			event = Weapon/Firearm/AR/FirearmAR15RemoveMagazine,
 		}
+	}
 
-		sound Stormy9mmClick
+	sound FirearmAR15InsertMagazine
+	{
+		category = Item,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/dryfire.ogg,
-				volume = 0.2,
-			}
+			event = Weapon/Firearm/AR/FirearmAR15InsertMagazine,
 		}
+	}
 
-		sound StormyRevolverInsertRound
+	sound FirearmAR15Rack
+	{
+		category = Item,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/StormyRevolverInsertRound.wav,
-			}
+			event = Weapon/Firearm/AR/FirearmAR15Rack,
 		}
+	}
 
-		sound FirearmARShot
+	sound FirearmAKRack
+	{
+		category = Item,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/FirearmARShot.wav,
-				volume = 2,
-			}
+			event = Weapon/Firearm/AR/FirearmAKRack,
 		}
+	}
 
-		sound FirearmARSuppressed
+	sound FirearmRifleShot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/FirearmARSuppressed.wav,
-				volume = 2,
-			}
+			event = Weapon/Firearm/Rifle/FirearmRifleShot,
 		}
+	}
 
-		sound Firearm9mmShot
+	sound FirearmRifleSilencerShot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/Firearm9mmShot.wav,
-				volume = 2,
-			}
+			event = Weapon/Firearm/Rifle/FirearmRifleSilencerShot,
 		}
+	}
 
-		sound Firearm9mmSuppressed
+	sound FirearmShotgunFire
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/Firearm9mmSuppressed.wav,
-				volume = 2,
-			}
+			event = Weapon/Firearm/Shotgun/FirearmShotgunFire,
 		}
+	}
 
-		sound Firearm45Shot
+	sound FirearmShotgunSilencerShot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/Firearm45Shot.wav,
-				volume = 2,
-			}
+			event = Weapon/Firearm/Shotgun/FirearmShotgunSilencerShot,
 		}
+	}
 
-		sound Firearm45Suppressed
+	sound FirearmM60Fire
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/Firearm45Suppressed.wav,
-				volume = 2,
-			}
+			event = Weapon/Firearm/M60/FirearmM60Fire,
 		}
+	}
 
-		sound FirearmPistolSilencerShot
+	sound FirearmM60Load
+	{
+		category = Item,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/FirearmPistolSilencerShot.wav,
-				volume = 2,
-			}
+			event = Weapon/Firearm/M60/FirearmM60Load,
 		}
+	}
 
-		sound FirearmShotgunSilencerShot
+	sound FirearmM60LoadStart
+	{
+		category = Item,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/FirearmShotgunSilencerShot.wav,
-				volume = 2,
-			}
+			event = Weapon/Firearm/M60/FirearmM60LoadStart,
 		}
+	}
 
-		sound Stormy9mmRack
+	sound FirearmM60LoadStop
+	{
+		category = Item,
+		clip
 		{
-			category = Item,
-			clip
-			{
-				file = media/sound/Firearm9mmRack.ogg,
-			}
+			event = Weapon/Firearm/M60/FirearmM60LoadStop,
 		}
+	}
+
+	sound FirearmM60Rack
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M60/FirearmM60Rack,
+		}
+	}
+
+	sound FirearmLeveractionCock
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Leveraction/LeveractionCock,
+		}
+	}
+
+	sound FirearmLeveractionLoad
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Leveraction/LeveractionLoad,
+		}
+	}
 
 }

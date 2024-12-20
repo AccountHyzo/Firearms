@@ -53,6 +53,9 @@ Sandbox_EN = {
   Sandbox_Firearms_SuppressorEffectiveness9mm = "9mm Suppressor Effectiveness",
   Sandbox_Firearms_SuppressorEffectiveness9mm_tooltip = "How effective a suppressor is on a firearm that uses 9mm rounds.",
 
+  Sandbox_Firearms_SuppressorEffectiveness10mm = "10mm Auto Suppressor Effectiveness",
+  Sandbox_Firearms_SuppressorEffectiveness10mm_tooltip = "How effective a suppressor is on a firearm that uses 10mm Auto rounds.",
+
   Sandbox_Firearms_SuppressorEffectiveness45 = ".45 ACP Suppressor Effectiveness",
   Sandbox_Firearms_SuppressorEffectiveness45_tooltip = "How effective a suppressor is on a firearm that uses .45 ACP rounds.",
 
@@ -101,11 +104,17 @@ Sandbox_EN = {
 	Sandbox_Firearms_SpawnFNFal = "FN Fal",
 	Sandbox_Firearms_SpawnFNFal_tooltip = "Whether the FN Fal spawns.",
 
+	Sandbox_Firearms_SpawnG3 = "H&K G3",
+	Sandbox_Firearms_SpawnG3_tooltip = "Whether the H&K G3 spawns.",
+
 	Sandbox_Firearms_SpawnPython = "Colt Python",
 	Sandbox_Firearms_SpawnPython_tooltip = "Whether Colt Python Revolvers spawn.",
 
 	Sandbox_Firearms_SpawnGlock17 = "Glock 17",
 	Sandbox_Firearms_SpawnGlock17_tooltip = "Whether Glock 17 Pistols and their magazines spawn.",
+
+	Sandbox_Firearms_SpawnICA19 = "ICA19",
+	Sandbox_Firearms_SpawnICA19_tooltip = "Whether to spawn the iconic ICA19 from the Hitman series.",
 
 	Sandbox_Firearms_SpawnM733 = "Colt Commando",
 	Sandbox_Firearms_SpawnM733_tooltip = "Whether Colt Commando Assault Rifles spawn.",

@@ -25,12 +25,17 @@ ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapo
     local canon = weapon:getWeaponPart("Canon")
 		if not canon then
 			original_attackHook(character, chargeDelta, weapon)
+		elseif not canon:hasTag("Silencer") then
+			original_attackHook(character, chargeDelta, weapon)
 		elseif ISReloadWeaponAction.canShoot(weapon) then
 			character:playSound(weapon:getSwingSound());
-			local radius = weapon:getSoundRadius();
-			if isClient() then -- limit sound radius in MP
-				radius = radius / 2.2;
+			local radius = weapon:getSoundRadius() * getSandboxOptions():getOptionByName("FirearmNoiseMultiplier"):getValue();
+			if not character:isOutside() then
+				radius = radius * 0.5
 			end
+			--if isClient() then -- limit sound radius in MP
+			--	radius = radius / 1.8;
+			--end
 			character:addWorldSoundUnlessInvisible(radius, weapon:getSoundVolume(), false);
 			if not canon then
 				if getDebug() then print(canon); end
@@ -48,9 +53,15 @@ ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapo
 			character:DoAttack(0);
 			character:setRangedWeaponEmpty(true);
 		end
-	else
+	-- else
+	-- nerf so players in vehicles cannot use melee attacks
+	elseif (not character:getVehicle() or character:isDoShove()) then
 		ISTimedActionQueue.clear(character)
-		original_attackHook(character, chargeDelta, weapon)
+		if(chargeDelta == nil) then
+			character:DoAttack(0);
+		else
+			character:DoAttack(chargeDelta);
+		end
 	end
 end
 

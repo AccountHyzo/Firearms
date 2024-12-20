@@ -178,7 +178,7 @@ module Base
 			Tags = InHandCraft;CanBeDoneInDark,
 			inputs
 			{
-				item 1 [/*Base.Bullets9mmBox;Base.Bullets45Box;Base.Bullets38Box;Base.Bullets44Box;*/Base.Bullets357Box;Base.Bullets4440Box;Base.Bullets22Box] mappers[ammoTypes],
+				item 1 [/*Base.Bullets9mmBox;Base.Bullets45Box;Base.Bullets38Box;Base.Bullets44Box;*/Bullets10mmBox;Base.Bullets357Box;Base.Bullets4440Box;Base.Bullets22Box] mappers[ammoTypes],
 			}
 			outputs
 			{
@@ -190,6 +190,7 @@ module Base
 			Base.Bullets45 = Base.Bullets45Box,
 			Base.Bullets38 = Base.Bullets38Box,
 			Base.Bullets44 = Base.Bullets44Box,*/
+			Base.Bullets10mm = Base.Bullets10mmBox,
 			Base.Bullets357 = Base.Bullets357Box,
 			Base.Bullets4440 = Base.Bullets4440Box,
 			Base.Bullets22 = Base.Bullets22Box,
@@ -298,6 +299,22 @@ module Base
 		outputs
 		{
 			item 1 Base.762x39Box,
+		}
+	}
+
+	craftRecipe Place10mmBulletsInBox
+	{
+    timedAction = PlaceAmmoInBox,
+		Time = 15,
+		category = Ammunition,
+    Tags = InHandCraft,
+		inputs
+		{
+			item 50 [Base.Bullets10mm],
+		}
+		outputs
+		{
+			item 1 Base.Bullets10mmBox,
 		}
 	}
 

@@ -21,25 +21,27 @@ local BREAKCHANCE = {
 
 local function silence(wielder, weapon)
 	CALIBER = {
-		caliberBullets22		= {SandboxVars.Firearms.SuppressorEffectiveness22;'Firearm9mmSuppressed'};
-		caliberBullets9mm		= {SandboxVars.Firearms.SuppressorEffectiveness9mm;'Firearm9mmSuppressed'};
-		caliberBullets45		= {SandboxVars.Firearms.SuppressorEffectiveness45;'Firearm45Suppressed'};
-		caliberBullets44		= {SandboxVars.Firearms.SuppressorEffectiveness44;'Firearm45Suppressed'};
-		caliberBullets4440		= {SandboxVars.Firearms.SuppressorEffectiveness44;'Firearm45Suppressed'};
-		caliberBullets38		= {SandboxVars.Firearms.SuppressorEffectiveness38;'Firearm45Suppressed'};
-		caliber223Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness223;'FirearmARSuppressed'};
-		caliber556Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness223;'FirearmARSuppressed'};
-		caliber308Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness308;'FirearmARSuppressed'};
-		caliber762x51Bullets	= {SandboxVars.Firearms.SuppressorEffectiveness308;'FirearmARSuppressed'};
-		caliber762x39Bullets	= {SandboxVars.Firearms.SuppressorEffectiveness308;'FirearmARSuppressed'};
-		caliberShotgunShells	= {SandboxVars.Firearms.SuppressorEffectivenessShotgunShells;'FirearmShotgunSilencerShot'};
-		caliberBullets357		= {SandboxVars.Firearms.SuppressorEffectiveness38;'Firearm45Suppressed'};
-		caliberBullets3006		= {SandboxVars.Firearms.SuppressorEffectiveness308;'FirearmARSuppressed'};
+		caliberBullets22		= {SandboxVars.Firearms.SuppressorEffectiveness22;'Weapon/Firearm/9mm/Firearm9mmSuppressed'};
+		caliberBullets9mm		= {SandboxVars.Firearms.SuppressorEffectiveness9mm;'Weapon/Firearm/9mm/Firearm9mmSuppressed'};
+		caliberBullets45		= {SandboxVars.Firearms.SuppressorEffectiveness45;'Weapon/Firearm/45/Firearm45Suppressed'};
+		caliberBullets44		= {SandboxVars.Firearms.SuppressorEffectiveness44;'Weapon/Firearm/45/Firearm45Suppressed'};
+		caliberBullets4440		= {SandboxVars.Firearms.SuppressorEffectiveness44;'Weapon/Firearm/45/Firearm45Suppressed'};
+		caliberBullets38		= {SandboxVars.Firearms.SuppressorEffectiveness38;'Weapon/Firearm/45/Firearm45Suppressed'};
+		caliber223Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness223;'Weapon/Firearm/AR/FirearmARSuppressed'};
+		caliber556Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness223;'Weapon/Firearm/AR/FirearmARSuppressed'};
+		caliber308Bullets		= {SandboxVars.Firearms.SuppressorEffectiveness308;'Weapon/Firearm/AR/FirearmARSuppressed'};
+		caliber762x51Bullets	= {SandboxVars.Firearms.SuppressorEffectiveness308;'Weapon/Firearm/AR/FirearmARSuppressed'};
+		caliber762x39Bullets	= {SandboxVars.Firearms.SuppressorEffectiveness308;'Weapon/Firearm/AR/FirearmARSuppressed'};
+		caliberShotgunShells	= {SandboxVars.Firearms.SuppressorEffectivenessShotgunShells;'Weapon/Firearm/Shotgun/FirearmShotgunSilencerShot'};
+		caliberBullets357		= {SandboxVars.Firearms.SuppressorEffectiveness38;'Weapon/Firearm/45/Firearm45Suppressed'};
+		caliberBullets3006		= {SandboxVars.Firearms.SuppressorEffectiveness308;'Weapon/Firearm/AR/FirearmARSuppressed'};
+		caliberBullets10mm		= {SandboxVars.Firearms.SuppressorEffectiveness10mm;'Weapon/Firearm/45/Firearm45Suppressed'};
 	}
 
 	SUPPRESSORTYPE		= {
 		type22Silencer			= 1;
 		type9mmSilencer			= 1;
+		type10mmSilencer			= 1;
 		type45Silencer			= 1;
 		type44Silencer			= 1;
 		type38Silencer			= 1;
@@ -81,6 +83,24 @@ local function silence(wielder, weapon)
 			soundRadius = soundRadius * effectivness
 			swingSound = CALIBER[ammo][2]
 		end
+	elseif weapon:hasTag("Silenced") then
+	if getDebug() then print("Permanent Suppressor") end
+			local weaponAmmo, replaced = string.gsub(weapon:getAmmoType(), "Base.", "")
+			local ammo = "caliber" .. weaponAmmo
+			if getDebug() then
+				print("Ammo type: " .. ammo)
+				print("Caliber Effectiveness: " .. CALIBER[ammo][1])
+				print("Suppressor Sound: " .. CALIBER[ammo][2])
+				print("Firearm Condition Lower Chance: " .. weapon:getConditionLowerChance())
+			end
+			soundVolume = soundVolume *  (0.6)
+			local effectivness = (EFFECTIVENESS[CALIBER[ammo][1]])
+			if weapon:getWeaponReloadType() == "revolver" then
+				effectivness = effectivness+((1-effectivness)*(1-EFFECTIVENESS[SandboxVars.Firearms.SuppressorEffectivenessRevolver]))
+			end
+			print("Suppressor Effectiveness: " .. (1-effectivness)*100 .. "%")
+			soundRadius = soundRadius * effectivness
+			swingSound = CALIBER[ammo][2]
 	end
 
 	weapon:setSoundVolume(soundVolume)

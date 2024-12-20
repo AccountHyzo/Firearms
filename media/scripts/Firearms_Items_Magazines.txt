@@ -99,6 +99,22 @@ module Base
 		Tags = GunMagazine,
 	}
 
+	item MP510Mag
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.4,
+		Type	=	Normal,
+		DisplayName	=	MP5/10 Magazine,
+		DisplayCategory = Ammo,
+		Icon	=	Mp5_Mag,
+		MaxAmmo = 30,
+		AmmoType = Base.Bullets10mm,
+		GunType = Base.MP510,
+		StaticModel = GunMagazine,
+		WorldStaticModel = MP5_Magazine_wm,
+		Tags = GunMagazine,
+	}
+
 	item UZIMag
 	{
 		CanStack	=	FALSE,
@@ -222,6 +238,22 @@ module Base
 		MaxAmmo = 20,
 		AmmoType = Base.762x51Bullets,
 		GunType = Base.FN_FAL,
+		StaticModel = GunMagazine,
+		WorldStaticModel = fn_fal_mag,
+		Tags = GunMagazine,
+	}
+
+	item G3_Mag
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	H&K G3 Magazine,
+		DisplayCategory = Ammo,
+		Icon	=	308_Mag2,
+		MaxAmmo = 20,
+		AmmoType = Base.762x51Bullets,
+		GunType = Base.G3,
 		StaticModel = GunMagazine,
 		WorldStaticModel = fn_fal_mag,
 		Tags = GunMagazine,

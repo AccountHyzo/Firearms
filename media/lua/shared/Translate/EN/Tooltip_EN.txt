@@ -14,4 +14,6 @@ Tooltip_EN = {
   Tooltip_9mm  = "9x19mm"
   Tooltip_Recipe_CleanGun = "Service firearm.",
   Tooltip_Magazine = "Magazine.",
+
+  Tooltip_Recipe_ScopeAdapter = "Will allow scope to be attached on firearms with a picatinny rail.",
 }

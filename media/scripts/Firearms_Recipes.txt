@@ -22,53 +22,6 @@ module Base
  		}
 	}
 
-	craftRecipe MakeImprovisedFlashlightSilencer
-	{
-    timedAction = Making,
-		xpAward = MetalWelding:5,
-		AutoLearn = MetalWelding:3,
-		Time = 200,
-		AllowBatchCraft = False,
-		Tags = InHandCraft,
-		category = Weaponry,
-		OnCreate = onImprovisedSilencer_OnCreate,
-		Tooltip = Tooltip_Recipe_ImprovisedSilencer,
-		OnTest = onImprovisedSilencer_OnTest,
-		inputs
-		{
-			item 1 [HandTorch;ImprovisedSilencer_Broken] flags[Prop1;AllowDestroyedItem;IsWorn],
-			item 1 [ScrapMetal],
-			item 1 [DuctTape] flags[Prop2],
-		}
-		outputs
-		{
-			item 1 Base.ImprovisedSilencer,
-		}
-	}
-
-	craftRecipe MakeImprovisedBottleSilencer
-	{
-    timedAction = Making,
-		xpAward = Maintenance:5,
-		AutoLearn = Maintenance:3,
-		Time = 200,
-		AllowBatchCraft = False,
-		Tags = InHandCraft,
-		category = Weaponry,
-		OnCreate = onImprovisedSilencer_OnCreate,
-		Tooltip = Tooltip_Recipe_ImprovisedSilencer,
-		OnTest = onImprovisedSilencer_OnTest,
-		inputs
-		{
-			item 1 [Base.PopBottle;Base.WaterBottle] flags[Prop1;IsEmpty],
-			item 1 [DuctTape] flags[Prop2],
-		}
-		outputs
-		{
-			item 1 Base.Silencer_PopBottle,
-		}
-	}
-
 	craftRecipe firearmsSawOffShotgun
 	{
     timedAction = SawOffShotgun,
@@ -92,56 +45,6 @@ module Base
 			Base.Remington870Sawnoff = Base.Remington870Wood,
 		}
 	}
-
-	/*craftRecipe ExtendStock
-	{
-		Time = 15,
-		OnCreate = onExtDetStock_OnCreate,
-		OnTest = onExtendStock_OnTest,
-		ToolTip = Tooltip_Recipe_ExtendStock,
-		Tags = InHandCraft;CanBeDoneInDark,
-    category = Weaponry,
-		inputs
-		{
-			item 1 [Base.MP5;Base.UZI;Base.M37;Base.Mac10;Base.SPAS12] mode:keep flags[Prop2;InheritCondition;InheritAmmunition] mappers[stockType],
-		}
-		outputs
-		{
-			item 1 mapper:stockType,
-		}
-		itemMapper stockType
-		{
-			Base.MP5_Stock_Extended = Base.MP5,
-			Base.UZI_Stock_Extended = Base.UZI,
-			Base.Mac10_Stock_Extended = Base.Mac10,
-			Base.SPAS12_Stock_Extended = Base.SPAS12,
-		}
-	}
-
-	craftRecipe DetractStock
-	{
-		Time = 15,
-		OnCreate = onExtDetStock_OnCreate,
-		OnTest = onDetractStock_OnTest,
-		ToolTip = Tooltip_Recipe_DetractStock,
-		Tags = InHandCraft;CanBeDoneInDark,
-    category = Weaponry,
-		inputs
-		{
-			item 1 [Base.MP5;Base.UZI;Base.Mac10;Base.SPAS12] mode:keep flags[Prop2;InheritCondition;InheritAmmunition] mappers[stockType],
-		}
-		outputs
-		{
-			item 1 mapper:stockType,
-		}
-		itemMapper stockType
-		{
-			Base.MP5_Stock_Detracted = Base.MP5,
-			Base.UZI_Stock_Detracted = Base.UZI,
-			Base.Mac10_Stock_Detracted = Base.Mac10,
-			Base.SPAS12_Stock_Detracted = Base.SPAS12,
-		}
-	}*/
 
 	craftRecipe ConvertAmmo
 	{

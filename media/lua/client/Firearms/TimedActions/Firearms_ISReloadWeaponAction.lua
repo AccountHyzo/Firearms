@@ -65,12 +65,31 @@ ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapo
 	end
 end
 
+local original_onShoot
+
+ISReloadWeaponAction.onShootFirearms = function(player, weapon)
+	original_onShoot(player, weapon)
+	if player:getPrimaryHandItem() ~= nil then
+		local weapon = player:getPrimaryHandItem();
+		if (weapon) and (instanceof(weapon,"HandWeapon")) and (weapon:isAimedFirearm()) then
+			if weapon:isJammed() then
+				weapon:setJammed(false)
+			end
+		end
+	end
+end
+
+
 Events.OnGameBoot.Add(function()
     Hook.Attack.Remove(ISReloadWeaponAction.attackHook);
     Hook.Attack.Add(ISReloadWeaponAction.attackHookFirearms) -- add our new callback
+    Events.OnWeaponSwingHitPoint.Remove(ISReloadWeaponAction.onShoot);
+    Events.OnWeaponSwingHitPoint.Add(ISReloadWeaponAction.onShootFirearms) -- add our new callback
 
     -- store the original function.
     original_attackHook = ISReloadWeaponAction.attackHook
+    original_onShoot = ISReloadWeaponAction.onShoot
     -- overwrite is probably redundant at this point, but best done just in case.
     ISReloadWeaponAction.attackHook = ISReloadWeaponAction.attackHookFirearms
+    ISReloadWeaponAction.onShoot = ISReloadWeaponAction.onShootFirearms
 end)

@@ -35,7 +35,7 @@ function onImprovisedSilencer_OnCreate(craftRecipeData, character)
 				end
 			end
 		end
-    end
+		end
 end
 
 -- Sawn-off recipe callback, copies modData to the new sawn-off.
@@ -55,7 +55,7 @@ function onSawnOff_OnCreate(craftRecipeData, character)
 			end
 			return
 		end
-    end
+		end
 end
 
 
@@ -67,7 +67,7 @@ function onExtendStock_OnTest(item)
 			else
 				return false;
 			end
-    else
+		else
 		return false;
 		end
 end
@@ -80,30 +80,9 @@ function onDetractStock_OnTest(item)
 			else
 				return false;
 			end
-    else
+		else
 		return false;
 		end
-end
-
-function onExtDetStock_OnCreate(craftRecipeData, character, firstHand, secondHand)
-	local items = craftRecipeData:getAllKeepInputItems();
-	local result = craftRecipeData:getAllCreatedItems():get(0);
-	for i=0,items:size()-1 do
-		local item = items:get(i)
-		if item:getSubCategory() == "Firearm" then
-			print("setWeaponpPart")
-			item:setWeaponPart(result)
-			character:getInventory():Remove(result);
-			--tryAttachPart(item, result, character)
-			--[[if secondHand or firstHand then
-	        character:setSecondaryHandItem(result);
-	        if not character:getPrimaryHandItem() then
-	            character:setPrimaryHandItem(result);
-	        end
-	    end]]--
-			return
-		end
-	end
 end
 
 function onExtendStock_OnCreate(craftRecipeData, character, firstHand, secondHand)
@@ -118,26 +97,19 @@ function onExtendStock_OnCreate(craftRecipeData, character, firstHand, secondHan
 			end
 			local stock = item:getWeaponPart("Stock")
 			local parts = item:getAllWeaponParts()
-			newstock = character:getInventory():AddItem('Base.' .. result:getType() .. '_Stock_Extended');
-			print('Base.' .. result:getType() .. '_Stock_Extended')
+			if getDebug() then
+				print('Base.' .. item:getType() .. '_Stock_Extended')
+			end
 			for i=1,parts:size() do
 				if parts:get(i-1) == stock then
-					if newstock then
-						tryAttachPart(result, newstock, character)
-					end
+					result:attachWeaponPart(instanceItem("Base." .. item:getType() .. "_Stock_Extended") , true)
 				else
-					tryAttachPart(result, parts:get(i-1), character)
+					result:setWeaponPart(parts:get(i-1))
 				end
 			end
-			if secondHand or firstHand then
-	        character:setSecondaryHandItem(result);
-	        if not character:getPrimaryHandItem() then
-	            character:setPrimaryHandItem(result);
-	        end
-	    end
 			return
 		end
-    end
+		end
 end
 
 function onDetractStock_OnCreate(craftRecipeData, character, firstHand, secondHand)
@@ -152,24 +124,17 @@ function onDetractStock_OnCreate(craftRecipeData, character, firstHand, secondHa
 			end
 			local stock = item:getWeaponPart("Stock")
 			local parts = item:getAllWeaponParts()
-			newstock = character:getInventory():AddItem('Base.' .. result:getType() .. '_Stock_Extended');
-			print('Base.' .. result:getType() .. '_Stock_Extended')
+			if getDebug() then
+				print('Base.' .. item:getType() .. '_Stock_Detracted')
+			end
 			for i=1,parts:size() do
 				if parts:get(i-1) == stock then
-					if newstock then
-						tryAttachPart(result, newstock, character)
-					end
+						result:attachWeaponPart(instanceItem("Base." .. item:getType() .. "_Stock_Detracted") , true)
 				else
-					tryAttachPart(result, parts:get(i-1), character)
+					result:setWeaponPart(parts:get(i-1))
 				end
 			end
-			if secondHand or firstHand then
-	        character:setSecondaryHandItem(result);
-	        if not character:getPrimaryHandItem() then
-	            character:setPrimaryHandItem(result);
-	        end
-	    end
 			return
 		end
-    end
+		end
 end

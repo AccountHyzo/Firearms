@@ -15,7 +15,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
 		WorldStaticModel		=	Silencer,
-		Tags								=	Silencer;Caliber22,
+		Tags								=	Silencer;Caliber22;NoScrewdriver,
 	}
 
 
@@ -31,7 +31,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
 		WorldStaticModel		=	Silencer,
-		Tags								=	Silencer;Caliber9mm,
+		Tags								=	Silencer;Caliber9mm;NoScrewdriver,
 	}
 
 	item 10mmSilencer
@@ -46,7 +46,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
 		WorldStaticModel		=	Silencer,
-		Tags								=	Silencer;Caliber9mm,
+		Tags								=	Silencer;Caliber9mm;NoScrewdriver,
 	}
 
 	item 45Silencer
@@ -61,7 +61,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
 		WorldStaticModel		=	Silencer,
-		Tags								=	Silencer;Caliber45,
+		Tags								=	Silencer;Caliber45;NoScrewdriver,
 	}
 
 	item 38Silencer
@@ -76,7 +76,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
 		WorldStaticModel		=	Silencer,
-		Tags								=	Silencer;Caliber38,
+		Tags								=	Silencer;Caliber38;NoScrewdriver,
 	}
 
 	item 223Silencer
@@ -91,7 +91,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
 		WorldStaticModel		=	Silencer,
-		Tags								=	Silencer;Caliber223,
+		Tags								=	Silencer;Caliber223;NoScrewdriver,
 	}
 
 	item 308Silencer
@@ -106,7 +106,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
 		WorldStaticModel		=	Silencer,
-		Tags								=	Silencer;Caliber308,
+		Tags								=	Silencer;Caliber308;NoScrewdriver,
 	}
 
 	item ShotgunSilencer
@@ -121,7 +121,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
 		WorldStaticModel		=	Silencer,
-		Tags								=	Silencer;Caliber12ga,
+		Tags								=	Silencer;Caliber12ga;NoScrewdriver,
 	}
 
 	item ImprovisedSilencer
@@ -136,7 +136,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_ImprovisedSilencer,
 		WorldStaticModel		=	Silencer_Improvised,
-		Tags								=	Silencer;ImprovisedSilencer;ImprovisedSilencerFlashlight,
+		Tags								=	Silencer;ImprovisedSilencer;ImprovisedSilencerFlashlight;NoScrewdriver,
 	}
 
 	item Silencer_PopBottle
@@ -151,7 +151,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_ImprovisedSilencer,
 		WorldStaticModel		=	Silencer_PopBottle,
-		Tags								=	Silencer;ImprovisedSilencer;ImprovisedSilencerBottle,
+		Tags								=	Silencer;ImprovisedSilencer;ImprovisedSilencerBottle;NoScrewdriver,
 	}
 
 	item 9mmCompensator
@@ -168,7 +168,7 @@ module Base
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Compensator,
 		WorldStaticModel		=	Compensator_Pistol_wm,
-		Tags								=	Compensator;Caliber9mm,
+		Tags								=	Compensator;Caliber9mm;NoScrewdriver,
 	}
 
 
@@ -194,6 +194,56 @@ module Base
 		TorchDot = 0.66,
 		SoundMap = Activate FlashlightOn,
 		SoundMap = Deactivate FlashlightOff,
+		Tags							=	NoScrewdriver,
+	}
+
+	item Rifle_Flashlight
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	Rifle Flashlight,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	Firearms_Gunlight,
+		Weight					=	0.2,
+		WeightModifier			=	0.2,
+		AimingTimeModifier		=	5,
+		MountOn					=	AssaultRifle;	M16A2; M733; AR15; G3; FN_FAL; AK47; M60; AssaultRifle2; VarmintRifle; HuntingRifle; Rugerm7722; SKS; M24Rifle,
+		PartType				=	Stock,
+		StaticModel				=	Rifle_Flashlight,
+		MetalValue				=	15,
+		WorldStaticModel		=	Rifle_Flashlight_WM,
+		ActivatedItem = TRUE,
+		LightDistance = 20,
+		LightStrength = 1.5,
+		MetalValue = 10,
+		TorchCone = TRUE,
+		TorchDot = 0.66,
+		SoundMap = Activate FlashlightOn,
+		SoundMap = Deactivate FlashlightOff,
+	}
+
+	item GunLight
+	{
+		DisplayCategory = WeaponPart,
+		Type = WeaponPart,
+		DisplayName = Pistol Flashlight,
+		Icon = Firearms_Gunlight,
+		Weight = 0.2,
+		WeightModifier = 0.2,
+		AimingTimeModifier = 5,
+		MountOn = Pistol; Pistol3; Glock17,
+		PartType = Stock,
+		StaticModel = Pistol_Flashlight,
+		MetalValue = 15,
+		WorldStaticModel = Pistol_Flashlight,
+		ActivatedItem = TRUE,
+		LightDistance = 15,
+		LightStrength = 1.3,
+		MetalValue = 10,
+		TorchCone = TRUE,
+		TorchDot = 0.66,
+		SoundMap = Activate FlashlightOn,
+		SoundMap = Deactivate FlashlightOff,
+		Tags							=	NoScrewdriver,
 	}
 
 	/************************Pads************************/
@@ -442,6 +492,7 @@ module Base
 			PartType			=	Sling,
 			Tooltip				=	Tooltip_Sling,
 			WorldStaticModel	=	Sling_wm,
+			Tags							=	NoScrewdriver,
 	}
 
 	item Sling_Leather
@@ -456,6 +507,7 @@ module Base
 			PartType			=	Sling,
 			Tooltip				=	Tooltip_Sling,
 			WorldStaticModel	=	Sling_Leather_wm,
+			Tags							=	NoScrewdriver,
 	}
 
 	item Sling_Olive
@@ -470,6 +522,7 @@ module Base
 			PartType			=	Sling,
 			Tooltip				=	Tooltip_Sling,
 			WorldStaticModel	=	Sling_Olive_wm,
+			Tags							=	NoScrewdriver,
 	}
 
 	item Sling_Camo
@@ -484,6 +537,7 @@ module Base
 			PartType			=	Sling,
 			Tooltip				=	Tooltip_Sling,
 			WorldStaticModel	=	Sling_Camo_wm,
+			Tags							=	NoScrewdriver,
 	}
 
 	item AmmoStraps
@@ -499,6 +553,7 @@ module Base
 			PartType			=	Sling,
 			Tooltip				=	Tooltip_AmmoStrap,
 			WorldStaticModel	=	Sling_wm,
+			Tags							=	NoScrewdriver,
 	}
 
 	/************************Choketubes************************/
@@ -518,6 +573,7 @@ module Base
 		Tooltip					=	Tooltip_ChokeTubeFull,
 		MetalValue				=	12,
 		WorldStaticModel		=	Shotgun_Choke_Ground,
+		Tags							=	NoScrewdriver,
 	}
 
 	item ChokeTubeImproved
@@ -535,25 +591,39 @@ module Base
 		Tooltip					=	Tooltip_ChokeTubeImproved,
 		MetalValue				=	12,
 		WorldStaticModel		=	Shotgun_Choke_Ground,
+		Tags							=	NoScrewdriver,
 	}
 
 
 	/************************Optics************************/
 
+	item picatinnyACOGAdapter
+	{
+		DisplayName				=	Thumbscrew Flattop Adapter ,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Firearms_TA51,
+		StaticModel = TA51,
+		WorldStaticModel = TA51_WM,
+	}
+
 	item Laser
 	{
-		Type					=	WeaponPart,
-		DisplayName				=	Laser,
-		DisplayCategory			=	WeaponPart,
-		Icon					=	HandgunLaser,
-		Weight					=	0.2,
-		WeightModifier			=	0.2,
-		HitChanceModifier		=	5,
-		MountOn					=	Pistol; Base.Glock17; Pistol3; AssaultRifle; FN_FAL; M16A2; M733; AR15; M24Rifle,
-		PartType				=	Canon,
-		Tooltip					=	Tooltip_Laser,
-		MetalValue				=	15,
-		WorldStaticModel		=	TacticalLaser_wm,
+			DisplayCategory = WeaponPart,
+			Type = WeaponPart,
+			DisplayName = Pistol laser,
+			Icon = HandgunLaser,
+			Weight = 0.6,
+			WeightModifier = 0.6,
+			HitChanceModifier = 5,
+			AimingTimeModifier = -10,
+			MountOn = Pistol; Pistol3; Glock17,
+			PartType = Stock,
+			Tooltip = Tooltip_Laser,
+			MetalValue = 15,
+			WorldStaticModel = Pistol_Laser,
+			Tags							=	NoScrewdriver,
 	}
 
 	item IronSight
@@ -605,6 +675,24 @@ module Base
 		WorldStaticModel		=	2xLeupoldScope,
 	}
 
+	item x4ACOGScope
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	x4 Scope,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	Firearms_TA01,
+		Weight					=	0.4,
+		WeightModifier			=	0.4,
+		MaxRangeModifier		=	13,
+		MinRangeModifier		=	2,
+		MountOn					=	AssaultRifle; Base.M16A2; M733; AR15,
+		PartType				=	Scope,
+		Tooltip					=	Tooltip_Scope,
+		MetalValue				=	22,
+		WorldStaticModel		=	TA01_WM,
+		Tags							=	NoScrewdriver,
+	}
+
 	item x2Scope
 	{
 		Type					=	WeaponPart,
@@ -620,6 +708,7 @@ module Base
 		Tooltip					=	Tooltip_Scope,
 		MetalValue				=	22,
 		WorldStaticModel		=	Acog_wm,
+		Tags							=	NoScrewdriver,
 	}
 
 	item x4Scope
@@ -627,16 +716,17 @@ module Base
 		Type					=	WeaponPart,
 		DisplayName				=	x4 Scope,
 		DisplayCategory			=	WeaponPart,
-		Icon					=	Scope4x,
+		Icon					=	Firearms_TA01_TA51,
 		Weight					=	0.4,
 		WeightModifier			=	0.4,
 		MaxRangeModifier		=	13,
 		MinRangeModifier		=	2,
-		MountOn					=	HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.MP5; MP5SD; MP510; Mossberg500Tactical; LAW12; Rugerm7722; FN_FAL,
+		MountOn					=	HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle2; Base.M24Rifle; Base.MP5; MP5SD; MP510; Mossberg500Tactical; LAW12; Rugerm7722; FN_FAL,
 		PartType				=	Scope,
 		Tooltip					=	Tooltip_Scope,
 		MetalValue				=	22,
-		WorldStaticModel		=	Acog_wm,
+		WorldStaticModel		=	TA01_TA51_WM,
+		Tags							=	NoScrewdriver,
 	}
 
 	item x8Scope
@@ -654,6 +744,7 @@ module Base
 		Tooltip					=	Tooltip_Scope,
 		MetalValue				=	22,
 		WorldStaticModel		=	12xScope_wm,
+		Tags							=	NoScrewdriver,
 	}
 
 	item x4-x12Scope
@@ -671,22 +762,7 @@ module Base
 		Tooltip					=	Tooltip_Scope,
 		MetalValue				=	22,
 		WorldStaticModel		=	12xScope_wm,
-	}
-
-	item STANAG
-	{
-		Type					=	WeaponPart,
-		DisplayName				=	STANAG,
-		DisplayCategory			=	WeaponPart,
-		Icon					=	556_Stanag_Mag,
-		Weight					=	0.25,
-		WeightModifier			=	0.25,
-		ClipSizeModifier			=	20,
-		MountOn					=	AssaultRifle; M16A2; M733,
-		PartType				=	Clip,
-		Tooltip					=	Tooltip_Magazine,
-		MetalValue				=	22,
-		WorldStaticModel		=	STANAG,
+		Tags							=	NoScrewdriver,
 	}
 
 }

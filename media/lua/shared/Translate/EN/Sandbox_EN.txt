@@ -1,6 +1,6 @@
 Sandbox_EN = {
-	Sandbox_Firearms = "Firearms B41",
-	Sandbox_FirearmsSpawns = "Firearms B41 - Spawns",
+	Sandbox_Firearms = "Firearms B42",
+	Sandbox_FirearmsSpawns = "Firearms B42 - Spawns",
 
 	Sandbox_Firearms_Service = "Advanced Firearms Repair"
 	Sandbox_Firearms_Service_tooltip = "This option enables a more advanced system of repairing firearms."

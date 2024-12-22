@@ -1174,7 +1174,7 @@ module Base
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.0740 0.0230,
+			offset = 0.0000 0.0974 0.0011,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -1194,6 +1194,12 @@ module Base
 		{
 			offset = 0.0000 0.1260 -0.0210,
 			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = -0.0100 0.0542 -0.0000,
+			rotate = 0.0000 -0.0000 0.0000,
 		}
 	}
 	model DEagle
@@ -1226,13 +1232,13 @@ module Base
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.4020 0.0270,
-			rotate = -90.0000 0.0000 -180.0000,
+			offset = 0.0000 0.0961 0.0003,
+			rotate = -0.1455 -0.0004 0.1583,
 		}
 
 		attachment laser
 		{
-			offset = 0.0000 0.0870 -0.0060,
+			offset = 0.0000 0.0972 0.0002,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -1246,6 +1252,12 @@ module Base
 		{
 			offset = 0.0000 0.1380 -0.0240,
 			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = -0.0090 0.0606 -0.0000,
+			rotate = 0.0000 -0.0000 0.0000,
 		}
 	}
 	model ColtPeacemaker
@@ -1398,14 +1410,14 @@ module Base
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.0660 0.0240,
+			offset = 0.0000 0.0954 -0.0032,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment laser
 		{
-			offset = 0.0000 0.1100 0.0060,
-			rotate = -180.0000 0.0000 -180.0000,
+			offset = 0.0000 0.0954 -0.0022,
+			rotate = -0.2439 -0.0022 0.5264,
 		}
 
 		attachment stock
@@ -1418,6 +1430,12 @@ module Base
 		{
 			offset = 0.0000 0.1160 -0.0210,
 			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = -0.0080 0.0438 -0.0000,
+			rotate = 0.0000 -0.0000 0.0000,
 		}
 	}
 	model MP5
@@ -2277,7 +2295,7 @@ module Base
 
 		attachment scope
 		{
-			offset = 0.0000 0.0200 0.0390,
+			offset = 0.0000 0.0200 0.0354,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
@@ -2289,8 +2307,8 @@ module Base
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.4020 -0.0270,
-			rotate = -90.0000 0.0000 -180.0000,
+			offset = 0.0000 0.3377 0.0189,
+			rotate = -179.8483 -0.0000 180.0000,
 		}
 
 		attachment laser
@@ -2308,7 +2326,7 @@ module Base
 		attachment silencer
 		{
 			offset = 0.0000 0.4200 0.0200,
-			rotate = 0.0000 0.0000 0.0000,
+			rotate = -179.8887 -0.0008 -179.8749,
 		}
 
 		attachment recoilpad
@@ -2321,6 +2339,12 @@ module Base
 		{
 			offset = 0.0000 0.2950 0.0100,
 			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0117 0.0001 0.0000,
+			rotate = -0.0000 -0.0000 -179.5702,
 		}
 	}
 	model G3
@@ -2689,8 +2713,8 @@ module Base
 
 		attachment scope
 		{
-			offset = 0.0000 0.0560 -0.0610,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.0752 -0.0610,
+			rotate = -0.7743 -0.1168 0.0037,
 		}
 
 		attachment reddot
@@ -2701,8 +2725,8 @@ module Base
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.4020 -0.0270,
-			rotate = -90.0000 0.0000 180.0000,
+			offset = 0.0000 0.3431 -0.0270,
+			rotate = 0.1432 0.0013 0.0722,
 		}
 
 		attachment laser
@@ -2720,7 +2744,7 @@ module Base
 		attachment silencer
 		{
 			offset = 0.0000 0.4030 -0.0250,
-			rotate = 0.0000 0.0000 0.0000,
+			rotate = 0.0636 0.0000 0.0000,
 		}
 
 		attachment magazine
@@ -2731,8 +2755,8 @@ module Base
 
 		attachment world
 		{
-			offset = -0.0190 0.0830 -0.0120,
-			rotate = 0.0000 0.0000 180.0000,
+			offset = 0.0170 0.0830 -0.0128,
+			rotate = 0.0000 2.7488 -180.0000,
 		}
 	}
 	model M733
@@ -2819,8 +2843,8 @@ module Base
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.4020 0.0270,
-			rotate = -90.0000 0.0000 -180.0000,
+			offset = 0.0000 0.3113 0.0165,
+			rotate = 179.8808 -0.0000 180.0000,
 		}
 
 		attachment laser
@@ -2838,7 +2862,7 @@ module Base
 		attachment silencer
 		{
 			offset = 0.0000 0.4230 0.0180,
-			rotate = 180.0000 0.0000 180.0000,
+			rotate = -179.8829 -0.0000 -180.0000,
 		}
 
 		attachment world
@@ -3063,21 +3087,125 @@ module Base
 			rotate = 0.0000 0.0000 -90.0000,
 		}
 	}
+	model Rifle_Flashlight
+	{
+		mesh = weapons/firearm/attachments/Rifle_Flashlight,
+		texture = weapons/firearm/attachments/Rifle_Flashlight,
+
+		attachment world
+		{
+			offset = 0.0079 0.0064 0.0098,
+			rotate = 89.3185 0.0002 172.8976,
+		}
+	}
+	model Rifle_Flashlight_WM
+	{
+		mesh = weapons/firearm/attachments/Rifle_Flashlight_WM,
+		texture = weapons/firearm/attachments/Rifle_Flashlight,
+	}
+	model TA51
+	{
+		mesh = weapons/firearm/attachments/TA51,
+		texture = weapons/firearm/attachments/TA51,
+
+		attachment world
+		{
+			offset = -0.0000 0.0000 -0.0000,
+			rotate = 89.7651 -0.0000 -90.0000,
+		}
+	}
+	model TA51_WM
+	{
+		mesh = weapons/firearm/attachments/TA51_WM,
+		texture = weapons/firearm/attachments/TA51,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = -179.9629 -0.0000 -90.0000,
+		}
+	}
+	model TA01
+	{
+		mesh = weapons/firearm/attachments/TA01,
+		texture = weapons/firearm/attachments/TA51,
+
+		attachment world
+		{
+			offset = -0.0052 -0.0052 -0.0029,
+			rotate = 179.0513 -26.9209 -2.0947,
+		}
+	}
+	model TA01_WM
+	{
+		mesh = weapons/firearm/attachments/TA01_WM,
+		texture = weapons/firearm/attachments/TA51,
+
+		attachment world
+		{
+			offset = -0.0052 -0.0052 -0.0029,
+			rotate = 179.0513 -26.9209 -2.0947,
+		}
+	}
+	model TA01_TA51
+	{
+		mesh = weapons/firearm/attachments/TA01_TA51,
+		texture = weapons/firearm/attachments/TA51,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0001,
+			rotate = -41.9716 89.6719 41.9712,
+		}
+	}
+	model TA01_TA51_WM
+	{
+		mesh = weapons/firearm/attachments/TA01_TA51_WM,
+		texture = weapons/firearm/attachments/TA51,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0001,
+			rotate = -41.9716 89.6719 41.9712,
+		}
+	}
+	model TA01_TA51_Picatinny
+	{
+		mesh = weapons/firearm/attachments/TA01_TA51_Picatinny,
+		texture = weapons/firearm/attachments/TA51,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0007,
+			rotate = 90.1978 -0.0000 -90.0000,
+		}
+	}
+	model TA01_TA51_Picatinny_WM
+	{
+		mesh = weapons/firearm/attachments/TA01_TA51_Picatinny_WM,
+		texture = weapons/firearm/attachments/TA51,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 0.0007,
+			rotate = 90.1978 -0.0000 -90.0000,
+		}
+	}
 	model Acog
-							{
-								mesh = weapons/firearm/attachments/ACOG,
-								texture = weapons/firearm/attachments/ACOG,
-							}
+	{
+		mesh = weapons/firearm/attachments/ACOG,
+		texture = weapons/firearm/attachments/ACOG,
+	}
 	model Acog_wm
-							{
-								mesh = weapons/firearm/attachments/ACOG_wm,
-								texture = weapons/firearm/attachments/ACOG,
-							}
+	{
+		mesh = weapons/firearm/attachments/ACOG_wm,
+		texture = weapons/firearm/attachments/ACOG,
+	}
 	model Reddot_PicatinnyShort
-							{
-								mesh = Weapons/Firearm/attachments/Reddot_PicatinnyShort,
-								texture = Weapons/firearm/attachments/RedDot,
-							}
+	{
+		mesh = Weapons/Firearm/attachments/Reddot_PicatinnyShort,
+		texture = Weapons/firearm/attachments/RedDot,
+	}
 	model Reddot
 	{
 		mesh = Weapons/Firearm/attachments/RedDot,
@@ -3417,6 +3545,11 @@ module Base
 		mesh = Weapons/Firearm/attachments/TapedFlashlight,
 		texture = Weapons/firearm/attachments/Silencer_Improvised,
 	}
+	model FirearmsRifleFlashlight
+	{
+		mesh = Weapons/Firearm/attachments/Rifle_Flashlight,
+		texture = Weapons/firearm/attachments/Silencer_Improvised,
+	}
 	model Shotgun_AmmoStrap
 	{
 		mesh = Weapons/Firearm/attachments/ShotgunShellsStrap,
@@ -3426,6 +3559,16 @@ module Base
 	{
 		mesh = Weapons/Firearm/attachments/ShotgunShellsStrap_wm,
 		texture = Weapons/firearm/attachments/ammosling,
+	}
+	model Pistol_Flashlight
+	{
+		mesh = Weapons/Firearm/attachments/Pistol_Flashlight,
+		texture = Weapons/firearm/attachments/Pistol_Flashlight,
+	}
+	model Pistol_Laser
+	{
+		mesh = Weapons/Firearm/attachments/Pistol_Laser,
+		texture = Weapons/firearm/attachments/Pistol_Flashlight,
 	}
 	model TacticalLaser
 	{
@@ -3437,7 +3580,7 @@ module Base
 		mesh = Weapons/Firearm/attachments/Laser_wm,
 		texture = Weapons/firearm/attachments/Laser,
 	}
-	model HandTorch
+	/*model HandTorch
 	{
 		mesh = Weapons/HDModels/Tools/Flashlight,
 	}
@@ -3448,5 +3591,5 @@ module Base
 	model FlashLightGround
 	{
 		mesh = Weapons/HDModels/Tools/Flashlight,
-	}
+	}*/
 }

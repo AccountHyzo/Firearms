@@ -2,7 +2,7 @@ VERSION = 1,
 
 option Firearms.ScrewdriverReq
 {
-	type = boolean, default = true,
+	type = boolean, default = false,
 	page = Firearms, translation = Firearms_ScrewdriverReq,
 }
 
@@ -184,7 +184,7 @@ option Firearms.SpawnGlock17
 
 option Firearms.SpawnICA19
 {
-	type = boolean, default = false,
+	type = boolean, default = true,
 	page = FirearmsSpawns, translation = Firearms_SpawnICA19,
 }
 

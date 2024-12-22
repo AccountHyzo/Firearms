@@ -128,21 +128,40 @@ function breakSuppressor(playerObj, weapon)
 
 	local canon = weapon:getWeaponPart("Canon")
 	if canon then
-	if canon:hasTag("ImprovisedSilencer") then
-		if ZombRand(BREAKCHANCE[SandboxVars.Firearms.FlashlightSuppressorBreakChance]) == 1 then
-		weapon:detachWeaponPart(canon)
-		playerObj:getCurrentSquare():AddWorldInventoryItem(canon:getType() .. "_Broken", 0.0, 0.0, 0.0);
-		playerObj:resetEquippedHandsModels();
-		silence(playerObj, weapon)
+		if getDebug() then
+			print(canon)
 		end
-	elseif canon:hasTag("ImprovisedSilencerBottle") then
-		if ZombRand(BREAKCHANCE[SandboxVars.Firearms.BottleSuppressorBreakChance]) == 1 then
-		weapon:detachWeaponPart(canon)
-		playerObj:getCurrentSquare():AddWorldInventoryItem(canon:getType() .. "_Broken", 0.0, 0.0, 0.0);
-		playerObj:resetEquippedHandsModels();
-		silence(playerObj, weapon)
+		if canon:hasTag("ImprovisedSilencer") then
+			local breakchance = ZombRand(1, BREAKCHANCE[SandboxVars.Firearms.FlashlightSuppressorBreakChance-1])
+			if getDebug() then
+				print("Breakchance: " .. BREAKCHANCE[SandboxVars.Firearms.FlashlightSuppressorBreakChance-1])
+				print("Rand: " .. breakchance)
+			end
+			if breakchance == 1 then
+				if getDebug() then
+					print("break")
+				end
+				weapon:detachWeaponPart(canon)
+				playerObj:getCurrentSquare():AddWorldInventoryItem(canon:getType() .. "_Broken", 0.0, 0.0, 0.0);
+				playerObj:resetEquippedHandsModels();
+				silence(playerObj, weapon)
+			end
+		elseif canon:hasTag("ImprovisedSilencerBottle") then
+			local breakchance = ZombRand(1, BREAKCHANCE[SandboxVars.Firearms.BottleSuppressorBreakChance-1])
+			if getDebug() then
+				print("Breakchance: " .. BREAKCHANCE[SandboxVars.Firearms.BottleSuppressorBreakChance-1])
+				print("Rand: " .. breakchance)
+			end
+			if breakchance == 1 then
+				if getDebug() then
+					print("break")
+				end
+				weapon:detachWeaponPart(canon)
+				playerObj:getCurrentSquare():AddWorldInventoryItem(canon:getType() .. "_Broken", 0.0, 0.0, 0.0);
+				playerObj:resetEquippedHandsModels();
+				silence(playerObj, weapon)
+			end
 		end
-	end
 	end
 end
 

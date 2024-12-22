@@ -42,4 +42,6 @@ Recipes_EN = {
 		recipe_Place_.357_Ammo_in_Box = "Place .357 Rounds in Box"
 		Recipe_Open_Box_of_.357_Ammo = "Open Box of .357 Ammo",
 		Recipe_Clean_gun_part = "Clean gun part",
+
+		Recipe_PutScopeOnAdapter = "Put scope on rail adapter",
 }

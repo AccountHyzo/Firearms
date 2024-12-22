@@ -57,6 +57,8 @@ ItemName_EN = {
 
     ItemName_Base.x2LeupoldScope = "x2 Leupold Scope",
     ItemName_Base.x2Scope = "ACOG x2 Scope",
+    ItemName_Base.x4ACOGScope = "ACOG 4x32 Riflescope",
+    ItemName_Base.x4Scope = "ACOG 4x32 Riflescope with Rail Adapter",
     ItemName_Base.x4Scope = "ACOG x4 Scope",
     ItemName_Base.x8Scope = "x8 Scope",
     ItemName_Base.x4-x12Scope = "x4-x12 Scope",
@@ -77,6 +79,12 @@ ItemName_EN = {
     ItemName_Base.Mac10_Stock_Detracted = "MAC 10 Stock",
     ItemName_Base.Mac10_Stock_Extended = "MAC 10 Stock",
     ItemName_Base.Rifle_Bipod = "Rifle Bipod",
+    ItemName_Base.GunLight = "Pistol Flashlight",
+    ItemName_Base.Rifle_Flashlight = "Rifle Flashlight",
+    ItemName_Base.GunLightImprovised = "Taped Flashlight",
+    ItemName_Base.Laser = "Pistol laser",
+
+    ItemName_Base.picatinnyACOGAdapter = "Rail Adapter for ACOG 4x32",
 
     ItemName_Base.ChokeTubeImproved = "Choke Tube - Duckbill",
 
@@ -88,6 +96,7 @@ ItemName_EN = {
     ItemName_Base.22Silencer = ".22 LR Suppressor",
     ItemName_Base.38Silencer = ".38 & .357 Suppressor",
     ItemName_Base.9mmSilencer = "9mm Suppressor",
+    ItemName_Base.10mmSilencer = "10mm Suppressor",
     ItemName_Base.45Silencer = ".45 Suppressor",
     ItemName_Base.223Silencer = ".223 & 5.56mm Suppressor",
     ItemName_Base.308Silencer = ".308 & 7.62mm Suppressor",

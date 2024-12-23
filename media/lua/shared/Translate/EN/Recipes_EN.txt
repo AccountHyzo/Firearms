@@ -25,53 +25,35 @@ Recipes_EN = {
 		Recipe_Convert_to_.357 = "Convert to .357",
 		Recipe_Convert_to_.38 = "Convert to .38 Special",
 
-		Recipe_Place762x51AmmoInBox = "Place 7.62x51mm Rounds in Box",
-		Recipe_Open_Box_of_7.62x51mm_Ammo = "Open Box of 7.62x51mm Ammo",
+		Recipe_Place762x51AmmoInBox = "Place 20 7.62x51mm Rounds in a box",
 
-		Recipe_Place762x39AmmoInBox = "Place 7.62x39mm Rounds in Box",
-		Recipe_Open_Box_of_7.62x39mm_Ammo = "Open Box of 7.62x39mm Ammo",
+		Recipe_Place762x39AmmoInBox = "Place 20 7.62x39mm Rounds in a box",
 
-		Recipe_Place4440BulletsInBox = "Place .44-40 WCF Rounds in Box",
-		Recipe_Open_Box_of_.44-40_WCF_Ammo = "Open Box of .44-40 WCF Ammo",
+		Recipe_Place4440BulletsInBox = "Place 50 .44-40 WCF Rounds in a box",
 
-		Recipe_Place_.22_LR_Ammo_in_Box = "Place .22 LR Rounds in Box",
-		Recipe_Open_Box_of_.22_LR_Ammo = "Open Box of .22 LR Ammo",
+		Recipe_PlaceBullets22InBox = "Place 50 .22 LR Rounds in a Box",
 
-		recipe_Place38SpecialBulletsInBox = "Place .38 Special Rounds in Box"
-		Recipe_Open_Box_of_.38_Special_Bullets = "Open Box of .38 Special Ammo",
+		Recipe_Place38SpecialBulletsInBox = "Place 50 .38 Special Rounds in a box",
 
-		recipe_Place44MagnumBulletsInBox = "Place .44 Magnum Rounds in Box"
-		Recipe_Open_Box_of_.44_Magnum_Bullets = "Open Box of .44 Magnum Ammo",
+		Recipe_Place44MagnumBulletsInBox = "Place 20 .44 Magnum Rounds in a box",
 
-		recipe_Place556AmmoInBox = "Place 5.56x45mm Rounds in Box"
-		Recipe_Open_Box_of_.556_Ammo = "Open Box of 5.56x45mm Ammo",
+		Recipe_Place556AmmoInBox = "Place 50 5.56x45mm Rounds in a box",
 
-		recipe_Place223AmmoInBox = "Place .223 Rounds in Box"
-		Recipe_Open_Box_of_.223_Ammo = "Open Box of .223 Ammo",
+		Recipe_Place223AmmoInBox = "Place 50 .223 Rounds in a box",
 
-		recipe_Place308AmmoInBox = "Place .308 Rounds in Box"
-		Recipe_Open_Box_of_.308_Ammo = "Open Box of .308 Ammo",
+		Recipe_Place308AmmoInBox = "Place 20 .308 Rounds in a box",
 
-		recipe_Place_.30-06_Ammo_in_Box = "Place .30-06 Rounds in Box"
-		Recipe_Open_Box_of_.30-06_Ammo = "Open Box of .30-06 Ammo",
+		Recipe_Place3006BulletsInBox = "Place 20 .30-06 Rounds in a box",
 
-		recipe_Place357BulletsInBox = "Place .357 Rounds in Box"
-		Recipe_Open_Box_of_.357_Ammo = "Open Box of .357 Ammo",
+		Recipe_Place357BulletsInBox = "Place 50 .357 Rounds in a box",
 
-		recipe_Place10mmBulletsInBox = "Place 10mm Auto Rounds in Box"
-		Recipe_Open_Box_of_.357_Ammo = "Open Box of .357 Ammo",
+		Recipe_Place10mmBulletsInBox = "Place 50 10mm Auto Rounds in a box",
 
-		recipe_Place9mmBulletsInBox = "Place 9x19mm Rounds in Box"
-		Recipe_Open_Box_of_.357_Ammo = "Open Box of .357 Ammo",
+		Recipe_Place9mmBulletsInBox = "Place 50 9x19mm Rounds in a box",
 
-		recipe_Place45AutoBulletsInBox = "Place .45 ACP Rounds in Box"
-		Recipe_Open_Box_of_.357_Ammo = "Open Box of .357 Ammo",
+		Recipe_Place45AutoBulletsInBox = "Place 50 .45 ACP Rounds in a box",
 
-		recipe_Place3006BulletsInBox = "Place .30-06 Rounds in Box"
-		Recipe_Open_Box_of_.357_Ammo = "Open Box of .357 Ammo",
-
-		recipe_PlaceShotgunShellsInBox = "Place 12ga Shells in Box"
-		Recipe_Open_Box_of_.357_Ammo = "Open Box of .357 Ammo",
+		Recipe_PlaceShotgunShellsInBox = "Place 25 12ga Shells in a box",
 
 		Recipe_Clean_gun_part = "Clean gun part",
 

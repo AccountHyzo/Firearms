@@ -179,6 +179,22 @@ module Base
 		}
 	}
 
+	craftRecipe PlaceBullets22InBox
+	{
+		timedAction = PlaceAmmoInBox,
+		Time = 15,
+		category = Ammunition,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 50 [Base.Bullets22],
+		}
+		outputs
+		{
+			item 1 Base.Bullets22Box,
+		}
+	}
+
 	/*craftRecipe Place9mmBulletsInBox
 	{
     timedAction = PlaceAmmoInBox,
@@ -283,7 +299,7 @@ module Base
     Tags = InHandCraft,
 		inputs
 		{
-			item 50 [Base.Bullets3006],
+			item 20 [Base.Bullets3006],
 		}
 		outputs
 		{

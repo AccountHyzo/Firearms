@@ -68,8 +68,6 @@ end
 Events.OnGameBoot.Add(function()
     Hook.Attack.Remove(ISReloadWeaponAction.attackHook);
     Hook.Attack.Add(ISReloadWeaponAction.attackHookFirearms) -- add our new callback
-    Events.OnWeaponSwingHitPoint.Remove(ISReloadWeaponAction.onShoot);
-    Events.OnWeaponSwingHitPoint.Add(ISReloadWeaponAction.onShootFirearms) -- add our new callback
 
     -- store the original function.
     original_attackHook = ISReloadWeaponAction.attackHook

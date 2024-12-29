@@ -39,7 +39,6 @@ module Base
 		AllowBatchCraft = False,
 		Tags = InHandCraft,
 		category = Weaponry,
-		OnCreate = onImprovisedSilencer_OnCreate,
 		Tooltip = Tooltip_Recipe_ImprovisedSilencer,
 		OnTest = onImprovisedSilencer_OnTest,
 		inputs
@@ -98,6 +97,56 @@ module Base
 		itemMapper scopeType
 		{
 			Base.x4ACOGScope = Base.x4Scope,
+		}
+	}
+
+	craftRecipe PutGripOnRIS
+	{
+    timedAction = Making,
+		Time = 5,
+		AllowBatchCraft = False,
+		Tags = InHandCraft,
+		category = Weaponry,
+		Tooltip = Tooltip_Recipe_RISAdapter,
+		inputs
+		{
+			item 1 tags[Screwdriver] mode:keep flags[Prop1],
+			item 1 [RIS] flags[Prop2],
+			item 1 [M4_RIS_Grip;KACForegrip] mappers[scopeType],
+		}
+		outputs
+		{
+			item 1 mapper:scopeType,
+		}
+		itemMapper scopeType
+		{
+			Base.RIS_Grip = Base.M4_RIS_Grip,
+			Base.RIS_Foregrip = Base.KACForegrip,
+		}
+	}
+
+	craftRecipe RemoveGripRISAdapter
+	{
+    timedAction = Making,
+		Time = 5,
+		AllowBatchCraft = False,
+		Tags = InHandCraft,
+		category = Weaponry,
+		Tooltip = Tooltip_Recipe_RISAdapter,
+		inputs
+		{
+			item 1 tags[Screwdriver] mode:keep flags[Prop2],
+			item 1 [RIS_Grip;RIS_Foregrip] flags[Prop1] mappers[scopeType],
+		}
+		outputs
+		{
+			item 1 RIS,
+			item 1 mapper:scopeType,
+		}
+		itemMapper scopeType
+		{
+			Base.M4_RIS_Grip = Base.RIS_Grip,
+			Base.KACForegrip = Base.RIS_Foregrip,
 		}
 	}
 

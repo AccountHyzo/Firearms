@@ -1,0 +1,13 @@
+tileDepthTextureAssignments
+{
+	VERSION = 1,
+	Gunsmith_Workstation_0 = Gunsmith_Workstation_0,
+	Gunsmith_Workstation_1 = Gunsmith_Workstation_1,
+	Gunsmith_Workstation_2 = Gunsmith_Workstation_2,
+	Gunsmith_Workstation_3 = Gunsmith_Workstation_3,
+	Gunsmith_Workstation_4 = Gunsmith_Workstation_4,
+	Gunsmith_Workstation_5 = Gunsmith_Workstation_5,
+	Gunsmith_Workstation_6 = Gunsmith_Workstation_6,
+	Gunsmith_Workstation_7 = Gunsmith_Workstation_7,
+	Gunsmith_Workstation_8 = Gunsmith_Workstation_8,
+}

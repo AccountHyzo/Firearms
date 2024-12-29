@@ -322,8 +322,8 @@ module Base
 		WeightModifier			=	0.25,
 		ReloadTimeModifier		=	5,
 		RecoilDelayModifier		=	-20.0,
-		MountOn					=	Mossberg500Tactical,
-		PartType				=	RecoilPad,
+		MountOn					=	Mossberg500Tactical; M4,
+		PartType				=	Stock,
 		Tooltip					=	Tooltip_TacticalStock,
 		WorldStaticModel		=	Stock_Tactical,
 	}
@@ -339,7 +339,7 @@ module Base
 		ReloadTimeModifier		=	1,
 		RecoilDelayModifier		=	-15.0,
 		MountOn					=	Mossberg500Tactical,
-		PartType				=	RecoilPad,
+		PartType				=	Stock,
 		Tooltip					=	Tooltip_TacticalStock,
 		WorldStaticModel		=	Stock,
 	}
@@ -355,7 +355,7 @@ module Base
 		ReloadTimeModifier		=	1,
 		RecoilDelayModifier		=	-10,
 		MountOn					=	Mossberg500Tactical,
-		PartType				=	RecoilPad,
+		PartType				=	Stock,
 		Tooltip					=	Tooltip_TacticalStock,
 		WorldStaticModel		=	Stock_Light,
 	}
@@ -599,13 +599,53 @@ module Base
 
 	item picatinnyACOGAdapter
 	{
-		DisplayName				=	Thumbscrew Flattop Adapter ,
+		DisplayName				=	Thumbscrew Flattop Adapter,
 		DisplayCategory = Material,
 		Type = Normal,
 		Weight = 0.1,
 		Icon = Firearms_TA51,
 		StaticModel = TA51,
 		WorldStaticModel = TA51_WM,
+	}
+
+	item M4_RIS_Grip
+	{
+		DisplayName				=	M4 Grip underside,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Firearms_RIS,
+		Tooltip					=	Tooltip_AttachRISAdapter,
+		StaticModel = RIS_Grip,
+		WorldStaticModel = RIS_Grip,
+	}
+
+	item KACForegrip
+	{
+		DisplayName				=	Foregrip,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Firearms_KAC_Foregrip,
+		Tooltip					=	Tooltip_AttachRISAdapter,
+		StaticModel = RIS_Foregrip,
+		WorldStaticModel = RIS_Foregrip,
+	}
+
+	item M4_Carryhandle
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	M4 Carryhandle,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	Firearms_M4_Carryhandle,
+		Weight					=	0.1,
+		WeightModifier			=	0.1,
+		MaxRangeModifier		=	3,
+		MountOn					=	M4,
+		PartType				=	Scope,
+		Tooltip					=	Tooltip_IronSight,
+		MetalValue				=	15,
+		WorldStaticModel		=	M4_Carryhandle,
 	}
 
 	item Laser
@@ -750,7 +790,7 @@ module Base
 		MaxRangeModifier		=	16,
 		MinRangeModifier		=	8,
 		LowLightBonus = 10,
-		MountOn					=	HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle2; Base.M24Rifle; Base.MP5; MP5SD; MP510; Mossberg500Tactical; LAW12; Rugerm7722; FN_FAL,
+		MountOn					=	HuntingRifle; VarmintRifle; Base.HuntingRifle_Sawn; AssaultRifle2; Base.M24Rifle; Base.MP5; MP5SD; MP510; Mossberg500Tactical; LAW12; Rugerm7722; FN_FAL; M4,
 		PartType				=	Scope,
 		Tooltip					=	Tooltip_Scope,
 		MetalValue				=	22,
@@ -793,6 +833,230 @@ module Base
 		MetalValue				=	22,
 		WorldStaticModel		=	12xScope_wm,
 		Tags							=	NoScrewdriver; optics,
+	}
+
+	item RIS
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	RIS,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	Firearms_RIS,
+		Weight					=	0.1,
+		WeightModifier			=	0.1,
+		HitChanceModifier		=	5,
+		RecoilDelayModifier		=	-5.0,
+		MountOn					=	M4,
+		PartType				=	RecoilPad,
+		Tooltip					=	Tooltip_RISAdapter,
+		WorldStaticModel		=	RIS,
+	}
+
+	item RIS_Grip
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	RIS Grip,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	Firearms_RIS,
+		Weight					=	0.2,
+		WeightModifier			=	0.2,
+		HitChanceModifier		=	10,
+		RecoilDelayModifier		=	-10.0,
+		MountOn					=	M4,
+		PartType				=	RecoilPad,
+		Tooltip					=	Tooltip_RISAdapter,
+		WorldStaticModel		=	RIS_Grip,
+	}
+
+	item RIS_Foregrip
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	RIS Foregrip,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	Firearms_KAC_Foregrip,
+		Weight					=	0.2,
+		WeightModifier			=	0.2,
+		HitChanceModifier		=	15,
+		RecoilDelayModifier		=	-15.0,
+		MountOn					=	M4,
+		PartType				=	RecoilPad,
+		Tooltip					=	Tooltip_RISAdapter,
+		WorldStaticModel		=	RIS_Foregrip,
+	}
+
+	item 556Clip_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	STANAG,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	556_Stanag_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	AssaultRifle; M16A2; AR15; M733; M4,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	STANAG_Magazine,
+		Tags							=	NoScrewdriver,
+	}
+
+	item AK_Mag_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	AK Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	AK_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	AK47,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	AK_Mag,
+		Tags							=	NoScrewdriver,
+	}
+
+	item G3_Mag_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	G3 Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	AK_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	G3,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	G3_Mag,
+		Tags							=	NoScrewdriver,
+	}
+
+	item FN_FAL_Mag_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	FN Fal Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	AK_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	FN_Fal,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	G3_Mag,
+		Tags							=	NoScrewdriver,
+	}
+
+	item M60Mag_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	M60 Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	M60_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	M60,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	M60_Mag,
+		Tags							=	NoScrewdriver,
+	}
+
+	item MP5Mag_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	MP5 Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	MP5_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	MP5; MP5SD,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	MP5_Magazine,
+		Tags							=	NoScrewdriver,
+	}
+
+	item MP510Mag_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	MP5/10 Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	MP5_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	MP510,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	MP510_Magazine,
+		Tags							=	NoScrewdriver,
+	}
+
+	item UZIMag_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	UZI Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	MP5_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	UZI,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	UZI_Magazine,
+		Tags							=	NoScrewdriver,
+	}
+
+	item Mac10Mag_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	MAC10 Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	MP5_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	Mac10,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	Mac10_Magazine,
+		Tags							=	NoScrewdriver,
+	}
+
+	item 223Clip_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	Model 700 Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	MP5_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	VarmintRifle,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	Rifle_Mag,
+		Tags							=	NoScrewdriver,
+	}
+
+	item M14Clip_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	M14 Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	MP5_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	AssaultRifle2,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	M14_Mag,
+		Tags							=	NoScrewdriver,
 	}
 
 }

@@ -13,6 +13,23 @@ end
 
 Events.OnEquipPrimary.Add(firearms_setRackAfterShoot)
 
+function ISReloadWeaponAction:ejectSpentRounds()
+	if self.gun:getSpentRoundCount() > 0 then
+		self.gun:setSpentRoundCount(0)
+		ejectCasing(self.character, self.gun)
+		syncHandWeaponFields(self.character, self.gun)
+	elseif self.gun:isSpentRoundChambered() then
+		self.gun:setSpentRoundChambered(false)
+		ejectCasing(self.character, self.gun)
+		syncHandWeaponFields(self.character, self.gun)
+	else
+		return
+	end
+	if self.gun:getShellFallSound() then
+		self.character:getEmitter():playSound(self.gun:getShellFallSound())
+	end
+end
+
 local original_attackHook
 
 ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapon)

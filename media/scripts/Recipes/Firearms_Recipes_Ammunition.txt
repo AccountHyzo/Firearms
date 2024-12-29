@@ -9,10 +9,10 @@ module Base
 		Time = 0,
 		ToolTip = Tooltip_Recipe_ConvertAmmo,
 		Tags = InHandCraft;CanBeDoneInDark,
-    category = Weaponry,
+    category = Ammunition,
 		inputs
 		{
-			item 1 [Base.223Bullets;Base.556Bullets;Base.308Bullets;Base.762x51Bullets;Base.Bullets38;Base.Bullets357] flags[Prop2] mappers[ammoType],
+			item 1 [Base.223Bullets;Base.556Bullets;Base.308Bullets;Base.762x51Bullets;Base.Bullets38;Base.Bullets357] mappers[ammoType] flags[Prop2],
 		}
 		outputs
 		{
@@ -39,7 +39,7 @@ module Base
 			Tags = InHandCraft;CanBeDoneInDark,
 			inputs
 			{
-				item 1 [/*Base.Bullets9mmBox;Base.Bullets45Box;Base.Bullets38Box;Base.Bullets44Box;*/Bullets10mmBox;Base.Bullets357Box;Base.Bullets4440Box;Base.Bullets22Box] mappers[ammoTypes],
+				item 1 [/*Base.Bullets9mmBox;Base.Bullets45Box;Base.Bullets38Box;Base.Bullets44Box;*/Bullets10mmBox;Base.Bullets357Box;Base.Bullets4440Box;Base.Bullets22Box] mappers[ammoTypes] flags[Prop2],
 			}
 			outputs
 			{
@@ -66,7 +66,7 @@ module Base
 			Tags = InHandCraft;CanBeDoneInDark,
 			inputs
 			{
-				item 1 [/*Base.223Box;Base.556Box;Base.308Box;*/Base.762x51Box;Base.762x39Box;Base.Bullets3006Box] mappers[ammoTypes],
+				item 1 [/*Base.223Box;Base.556Box;Base.308Box;*/Base.762x51Box;Base.762x39Box;Base.Bullets3006Box] mappers[ammoTypes] flags[Prop2],
 			}
 			outputs
 			{
@@ -91,7 +91,7 @@ module Base
     Tags = InHandCraft,
 		inputs
 		{
-			item 20 [Base.556Bullets],
+			item 20 [Base.556Bullets] ,
 		}
 		outputs
 		{

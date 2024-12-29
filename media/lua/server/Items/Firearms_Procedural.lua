@@ -36,6 +36,8 @@ SpawnHandgunSuppressors = (SandboxVars.Firearms.SpawnHandgunSuppressors)
 SpawnRifleSuppressors = (SandboxVars.Firearms.SpawnRifleSuppressors)
 SpawnShotgunSuppressors = (SandboxVars.Firearms.SpawnShotgunSuppressors)
 
+SpawnAmmocraft = (SandboxVars.Firearms.Ammocraft)
+
 --[[
 GunStoreAccessories
 GunStoreAmmunition
@@ -44,6 +46,76 @@ GunStoreAmmunition
 local i, j, d
 
 -- Distributions for ProceduralDistributions.lua
+
+local FirearmsDistributionBoxes = {
+	"LockerArmyBedroom", 1,
+	"CrateMetalwork", 1,
+	"GunStoreAmmunition", 1,
+	"GarageFirearms", 6,
+	"DrugLabGuns", 1,
+	"DrugLabSupplies", 2,
+	"DrugShackDrugs", 1,
+	"DrugShackMisc", 2,
+	"PoliceEvidence", 2,
+}
+
+local FirearmsDistributionMolds = {
+	"CrateTools", 0.1,
+	"LockerArmyBedroom", 1,
+	"GarageFirearms", 6,
+	"CrateMetalwork", 1,
+	"GarageMetalwork", 0.1,
+	"CrateBlacksmithing", 4,
+	"PoliceEvidence", 4,
+}
+
+local FirearmsDistributionLit = {
+	"SafehouseBookShelf", 2,
+	"GunStoreLiterature", 2,
+	"GunStoreMagazineRack", 2,
+	"ArmySurplusLiterature", 2,
+	"CampingLockers", 2,
+	"ClassroomMisc", 1,
+	"ComicStoreCounter", 1,
+	"CrateBlacksmithing", 1,
+	"CyberCafeDesk", 1,
+	"DrugLabGuns", 1,
+	"DrugLabMoney", 1,
+	"DrugLabOutfit", 2,
+	"DrugLabSupplies", 2,
+	"DrugShackDrugs", 1,
+	"DrugShackMisc", 2,
+	"GarageFirearms", 2,
+	"GunStoreLiterature", 10,
+	"LivingRoomShelf", 0.005,
+	"LivingRoomShelfClassy", 0.005,
+	"LivingRoomShelfRedneck", 0.01,
+	"LivingRoomSideTable", 0.01,
+	"LivingRoomSideTableClassy", 0.005,
+	"LivingRoomSideTableRedneck", 0.05,
+	"SafehouseFireplace", 0.05,
+	"SafehouseFireplace_Late", 0.15,
+	"PoliceCaptainDesk", 0.05,
+	"PoliceEvidence", 0.05,
+	"SecurityLockers", 0.05,
+	"SecurityDesk", 0.05,
+}
+
+local FirearmsDistributionTools = {
+	"LockerArmyBedroom", 1,
+	"CrateBlacksmithing", 1,
+	"GarageFirearms", 2,
+	"StoreShelfMechanics", 1,
+	"GarageTools", 0.1,
+	"CrateTools", 1,
+	"GigamartTools", 0.1,
+	"GarageMetalwork", 0.1,
+}
+
+local FirearmsDistributionChemicals = {
+	"CrateFertilizer", 25,
+}
+
 local FirearmsDistributionAmmoBoxes = {
 	"GunStoreAmmunition", 10,
 	"HuntingLockers", 2,
@@ -152,6 +224,103 @@ local FirearmsDistributionOld = {
 	"BarCounterWeapon", 3,
 	"PawnShopGunsSpecial", 5,
 }
+
+for i = 1, #FirearmsDistributionBoxes, 2 do
+	if SpawnAmmocraft then
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.Bullets9mm_casingbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.Bullets45_casingbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.Bullets44_casingbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]/2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.Bullets38_casingbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.308Bullets_casingbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]/3)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.223Bullets_casingbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]/3)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.ShotgunShells_casingbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]*2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.Bullets9mm_tipbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.Bullets45_tipbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.Bullets44_tipbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]/2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.Bullets38_tipbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.308Bullets_tipbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]/3)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.223Bullets_tipbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]/3)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.ShotgunShells_tipbox")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]*2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.SP_Primers_box")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.LP_Primers_box")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]/2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.R_Primers_box")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]/4)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.SG_Primers_box")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]*2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, "Base.GunpowderJar")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionBoxes[i]].items, FirearmsDistributionBoxes[i+1]*2)
+	end
+end
+
+for i = 1, #FirearmsDistributionMolds, 2 do
+	if SpawnAmmocraft then
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, "Base.9mmBulletsMold")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, FirearmsDistributionMolds[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, "Base.45BulletsMold")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, FirearmsDistributionMolds[i+1]/2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, "Base.44BulletsMold")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, FirearmsDistributionMolds[i+1]/3)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, "Base.38BulletsMold")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, FirearmsDistributionMolds[i+1]/2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, "Base.308BulletsMold")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, FirearmsDistributionMolds[i+1]/5)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, "Base.223BulletsMold")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, FirearmsDistributionMolds[i+1]/5)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, "Base.ShotgunShellsMold")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionMolds[i]].items, FirearmsDistributionMolds[i+1]*2)
+	end
+end
+
+for i = 1, #FirearmsDistributionLit, 2 do
+	if SpawnAmmocraft then
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, "Base.GunnutMonthly1")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, FirearmsDistributionLit[i+1]*2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, "Base.GunnutMonthly2")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, FirearmsDistributionLit[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, "Base.GunnutMonthly3")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, FirearmsDistributionLit[i+1]*0.8)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, "Base.GunnutMonthly4")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, FirearmsDistributionLit[i+1]*0.6)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, "Base.GunnutMonthly5")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, FirearmsDistributionLit[i+1]*0.4)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, "Base.GunnutMonthly6")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, FirearmsDistributionLit[i+1]*0.2)
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, "Base.GunnutBible")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionLit[i]].items, FirearmsDistributionLit[i+1]/10)
+	end
+end
+
+for i = 1, #FirearmsDistributionTools, 2 do
+	if SpawnAmmocraft then
+	table.insert(ProceduralDistributions.list[FirearmsDistributionTools[i]].items, "Base.Reloadpress")
+	table.insert(ProceduralDistributions.list[FirearmsDistributionTools[i]].items, FirearmsDistributionTools[i+1]/4)
+	end
+end
+
+for i = 1, #FirearmsDistributionChemicals, 2 do
+	if SpawnAmmocraft then
+		table.insert(ProceduralDistributions.list[FirearmsDistributionChemicals[i]].items, "Base.Sulfur")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionChemicals[i]].items, FirearmsDistributionChemicals[i+1])
+		table.insert(ProceduralDistributions.list[FirearmsDistributionChemicals[i]].items, "Base.Saltpeter")
+		table.insert(ProceduralDistributions.list[FirearmsDistributionChemicals[i]].items, FirearmsDistributionChemicals[i+1])
+	end
+end
 
 --[[
 			FirearmsDistributionMagazines

@@ -1,5 +1,17 @@
 VERSION = 1,
 
+option Firearms.Ammocraft
+{
+type = boolean, default = false,
+page = Firearms, translation = Firearms_Ammocraft,
+}
+
+option Firearms.CasingsGround
+{
+	type = boolean, default = true,
+	page = Firearms, translation = Firearms_CasingsGround,
+}
+
 option Firearms.ScrewdriverReq
 {
 	type = boolean, default = true,

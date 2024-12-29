@@ -1,0 +1,119 @@
+module Base
+{
+
+	/************************Tools************************/
+
+	item Reloadpress
+	{
+		DisplayName = ReloadPress,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = Reloadingpress,
+		Tooltip = Tooltip_Reloader,
+	}
+
+	/*****************************************************/
+	/*                       Molds                       */
+	/*****************************************************/
+
+	item Bullets22Mold
+	{
+		DisplayName = 22 Bullet Mold,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BulletMold,
+		MetalValue = 15,
+		WorldStaticModel = ShotGunShellsMold_Ground,
+	}
+
+	item 10mmBulletsMold
+	{
+		DisplayName = 10mm Bullet Mold,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BulletMold,
+		MetalValue = 15,
+		WorldStaticModel = ShotGunShellsMold_Ground,
+	}
+
+	item 9mmBulletsMold
+	{
+		DisplayName = 9mm Bullet Mold,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BulletMold,
+		MetalValue = 15,
+		WorldStaticModel = ShotGunShellsMold_Ground,
+	}
+
+	item ShotgunShellsMold
+	{
+		DisplayName = Shotgun Shells Mold,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BulletMold,
+		MetalValue = 15,
+		WorldStaticModel = ShotGunShellsMold_Ground,
+	}
+
+	item 308BulletsMold
+	{
+		DisplayName = .308 Bullet Mold,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BulletMold,
+		MetalValue = 15,
+		WorldStaticModel = ShotGunShellsMold_Ground,
+	}
+
+	item 223BulletsMold
+	{
+		DisplayName = .223 Bullet Mold,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BulletMold,
+		MetalValue = 15,
+		WorldStaticModel = ShotGunShellsMold_Ground,
+	}
+
+	item 45BulletsMold
+	{
+		DisplayName = 45 Bullet Mold,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BulletMold,
+		MetalValue = 15,
+		WorldStaticModel = ShotGunShellsMold_Ground,
+	}
+
+	item 44BulletsMold
+	{
+		DisplayName = 44 Bullet Mold,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BulletMold,
+		MetalValue = 15,
+		WorldStaticModel = ShotGunShellsMold_Ground,
+	}
+
+	item 38BulletsMold
+	{
+		DisplayName = 38 Bullet Mold,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BulletMold,
+		MetalValue = 15,
+		WorldStaticModel = ShotGunShellsMold_Ground,
+	}
+
+}

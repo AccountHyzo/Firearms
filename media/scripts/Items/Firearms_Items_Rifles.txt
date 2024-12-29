@@ -115,6 +115,7 @@ module Base
 		ModelWeaponPart					=	Base.Rifle_Bipod		Base.Bipod					bipod		bipod,
 		ModelWeaponPart					=	RecoilPad				Base.Recoil_Pad				recoilpad	recoilpad,
 		ModelWeaponPart					=	Base.ExtendedRecoilPad	Base.ExtendedRecoil_Pad		recoilpad	recoilpad,
+		ModelWeaponPart					=	Base.223Clip_Attachment	Base.Rifle_Mag		magazine	magazine,
 
 	}
 
@@ -521,7 +522,7 @@ module Base
 		UseEndurance					=	FALSE,
 		RequiresEquippedBothHands		=	TRUE,
 		TwoHandWeapon					=	TRUE,
-		RackAfterShoot					=	TRUE,
+		RackAfterShoot					=	FALSE,
 		AttachmentType					=	Rifle,
 		SwingAnim						=	Rifle,
 		RunAnim							=	Run_Weapon2,
@@ -752,7 +753,7 @@ module Base
 		UseEndurance					=	FALSE,
 		RequiresEquippedBothHands		=	TRUE,
 		TwoHandWeapon					=	TRUE,
-		RackAfterShoot					=	TRUE,
+		RackAfterShoot					=	FALSE,
 		FireMode						=	Single,
 		AttachmentType					=	Rifle,
 		SwingAnim						=	Rifle,
@@ -762,7 +763,7 @@ module Base
 		/************************Ammo************************/
 		AmmoBox							=	762x51Box,
 		MaxAmmo							=	20,
-		AmmoType						=	Base.Bullets22,
+		AmmoType						=	Base.762x51Bullets,
 		WeaponReloadType				=	boltaction,
 		MagazineType					=	Base.M14Clip,
 
@@ -807,6 +808,7 @@ module Base
 		ModelWeaponPart					=	Base.Rifle_Bipod		Base.Bipod					bipod		bipod,
 		ModelWeaponPart					=	RecoilPad				Base.Recoil_Pad				recoilpad	recoilpad,
 		ModelWeaponPart					=	Base.ExtendedRecoilPad	Base.ExtendedRecoil_Pad		recoilpad	recoilpad,
+		ModelWeaponPart					=	Base.M14Clip_Attachment	Base.M14_Mag		magazine	magazine,
 
 	}
 

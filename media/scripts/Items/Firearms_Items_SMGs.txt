@@ -120,7 +120,7 @@ module Base
 		ModelWeaponPart					=	Base.STANAG_Magazine	Base.STANAG_Magazine		magazine	magazine,
 		ModelWeaponPart					=	Base.MP5_Stock_Extended	Base.MP5_Stock_Extended		stock		stock,
 		ModelWeaponPart					=	Base.MP5_Stock_Detracted	Base.MP5_Stock_Detracted	stock		stock,
-		ModelWeaponPart					=	Base.MP5_Magazine			Base.MP5_Magazine			magazine	magazine,
+		ModelWeaponPart					=	Base.MP5Mag_Attachment			Base.MP5_Magazine			magazine	magazine,
 	}
 
 	item MP5SD
@@ -242,7 +242,7 @@ module Base
 		ModelWeaponPart					=	Base.STANAG_Magazine	Base.STANAG_Magazine		magazine	magazine,
 		ModelWeaponPart					=	Base.MP5_Stock_Extended	Base.MP5_Stock_Extended		stock		stock,
 		ModelWeaponPart					=	Base.MP5_Stock_Detracted	Base.MP5_Stock_Detracted	stock		stock,
-		ModelWeaponPart					=	Base.MP5_Magazine			Base.MP5_Magazine			magazine	magazine,
+		ModelWeaponPart					=	Base.MP5Mag_Attachment			Base.MP5_Magazine			magazine	magazine,
 	}
 
 	item MP510
@@ -364,7 +364,7 @@ module Base
 		ModelWeaponPart					=	Base.STANAG_Magazine	Base.STANAG_Magazine		magazine	magazine,
 		ModelWeaponPart					=	Base.MP5_Stock_Extended	Base.MP5_Stock_Extended		stock		stock,
 		ModelWeaponPart					=	Base.MP5_Stock_Detracted	Base.MP5_Stock_Detracted	stock		stock,
-		ModelWeaponPart					=	Base.MP5_Magazine			Base.MP5_Magazine			magazine	magazine,
+		ModelWeaponPart					=	Base.MP510Mag_Attachment			Base.MP510_Magazine			magazine	magazine,
 	}
 
 	item UZI
@@ -486,7 +486,7 @@ module Base
 		ModelWeaponPart					=	Base.STANAG_Magazine	Base.STANAG_Magazine		magazine	magazine,
 		ModelWeaponPart					=	Base.UZI_Stock_Extended	Base.UZI_Stock_Extended		stock		stock,
 		ModelWeaponPart					=	Base.UZI_Stock_Detracted	Base.UZI_Stock_Detracted	stock		stock,
-		ModelWeaponPart					=	Base.MP5_Magazine			Base.MP5_Magazine			magazine	magazine,
+		ModelWeaponPart					=	Base.UZIMag_Attachment			Base.UZI_Magazine			magazine	magazine,
 	}
 
 	item Mac10
@@ -608,6 +608,6 @@ module Base
 		ModelWeaponPart					=	Base.STANAG_Magazine	Base.STANAG_Magazine		magazine	magazine,
 		ModelWeaponPart					=	Base.Mac10_Stock_Extended	Base.Mac10_Stock_Extended		stock		stock,
 		ModelWeaponPart					=	Base.Mac10_Stock_Detracted	Base.Mac10_Stock_Detracted	stock		stock,
-		ModelWeaponPart					=	Base.MP5_Magazine			Base.MP5_Magazine			magazine	magazine,
+		ModelWeaponPart					=	Base.Mac10Mag_Attachment			Base.Mac10_Magazine			magazine	magazine,
 	}
 }

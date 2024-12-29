@@ -6,42 +6,55 @@ end
 local original_onChangefiremode = ISInventoryPaneContextMenu.onChangefiremode
 
 ISInventoryPaneContextMenu.onChangefiremode = function(playerObj, weapon, newfiremode)
-	if not weapon:hasTag("SemiShotgun") then
+	if weapon:hasTag("SemiShotgun") then
+		if "Auto" == newfiremode then
+			weapon:setRackAfterShoot(false);
+		elseif "Single" == newfiremode then
+			weapon:setRackAfterShoot(true)
+		end
+		original_onChangefiremode(playerObj, weapon, newfiremode)
+	else
 		original_onChangefiremode(playerObj, weapon, newfiremode)
 	end
-	if "Auto" == newfiremode then
-		weapon:setRackAfterShoot(false);
-	elseif "Single" == newfiremode then
-		weapon:setRackAfterShoot(true)
-	end
-	original_onChangefiremode(playerObj, weapon, newfiremode)
 end
+
+local original_onRemoveUpgradeWeapon = ISInventoryPaneContextMenu.onRemoveUpgradeWeapon
 
 ISInventoryPaneContextMenu.onRemoveUpgradeWeapon = function(weapon, part, playerObj)
+	if getDebug() then
+		print(part:getPartType())
+	end
+	if part:getPartType() == "Clip" then return end
+	local screwdriver = playerObj:getInventory():getFirstTagEvalRecurse("Screwdriver", predicateNotBroken)
+	if screwdriver then
+			original_onRemoveUpgradeWeapon(weapon, part, playerObj)
+	else
 		ISInventoryPaneContextMenu.transferIfNeeded(playerObj, weapon)
-		--[[local screwdriver = playerObj:getInventory():getFirstTagEvalRecurse("Screwdriver", predicateNotBroken)
-		if screwdriver then
-				ISInventoryPaneContextMenu.equipWeapon(screwdriver, true, false, playerObj:getPlayerNum());]]--
-				ISTimedActionQueue.add(ISRemoveWeaponUpgrade:new(playerObj, weapon, part:getPartType()));
-		--end
+		ISInventoryPaneContextMenu.equipWeapon(weapon, false, false, playerObj:getPlayerNum());
+		ISTimedActionQueue.add(ISRemoveWeaponUpgrade:new(playerObj, weapon, part:getPartType()));
+	end
 end
 
+local original_onUpgradeWeapon = ISInventoryPaneContextMenu.onUpgradeWeapon
+
 ISInventoryPaneContextMenu.onUpgradeWeapon = function(weapon, part, player)
+	if getDebug() then
+		print(part:getPartType())
+	end
+	--if not part:getPartType() == "Clip" then
+	local screwdriver = player:getInventory():getFirstTagEvalRecurse("Screwdriver", predicateNotBroken)
+	if screwdriver then
+		original_onUpgradeWeapon(weapon, part, player)
+	else
 		ISInventoryPaneContextMenu.transferIfNeeded(player, weapon)
 		ISInventoryPaneContextMenu.transferIfNeeded(player, part)
-		--[[local screwdriver = player:getInventory():getFirstTagEvalRecurse("Screwdriver", predicateNotBroken)
-		if screwdriver then
-				ISInventoryPaneContextMenu.equipWeapon(screwdriver, true, false, player:getPlayerNum());]]--
-				ISInventoryPaneContextMenu.equipWeapon(part, false, false, player:getPlayerNum());
-				ISTimedActionQueue.add(ISUpgradeWeapon:new(player, weapon, part));
-		--end
+		ISInventoryPaneContextMenu.equipWeapon(weapon, false, false, player:getPlayerNum());
+		ISTimedActionQueue.add(ISUpgradeWeapon:new(player, weapon, part));
+	end
 end
 
 --Override addAttachment function if the Screwdriver Requirement is turned off in the sandbox settings
 local function addAttachment(player, context, items)
-	if getDebug() then
-		print("addAttachment")
-	end
 	--if SandboxVars.Firearms.ScrewdriverReq then return end;
 
 	local playerObj = getSpecificPlayer(player)

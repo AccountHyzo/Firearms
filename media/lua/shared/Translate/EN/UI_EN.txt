@@ -1,0 +1,4 @@
+UI_EN = {
+		UI_options_Firearms_spawnCasing = "Drop casings",
+		UI_options_Firearms_spawnCasing_tooltip = "Whether casings drop on the floor or get put in the players inventory.",
+}

@@ -1,0 +1,86 @@
+module Base
+{
+	/*******************************************************/
+	/*                      Casting                        */
+	/*******************************************************/
+
+	craftRecipe Forge_Bullet_Tip
+	{
+			time        = 10,
+			SkillRequired = Blacksmith:4,
+			needTobeLearn = true,
+			timedAction = Making,
+			xpAward = Blacksmith:45,
+			AutoLearn = Blacksmith:6,
+			OnTest = onAmmocraft_OnTest,
+			Tags = Forge,
+			category = Ammunition,
+			inputs
+			{
+					item 1 tags[Charcoal],
+					item 1 tags[SmeltableIronMedium],
+					item 1 [Base.CeramicCrucible] mode:keep,
+					item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+					item 1 [Base.9mmBulletsMold;Base.45BulletsMold;Base.44BulletsMold;Base.38BulletsMold;Base.223BulletsMold;308BulletsMold;Base.ShotgunShellsMold;10mmBulletsMold;Base.Bullets22Mold] mappers[ammoTypes],
+				}
+				outputs
+				{
+					item 5 mapper:ammoTypes,
+				}
+				itemMapper ammoTypes
+				{
+					Base.Bullets9mm_tip = Base.9mmBulletsMold,
+					Base.Bullets45_tip = Base.45BulletsMold,
+					Base.Bullets44_tip = Base.44BulletsMold,
+					Base.Bullets38_tip = Base.38BulletsMold,
+					Base.223Bullets_tip = Base.223BulletsMold,
+					Base.308Bullets_tip = Base.308BulletsMold,
+					Base.ShotgunShells_tip = Base.ShotgunShellsMold,
+					Base.Bullets10mm_tip = Base.10mmBulletsMold,
+					Base.Bullets22_tip = Base.Bullets22Mold,
+			}
+	}
+
+	/*******************************************************/
+	/*                      Survival                       */
+	/*******************************************************/
+
+	/*craftRecipe ammocraftRecipe
+	{
+		timedAction = Making,
+		Time = 100,
+		category = Ammunition,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Pliers] mode:keep flags[MayDegradeLight],
+			item 1 [ShotgunShells],
+		}
+		outputs
+		{
+			item 1 Base.GunPowder,
+		}
+	}*/
+
+	craftRecipe Create_Homemade_Gunpowder
+	{
+		timedAction = OpenAmmoBox,
+		Time = 100,
+		category = Survival,
+		NeedToBeLearn = True,
+		OnTest = onAmmocraft_OnTest,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 tags[MortarPestle] mode:keep flags[MayDegradeLight],
+			item 1 [Charcoal],
+			item 3 [Fertilizer],
+			item 1 [Sulfur],
+		}
+		outputs
+		{
+			item 5 Base.GunPowder,
+		}
+	}
+}

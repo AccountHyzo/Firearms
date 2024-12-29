@@ -1,4 +1,3 @@
-
 function ISRemoveWeaponUpgrade:isValid()
 	if isClient() and self.weapon then
 			return self.character:getInventory():containsID(self.weapon:getID())
@@ -10,6 +9,7 @@ end
 
 function ISUpgradeWeapon:isValid()
 	if self.weapon:getWeaponPart(self.part:getPartType()) then return false end
+	if self.part:getPartType() == "Clip" then return false end
 	if isClient() and self.part and self.weapon then
 			return self.character:getInventory():containsID(self.part:getID()) and self.character:getInventory():containsID(self.weapon:getID());
 	else

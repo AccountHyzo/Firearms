@@ -14,6 +14,14 @@ end
 
 GiveMaintenanceXP = Recipe.OnGiveXP.CleanGun
 
+function onAmmocraft_OnTest(item)
+		if SandboxVars.Firearms.Ammocraft then
+			return true;
+		else
+			return false;
+		end
+end
+
 function onImprovisedSilencer_OnTest(item)
 		if SandboxVars.Firearms.ImprovisedSuppressors then
 			return true;

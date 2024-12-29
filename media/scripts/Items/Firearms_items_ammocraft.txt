@@ -1,0 +1,1122 @@
+module Base
+{
+
+	/*****************************************************/
+	/*                       Boxes                       */
+	/*****************************************************/
+
+	item Bullets9mm_casingbox
+	{
+		DisplayName = Box of 9mm Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets45_casingbox
+	{
+		DisplayName = Box of 45 Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets44_casingbox
+	{
+		DisplayName = Box of 44 Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets38_casingbox
+	{
+		DisplayName = Box of 38 Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item 308Bullets_casingbox
+	{
+		DisplayName = Box of 308 Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item 223Bullets_casingbox
+	{
+		DisplayName = Box of 223 Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.6,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets357_casingbox
+	{
+		DisplayName = Box of 357 Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item 762x39Bullets_casingbox
+	{
+		DisplayName = Box of 762x39mm Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets22_casingbox
+	{
+		DisplayName = Box of 22 Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets3006_casingbox
+	{
+		DisplayName = Box of 3006 Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets10mm_casingbox
+	{
+		DisplayName = Box of 10mm Casings,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item ShotgunShells_casingbox
+	{
+		DisplayName = Box of Shotgun Shells,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets9mm_tipbox
+	{
+		DisplayName = Box of 9mm Tips,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets45_tipbox
+	{
+		DisplayName = Box of 45 Tips,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets44_tipbox
+	{
+		DisplayName = Box of 44 Tips,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets38_tipbox
+	{
+		DisplayName = Box of 38 Tips,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item 308Bullets_tipbox
+	{
+		DisplayName = Box of 308 Tips,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item 223Bullets_tipbox
+	{
+		DisplayName = Box of 223 Tips,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets22_tipbox
+	{
+		DisplayName = Box of 22 Tips,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets3006_tipbox
+	{
+		DisplayName = Box of 3006 Tips,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets10mm_tipbox
+	{
+		DisplayName = Box of 10mm Tips,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item ShotgunShells_tipbox
+	{
+		DisplayName = Jar of Buckshot,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = GunpowderJar,
+		WorldStaticModel = GunpowderJar,
+	}
+
+	item SP_Primers_box
+	{
+		DisplayName = Box of Small Pistol Primers,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item LP_Primers_box
+	{
+		DisplayName = Box of Large Pistol Primers,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item R_Primers_box
+	{
+		DisplayName = Box of Rifle Primers,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item SG_Primers_box
+	{
+		DisplayName = Box of Shotgun Primers,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item GunpowderJar
+	{
+		DisplayName = Bottle of Gunpowder,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = GunpowderJar,
+		WorldStaticModel = GunpowderJar,
+	}
+
+	/**************************************************************/
+	/*                       Casings & Tips                       */
+	/**************************************************************/
+
+	item Bullets9mm_casing
+	{
+		DisplayName = 9mm Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets9mm_casing_spent
+	{
+		DisplayName = 9mm Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets9mm_casing_spent_noprimer
+	{
+		DisplayName = 9mm Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets9mm_tip
+	{
+		DisplayName = 9mm Bullet,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets45_casing
+	{
+		DisplayName = 45 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets45_casing_spent
+	{
+		DisplayName = 45 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets45_casing_spent_noprimer
+	{
+		DisplayName = 45 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets45_tip
+	{
+		DisplayName = 45 Bullet,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets44_casing
+	{
+		DisplayName = 44 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets44_casing_spent
+	{
+		DisplayName = 44 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets44_casing_spent_noprimer
+	{
+		DisplayName = 44 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets44_tip
+	{
+		DisplayName = 44 Bullet,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets357_casing
+	{
+		DisplayName = 357 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets357_casing_spent
+	{
+		DisplayName = 357 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets357_casing_spent_noprimer
+	{
+		DisplayName = 357 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets38_casing
+	{
+		DisplayName = 38 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets38_casing_spent
+	{
+		DisplayName = 38 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets38_casing_spent_noprimer
+	{
+		DisplayName = 38 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets38_tip
+	{
+		DisplayName = 38 Bullet,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item 308Bullets_casing
+	{
+		DisplayName = 308 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item 308Bullets_casing_spent
+	{
+		DisplayName = 308 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item 308Bullets_casing_spent_noprimer
+	{
+		DisplayName = 308 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item 308Bullets_tip
+	{
+		DisplayName = 308 Bullet,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item 762x39Bullets_casing
+	{
+		DisplayName = 762x39 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item 762x39Bullets_casing_spent
+	{
+		DisplayName = 762x39 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item 762x39Bullets_casing_spent_noprimer
+	{
+		DisplayName = 762x39 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item 223Bullets_casing
+	{
+		DisplayName = 223 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item 223Bullets_casing_spent
+	{
+		DisplayName = 223 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item 223Bullets_casing_spent_noprimer
+	{
+		DisplayName = 223 Casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item 223Bullets_tip
+	{
+		DisplayName = 223 Bullet,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet_Casing,
+	}
+
+	item ShotgunShells_casing
+	{
+		DisplayName = Shotgun Shell,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Shotgun_Casing,
+	}
+
+	item ShotgunShells_casing_spent
+	{
+		DisplayName = Shotgun Shell,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Shotgun_Casing,
+	}
+
+	item ShotgunShells_casing_spent_noprimer
+	{
+		DisplayName = Shotgun Shell,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Shotgun_Casing,
+	}
+
+	item ShotgunShells_tip
+	{
+		DisplayName = Shotgun buckshot,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Buckshot_Pile,
+	}
+
+	item Bullets10mm_casing
+	{
+		DisplayName = 10mm casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets10mm_casing_spent
+	{
+		DisplayName = 10mm casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets10mm_casing_spent_noprimer
+	{
+		DisplayName = 10mm casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets10mm_tip
+	{
+		DisplayName = 10mm bullet,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets22_casing
+	{
+		DisplayName = 22 casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets22_casing_spent
+	{
+		DisplayName = 22 casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets22_casing_spent_noprimer
+	{
+		DisplayName = 22 casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets22_tip
+	{
+		DisplayName = 22 bullet,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Bullets3006_casing
+	{
+		DisplayName = 3006 casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet,
+	}
+
+	item Bullets3006_casing_spent
+	{
+		DisplayName = 3006 casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet,
+	}
+
+	item Bullets3006_casing_spent_noprimer
+	{
+		DisplayName = 3006 casing,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Casing,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleBullet,
+	}
+
+	item Bullets3006_tip
+	{
+		DisplayName = 3006 bullet,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = 9mm_Bullet,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	/*******************************************************/
+	/*                      Primers                        */
+	/*******************************************************/
+
+	item SP_Primers
+	{
+		DisplayName = SP Primer,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Primer,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item LP_Primers
+	{
+		DisplayName = LP Primer,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Primer,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item R_Primers
+	{
+		DisplayName = R Primer,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Primer,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item SG_Primers
+	{
+		DisplayName = SG Primer,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Primer,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item SP_Primers_Spent
+	{
+		DisplayName = SP Primer,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Primer,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item LP_Primers_Spent
+	{
+		DisplayName = LP Primer,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Primer,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item R_Primers_Spent
+	{
+		DisplayName = R Primer,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Primer,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item SG_Primers_Spent
+	{
+		DisplayName = SG Primer,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Primer,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Bullet_Casing,
+	}
+
+	item Sulfur
+	{
+		DisplayName = NPK Fertilizer,
+		DisplayCategory = Gardening,
+		Type = Drainable,
+		Weight = 5.0,
+		WeightEmpty = 0.1,
+		Icon = Sulfur,
+		Tooltip = Tooltip_Fertilizer,
+		UseDelta = 0.125,
+		UseWhileEquipped = FALSE,
+		StaticModel = Fertilizer_Ground,
+		WorldStaticModel = Fertilizer_Ground,
+	}
+
+			/************************Misc************************/
+
+	item GunPowder
+	{
+		DisplayName = Gunpowder,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.5,
+		Icon = Gunpowder,
+		UseDelta = 0.01,
+		UseWhileEquipped = FALSE,
+		WeightEmpty = 0.01,
+		WorldStaticModel = GunPowder_Pile,
+	}
+
+}

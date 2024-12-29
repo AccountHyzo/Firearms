@@ -1,0 +1,161 @@
+module Base
+{
+
+	/*****************************************************/
+	/*                       Boxes                       */
+	/*****************************************************/
+
+	craftRecipe OpenCasingBox
+	{
+		timedAction = OpenAmmoBox,
+		Time = 15,
+		category = Ammunition,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.Bullets9mm_casingbox;Base.Bullets45_casingbox;Base.Bullets44_casingbox;Base.Bullets38_casingbox;Base.308Bullets_casingbox;Base.223Bullets_casingbox;762x39Bullets_casingbox;Base.ShotgunShells_casingbox;Bullets10mm_casingbox;Base.Bullets357_casingbox;Base.Bullets22_casingbox] mappers[ammoTypes],
+		}
+		outputs
+		{
+			item 50 mapper:ammoTypes,
+		}
+		itemMapper ammoTypes
+		{
+			Base.Bullets9mm_casing = Base.Bullets9mm_casingbox,
+			Base.Bullets45_casing = Base.Bullets45_casingbox,
+			Base.Bullets44_casing = Base.Bullets44_casingbox,
+			Base.Bullets38_casing = Base.Bullets38_casingbox,
+			Base.308Bullets_casing = Base.308Bullets_casingbox,
+			Base.223Bullets_casing = Base.223Bullets_casingbox,
+			Base.762x39Bullets_casing = Base.762x39Bullets_casingbox,
+			Base.ShotgunShells_casing = Base.ShotgunShells_casingbox,
+			Base.Bullets10mm_casing = Base.Bullets10mm_casingbox,
+			Base.Bullets357_casing = Base.Bullets357_casingbox,
+			Base.Bullets22_casing = Base.Bullets22_casingbox,
+		}
+	}
+
+	craftRecipe OpenTipBox
+	{
+		timedAction = OpenAmmoBox,
+		Time = 15,
+		category = Ammunition,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.Bullets9mm_tipbox;Base.Bullets45_tipbox;Base.Bullets44_tipbox;Base.Bullets38_tipbox;Base.308Bullets_tipbox;Base.223Bullets_tipbox;Base.ShotgunShells_tipbox;Bullets10mm_tipbox;Base.Bullets3006_tipbox;Base.Bullets22_tipbox] mappers[ammoTypes],
+		}
+		outputs
+		{
+			item 50 mapper:ammoTypes,
+		}
+		itemMapper ammoTypes
+		{
+			Base.Bullets9mm_tip = Base.Bullets9mm_tipbox,
+			Base.Bullets45_tip = Base.Bullets45_tipbox,
+			Base.Bullets44_tip = Base.Bullets44_tipbox,
+			Base.Bullets38_tip = Base.Bullets38_tipbox,
+			Base.308Bullets_tip = Base.308Bullets_tipbox,
+			Base.223Bullets_tip = Base.223Bullets_tipbox,
+			Base.ShotgunShells_tip = Base.ShotgunShells_tipbox,
+			Base.Bullets10mm_tip = Base.Bullets10mm_tipbox,
+			Base.Bullets3006_tip = Base.Bullets3006_tipbox,
+			Base.Bullets22_tip = Base.Bullets22_tipbox,
+		}
+	}
+
+	craftRecipe OpenPrimerBox
+	{
+		timedAction = OpenAmmoBox,
+		Time = 15,
+		category = Ammunition,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.SP_Primers_box;Base.LP_Primers_box;Base.R_Primers_box;Base.SG_Primers_box] mappers[ammoTypes],
+		}
+		outputs
+		{
+			item 100 mapper:ammoTypes,
+		}
+		itemMapper ammoTypes
+		{
+			Base.SP_Primers = Base.SP_Primers_box,
+			Base.LP_Primers = Base.LP_Primers_box,
+			Base.R_Primers = Base.R_Primers_box,
+			Base.SG_Primers = Base.SG_Primers_box,
+		}
+	}
+
+	craftRecipe OpenBuckshotJar
+	{
+		timedAction = Making,
+		Time = 15,
+		category = Ammunition,
+		OnCreate = Ammocraft_OpenJar_OnCreate,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.ShotgunShells_tipbox]  flags[Prop2],
+		}
+		outputs
+		{
+			item 50 Base.ShotgunShells_tip,
+		}
+	}
+
+	craftRecipe PutBuckshotJar
+	{
+		timedAction = Making,
+		Time = 15,
+		category = Ammunition,
+		OnCreate = Ammocraft_OpenJar_OnCreate,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.Funnel] mode:keep flags[Prop1],
+			item 100 [Base.ShotgunShells_tip],
+			item 1 [Base.EmptyJar] flags[Prop2],
+			item 1 [Base.JarLid],
+		}
+		outputs
+		{
+			item 1 Base.ShotgunShells_tipbox,
+		}
+	}
+
+	craftRecipe OpenGunpowderJar
+	{
+		timedAction = Making,
+		Time = 15,
+		category = Ammunition,
+		OnCreate = Ammocraft_OpenJar_OnCreate,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.GunpowderJar],
+		}
+		outputs
+		{
+			item 10 Base.GunPowder,
+		}
+	}
+
+	craftRecipe PutGunpowderJar
+	{
+		timedAction = Making,
+		Time = 15,
+		category = Ammunition,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 10 [Base.GunPowder],
+			item 1 [Base.EmptyJar],
+			item 1 [Base.JarLid],
+		}
+		outputs
+		{
+			item 1 Base.GunpowderJar,
+		}
+	}
+}

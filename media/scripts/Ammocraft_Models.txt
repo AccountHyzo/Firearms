@@ -1,0 +1,78 @@
+module Base
+{
+
+	/************************Models************************/
+	model Reloadingpress
+	{
+		mesh = tools/Reloadingpress,
+	}
+
+	model Pliers
+	{
+		mesh = tools/Pliers,
+	}
+
+	model Bullet
+	{
+		mesh = ammo/Bullet,
+	}
+
+	model Bullet_Casing
+	{
+		mesh = ammo/Bullet_Casing,
+		texture = ammo/Casing,
+		scale = 1.5,
+	}
+
+	model RifleBullet
+	{
+		mesh = ammo/RifleBullet,
+		texture = ammo/Bullet,
+	}
+
+	model RifleBullet_Casing
+	{
+		mesh = ammo/RifleBullet_Casing,
+		texture = ammo/Casing,
+		scale = 1.25,
+	}
+
+	model Shotgun_Casing
+	{
+		mesh = ammo/Shotgun_Casing,
+		texture = ammo/ammo_shotgun,
+		scale = 1.25,
+	}
+
+	model ShotgunShell
+	{
+		mesh = ammo/ShotgunShells,
+	}
+
+	model Ammobox
+	{
+		mesh = ammo/Ammobox,
+	}
+
+	model 556_Mag
+	{
+		mesh = ammo/Stanag_Mag,
+	}
+
+	model GunPowder_Pile
+	{
+		mesh = ammo/Pile,
+		scale = 0.5,
+	}
+
+	model Buckshot_Pile
+	{
+		mesh = ammo/Pile,
+	}
+
+	model BulletMold
+	{
+		mesh = tools/mold,
+	}
+
+}

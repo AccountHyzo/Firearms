@@ -2,6 +2,12 @@ Sandbox_EN = {
 	Sandbox_Firearms = "Firearms B42",
 	Sandbox_FirearmsSpawns = "Firearms B42 - Spawns",
 
+	Sandbox_Firearms_CasingsGround = "Ground casings",
+	Sandbox_Firearms_CasingsGround_tooltip = "Whether casings fall to the floor or end up in the players inventory.",
+
+	Sandbox_Firearms_Ammocraft = "Ammocrafting",
+	Sandbox_Firearms_Ammocraft_tooltip = "Whether ammo can be crafted at a reloading press.",
+
 	Sandbox_Firearms_Service = "Advanced Firearms Repair"
 	Sandbox_Firearms_Service_tooltip = "This option enables a more advanced system of repairing firearms."
 

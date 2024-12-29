@@ -99,7 +99,7 @@ module Base
 	}
 	model WMD
 	{
-		mesh = tools/WMD,
+		mesh = Tools/WMD,
 	}
 	model M1Clip
 	{
@@ -122,8 +122,23 @@ module Base
 	}
 	model AK_Mag
 	{
-		mesh = ammo/AK_Mag,
+		mesh = weapons/firearms/attachments/AK_Mag,
 		texture = weapons/firearms/AK,
+	}
+	model G3_Mag
+	{
+		mesh = weapons/firearms/attachments/G3_Mag,
+		texture = weapons/firearms/G3,
+	}
+	model Fn_Fal_Mag
+	{
+		mesh = weapons/firearms/attachments/Fn_Fal_Mag,
+		texture = weapons/firearms/FN_FAL,
+	}
+	model M60_Mag
+	{
+		mesh = weapons/firearms/attachments/M60_Mag,
+		texture = weapons/firearms/M60,
 	}
 	model Glock_Mag
 	{
@@ -136,8 +151,33 @@ module Base
 	}
 	model MP5_Magazine
 	{
-		mesh = weapons/firearms/attachments/MP5_Magazine,
+		mesh = weapons/firearms/attachments/MP5_Mag,
 		texture = weapons/firearms/mp5,
+	}
+	model MP510_Magazine
+	{
+		mesh = weapons/firearms/attachments/MP510_Mag,
+		texture = weapons/firearms/MP510,
+	}
+	model UZI_Magazine
+	{
+		mesh = weapons/firearms/attachments/UZI_Mag,
+		texture = weapons/firearms/UZI,
+	}
+	model Mac10_Magazine
+	{
+		mesh = weapons/firearms/attachments/Mac10_Mag,
+		texture = weapons/firearms/mac10,
+	}
+	model Rifle_Mag
+	{
+		mesh = weapons/firearms/attachments/Rifle_Mag,
+		texture = weapons/firearms/BoltActionRifle_Synthetic,
+	}
+	model M14_Mag
+	{
+		mesh = weapons/firearms/attachments/M14_Mag,
+		texture = weapons/firearms/M14,
 	}
 	model fn_fal_mag
 	{
@@ -1310,7 +1350,7 @@ module Base
 	}
 	model SW36
 	{
-		mesh = weapons/firearms/Revolver_Short,
+		mesh = Weapons/Firearm/Revolver_Short,
 		texture = weapons/firearms/SW36,
 
 		attachment muzzle
@@ -1556,7 +1596,7 @@ module Base
 
 		attachment magazine
 		{
-			offset = 0.0000 0.1030 0.0040,
+			offset = 0.0000 0.0895 0.0040,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -1620,7 +1660,7 @@ module Base
 
 		attachment magazine
 		{
-			offset = 0.0000 0.1030 0.0040,
+			offset = 0.0000 0.1157 0.0040,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -1900,6 +1940,18 @@ module Base
 			offset = 0.0000 0.3170 -0.0050,
 			rotate = -0.0000 0.0000 -0.0000,
 		}
+
+		attachment world
+		{
+			offset = 0.0105 0.0000 -0.0004,
+			rotate = -180.0000 -2.4170 180.0000,
+		}
+
+		attachment magazine
+		{
+			offset = 0.0000 0.1105 -0.0040,
+			rotate = 0.0000 0.0000 0.0000,
+		}
 	}
 	model Model788
 	{
@@ -2043,7 +2095,6 @@ module Base
 			rotate = -180.0000 0.0000 -180.0000,
 		}
 	}
-
 	model M14
 	{
 		mesh = weapons/firearms/M14,
@@ -2344,8 +2395,14 @@ module Base
 
 		attachment world
 		{
-			offset = 0.0117 0.0001 0.0000,
-			rotate = -0.0000 -0.0000 -179.5702,
+			offset = -0.0117 -0.0001 -0.0003,
+			rotate = -179.9799 1.3363 -0.4299,
+		}
+
+		attachment magazine
+		{
+			offset = 0.0000 0.1022 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
 	model G3
@@ -2416,6 +2473,18 @@ module Base
 		{
 			offset = 0.0000 0.2950 0.0100,
 			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment world
+		{
+			offset = -0.0113 -0.0000 -0.0000,
+			rotate = 0.0000 -0.0000 0.0000,
+		}
+
+		attachment magazine
+		{
+			offset = 0.0000 0.1031 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
 	model Winchester73
@@ -2685,14 +2754,14 @@ module Base
 
 		attachment magazine
 		{
-			offset = 0.0000 0.0810 -0.0200,
-			rotate = 0.0000 0.0000 180.0000,
+			offset = 0.0000 0.0810 0.0159,
+			rotate = 0.0000 0.0000 0.1631,
 		}
 
 		attachment world
 		{
-			offset = -0.0190 0.0830 -0.0120,
-			rotate = 0.0000 0.0000 180.0000,
+			offset = 0.0169 0.0680 -0.0135,
+			rotate = -0.0000 5.0135 -180.0000,
 		}
 	}
 	model M16A2
@@ -2750,8 +2819,8 @@ module Base
 
 		attachment magazine
 		{
-			offset = 0.0000 0.0810 -0.0200,
-			rotate = 0.0000 0.0000 180.0000,
+			offset = 0.0000 0.0810 0.0202,
+			rotate = -0.0000 0.0000 -0.0560,
 		}
 
 		attachment world
@@ -2812,6 +2881,89 @@ module Base
 			offset = 0.0000 0.2810 -0.0240,
 			rotate = 180.0000 0.0000 180.0000,
 		}
+
+		attachment world
+		{
+			offset = -0.0162 -0.0000 -0.0016,
+			rotate = 0.0000 -5.7547 0.0000,
+		}
+
+		attachment magazine
+		{
+			offset = 0.0000 0.0789 0.0126,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model M4
+	{
+		mesh = weapons/firearms/M4,
+		texture = weapons/firearms/M16,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.2970 -0.0240,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment sling
+		{
+			offset = 0.0000 0.2670 -0.0450,
+			rotate = 5.0000 14.0000 -1.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0434 -0.0432,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0470 -0.0610,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment gunlight
+		{
+			offset = 0.0000 0.4020 0.0270,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0100 0.2780 -0.0110,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+
+		attachment stock
+		{
+			offset = 0.0000 0.0068 -0.0106,
+			rotate = 0.0000 0.0000 -0.0000,
+		}
+
+		attachment silencer
+		{
+			offset = 0.0000 0.2810 -0.0240,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment magazine
+		{
+			offset = 0.0000 0.0779 0.0178,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = -0.0193 -0.0000 -0.0019,
+			rotate = 0.0000 -5.4954 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.1696 -0.0142,
+			rotate = 0.0000 0.0000 0.0000,
+		}
 	}
 	model AK47
 	{
@@ -2871,6 +3023,12 @@ module Base
 			offset = 0.0130 0.1200 -0.0200,
 			rotate = -90.0000 0.0000 -177.0000,
 		}
+
+		attachment magazine
+		{
+			offset = 0.0000 0.1116 -0.0201,
+			rotate = 0.0000 0.0000 0.0000,
+		}
 	}
 	model M60
 	{
@@ -2929,6 +3087,12 @@ module Base
 		{
 			offset = 0.0000 0.1220 -0.0400,
 			rotate = -172.0000 -83.0000 -178.0000,
+		}
+
+		attachment magazine
+		{
+			offset = -0.0109 0.0427 -0.0459,
+			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
 	model M60_World
@@ -2992,7 +3156,7 @@ module Base
 	}
 	model M625
 	{
-		mesh = weapons/firearms/Revolver,
+		mesh = Weapons/Firearm/Revolver,
 
 		attachment muzzle
 		{
@@ -3530,6 +3694,31 @@ module Base
 			offset = -0.0140 -0.0590 -0.0070,
 			rotate = 0.0000 5.0000 0.0000,
 		}
+	}
+	model M4_Stock
+	{
+		mesh = weapons/firearms/attachments/M4_Stock,
+		texture = weapons/firearms/M16,
+	}
+	model RIS
+	{
+		mesh = weapons/firearms/attachments/RIS,
+		texture = weapons/firearms/M16,
+	}
+	model RIS_Grip
+	{
+		mesh = weapons/firearms/attachments/RIS_Grip,
+		texture = weapons/firearms/M16,
+	}
+	model RIS_Foregrip
+	{
+		mesh = weapons/firearms/attachments/RIS_Foregrip,
+		texture = weapons/firearms/M16,
+	}
+	model M4_Carryhandle
+	{
+		mesh = weapons/firearms/attachments/M4_Carryhandle,
+		texture = weapons/firearms/M16,
 	}
 	model Choketube
 	{

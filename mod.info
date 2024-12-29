@@ -32,3 +32,6 @@ poster=firearms4.png
 poster=firearms5.png
 poster=firearms6.png
 icon=icon.png
+pack=Firearms
+pack=Firearms_UI
+tiledef=firearms 6458

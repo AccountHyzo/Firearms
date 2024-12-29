@@ -296,7 +296,7 @@ module Base
 		RackAfterShoot					=	FALSE,
 		ManuallyRemoveSpentRounds		=	TRUE,
 		haveChamber						=	FALSE,
-		AttachmentType					=	Holster,
+		AttachmentType					=	HolsterSmall,
 		SwingAnim						=	Handgun,
 		RunAnim							=	Run_Weapon2,
 		IdleAnim						=	Idle_Weapon2,

@@ -41,7 +41,7 @@ ISInventoryPaneContextMenu.onUpgradeWeapon = function(weapon, part, player)
 	if getDebug() then
 		print(part:getPartType())
 	end
-	--if not part:getPartType() == "Clip" then
+	if part:getPartType() == "Clip" then return end
 	local screwdriver = player:getInventory():getFirstTagEvalRecurse("Screwdriver", predicateNotBroken)
 	if screwdriver then
 		original_onUpgradeWeapon(weapon, part, player)

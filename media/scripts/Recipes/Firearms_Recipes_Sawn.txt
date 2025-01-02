@@ -3,7 +3,7 @@ module Base
 
 
 	/************************Sawed-off Firearms************************/
-	craftRecipe Saw Off Rifle
+	craftRecipe firearmsSawOffRifle
 	{
 		timedAction = SawOffShotgun,
 		Time = 200,
@@ -12,24 +12,30 @@ module Base
 		Tags = InHandCraft,
 		category = Weaponry,
 		inputs
- 		{
- 			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegrade],
- 			item 1 [HuntingRifle] flags[Prop2;InheritCondition;InheritAmmunition],
- 		}
- 		outputs
- 		{
- 			item 1 Base.HuntingRifle_Sawn,
- 		}
+		{
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegrade],
+			item 1 [HuntingRifle;Winchester73;Winchester94] flags[Prop2;InheritCondition;InheritAmmunition] mappers[rifleType],
+		}
+		outputs
+		{
+			item 1 mapper:rifleType,
+		}
+		itemMapper rifleType
+		{
+			Base.HuntingRifle_Sawn = Base.HuntingRifle,
+			Base.Winchester73_Sawn = Base.Winchester73,
+			Base.Winchester94_Sawn = Base.Winchester94,
+		}
 	}
 
 	craftRecipe firearmsSawOffShotgun
 	{
-    timedAction = SawOffShotgun,
+		timedAction = SawOffShotgun,
 		Time = 200,
 		OnCreate = Recipe.OnCreate.ShotgunSawnoff,
 		ToolTip = Tooltip_Recipe_NeedSawMetal,
 		Tags = InHandCraft,
-    category = Weaponry,
+		category = Weaponry,
 		inputs
 		{
 			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegrade],

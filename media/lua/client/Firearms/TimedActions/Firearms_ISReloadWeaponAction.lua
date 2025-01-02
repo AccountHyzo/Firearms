@@ -13,23 +13,6 @@ end
 
 Events.OnEquipPrimary.Add(firearms_setRackAfterShoot)
 
-function ISReloadWeaponAction:ejectSpentRounds()
-	if self.gun:getSpentRoundCount() > 0 then
-		self.gun:setSpentRoundCount(0)
-		ejectCasing(self.character, self.gun)
-		syncHandWeaponFields(self.character, self.gun)
-	elseif self.gun:isSpentRoundChambered() then
-		self.gun:setSpentRoundChambered(false)
-		ejectCasing(self.character, self.gun)
-		syncHandWeaponFields(self.character, self.gun)
-	else
-		return
-	end
-	if self.gun:getShellFallSound() then
-		self.character:getEmitter():playSound(self.gun:getShellFallSound())
-	end
-end
-
 local original_attackHook
 
 ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapon)
@@ -41,8 +24,10 @@ ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapo
 	if weapon:isRanged() and not character:isDoShove() then
     local canon = weapon:getWeaponPart("Canon")
 		if not canon then
+			if getDebug() then print("original_attackHook"); end
 			original_attackHook(character, chargeDelta, weapon)
 		elseif not canon:hasTag("Silencer") then
+			if getDebug() then print("original_attackHook"); end
 			original_attackHook(character, chargeDelta, weapon)
 		elseif ISReloadWeaponAction.canShoot(weapon) then
 			character:playSound(weapon:getSwingSound());

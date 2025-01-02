@@ -2,12 +2,6 @@ Sandbox_EN = {
 	Sandbox_Firearms = "Firearms B42",
 	Sandbox_FirearmsSpawns = "Firearms B42 - Spawns",
 
-	Sandbox_Firearms_CasingsGround = "Ground casings",
-	Sandbox_Firearms_CasingsGround_tooltip = "Whether casings fall to the floor or end up in the players inventory.",
-
-	Sandbox_Firearms_Ammocraft = "Ammocrafting",
-	Sandbox_Firearms_Ammocraft_tooltip = "Whether ammo can be crafted at a reloading press.",
-
 	Sandbox_Firearms_Service = "Advanced Firearms Repair"
 	Sandbox_Firearms_Service_tooltip = "This option enables a more advanced system of repairing firearms."
 
@@ -107,6 +101,9 @@ Sandbox_EN = {
 	Sandbox_Firearms_SpawnAR15 = "AR-15",
 	Sandbox_Firearms_SpawnAR15_tooltip = "Whether AR-15 Rifles spawns.",
 
+	Sandbox_Firearms_SpawnAKM = "AKM",
+	Sandbox_Firearms_SpawnAKM_tooltip = "Whether AKM Rifles spawns.",
+
 	Sandbox_Firearms_SpawnFNFal = "FN Fal",
 	Sandbox_Firearms_SpawnFNFal_tooltip = "Whether the FN Fal spawns.",
 
@@ -124,6 +121,9 @@ Sandbox_EN = {
 
 	Sandbox_Firearms_SpawnM733 = "Colt Commando",
 	Sandbox_Firearms_SpawnM733_tooltip = "Whether Colt Commando Assault Rifles spawn.",
+
+	Sandbox_Firearms_SpawnM4 = "M4",
+	Sandbox_Firearms_SpawnM4_tooltip = "Whether M4 Assault Rifles spawn.",
 
 	Sandbox_Firearms_SpawnRuger22 = "Ruger Model 77 .22 LR",
 	Sandbox_Firearms_SpawnRuger22_tooltip = "Whether Ruger Model 77 Rifles using the caliber .22 LR spawn.",

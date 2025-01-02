@@ -698,7 +698,7 @@ module Base
 	item AssaultRifle2
 	{
 		/*****************Naming and Category*****************/
-		WeaponSprite					=	Base.M14,
+		WeaponSprite					=	Base.Firearms_M14,
 		Type							=	Weapon,
 		Weight							=	4,
 		SubCategory						=	Firearm,

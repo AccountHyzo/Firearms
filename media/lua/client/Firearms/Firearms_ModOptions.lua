@@ -1,7 +1,7 @@
 -- Storage array for all of our options
 local config = {
-		--keyBind   = nil,
-		spawnCasing  = false,
+		keyBind_FireMode   = nil,
+		--spawnCasing  = false,
 		--textEntry = nil,
 		--multiBox  = nil,
 		--comboBox  = nil,
@@ -46,10 +46,11 @@ local function AmmocraftConfig()
 		--- Each _tooltip is optional, except for with Buttons.
 
 		-- addKeyBind(ID, name, value, _tooltip)
-		--config.keyBind = options:addKeyBind("0", getText("UI_options_UNIQUEID_keyBind"), Keyboard.KEY_Z, getText("UI_options_UNIQUEID_keyBind_tooltip"))
+		--config.keyBind_FireMode = options:addKeyBind("Firearms_FireMode", getText("UI_options_Firearms_keyBind_FireMode"), Keyboard.KEY_Z, getText("UI_options_Firearms_keyBind_FireMode_tooltip"))
+		--config.keyBind_FireMode = options:addKeyBind("Firearms_StockMode", getText("UI_options_Firearms_keyBind_StockMode"), Keyboard.KEY_B, getText("UI_options_Firearms_keyBind_StockMode_tooltip"))
 
 		-- addTickBox(ID, name, value, _tooltip)
-		config.spawnCasing = options:addTickBox("1", getText("UI_optionsFirearms_spawnCasing"), false, getText("UI_options_Ammocraft_spawnCasing_tooltip"))
+		--config.spawnCasing = options:addTickBox("1", getText("UI_options_Ammocraft_spawnCasing"), false, getText("UI_options_Ammocraft_spawnCasing_tooltip"))
 
 		-- addTextEntry(ID, name, value, _tooltip)
 		--config.textEntry = options:addTextEntry("2", getText("UI_options_UNIQUEID_textEntry"), "Enter Text Here!", getText("UI_options_UNIQUEID_textEntry_tooltip"))
@@ -100,6 +101,27 @@ local function AmmocraftConfig()
 		-------- In the above exmple, doing options:getOption("5") would return the colorPicker
 		--config.spawnCasing:getValue()
 end
-
-
 AmmocraftConfig()
+
+--[[
+ISInventoryPaneContextMenu.doChangeFireModeMenu = function(playerObj, weapon, context)
+    local firemodeOption = context:addOption(getText("ContextMenu_ChangeFireMode"))
+    local subMenuFiremode = context:getNew(context)
+    context:addSubMenu(firemodeOption, subMenuFiremode)
+    for i=0, weapon:getFireModePossibilities():size() - 1 do
+        local firemode = weapon:getFireModePossibilities():get(i);
+        if firemode ~= weapon:getFireMode() then
+            subMenuFiremode:addOption(getText("ContextMenu_FireMode_" .. firemode), playerObj, ISInventoryPaneContextMenu.onChangefiremode, weapon, firemode);
+        end
+    end
+end
+
+ISInventoryPaneContextMenu.onChangefiremode = function(playerObj, weapon, newfiremode)
+    weapon:setFireMode(newfiremode);
+    playerObj:setFireMode(newfiremode)
+    --playerObj:setVariable("FireMode", newfiremode);
+    if "Burst" == newfiremode then
+        weapon:setAmmoPerShoot(3);
+    end
+end
+]]--

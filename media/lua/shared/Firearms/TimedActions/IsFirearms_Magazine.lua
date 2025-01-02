@@ -15,3 +15,19 @@ function ISEjectMagazine:complete()
 	end
 	return true
 end
+
+local function ISAttachMagazine(wielder, weapon)
+	if weapon == nil then return end
+	if not weapon:IsWeapon() or not weapon:isRanged() then return; end
+
+	local magazineType = weapon:getMagazineType()
+	if magazineType and weapon:isContainsClip() then
+		weapon:attachWeaponPart(instanceItem(magazineType .. "_Attachment"))
+		--self.character:resetEquippedHandsModels();
+	elseif magazineType and not weapon:isContainsClip() then
+		weapon:detachWeaponPart(weapon:getWeaponPart("Clip"))
+		--self.character:resetEquippedHandsModels();
+	end
+end
+
+Events.OnEquipPrimary.Add(ISAttachMagazine);

@@ -47,7 +47,7 @@ function onImprovisedSilencer_OnCreate(craftRecipeData, character)
 end
 
 -- Sawn-off recipe callback, copies modData to the new sawn-off.
-function onSawnOff_OnCreate(craftRecipeData, character)
+function Recipe.OnCreate.ShotgunSawnoff(craftRecipeData, character)
 	local items = craftRecipeData:getAllConsumedItems();
 	local result = craftRecipeData:getAllCreatedItems():get(0);
 	for i=0,items:size()-1 do
@@ -61,11 +61,24 @@ function onSawnOff_OnCreate(craftRecipeData, character)
 			for i=1,parts:size() do
 				tryAttachPart(result, parts:get(i-1), character)
 			end
+			local modelIndex = item:getModelIndex()
+			if modelIndex then
+				result:setModelIndex(modelIndex)
+				result:setTexture(getTexture("media/textures/Item_" .. result:getIconsForTexture():get(modelIndex) .. ".png"))
+			end
 			return
 		end
-		end
+	end
 end
 
+
+function onTest_ShotgunSawnoff(item)
+	if item:hasTag("Plastic") then
+		return false;
+	else
+		return true;
+	end
+end
 
 function onExtendStock_OnTest(item)
 		if item:getSubCategory() == "Firearm" then

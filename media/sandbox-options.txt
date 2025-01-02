@@ -1,17 +1,5 @@
 VERSION = 1,
 
-option Firearms.Ammocraft
-{
-type = boolean, default = false,
-page = Firearms, translation = Firearms_Ammocraft,
-}
-
-option Firearms.CasingsGround
-{
-	type = boolean, default = true,
-	page = Firearms, translation = Firearms_CasingsGround,
-}
-
 option Firearms.ScrewdriverReq
 {
 	type = boolean, default = true,
@@ -134,6 +122,12 @@ option Firearms.SpawnAK47
 	page = FirearmsSpawns, translation = Firearms_SpawnAK47,
 }
 
+option Firearms.SpawnAKM
+{
+	type = boolean, default = true,
+	page = FirearmsSpawns, translation = Firearms_SpawnAKM,
+}
+
 option Firearms.SpawnAR15
 {
 	type = boolean, default = true,
@@ -200,12 +194,6 @@ option Firearms.SpawnICA19
 	page = FirearmsSpawns, translation = Firearms_SpawnICA19,
 }
 
-option Firearms.SpawnM37
-{
-type = boolean, default = true,
-page = FirearmsSpawns, translation = Firearms_SpawnM37,
-}
-
 option Firearms.SpawnM16A2
 {
 type = boolean, default = true,
@@ -216,6 +204,18 @@ option Firearms.SpawnM24
 {
 type = boolean, default = true,
 page = FirearmsSpawns, translation = Firearms_SpawnM24,
+}
+
+option Firearms.SpawnM37
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnM37,
+}
+
+option Firearms.SpawnM4
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnM4,
 }
 
 option Firearms.SpawnM60

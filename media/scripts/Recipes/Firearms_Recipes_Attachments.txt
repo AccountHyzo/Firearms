@@ -20,7 +20,7 @@ module Base
 		{
 			item 1 tags[DrillMetal] mode:keep flags[Prop1;MayDegrade],
 			item 1 tags[SheetMetalSnips] mode:keep flags[MayDegradeLight],
-			item 1 [HandTorch;ImprovisedSilencer_Broken] flags[Prop2;AllowDestroyedItem;IsWorn],
+			item 1 [HandTorch;ImprovisedSilencer_Broken] mode:destroy flags[Prop2;AllowDestroyedItem;IsWorn],
 			item 1 [Base.NutsBolts],
 			item 1 [Base.SmallSheetMetal;Base.UnusableMetal],
 		}
@@ -43,7 +43,7 @@ module Base
 		OnTest = onImprovisedSilencer_OnTest,
 		inputs
 		{
-			item 1 [Base.PopBottle;Base.WaterBottle] flags[Prop1;IsEmpty],
+			item 1 [Base.PopBottle;Base.WaterBottle] mode:destroy flags[Prop1;IsEmpty],
 			item 1 [DuctTape] flags[Prop2],
 		}
 		outputs

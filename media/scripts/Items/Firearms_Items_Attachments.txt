@@ -87,7 +87,7 @@ module Base
 		Icon					=	Silencer,
 		Weight					=	0.3,
 		WeightModifier			=	0.3,
-		MountOn					=	VarmintRifle; AssaultRifle; M16A2; M733,
+		MountOn					=	VarmintRifle; AssaultRifle; M16A2; M733; M4,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_Silencer,
 		WorldStaticModel		=	Silencer,
@@ -132,7 +132,7 @@ module Base
 		Icon					=	FlashlightSilencer,
 		Weight					=	0.2,
 		WeightModifier			=	0.1,
-		MountOn					=	Pistol; Pistol2; ICA19; ICA19_Gold; Glock17; AR15; AssaultRifle2; M24Rifle; FN_FAL; G3; SKS; AK47; VarmintRifle; HuntingRifle; HuntingRifle_Sawn  ; AssaultRifle; M16A2; M733; MP5; MP510; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94; Rossi92; ColtSingleAction22; ColtAnaconda; ColtPython; ColtPythonHunter; ColtAce; M1Garand,
+		MountOn					=	Pistol; Pistol2; ICA19; ICA19_Gold; Glock17; AR15; M4; AssaultRifle2; M24Rifle; FN_FAL; G3; SKS; AK47; VarmintRifle; HuntingRifle; HuntingRifle_Sawn  ; AssaultRifle; M16A2; M733; MP5; MP510; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94; Rossi92; ColtSingleAction22; ColtAnaconda; ColtPython; ColtPythonHunter; ColtAce; M1Garand,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_ImprovisedSilencer,
 		WorldStaticModel		=	Silencer_Improvised,
@@ -147,7 +147,7 @@ module Base
 		Icon					=	BottleSilencer,
 		Weight					=	0.2,
 		WeightModifier			=	0.1,
-		MountOn					=	Pistol; Pistol2; ICA19; ICA19_Gold; Glock17; AR15; AssaultRifle2; M24Rifle; FN_FAL; G3; SKS; AK47; VarmintRifle; HuntingRifle; HuntingRifle_Sawn  ; AssaultRifle; M16A2; M733; MP5; MP510; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94; Rossi92; ColtSingleAction22; ColtAnaconda; ColtPython; ColtPythonHunter; ColtAce; M1Garand,
+		MountOn					=	Pistol; Pistol2; ICA19; ICA19_Gold; Glock17; AR15; M4; AssaultRifle2; M24Rifle; FN_FAL; G3; SKS; AK47; VarmintRifle; HuntingRifle; HuntingRifle_Sawn  ; AssaultRifle; M16A2; M733; MP5; MP510; UZI; Mac10; Revolver_Short; Revolver; Revolver_Long; ColtPeacemaker; Shotgun; Mossberg500; Mossberg500Tactical; Remington870Wood; M37; SPAS12; LAW12; Winchester73; Winchester94; Rossi92; ColtSingleAction22; ColtAnaconda; ColtPython; ColtPythonHunter; ColtAce; M1Garand,
 		PartType				=	Canon,
 		Tooltip					=	Tooltip_ImprovisedSilencer,
 		WorldStaticModel		=	Silencer_PopBottle,
@@ -206,7 +206,7 @@ module Base
 		Weight					=	0.2,
 		WeightModifier			=	0.2,
 		AimingTimeModifier		=	5,
-		MountOn					=	AssaultRifle;	M16A2; M733; AR15; G3; FN_FAL; AK47; M60; AssaultRifle2; VarmintRifle; HuntingRifle; Rugerm7722; SKS; M24Rifle,
+		MountOn					=	AssaultRifle;	M16A2; M733; AR15; M4; G3; FN_FAL; AK47; M60; AssaultRifle2; VarmintRifle; HuntingRifle; Rugerm7722; SKS; M24Rifle,
 		PartType				=	Stock,
 		StaticModel				=	Rifle_Flashlight,
 		MetalValue				=	15,
@@ -488,7 +488,7 @@ module Base
 			Icon				=	Sling,
 			Weight				=	0.5,
 			WeightModifier		=	-0.3,
-			MountOn				=	M37; Mac10; HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; MP5SD; MP510; Base.UZI; Rugerm7722; FN_FAL; G3; M1Garand,
+			MountOn				=	M37; Mac10; HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; M4; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; MP5SD; MP510; Base.UZI; Rugerm7722; FN_FAL; G3; M1Garand,
 			PartType			=	Sling,
 			Tooltip				=	Tooltip_Sling,
 			WorldStaticModel	=	Sling_wm,
@@ -503,7 +503,7 @@ module Base
 			Icon				=	Sling_Leather,
 			Weight				=	0.5,
 			WeightModifier		=	-0.3,
-			MountOn				=	M37; Mac10; HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; MP5SD; MP510; Base.UZI; Rugerm7722; FN_FAL; G3; M1Garand,
+			MountOn				=	M37; Mac10; HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; M4; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; MP5SD; MP510; Base.UZI; Rugerm7722; FN_FAL; G3; M1Garand,
 			PartType			=	Sling,
 			Tooltip				=	Tooltip_Sling,
 			WorldStaticModel	=	Sling_Leather_wm,
@@ -518,7 +518,7 @@ module Base
 			Icon				=	Sling_Olive,
 			Weight				=	0.5,
 			WeightModifier		=	-0.3,
-			MountOn				=	M37; Mac10; HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; MP5SD; MP510; Base.UZI; Rugerm7722; FN_FAL; G3; M1Garand,
+			MountOn				=	M37; Mac10; HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; M4; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; MP5SD; MP510; Base.UZI; Rugerm7722; FN_FAL; G3; M1Garand,
 			PartType			=	Sling,
 			Tooltip				=	Tooltip_Sling,
 			WorldStaticModel	=	Sling_Olive_wm,
@@ -533,7 +533,7 @@ module Base
 			Icon				=	Sling_Camo,
 			Weight				=	0.5,
 			WeightModifier		=	-0.3,
-			MountOn				=	M37; Mac10; HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; MP5SD; MP510; Base.UZI; Rugerm7722; FN_FAL; G3; M1Garand,
+			MountOn				=	M37; Mac10; HuntingRifle; VarmintRifle; ShotgunSawnoff; AR15; M4; AK47; SKS; Base.Winchester94; Winchester73; Base.M60; Base.HuntingRifle_Sawn; Base.Remington870Sawnoff; Shotgun; Base.Mossberg500; AssaultRifle; Base.M16A2; M733; AssaultRifle2; Base.M24Rifle; Base.Remington870Wood; Mossberg500Tactical; SPAS12; LAW12; Base.MP5; MP5SD; MP510; Base.UZI; Rugerm7722; FN_FAL; G3; M1Garand,
 			PartType			=	Sling,
 			Tooltip				=	Tooltip_Sling,
 			WorldStaticModel	=	Sling_Camo_wm,
@@ -714,7 +714,7 @@ module Base
 		AimingTimeModifier = -10,
 		MinSightRange = 2,
 		MaxSightRange = 10,
-		MountOn					=	M37; Mac10; Pistol; Pistol2; ICA19; ICA19_Gold; Pistol3; Base.Glock17; Base.HuntingRifle_Sawn; Shotgun; ShotgunSawnoff; Base.Remington870Sawnoff; Base.Mossberg500; Mossberg500Tactical; LAW12; Base.Remington870Wood; Base.MP5; MP5SD; MP510; Base.UZI; AssaultRifle; AssaultRifle2; Base.M24Rifle; Base.M16A2; M733; Rugerm7722; FN_FAL,
+		MountOn					=	M37; Mac10; Pistol; Pistol2; ICA19; ICA19_Gold; Pistol3; Base.Glock17; M4; Base.HuntingRifle_Sawn; Shotgun; ShotgunSawnoff; Base.Remington870Sawnoff; Base.Mossberg500; Mossberg500Tactical; LAW12; Base.Remington870Wood; Base.MP5; MP5SD; MP510; Base.UZI; AssaultRifle; AssaultRifle2; Base.M24Rifle; Base.M16A2; M733; Rugerm7722; FN_FAL,
 		PartType				=	Scope,
 		Tooltip					=	Tooltip_RedDot,
 		MetalValue				=	15,
@@ -835,6 +835,81 @@ module Base
 		Tags							=	NoScrewdriver; optics,
 	}
 
+	item AKM_Grip_Wood
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	AKM Grip Wood,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	AKM_Grip_Wood,
+		Weight					=	0.1,
+		WeightModifier			=	0.1,
+		HitChanceModifier		=	5,
+		RecoilDelayModifier		=	-5.0,
+		MountOn					=	AKM,
+		PartType				=	RecoilPad,
+		WorldStaticModel		=	AKM_Grip_Wood,
+	}
+
+	item AKM_Foregrip_Wood
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	AKM Foregrip Wood,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	AKM_Foregrip_Wood,
+		Weight					=	0.1,
+		WeightModifier			=	0.1,
+		HitChanceModifier		=	5,
+		RecoilDelayModifier		=	-5.0,
+		MountOn					=	AKM,
+		PartType				=	RecoilPad,
+		WorldStaticModel		=	AKM_Foregrip_Wood,
+	}
+
+	item AKM_Grip_Plastic
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	AKM Grip Plastic,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	AKM_Grip,
+		Weight					=	0.1,
+		WeightModifier			=	0.1,
+		HitChanceModifier		=	5,
+		RecoilDelayModifier		=	-5.0,
+		MountOn					=	AKM,
+		PartType				=	RecoilPad,
+		WorldStaticModel		=	AKM_Grip_Plastic,
+	}
+
+	item AKM_Stock_Wood
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	AKM Stock Wood,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	AKM_Stock_Wood,
+		Weight					=	0.1,
+		WeightModifier			=	0.1,
+		HitChanceModifier		=	5,
+		RecoilDelayModifier		=	-5.0,
+		MountOn					=	AKM,
+		PartType				=	Stock,
+		WorldStaticModel		=	AKM_Stock_Wood,
+	}
+
+	item AKM_Stock_Plastic
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	AKM Stock Plastic,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	AKM_Stock,
+		Weight					=	0.1,
+		WeightModifier			=	0.1,
+		HitChanceModifier		=	5,
+		RecoilDelayModifier		=	-5.0,
+		MountOn					=	AKM,
+		PartType				=	Stock,
+		WorldStaticModel		=	AKM_Stock_Plastic,
+	}
+
 	item RIS
 	{
 		Type					=	WeaponPart,
@@ -912,6 +987,22 @@ module Base
 		Tooltip					=	Tooltip_Magazine,
 		MetalValue				=	22,
 		WorldStaticModel		=	AK_Mag,
+		Tags							=	NoScrewdriver,
+	}
+
+	item AKM_Mag_Attachment
+	{
+		Type					=	WeaponPart,
+		DisplayName				=	AK Magazine,
+		DisplayCategory			=	WeaponPart,
+		Icon					=	AK_Mag,
+		Weight					=	1.2,
+		WeightModifier			=	1,
+		MountOn					=	AK47,
+		PartType				=	Clip,
+		Tooltip					=	Tooltip_Magazine,
+		MetalValue				=	22,
+		WorldStaticModel		=	AKM_Mag,
 		Tags							=	NoScrewdriver,
 	}
 

@@ -16,14 +16,4 @@ IGUI_EN = {
 		IGUI_ItemCat_Revolver44 = "Revolver, .44 Magnum",
 		IGUI_ItemCat_Revolver4440 = "Revolver, .44-40",
 		IGUI_ItemCat_Revolver38 = "Revolver, .38 Special",
-
-		IGUI_ItemCat_CasingsBox = "Casings, Box",
-		IGUI_ItemCat_TipsBox = "Tips, Box",
-		IGUI_ItemCat_PrimersBox = "Primers, Box",
-
-		IGUI_ItemCat_Casings = "Bullet Casings",
-		IGUI_ItemCat_Tips = "Bullet Tips",
-		IGUI_ItemCat_Primers = "Bullet Primers",
-
-		IGUI_ItemCat_Molds = "Bullet Molds",
 }

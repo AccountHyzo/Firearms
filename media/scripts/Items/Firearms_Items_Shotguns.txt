@@ -164,10 +164,10 @@ module Base
 		ModelWeaponPart					=	Base.x4-x12Scope		Base.12xScope				scope		scope,
 		ModelWeaponPart					=	Base.RedDot		Reddot_PicatinnyShort		reddot		reddot,
 		ModelWeaponPart					=	Base.AmmoStraps			Base.Shotgun_AmmoSling	sling		sling,
-		ModelWeaponPart					=	Base.Sling				Base.Sling			sling		sling,
-		ModelWeaponPart					=	Sling_Leather			Base.Sling_Leather	sling		sling,
-		ModelWeaponPart					=	Sling_Olive				Base.Sling_Olive		sling		sling,
-		ModelWeaponPart					=	Sling_Camo				Base.Sling_Camo		sling		sling,
+		ModelWeaponPart					=	Base.Sling				Base.Sling_Short			sling		sling,
+		ModelWeaponPart					=	Sling_Leather			Base.Sling_Short_Leather	sling		sling,
+		ModelWeaponPart					=	Sling_Olive				Base.Sling_Short_Olive		sling		sling,
+		ModelWeaponPart					=	Sling_Camo				Base.Sling_Short_Camo		sling		sling,
 		ModelWeaponPart					=	AmmoStock				Base.Shotgun_AmmoStrap		ammostrap		ammostrap,
 		ModelWeaponPart					=	Base.ChokeTubeFull		Base.Choketube		silencer	silencer,
 		ModelWeaponPart					=	Base.ChokeTubeImproved		Base.Choketube_Duckbill		silencer	silencer,
@@ -211,11 +211,11 @@ module Base
 
 	item Shotgun
 	{
-		DisplayName = JS-2000 Shotgun,
+		DisplayName = Mossberg 500,
 		DisplayCategory = Weapon,
 		Type = Weapon,
 		Weight = 4,
-		Icon = Mossberg500,
+		IconsForTexture = Mossberg_Wood;Mossberg_Wood_Black,
 		AimingMod = 2,
 		AimingPerkCritModifier = 10,
 		AimingPerkHitChanceModifier = 4,
@@ -308,8 +308,9 @@ module Base
 		UnequipSound = JS2000ShotgunUnEquip,
 		UseEndurance = FALSE,
 		WeaponReloadType = shotgun,
-		WeaponSprite = Mossberg500Wood,
+		WeaponSpritesByIndex = Mossberg500Wood;Mossberg500WoodBlack,
 		Tags = HasMetal;Firearm,
+		OnCreate	= SpecialLootSpawns.OnCreateMossberg,
 	}
 
 	item ShotgunSawnoff
@@ -318,7 +319,7 @@ module Base
 		DisplayCategory = Weapon,
 		Type = Weapon,
 		Weight = 3.5,
-		Icon = Mossberg500_Sawn,
+		IconsForTexture = Mossberg_Wood_Sawed;Mossberg_Wood_Black_Sawed,
 		AimingPerkCritModifier = 6,
 		AimingPerkHitChanceModifier = 4,
 		AimingTime = 35,
@@ -364,10 +365,10 @@ module Base
 		ModelWeaponPart					=	Base.x4-x12Scope		Base.12xScope				scope		scope,
 		ModelWeaponPart					=	Base.RedDot		Reddot_PicatinnyShort		reddot		reddot,
 		ModelWeaponPart					=	Base.AmmoStraps			Base.Shotgun_AmmoSling	sling		sling,
-		ModelWeaponPart					=	Base.Sling				Base.Sling			sling		sling,
-		ModelWeaponPart					=	Sling_Leather			Base.Sling_Leather	sling		sling,
-		ModelWeaponPart					=	Sling_Olive				Base.Sling_Olive		sling		sling,
-		ModelWeaponPart					=	Sling_Camo				Base.Sling_Camo		sling		sling,
+		ModelWeaponPart					=	Base.Sling				Base.Sling_Short			sling		sling,
+		ModelWeaponPart					=	Sling_Leather			Base.Sling_Short_Leather	sling		sling,
+		ModelWeaponPart					=	Sling_Olive				Base.Sling_Short_Olive		sling		sling,
+		ModelWeaponPart					=	Sling_Camo				Base.Sling_Short_Camo		sling		sling,
 		ModelWeaponPart					=	AmmoStock				Base.Shotgun_AmmoStrap		ammostrap		ammostrap,
 		ModelWeaponPart					=	Base.ChokeTubeFull		Base.Choketube		silencer	silencer,
 		ModelWeaponPart					=	Base.ChokeTubeImproved		Base.Choketube_Duckbill		silencer	silencer,
@@ -411,22 +412,22 @@ module Base
 		UnequipSound = SawnOffJS2000ShotgunUnEquip,
 		UseEndurance = FALSE,
 		WeaponReloadType = shotgun,
-		WeaponSprite = Mossberg500WoodSawnOff,
+		WeaponSpritesByIndex = Mossberg500WoodSawnOff;Mossberg500WoodBlackSawnOff,
 		Tags = HasMetal;Firearm,
 	}
 
 	item Mossberg500
 	{
 		/*****************Naming and Category*****************/
-		WeaponSprite					=	Base.Mossberg500,
+		WeaponSpritesByIndex = Mossberg500;Mossberg500Black,
 		Type							=	Weapon,
 		Weight							=	4,
 		SubCategory						=	Firearm,
 		IsAimedFirearm					=	TRUE,
 		DisplayName						=	Mossberg500,
 		DisplayCategory					=	Weapon,
-		Icon							=	Mossberg500Plastic,
-		Tags							=	Gun;HasMetal;Firearm,
+		IconsForTexture = Mossberg_Plastic;Mossberg_Plastic_Black,
+		Tags							=	HasMetal;Firearm,
 		MetalValue						=	45,
 
 		/************************Damage************************/
@@ -542,14 +543,14 @@ module Base
 	item Mossberg500Tactical
 	{
 		/*****************Naming and Category*****************/
-		WeaponSprite					=	Base.Mossberg500Tactical,
+		WeaponSpritesByIndex = Mossberg500Tactical;Mossberg500TacticalBlack,
 		Type							=	Weapon,
 		Weight							=	2,
 		SubCategory						=	Firearm,
 		IsAimedFirearm					=	TRUE,
 		DisplayName						=	Mossberg500Tactical,
 		DisplayCategory					=	Weapon,
-		Icon							=	Mossberg500Plastic,
+		IconsForTexture = Mossberg_Tactical;Mossberg_Tactical_Black,
 		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
@@ -666,17 +667,141 @@ module Base
 		ModelWeaponPart					=	Base.LightShotgunStock	Base.Stock_Light		stock	stock,
 	}
 
-	item Remington870Wood
+	item Remington870
 	{
 		/*****************Naming and Category*****************/
-		WeaponSprite					=	Base.Remington870Wood,
+		WeaponSpritesByIndex = Remington870;Remington870Black,
 		Type							=	Weapon,
 		Weight							=	4,
 		SubCategory						=	Firearm,
 		IsAimedFirearm					=	TRUE,
 		DisplayName						=	Remington870,
 		DisplayCategory					=	Weapon,
-		Icon							=	Mossberg500,
+		IconsForTexture = Mossberg_Plastic;Mossberg_Plastic_Black,
+		Tags							=	Gun;HasMetal;Firearm,
+		MetalValue						=	45,
+
+		/************************Damage************************/
+		SplatNumber						=	3,
+		PushBackMod						=	0.8,
+		DoorDamage						=	30,
+		MinDamage						=	1,
+		MaxDamage						=	2.75,
+		SplatSize						=	3,
+		KnockdownMod					=	8,
+		CriticalChance					=	20,
+		CritDmgMultiplier				=	4,
+		ShareDamage						=	FALSE,
+		KnockBackOnNoDeath				=	TRUE,
+		SplatBloodOnNoDeath				=	TRUE,
+		PiercingBullets					=	FALSE,
+
+		/***********************Handling***********************/
+		MaxRange						=	20,
+		MinRange						=	0.61,
+		MinAngle						=	0.90,
+		MinSightRange = 3,
+		MaxSightRange = 9,
+		MinimumSwingTime				=	0.5,
+		SwingAmountBeforeImpact			=	0,
+		ProjectileCount					=	9,
+		ProjectileSpread = 1,
+		ProjectileWeightCenter = 1.0,
+		SwingTime						=	2,
+		MaxHitCount						=	5,
+		ToHitModifier					=	1.5,
+		HitChance						=	80,
+		AimingMod	=	2,
+		AimingPerkCritModifier			=	4,
+		AimingPerkHitChanceModifier		=	5,
+		AimingPerkMinAngleModifier		=	0,
+		AimingPerkRangeModifier			=	0,
+		RecoilDelay						=	25,
+		ReloadTime						=	25,
+		AimingTime						=	20,
+		StopPower						=	40,
+		ConditionLowerChanceOneIn		=	200,
+		ConditionMax					=	10,
+		JamGunChance					=	3,
+		AngleFalloff	=	TRUE,
+		Ranged							=	TRUE,
+		MultipleHitConditionAffected	=	FALSE,
+		UseEndurance					=	FALSE,
+		RequiresEquippedBothHands		=	TRUE,
+		TwoHandWeapon					=	TRUE,
+		RackAfterShoot					=	TRUE,
+		InsertAllBulletsReload = FALSE,
+		haveChamber = TRUE,
+		FireMode					=	Single,
+		/*FireModePossibilities					=	Auto/Single,*/
+		AttachmentType					=	Rifle,
+		SwingAnim						=	Rifle,
+		RunAnim							=	Run_Weapon2,
+		IdleAnim						=	Idle_Weapon2,
+
+		/************************Ammo************************/
+		AmmoBox							=	ShotgunShellsBox,
+		MaxAmmo							=	7,
+		AmmoType						=	Base.ShotgunShells,
+		WeaponReloadType				=	shotgun,
+		/*MagazineType					=	Base.556Clip,*/
+
+		/************************Audio************************/
+		ImpactSound						=	null,
+		SoundVolume						=	200,
+		NPCSoundBoost					=	1.5,
+		BringToBearSound				=	JS2000ShotgunBringToBear,
+		HitSound						=	BulletHitBody,
+		SwingSound						=	JS2000ShotgunShoot,
+		EquipSound						=	JS2000ShotgunEquip,
+		UnequipSound					=	JS2000ShotgunUnEquip,
+		InsertAmmoSound					=	JS2000ShotgunInsertAmmo,
+		EjectAmmoSound					=	JS2000ShotgunEjectAmmo,
+		InsertAmmoStartSound			=	JS2000ShotgunInsertAmmoStart,
+		InsertAmmoStopSound				=	JS2000ShotgunInsertAmmoStop,
+		EjectAmmoStartSound				=	JS2000ShotgunEjectAmmoStart,
+		EjectAmmoStopSound				=	JS2000ShotgunEjectAmmoStop,
+		ShellFallSound					=	JS2000ShotgunCartridgeFall,
+		RackSound						=	JS2000ShotgunRack,
+		BreakSound						=	JS2000ShotgunBreak,
+		ClickSound						=	JS2000ShotgunJam,
+		SoundRadius						=	110,
+		SoundGain						=	2,
+
+		/************************Attachments************************/
+		ModelWeaponPart					=	Bayonnet				Bayonnet					bayonnet	bayonnet,
+		ModelWeaponPart					=	Base.x2Scope			Base.Acog					scope		scope,
+		ModelWeaponPart					=	Base.x4Scope			Base.Acog					scope		scope,
+		ModelWeaponPart					=	Base.x8Scope			Base.12xScope				scope		scope,
+		ModelWeaponPart					=	Base.x4-x12Scope		Base.12xScope				scope		scope,
+		ModelWeaponPart					=	Base.RedDot		Reddot_PicatinnyShort		reddot		reddot,
+		ModelWeaponPart					=	Base.AmmoStraps			Base.Shotgun_AmmoSling	sling		sling,
+		ModelWeaponPart					=	Base.Sling				Base.Sling			sling		sling,
+		ModelWeaponPart					=	Sling_Leather			Base.Sling_Leather	sling		sling,
+		ModelWeaponPart					=	Sling_Olive				Base.Sling_Olive		sling		sling,
+		ModelWeaponPart					=	Sling_Camo				Base.Sling_Camo		sling		sling,
+		ModelWeaponPart					=	AmmoStock				Base.Shotgun_AmmoStrap		ammostrap		ammostrap,
+		ModelWeaponPart					=	Base.ChokeTubeFull		Base.Choketube		silencer	silencer,
+		ModelWeaponPart					=	Base.ChokeTubeImproved		Base.Choketube_Duckbill		silencer	silencer,
+		ModelWeaponPart					=	Base.ShotgunSilencer		Base.ShotgunSilencer				silencer	silencer,
+		ModelWeaponPart					=	Base.Laser		Base.TacticalLaser				laser	laser,
+		ModelWeaponPart					=	Base.ImprovisedSilencer	Base.Silencer_Improvised	silencer	silencer,
+		ModelWeaponPart					=	Base.Silencer_PopBottle	Base.Silencer_PopBottle		silencer	silencer,
+		ModelWeaponPart					=	RecoilPad				Base.Recoil_Pad				recoilpad	recoilpad,
+		ModelWeaponPart					=	Base.ExtendedRecoilPad	Base.ExtendedRecoil_Pad		recoilpad	recoilpad,
+	}
+
+	item Remington870Wood
+	{
+		/*****************Naming and Category*****************/
+		WeaponSpritesByIndex = Remington870Wood;Remington870WoodBlack,
+		Type							=	Weapon,
+		Weight							=	4,
+		SubCategory						=	Firearm,
+		IsAimedFirearm					=	TRUE,
+		DisplayName						=	Remington870,
+		DisplayCategory					=	Weapon,
+		IconsForTexture = Mossberg_Wood;Mossberg_Wood_Black,
 		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
@@ -793,14 +918,14 @@ module Base
 	item Remington870Sawnoff
 	{
 		/*****************Naming and Category*****************/
-		WeaponSprite					=	Base.Remington870SawnOff,
+		WeaponSpritesByIndex = Remington870SawnOff;Remington870SawnOffBlack,
 		Type							=	Weapon,
 		Weight							=	2,
 		SubCategory						=	Firearm,
 		IsAimedFirearm					=	TRUE,
 		DisplayName						=	Sawn Off Remington 870 Shotgun,
 		DisplayCategory					=	Weapon,
-		Icon							=	Mossberg500_Sawn,
+		IconsForTexture = Mossberg_Wood_Sawed;Mossberg_Wood_Black_Sawed,
 		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
 
@@ -1181,6 +1306,7 @@ module Base
 		Icon							=	SPAS-12,
 		Tags							=	Gun;HasMetal;Firearm;SemiShotgun,
 		MetalValue						=	45,
+		OnCreate	= SpecialLootSpawns.OnCreateWeaponWithStock,
 
 		/************************Damage************************/
 		SplatNumber						=	3,

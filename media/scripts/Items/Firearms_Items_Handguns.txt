@@ -122,16 +122,17 @@ module Base
 	item Pistol2
 	{
 		/*****************Naming and Category*****************/
-		WeaponSprite					=	Base.M1911,
+		WeaponSpritesByIndex					=	Base.M1911;ICA19;ICA19_Gold,
 		Type							=	Weapon,
 		Weight							=	1.4,
 		SubCategory						=	Firearm,
 		IsAimedFirearm					=	TRUE,
 		DisplayName						=	M1911,
 		DisplayCategory					=	Weapon,
-		Icon							=	M1911,
+		IconsForTexture = M1911;ICA19;ICA19_Goldballer,
 		Tags							=	Gun;HasMetal;Firearm,
 		MetalValue						=	45,
+		OnCreate	= SpecialLootSpawns.OnCreate1911,
 
 		/************************Damage************************/
 		SplatNumber						=	3,

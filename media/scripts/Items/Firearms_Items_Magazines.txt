@@ -195,6 +195,22 @@ module Base
 		Tags = HasMetal;RifleMagazine,
 	}
 
+	item AKM_Mag
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	AKM Magazine,
+		DisplayCategory = Ammo,
+		Icon	=	AKM_Mag,
+		MaxAmmo = 30,
+		AmmoType = Base.762x39Bullets,
+		GunType = Base.AKM,
+		StaticModel = AKM_Mag_World,
+		WorldStaticModel = AKM_Mag_World,
+		Tags = HasMetal;RifleMagazine,
+	}
+
 	item M14Clip
 	{
 		CanStack	=	FALSE,

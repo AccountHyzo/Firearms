@@ -1,4 +1,6 @@
 UI_EN = {
-		UI_options_Firearms_spawnCasing = "Drop casings",
-		UI_options_Firearms_spawnCasing_tooltip = "Whether casings drop on the floor or get put in the players inventory.",
+		UI_options_Firearms_keyBind_FireMode = "Change Firemode",
+		UI_options_Firearms_keyBind_FireMode_tooltip = "Changes firemode of equipped firearm if alternative firemodes are available.",
+		UI_options_Firearms_keyBind_StockMode = "Extend/Detract Stock",
+		UI_options_Firearms_keyBind_StockMode_tooltip = "Extends/Detracts stock of equipped firearm.",
 }

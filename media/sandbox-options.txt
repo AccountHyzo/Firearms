@@ -158,6 +158,12 @@ type = boolean, default = true,
 page = FirearmsSpawns, translation = Firearms_SpawnM733,
 }
 
+option Firearms.SpawnColtDelta
+{
+type = boolean, default = true,
+page = FirearmsSpawns, translation = Firearms_SpawnColtDelta,
+}
+
 option Firearms.SpawnPython
 {
 	type = boolean, default = true,
@@ -284,10 +290,10 @@ option Firearms.SpawnUZI
 	page = FirearmsSpawns, translation = Firearms_SpawnUZI,
 }
 
-option Firearms.SpawnWinchester73
+option Firearms.SpawnMarlin1894
 {
 type = boolean, default = true,
-page = FirearmsSpawns, translation = Firearms_SpawnWinchester73,
+page = FirearmsSpawns, translation = Firearms_SpawnMarlin1894,
 }
 
 option Firearms.SpawnWinchester94

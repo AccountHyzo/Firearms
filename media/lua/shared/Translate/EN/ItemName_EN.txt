@@ -48,19 +48,19 @@ ItemName_EN = {
 		ItemName_Base.Remington870Wood = "Remington 870",
 		ItemName_Base.Remington870Sawnoff = "Sawed-off Remington 870",
 		ItemName_Base.M37 = "Ithaca 37",
+		ItemName_Base.M37Sawnoff = "Sawed-off Ithaca 37",
 		ItemName_Base.SPAS12 = "Franchi SPAS-12",
 		ItemName_Base.LAW12 = "Franchi LAW-12",
-		ItemName_Base.M37Sawnoff = "Sawed-off Ithaca 37",
+
 		ItemName_Base.Winchester94 = "Winchester Model 1894",
-		ItemName_Base.Winchester73 = "Winchester Model 1873",
+		ItemName_Base.Winchester94_Sawn = "Sawed-off Winchester Model 1894",
+		ItemName_Base.Marlin1894 = "Marlin Model 1894",
+		ItemName_Base.Marlin1894_Sawn = "Sawed-off Marlin Model 1894",
 		ItemName_Base.Rossi92 = "Rossi Model 92",
 
 
-		ItemName_Base.x2LeupoldScope = "x2 Leupold Scope",
 		ItemName_Base.x2Scope = "ACOG x2 Scope",
-		ItemName_Base.x4ACOGScope = "ACOG 4x32 Riflescope",
-		ItemName_Base.x4Scope = "ACOG 4x32 Riflescope with Rail Adapter",
-		ItemName_Base.x4Scope = "ACOG x4 Scope",
+		ItemName_Base.x4Scope = "ACOG 4x32",
 		ItemName_Base.x8Scope = "x8 Scope",
 		ItemName_Base.x4-x12Scope = "x4-x12 Scope",
 

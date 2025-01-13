@@ -57,6 +57,22 @@ Recipes_EN = {
 
 		Recipe_PlaceShotgunShellsInBox = "Place 25 12ga Shells in a box",
 
+		Recipe_PlaceBoxesOf762x51BulletsAmmoInCarton = "Place 12 Boxes of 7.62x51mm Rounds in a carton",
+
+		Recipe_PlaceBoxesOf762x39BulletsAmmoInCarton = "Place 12 Boxes of 7.62x39mm Rounds in a carton",
+
+		Recipe_PlaceBoxesOfBullets4440AmmoInCarton = "Place 12 Boxes of .44-40 WCF Rounds in a carton",
+
+		Recipe_PlaceBoxesOfBullets22AmmoInCarton = "Place 12 Boxes of .22 LR Rounds in a carton",
+
+		Recipe_PlaceBoxesOfBullets3006AmmoInCarton = "Place 12 Boxes of .30-06 Rounds in a carton",
+
+		Recipe_PlaceBoxesOfBullets357AmmoInCarton = "Place 12 Boxes of .357 Rounds in a carton",
+
+		Recipe_PlaceBoxesOfBullets10mmAmmoInCarton = "Place 12 Boxes of 10mm Auto Rounds in a carton",
+
+		OpenCartonOfBullets_Firearms = "Open Carton Of Bullets (12 Boxes)",
+
 		Recipe_Clean_gun_part = "Clean gun part",
 
 		Recipe_PutScopeOnAdapter = "Put scope on rail adapter",

@@ -124,7 +124,7 @@ module Base
 		/*****************Naming and Category*****************/
 		WeaponSprite					=	Base.SW29,
 		Type							=	Weapon,
-		Weight							=	1.4,
+		Weight							=	1.7,
 		SubCategory						=	Firearm,
 		IsAimedFirearm					=	TRUE,
 		DisplayName						=	SW29,
@@ -240,7 +240,7 @@ module Base
 		/*****************Naming and Category*****************/
 		WeaponSprite					=	Base.SW36,
 		Type							=	Weapon,
-		Weight							=	1.4,
+		Weight							=	1,
 		SubCategory						=	Firearm,
 		IsAimedFirearm					=	TRUE,
 		DisplayName						=	SW36,
@@ -356,7 +356,7 @@ module Base
 		/*****************Naming and Category*****************/
 		WeaponSprite					=	Base.Python,
 		Type							=	Weapon,
-		Weight							=	1.4,
+		Weight							=	1.7,
 		SubCategory						=	Firearm,
 		IsAimedFirearm					=	TRUE,
 		DisplayName						=	Colt Python,
@@ -564,7 +564,7 @@ module Base
 
 		/************************Attachments************************/
 		ModelWeaponPart					=	Bayonnet				Bayonnet					bayonnet	bayonnet,
-		ModelWeaponPart					=	Base.x2Scope			Base.Acog					scope		scope,
+		ModelWeaponPart					=	Base.x2Scope			Base.2xLeupoldScope					scope		scope,
 		ModelWeaponPart					=	Base.x4Scope			Base.Acog					scope		scope,
 		ModelWeaponPart					=	Base.x8Scope			Base.12xScope				scope		scope,
 		ModelWeaponPart					=	Base.x4-x12Scope		Base.12xScope				scope		scope,
@@ -588,7 +588,7 @@ module Base
 		/*****************Naming and Category*****************/
 		WeaponSprite					=	Base.Anaconda,
 		Type							=	Weapon,
-		Weight							=	7,
+		Weight							=	2,
 		SubCategory						=	Firearm,
 		IsAimedFirearm					=	TRUE,
 		DisplayName						=	Colt Anaconda,

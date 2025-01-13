@@ -7,14 +7,14 @@ module Base
 	{
 		timedAction = SawOffShotgun,
 		Time = 200,
-		OnCreate = onSawnOff_OnCreate,
+		OnCreate = Recipe.OnCreate.ShotgunSawnoff,
 		ToolTip = Tooltip_Recipe_NeedSawMetal,
 		Tags = InHandCraft,
 		category = Weaponry,
 		inputs
 		{
 			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegrade],
-			item 1 [HuntingRifle;Winchester73;Winchester94] flags[Prop2;InheritCondition;InheritAmmunition] mappers[rifleType],
+			item 1 [HuntingRifle;Winchester94;Marlin1894] flags[Prop2;InheritCondition;InheritAmmunition] mappers[rifleType],
 		}
 		outputs
 		{
@@ -23,8 +23,8 @@ module Base
 		itemMapper rifleType
 		{
 			Base.HuntingRifle_Sawn = Base.HuntingRifle,
-			Base.Winchester73_Sawn = Base.Winchester73,
 			Base.Winchester94_Sawn = Base.Winchester94,
+			Base.Marlin1894_Sawn = Base.Marlin1894,
 		}
 	}
 

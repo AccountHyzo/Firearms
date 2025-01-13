@@ -11,7 +11,7 @@ module Base
 		DisplayName	=	Colt Ace Magazine,
 		DisplayCategory = Ammo,
 		Icon	=	45_Mag,
-		MaxAmmo = 7,
+		MaxAmmo = 10,
 		AmmoType = Base.Bullets22,
 		GunType = Base.ColtAce,
 		StaticModel = GunMagazine,
@@ -45,6 +45,22 @@ module Base
 		Icon	=	45_Mag,
 		MaxAmmo = 7,
 		AmmoType = Base.Bullets45,
+		GunType = Base.Pistol2,
+		StaticModel = GunMagazine,
+		WorldStaticModel = Glock_Mag,
+		Tags = HasMetal;PistolMagazine,
+	}
+
+	item DeltaClip
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Colt Delta Magazine,
+		DisplayCategory = Ammo,
+		Icon	=	45_Mag,
+		MaxAmmo = 8,
+		AmmoType = Base.Bullets10mm,
 		GunType = Base.Pistol2,
 		StaticModel = GunMagazine,
 		WorldStaticModel = Glock_Mag,
@@ -94,8 +110,8 @@ module Base
 		MaxAmmo = 30,
 		AmmoType = Base.Bullets9mm,
 		GunType = Base.MP5,
-		StaticModel = GunMagazine,
-		WorldStaticModel = MP5_Magazine_wm,
+		StaticModel = MP5_Magazine,
+		WorldStaticModel = MP5Mag,
 		Tags = HasMetal;RifleMagazine,
 	}
 
@@ -110,8 +126,8 @@ module Base
 		MaxAmmo = 30,
 		AmmoType = Base.Bullets10mm,
 		GunType = Base.MP510,
-		StaticModel = GunMagazine,
-		WorldStaticModel = MP5_Magazine_wm,
+		StaticModel = MP510_Magazine,
+		WorldStaticModel = MP510Mag,
 		Tags = HasMetal;RifleMagazine,
 	}
 
@@ -126,8 +142,8 @@ module Base
 		MaxAmmo = 20,
 		AmmoType = Base.Bullets9mm,
 		GunType = Base.UZI,
-		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		StaticModel = UZI_Magazine,
+		WorldStaticModel = UZIMag,
 		Tags = HasMetal;RifleMagazine,
 	}
 
@@ -142,8 +158,8 @@ module Base
 		MaxAmmo = 30,
 		AmmoType = Base.Bullets45,
 		GunType = Base.Mac10,
-		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		StaticModel = Mac10_Magazine,
+		WorldStaticModel = MAC10Mag,
 		Tags = HasMetal;RifleMagazine,
 	}
 
@@ -158,8 +174,8 @@ module Base
 		MaxAmmo = 10,
 		AmmoType = Base.223Bullets,
 		GunType = Base.VarmintRifle,
-		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		StaticModel = Rifle_Mag,
+		WorldStaticModel = BoltActionRifleMag,
 		Tags = HasMetal;RifleMagazine,
 	}
 
@@ -174,24 +190,8 @@ module Base
 		MaxAmmo = 30,
 		AmmoType = Base.556Bullets,
 		GunType = Base.AssaultRifle,
-		StaticModel = 556_Mag,
-		WorldStaticModel = 556_Mag,
-		Tags = HasMetal;RifleMagazine,
-	}
-
-	item AK_Mag
-	{
-		CanStack	=	FALSE,
-		Weight	=	0.2,
-		Type	=	Normal,
-		DisplayName	=	AK Magazine,
-		DisplayCategory = Ammo,
-		Icon	=	AK_Mag,
-		MaxAmmo = 30,
-		AmmoType = Base.762x39Bullets,
-		GunType = Base.AK47,
-		StaticModel = AK_Mag,
-		WorldStaticModel = AK_Mag,
+		StaticModel = STANAG_Magazine,
+		WorldStaticModel = STANAGMag,
 		Tags = HasMetal;RifleMagazine,
 	}
 
@@ -206,7 +206,7 @@ module Base
 		MaxAmmo = 30,
 		AmmoType = Base.762x39Bullets,
 		GunType = Base.AKM,
-		StaticModel = AKM_Mag_World,
+		StaticModel = AKM_Mag,
 		WorldStaticModel = AKM_Mag_World,
 		Tags = HasMetal;RifleMagazine,
 	}
@@ -222,8 +222,8 @@ module Base
 		MaxAmmo = 20,
 		AmmoType = Base.762x51Bullets,
 		GunType = Base.AssaultRifle2,
-		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		StaticModel = M14_Mag,
+		WorldStaticModel = M14Mag,
 		Tags = HasMetal;RifleMagazine,
 	}
 
@@ -238,7 +238,7 @@ module Base
 		MaxAmmo = 100,
 		AmmoType = Base.762x51Bullets,
 		GunType = Base.M60,
-		StaticModel = GunMagazine,
+		StaticModel = M60_mag,
 		WorldStaticModel = M60_mag,
 		Tags = HasMetal;RifleMagazine,
 	}
@@ -254,8 +254,8 @@ module Base
 		MaxAmmo = 20,
 		AmmoType = Base.762x51Bullets,
 		GunType = Base.FN_FAL,
-		StaticModel = GunMagazine,
-		WorldStaticModel = fn_fal_mag,
+		StaticModel = fn_fal_mag,
+		WorldStaticModel = FNFalMag,
 		Tags = HasMetal;RifleMagazine,
 	}
 
@@ -270,8 +270,8 @@ module Base
 		MaxAmmo = 20,
 		AmmoType = Base.762x51Bullets,
 		GunType = Base.G3,
-		StaticModel = GunMagazine,
-		WorldStaticModel = fn_fal_mag,
+		StaticModel = fn_fal_mag,
+		WorldStaticModel = HKG3Mag,
 		Tags = HasMetal;RifleMagazine,
 	}
 

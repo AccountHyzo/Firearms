@@ -1,18 +1,3 @@
-function firearms_setRackAfterShoot(_player, _firearm)
-	if not player or not firearm then return; end
-	if firearm:hasTag("SemiShotgun") then
-		local firemode = firearm:getFireMode()
-		if not firearm then return; end
-		if "Auto" == firemode then
-			firearm:setRackAfterShoot(false);
-		elseif "Single" == firemode then
-			firearm:setRackAfterShoot(true)
-		end
-	end
-end
-
-Events.OnEquipPrimary.Add(firearms_setRackAfterShoot)
-
 local original_attackHook
 
 ISReloadWeaponAction.attackHookFirearms = function(character, chargeDelta, weapon)

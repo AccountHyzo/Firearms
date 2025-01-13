@@ -170,27 +170,6 @@ module Base
 		Fixer : MAC10; Aiming=3,
 	}
 
-	fixing Fix M16A2
-	{
-		Require : M16A2,
-
-		Fixer : M16A2; Aiming=3,
-	}
-
-	fixing Fix Colt Commando
-	{
-		Require : M733,
-
-		Fixer : M733; Aiming=3,
-	}
-
-	fixing Fix AR15
-	{
-		Require : AR15,
-
-		Fixer : AR15; Aiming=3,
-	}
-
 	fixing Fix M60
 	{
 		Require : M60,
@@ -203,6 +182,13 @@ module Base
 		Require : AK47,
 
 		Fixer : AK47; Aiming=3,
+	}
+
+	fixing Fix AKM
+	{
+		Require : AKM,
+
+		Fixer : AKM; Aiming=3,
 	}
 
 	fixing Fix FN FAL
@@ -254,25 +240,11 @@ module Base
 		Fixer : M1Garand; Aiming=3,
 	}
 
-	fixing Fix Winchester 94
+	fixing Fix Winchester
 	{
-		Require : Winchester94,
+		Require : Winchester,
 
-		Fixer : Winchester94; Aiming=3,
-	}
-
-	fixing Fix Winchester73
-	{
-		Require : Winchester73,
-
-		Fixer : Winchester73; Aiming=3,
-	}
-
-	fixing Fix Rossi92
-	{
-		Require : Rossi92,
-
-		Fixer : Rossi92; Aiming=3,
+		Fixer : Winchester; Aiming=3,
 	}
 
 	fixing Fix Mossberg500

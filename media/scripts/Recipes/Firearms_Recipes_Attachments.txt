@@ -52,54 +52,6 @@ module Base
 		}
 	}
 
-	craftRecipe PutScopeOnAdapter
-	{
-    timedAction = Making,
-		Time = 5,
-		AllowBatchCraft = False,
-		Tags = InHandCraft,
-		category = Weaponry,
-		Tooltip = Tooltip_Recipe_ScopeAdapter,
-		inputs
-		{
-			item 1 tags[Screwdriver] mode:keep flags[Prop1],
-			item 1 [picatinnyACOGAdapter] flags[Prop2],
-			item 1 [x4ACOGScope] mappers[scopeType],
-		}
-		outputs
-		{
-			item 1 mapper:scopeType,
-		}
-		itemMapper scopeType
-		{
-			Base.x4Scope = Base.x4ACOGScope,
-		}
-	}
-
-	craftRecipe RemoveScopeAdapter
-	{
-    timedAction = Making,
-		Time = 5,
-		AllowBatchCraft = False,
-		Tags = InHandCraft,
-		category = Weaponry,
-		Tooltip = Tooltip_Recipe_ScopeAdapter,
-		inputs
-		{
-			item 1 tags[Screwdriver] mode:keep flags[Prop2],
-			item 1 [x4Scope] flags[Prop1] mappers[scopeType],
-		}
-		outputs
-		{
-			item 1 picatinnyACOGAdapter,
-			item 1 mapper:scopeType,
-		}
-		itemMapper scopeType
-		{
-			Base.x4ACOGScope = Base.x4Scope,
-		}
-	}
-
 	craftRecipe PutGripOnRIS
 	{
     timedAction = Making,

@@ -7,8 +7,8 @@ WeaponUpgrades = {
 	SPAS12		= {"Sling"},
 	M37		= {"Sling", "RecoilPad"},
 
-	AssaultRifle		= {"Sling_Olive", "Sling_Camo", "RedDot", "x4ACOGScope"},
-	M16A2		= {"Sling_Olive", "Sling_Camo", "RedDot", "x4ACOGScope"},
+	AssaultRifle		= {"Sling_Olive", "Sling_Camo", "RedDot", "x4Scope"},
+	M16A2		= {"Sling_Olive", "Sling_Camo", "RedDot", "x4Scope"},
 	AR15		= {"Sling_Leather", "Sling", "RedDot"},
 	M4		= {"Sling_Olive", "Sling_Camo"},
 
@@ -31,5 +31,5 @@ WeaponUpgrades = {
 
 	MP5		= {"Sling"},
 	UZI    = {"Sling"},
-	M24Rifle		= {"Sling_Olive", "Sling_Camo", "ExtendedRecoilPad", "Rifle_Bipod", "AmmoStraps", "8xScope"},
+	M24Rifle		= {"Sling_Olive", "Sling_Camo", "ExtendedRecoilPad", "Rifle_Bipod", "AmmoStraps", "x8Scope"},
 };

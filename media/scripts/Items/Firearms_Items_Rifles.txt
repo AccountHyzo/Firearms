@@ -6,7 +6,7 @@ module Base
 	item VarmintRifle
 	{
 		/*****************Naming and Category*****************/
-		WeaponSprite					=	Base.Model700,
+		WeaponSpritesByIndex					=	Base.Model700;Model700_Camo;Model700_Green;Model700_Desert;Model700_Snow,
 		Type							=	Weapon,
 		Weight							=	4,
 		SubCategory						=	Firearm,
@@ -563,7 +563,7 @@ module Base
 		ModelWeaponPart					=	Base.x4Scope			Base.12xScope				scope		scope,
 		ModelWeaponPart					=	Base.x8Scope			Base.12xScope				scope		scope,
 		ModelWeaponPart					=	Base.x4-x12Scope		Base.12xScope				scope		scope,
-		ModelWeaponPart					=	Base.RedDot				Reddot_PicatinnyShort		reddot		reddot,
+		ModelWeaponPart					=	Base.RedDot				OKP7		reddot		reddot,
 		ModelWeaponPart					=	Base.AmmoStraps			Base.Rifle_Ammostrap		sling		sling,
 		ModelWeaponPart					=	Base.Sling				Sling_M14					sling		sling,
 		ModelWeaponPart					=	Sling_Leather			Sling_M14_Leather			sling		sling,

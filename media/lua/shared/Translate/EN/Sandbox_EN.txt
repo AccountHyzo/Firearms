@@ -101,6 +101,9 @@ Sandbox_EN = {
 	Sandbox_Firearms_SpawnAR15 = "AR-15",
 	Sandbox_Firearms_SpawnAR15_tooltip = "Whether AR-15 Rifles spawns.",
 
+	Sandbox_Firearms_SpawnColtDelta = "Colt Delta",
+	Sandbox_Firearms_SpawnColtDelta_tooltip = "Whether the Colt Delta 10mm Auto spawns.",
+
 	Sandbox_Firearms_SpawnAKM = "AKM",
 	Sandbox_Firearms_SpawnAKM_tooltip = "Whether AKM Rifles spawns.",
 
@@ -182,11 +185,11 @@ Sandbox_EN = {
 	Sandbox_Firearms_SpawnUZI = "UZI",
 	Sandbox_Firearms_SpawnUZI_tooltip = "Whether or not UZI SMGs spawn.",
 
-	Sandbox_Firearms_SpawnWinchester73 = "Winchester '73",
-	Sandbox_Firearms_SpawnWinchester73_tooltip = "Whether Winchester '73 lever action rifles and the associated .44-40 WCF ammo are spawned.",
+	Sandbox_Firearms_SpawnMarlin1894 = "Marlin Model 1894",
+	Sandbox_Firearms_SpawnMarlin1894_tooltip = "Whether Marlin Model 1894 lever action rifles spawn.",
 
-	Sandbox_Firearms_SpawnWinchester94 = "Winchester '94",
-	Sandbox_Firearms_SpawnWinchester94_tooltip = "Whether Winchester '94 lever action rifles are spawned.",
+	Sandbox_Firearms_SpawnWinchester94 = "Winchester Model 1894",
+	Sandbox_Firearms_SpawnWinchester94_tooltip = "Whether Winchester Model 1894 lever action rifles are spawned.",
 
   Sandbox_Firearms_LootSuppressor = "Suppressors",
 

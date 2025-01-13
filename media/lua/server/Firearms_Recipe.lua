@@ -64,19 +64,16 @@ function Recipe.OnCreate.ShotgunSawnoff(craftRecipeData, character)
 			local modelIndex = item:getModelIndex()
 			if modelIndex then
 				result:setModelIndex(modelIndex)
-				result:setTexture(getTexture("media/textures/Item_" .. result:getIconsForTexture():get(modelIndex) .. ".png"))
+				result:setName("Sawn-off " .. item:getDisplayName())
+				if item:getIconsForTexture() then
+					iconTexture = getTexture("media/textures/Item_" .. result:getIconsForTexture():get(modelIndex) .. ".png")
+					if iconTexture then
+						result:setTexture(getTexture(iconTexture))
+					end
+				end
 			end
 			return
 		end
-	end
-end
-
-
-function onTest_ShotgunSawnoff(item)
-	if item:hasTag("Plastic") then
-		return false;
-	else
-		return true;
 	end
 end
 

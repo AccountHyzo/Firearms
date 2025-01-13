@@ -1,5 +1,50 @@
 module Base
 {
+	model BoltActionRifleMag
+	{
+		mesh = weapons/Firearms/Magazines/BoltActionRifleMag,
+		texture = weapons/Firearms/BoltActionRifle_Synthetic,
+	}
+	model FNFalMag
+	{
+		mesh = weapons/Firearms/Magazines/FNFalMag,
+		texture = weapons/Firearms/FN_FAL,
+	}
+	model HKG3Mag
+	{
+		mesh = weapons/Firearms/Magazines/HKG3Mag,
+		texture = weapons/Firearms/G3,
+	}
+	model M14Mag
+	{
+		mesh = weapons/Firearms/Magazines/M14Mag,
+		texture = weapons/Firearms/M14,
+	}
+	model MAC10Mag
+	{
+		mesh = weapons/Firearms/Magazines/MAC10Mag,
+		texture = weapons/Firearms/mac10,
+	}
+	model MP5Mag
+	{
+		mesh = weapons/Firearms/Magazines/MP5Mag,
+		texture = weapons/Firearms/MP5,
+	}
+	model MP510Mag
+	{
+		mesh = weapons/Firearms/Magazines/MP510Mag,
+		texture = weapons/Firearms/MP510,
+	}
+	model STANAGMag
+	{
+		mesh = weapons/Firearms/Magazines/STANAGMag,
+		texture = weapons/Firearms/M16,
+	}
+	model UZIMag
+	{
+		mesh = weapons/Firearms/Magazines/UZIMag,
+		texture = weapons/Firearms/UZI,
+	}
 	model Bullet
 	{
 		mesh = ammo/Bullet,
@@ -118,16 +163,6 @@ module Base
 	{
 		mesh = ammo/M1Clip,
 	}
-	model M14Clip
-	{
-		mesh = ammo/M14_Mag,
-		texture = weapons/firearms/M14,
-	}
-	model 556_Mag
-	{
-		mesh = ammo/Stanag_Mag,
-		texture = weapons/firearms/M16,
-	}
 	model STANAG_Magazine
 	{
 		mesh = weapons/firearms/attachments/STANAG,
@@ -150,28 +185,38 @@ module Base
 	}
 	model AKM_Foregrip_Wood
 	{
-		mesh = weapons/firearms/attachments/AKM_Foregrip_Wood,
-		texture = weapons/firearms/AKM,
+		mesh = weapons/firearms/attachments/AKM_Handguard_Foregrip,
+		texture = weapons/firearms/attachments/AKM_Wood_Attachments,
 	}
-	model AKM_Grip_Wood
+	model AKM_Handguard_Wood
 	{
-		mesh = weapons/firearms/attachments/AKM_Grip_Wood,
-		texture = weapons/firearms/AKM,
+		mesh = weapons/firearms/attachments/AKM_Handguard,
+		texture = weapons/firearms/attachments/AKM_Wood_Attachments,
 	}
-	model AKM_Stock_Wood
+	model AKM_Wood_Stock
 	{
-		mesh = weapons/firearms/attachments/AKM_Stock_Wood,
-		texture = weapons/firearms/AKM,
+		mesh = weapons/firearms/attachments/AKM_Stock,
+		texture = weapons/firearms/attachments/AKM_Wood_Attachments,
 	}
-	model AKM_Grip_Plastic
+	model AKM_Handguard_Plastic
 	{
-		mesh = weapons/firearms/attachments/AKM_Grip_Plastic,
-		texture = weapons/firearms/AKM,
+		mesh = weapons/firearms/attachments/AKM_Handguard,
+		texture = weapons/firearms/attachments/AKM_Plastic_Attachments,
 	}
 	model AKM_Stock_Plastic
 	{
-		mesh = weapons/firearms/attachments/AKM_Stock_Plastic,
-		texture = weapons/firearms/AKM,
+		mesh = weapons/firearms/attachments/AKM_Stock,
+		texture = weapons/firearms/attachments/AKM_Plastic_Attachments,
+	}
+	model AKM_Handguard_Bakelite
+	{
+		mesh = weapons/firearms/attachments/AKM_Handguard,
+		texture = weapons/firearms/attachments/AKM_Bakelite_Attachments,
+	}
+	model AKM_Stock_Bakelite
+	{
+		mesh = weapons/firearms/attachments/AKM_Stock,
+		texture = weapons/firearms/attachments/AKM_Bakelite_Attachments,
 	}
 	model G3_Mag
 	{
@@ -371,6 +416,11 @@ module Base
 		mesh = weapons/firearms/attachments/ACOG_wm,
 		texture = weapons/firearms/attachments/ACOG,
 	}
+	model OKP7
+	{
+		mesh = weapons/firearms/attachments/OKP7,
+		texture = weapons/firearms/attachments/OKP7,
+	}
 	model Reddot_PicatinnyShort
 	{
 		mesh = weapons/firearms/attachments/Reddot_PicatinnyShort,
@@ -422,21 +472,22 @@ module Base
 	model Sling_wm
 	{
 			mesh = weapons/firearms/attachments/Sling_wm,
+			texture = weapons/firearms/attachments/Sling,
 	}
 	model Sling_Leather_wm
 	{
 				mesh = weapons/firearms/attachments/Sling_wm,
-				texture = weapons/firearms/attachments/Sling_Leather_wm,
+				texture = weapons/firearms/attachments/Sling_Leather,
 	}
 	model Sling_Olive_wm
 	{
 				mesh = weapons/firearms/attachments/Sling_wm,
-				texture = weapons/firearms/attachments/Sling_OliveGreen_wm,
+				texture = weapons/firearms/attachments/Sling_Olive,
 	}
 	model Sling_Camo_wm
 	{
 				mesh = weapons/firearms/attachments/Sling_wm,
-				texture = weapons/firearms/attachments/Sling_Camo_wm,
+				texture = weapons/firearms/attachments/Sling_Camo,
 	}
 	model Sling_Small
 	{
@@ -560,8 +611,8 @@ module Base
 	}
 	model Rifle_Ammostrap
 	{
-	mesh = weapons/firearms/attachments/Rifle_Ammo_Sling,
-	texture = weapons/firearms/attachments/Sling_Ammo,
+	mesh = weapons/firearms/attachments/Sling_Ammo,
+	texture = weapons/firearms/attachments/Sling_Leather,
 	}
 	model Shotgun_AmmoSling
 	{
@@ -575,6 +626,16 @@ module Base
 	model Bipod_wm
 	{
 		mesh = weapons/firearms/attachments/Bipod_wm,
+	}
+	model Silencer_Handgun
+	{
+		mesh = weapons/firearms/attachments/Silencer_Handgun,
+		texture = weapons/firearms/attachments/Silencer,
+	}
+	model Silencer_AR
+	{
+		mesh = weapons/firearms/attachments/Silencer_AR,
+		texture = weapons/firearms/attachments/Silencer,
 	}
 	model Silencer
 	{
@@ -735,10 +796,10 @@ module Base
 		mesh = weapons/firearms/attachments/choketube_duckbill,
 		texture = weapons/firearms/attachments/choketube,
 	}
-	model Flashlight_Improvised
+	model Flashlight_Taped
 	{
 		mesh = weapons/firearms/attachments/TapedFlashlight,
-		texture = weapons/firearms/attachments/Silencer_Improvised,
+		texture = weapons/firearms/attachments/Flashlight,
 	}
 	model FirearmsRifleFlashlight
 	{

@@ -9,7 +9,7 @@ module Base
 		Time = 0,
 		ToolTip = Tooltip_Recipe_ConvertAmmo,
 		Tags = InHandCraft;CanBeDoneInDark,
-    category = Ammunition,
+		category = Ammunition,
 		inputs
 		{
 			item 1 [Base.223Bullets;Base.556Bullets;Base.308Bullets;Base.762x51Bullets;Base.Bullets38;Base.Bullets357] mappers[ammoType] flags[Prop2],
@@ -85,10 +85,10 @@ module Base
 
 	/*craftRecipe Place556AmmoInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 20 [Base.556Bullets] ,
@@ -101,10 +101,10 @@ module Base
 
 	craftRecipe Place223AmmoInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 20 [Base.223Bullets],
@@ -117,10 +117,10 @@ module Base
 
 	craftRecipe Place308AmmoInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 20 [Base.308Bullets],
@@ -133,10 +133,10 @@ module Base
 
 	craftRecipe Place762x51AmmoInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 20 [Base.762x51Bullets],
@@ -149,10 +149,10 @@ module Base
 
 	craftRecipe Place762x39AmmoInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 20 [Base.762x39Bullets],
@@ -165,10 +165,10 @@ module Base
 
 	craftRecipe Place10mmBulletsInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 50 [Base.Bullets10mm],
@@ -197,10 +197,10 @@ module Base
 
 	/*craftRecipe Place9mmBulletsInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 50 [Base.Bullets9mm],
@@ -213,10 +213,10 @@ module Base
 
 	craftRecipe Place45AutoBulletsInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 50 [Base.Bullets45],
@@ -229,10 +229,10 @@ module Base
 
 	craftRecipe Place38SpecialBulletsInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 50 [Base.Bullets38],
@@ -245,10 +245,10 @@ module Base
 
 	craftRecipe Place357BulletsInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 50 [Base.Bullets357],
@@ -261,10 +261,10 @@ module Base
 
 	/*craftRecipe Place44MagnumBulletsInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 50 [Base.Bullets44],
@@ -277,10 +277,10 @@ module Base
 
 	craftRecipe Place4440BulletsInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 50 [Base.Bullets4440],
@@ -293,10 +293,10 @@ module Base
 
 	craftRecipe Place3006BulletsInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 20 [Base.Bullets3006],
@@ -309,10 +309,10 @@ module Base
 
 	/*craftRecipe PlaceShotgunShellsInBox
 	{
-    timedAction = PlaceAmmoInBox,
+		timedAction = PlaceAmmoInBox,
 		Time = 15,
 		category = Ammunition,
-    Tags = InHandCraft,
+		Tags = InHandCraft,
 		inputs
 		{
 			item 25 [Base.ShotgunShells],
@@ -322,5 +322,143 @@ module Base
 			item 1 Base.ShotgunShellsBox,
 		}
 	}*/
+
+	craftRecipe OpenCartonOfBullets_Firearms
+	{
+		timedAction = OpenAmmoBox,
+		Time = 50,
+		category = Ammunition,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 1 [Bullets10mmCarton;Bullets4440Carton;Bullets357Carton;762x51BulletsCarton;762x39BulletsCarton;Bullets22Carton;Bullets3006Carton] mappers[ammoTypes],
+		}
+		outputs
+		{
+			item 12 mapper:ammoTypes,
+		}
+			itemMapper ammoTypes
+			{
+			Base.Bullets10mmBox = Base.Bullets10mmCarton,
+			Base.Bullets4440Box = Base.Bullets4440Carton,
+			Base.Bullets357Box = Base.Bullets357Carton,
+			Base.762x51Box = Base.762x51BulletsCarton,
+			Base.762x39Box = Base.762x39BulletsCarton,
+			Base.Bullets22Box = Base.Bullets22Carton,
+			Base.Bullets3006Box = Base.Bullets3006Carton,
+		}
+	}
+
+	craftRecipe PlaceBoxesOfBullets10mmAmmoInCarton
+	{
+		timedAction = Making,
+		Time = 50,
+		category = Ammunition,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.Bullets10mmBox],
+		}
+		outputs
+		{
+			item 1 Base.Bullets10mmCarton,
+		}
+	}
+
+	craftRecipe PlaceBoxesOfBullets4440AmmoInCarton
+	{
+		timedAction = Making,
+		Time = 50,
+		category = Ammunition,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.Bullets4440Box],
+		}
+		outputs
+		{
+			item 1 Base.Bullets4440Carton,
+		}
+	}
+
+	craftRecipe PlaceBoxesOfBullets357AmmoInCarton
+	{
+		timedAction = Making,
+		Time = 50,
+		category = Ammunition,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.Bullets357Box],
+		}
+		outputs
+		{
+			item 1 Base.Bullets357Carton,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf762x51BulletsAmmoInCarton
+	{
+		timedAction = Making,
+		Time = 50,
+		category = Ammunition,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.762x51Box],
+		}
+		outputs
+		{
+			item 1 Base.762x51BulletsCarton,
+		}
+	}
+
+	craftRecipe PlaceBoxesOf762x39BulletsAmmoInCarton
+	{
+		timedAction = Making,
+		Time = 50,
+		category = Ammunition,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.762x39Box],
+		}
+		outputs
+		{
+			item 1 Base.762x39BulletsCarton,
+		}
+	}
+
+	craftRecipe PlaceBoxesOfBullets22AmmoInCarton
+	{
+		timedAction = Making,
+		Time = 50,
+		category = Ammunition,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.Bullets22Box],
+		}
+		outputs
+		{
+			item 1 Base.Bullets22Carton,
+		}
+	}
+
+	craftRecipe PlaceBoxesOfBullets3006AmmoInCarton
+	{
+		timedAction = Making,
+		Time = 50,
+		category = Ammunition,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.Bullets3006Box],
+		}
+		outputs
+		{
+			item 1 Base.Bullets3006Carton,
+		}
+	}
 
 }

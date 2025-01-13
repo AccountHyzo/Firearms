@@ -30,6 +30,22 @@ module Base
 		Tags = Ammo,
 	}
 
+	item Bullets10mmCarton
+	{
+		DisplayName = Carton of 10mm Auto Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 12,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
 	item Bullets45
 	{
 		Count				=	5,
@@ -72,6 +88,22 @@ module Base
 		Tags = Ammo,
 	}
 
+	item Bullets4440Carton
+	{
+		DisplayName = Carton of .44-40 WCF Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 12,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
 	item Bullets38
 	{
 		Count				=	5,
@@ -98,6 +130,22 @@ module Base
 		StaticModel			=	Bullet,
 		WorldStaticModel	=	9mmRounds,
 		Tags = Ammo,
+	}
+
+	item Bullets357Carton
+	{
+		DisplayName = Carton of .357 Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 12,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
 	}
 
 	item ShotgunShells
@@ -170,6 +218,22 @@ module Base
 		Tags = Ammo,
 	}
 
+	item 762x51BulletsCarton
+	{
+		DisplayName = Carton of 7.62x51mm Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 12,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
 	item 762x39Bullets
 	{
 		Count				=	5,
@@ -182,6 +246,22 @@ module Base
 		StaticModel			=	RifleBullet,
 		WorldStaticModel	=	RifleAmmo,
 		Tags = Ammo,
+	}
+
+	item 762x39BulletsCarton
+	{
+		DisplayName = Carton of 7.62x39mm Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 12,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
 	}
 
 	item Bullets22
@@ -198,6 +278,22 @@ module Base
 		Tags = Ammo,
 	}
 
+	item Bullets22Carton
+	{
+		DisplayName = Carton of .22 LR Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 12,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
 	item Bullets3006
 	{
 		Count				=	5,
@@ -210,6 +306,22 @@ module Base
 		StaticModel			=	RifleBullet,
 		WorldStaticModel	=	RifleAmmo,
 		Tags = Ammo,
+	}
+
+	item Bullets3006Carton
+	{
+		DisplayName = Carton of .30-06 Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 12,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
 	}
 
 	/************************Ammo Boxes************************/

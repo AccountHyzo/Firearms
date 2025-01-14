@@ -559,10 +559,10 @@ module Base
 
 		/************************Attachments************************/
 		ModelWeaponPart					=	Bayonnet				Bayonnet					bayonnet	bayonnet,
-		ModelWeaponPart					=	Base.x2Scope			Base.Acog					scope		scope,
-		ModelWeaponPart					=	Base.x4Scope			Base.12xScope				scope		scope,
-		ModelWeaponPart					=	Base.x8Scope			Base.12xScope				scope		scope,
-		ModelWeaponPart					=	Base.x4-x12Scope		Base.12xScope				scope		scope,
+		ModelWeaponPart					=	Base.x2Scope			Base.PSO1					scope		scope,
+		ModelWeaponPart					=	Base.x4Scope			Base.PSO1				scope		scope,
+		ModelWeaponPart					=	Base.x8Scope			Base.PSO1				scope		scope,
+		ModelWeaponPart					=	Base.x4-x12Scope		Base.PSO1				scope		scope,
 		ModelWeaponPart					=	Base.RedDot				OKP7		reddot		reddot,
 		ModelWeaponPart					=	Base.AmmoStraps			Base.Rifle_Ammostrap		sling		sling,
 		ModelWeaponPart					=	Base.Sling				Sling_M14					sling		sling,

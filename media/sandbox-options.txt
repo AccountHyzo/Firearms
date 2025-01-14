@@ -111,7 +111,7 @@ option Firearms.SuppressorEffectivenessImprovised
 
 option Firearms.LootSuppressor
 {
-type = enum, numValues = 5, default = 2,
+type = enum, numValues = 7, default = 2,
 page = Loot, translation = Firearms_LootSuppressor,
 valueTranslation = Rarity,
 }

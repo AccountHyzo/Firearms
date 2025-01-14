@@ -419,7 +419,12 @@ module Base
 	model OKP7
 	{
 		mesh = weapons/firearms/attachments/OKP7,
-		texture = weapons/firearms/attachments/OKP7,
+		texture = weapons/firearms/attachments/OKP_PSO,
+	}
+	model PSO1
+	{
+		mesh = weapons/firearms/attachments/PSO-1,
+		texture = weapons/firearms/attachments/OKP_PSO,
 	}
 	model Reddot_PicatinnyShort
 	{

@@ -38,10 +38,11 @@ SpawnShotgunSuppressors = (SandboxVars.Firearms.SpawnShotgunSuppressors)
 
 local LOOTRARITY = {
 	0;
-	2;
 	16;
 	64;
 	256;
+	1024;
+	4096;
 }
 
 --[[
@@ -879,7 +880,7 @@ end
 			FirearmsDistributionSilencers
 ]]--
 
-local SuppressorLootRarity = LOOTRARITY[LootSuppressor]
+local SuppressorLootRarity = LOOTRARITY[LootSuppressor-1]
 
 local FirearmsDistributionSilencers = {
 	"PoliceStorageGuns", 0.001,

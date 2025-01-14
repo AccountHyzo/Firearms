@@ -3173,7 +3173,7 @@ module Base
 
 		attachment scope
 		{
-			offset = 0.0000 0.0740 0.0406,
+			offset = 0.0000 0.0740 0.0475,
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
@@ -4111,8 +4111,8 @@ module Base
 
 		attachment sling
 		{
-			offset = 0.0029 0.3186 0.0153,
-			rotate = 179.8380 -19.0067 175.8490,
+			offset = 0.0029 0.3318 0.0153,
+			rotate = 177.6150 -10.5160 176.2218,
 		}
 
 		attachment scope

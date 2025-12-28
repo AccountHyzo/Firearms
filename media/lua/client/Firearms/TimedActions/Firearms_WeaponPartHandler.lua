@@ -1,2 +1,0 @@
--- ISEquipWeaponAction:isValid
--- ISEquipWeaponAction:start
